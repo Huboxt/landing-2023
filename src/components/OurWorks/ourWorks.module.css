@@ -1,0 +1,32 @@
+.ourWorksWrapper{
+  background: #161616;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project{
+  border: 1px solid #7E7B78;
+  border-radius: 40px;
+  padding: 56px 24px 24px 24px;
+
+}
+.projectTitle{
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: #F2F0EE;
+}
+.projectDescription{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #E2DFDC;
+}
+.slick-list{
+  /* display: flex;
+  gap: 100px;
+  width: 100%;
+  box-sizing: border-box; */
+}

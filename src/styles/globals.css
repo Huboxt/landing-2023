@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Clash Display Variable';
+  src:  url('../assets/fonts/ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf') format('truetype') ;
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  margin: 0;
+  font-family: 'Clash Display Variable';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
