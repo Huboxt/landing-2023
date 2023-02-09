@@ -1,15 +1,21 @@
 .ourWorksWrapper{
   background: #161616;
   padding-top: 160px;
+  padding-bottom: 105px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .project{
+  min-width: fit-content;
   border: 1px solid #7E7B78;
   border-radius: 40px;
   padding: 56px 24px 24px 24px;
-
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 543px;
+  box-sizing: border-box;
 }
 .projectTitle{
   font-weight: 500;
@@ -24,9 +30,45 @@
   line-height: 28px;
   color: #E2DFDC;
 }
-.slick-list{
-  /* display: flex;
-  gap: 100px;
-  width: 100%;
-  box-sizing: border-box; */
+.ourWorksIcon{
+  max-width: 80%;
+}
+
+.projectButtons{
+  display: flex;
+  gap: 15px;
+}
+.projectButton{
+  padding: 20px 30px;
+  text-align: center;
+  border: 1px solid #86B7E0;
+  background: transparent;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #F2F0EE;
+  cursor: pointer;
+}
+.projectButton:hover{
+  opacity: 0.7;
+}
+.prevArrow{
+  top: -40px !important;
+  right: 300px !important;
+  left: auto;
+  width: fit-content !important;
+}
+.prevArrow::before{
+  display: none;
+}
+.slider{
+  display: flex !important;
+}
+.nextArrow{
+  top: -40px !important;
+  right: 110px !important;
+  width: fit-content !important;
+}
+.nextArrow::before{
+  display: none;
 }

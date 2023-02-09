@@ -3,6 +3,8 @@ import Header from '../components/Header/Header';
 import FirstBlock from '../components/FirstBlock/FirstBlock';
 import Service from '../components/Service/Service';
 import OurWorks from '../components/OurWorks/OurWorks';
+import Industries from '../components/Industries/Industries.jsx';
+import Clutch from '../components/Clutch/Clutch';
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
           <FirstBlock />
           <Service />
           <OurWorks />
+          <Industries />
+          <Clutch/>
       </main>
     </>
   )
