@@ -15,9 +15,9 @@ const Service = () => {
         </div>
         <div className={style.cardWrapper}>
           {
-            cards.map((card) => {
+            cards.map((card, i) => {
               return(
-                <div className={style.card}>
+                <div className={style.card} key={card.name + i}>
                   <div><Image src={card.image} alt="logo" style={{marginBottom: '32px'}}/></div>
                   <div className={style.cardName}>{card.name}</div>
                   <div className={style.cardDescription}>{card.description}</div>

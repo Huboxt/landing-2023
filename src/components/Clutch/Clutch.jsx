@@ -57,19 +57,19 @@ const Clutch = () => {
       <div className={style.container}>
         <Slider {...settings}>
           {
-            clutches.map((e) => {
+            clutches.map((e, i) => {
               let starsArr = []
               for(let i = 0; i<e.stars; i++){
                 starsArr[i] = i;
               }
               return(
-                <div className={style.projectWrapper}>
+                <div key={e.name + i}className={style.projectWrapper}>
                   <div>
                     <div><Image src={review} alt="review"/></div>
                     <div className={style.starsWrapper}>
                       <div className={style.stars}>
                         {
-                          starsArr.map((e) => <Image src={star} alt="stars"/>)
+                          starsArr.map((e, index) => <Image key={index} src={star} alt="stars"/>)
                         }
                       </div>
                       <div className={style.readMore}>
