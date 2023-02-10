@@ -11,7 +11,7 @@ const Industries = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToScroll: array.length,
+    slidesToScroll: 1,
     rtl: true,
     initialSlide: 0,
     arrows: false,
@@ -32,7 +32,7 @@ const Industries = () => {
   const settings2 = {
     dots: false,
     infinite: true,
-    slidesToScroll: array.length,
+    slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
     speed: 2000,

@@ -16,18 +16,27 @@ body{
 .sliderOurWork > .slick-list > .slick-track{
   display: flex !important;
 }
+
 .industriesSlider > .slick-list > .slick-track{
   width: min-content;
 }
 .industriesSlider > .slick-list > .slick-track > .slick-slide {
   width: fit-content !important;
 }
-.sliderOurWor k> .slick-list {
+/* .sliderOurWork> .slick-list {
   padding:0 20% 0 0 !important;
-}
+} */
 .slick-disabled > svg > path{
   fill: #373737;
 }
 .industriesSlider>.slick-slider{
   width: 25%;
 }
+
+.sliderClutch > .slick-list > .slick-track{
+  display: flex !important;
+  gap: 50px;
+}
+
+
+
