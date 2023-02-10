@@ -1,0 +1,78 @@
+.faqWrapper{
+  background: #161616;
+  padding-top: 271px;
+  padding-bottom: 111px;
+}
+.faqContainer{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title{
+  font-weight: 500;
+  font-size: 82px;
+  line-height: 82px;
+  color: #F2F0EE;
+  margin-bottom: 42px;
+}
+.questions{
+  border-top: 1px solid #86B7E0;
+  padding: 32px 0 32px 0;
+}
+.titleWrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.numberWrapper{
+  display: flex;
+  gap: 40px;
+}
+.numberQuestion{
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  background: linear-gradient(133.26deg, #082B9B 3.83%, #86B7E0 84.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.questionTitle{
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: #F2F0EE;
+}
+.description{
+  width: 65%;
+  padding: 12px 0 10px 0;
+  font-weight: 400;
+  font-size: 26px;
+  color: #E2DFDC;
+  max-height: 500px;
+  transition: all 0.5s ease;
+}
+.descriptionHidden{
+  width: 65%;
+  /* padding: 0px 0 0px 0; */
+  font-weight: 400;
+  font-size: 26px;
+  color: #E2DFDC;
+  color: transparent;
+  max-height: 0px;
+  transition: all 0.5s;
+}
+.increaseButton{
+  cursor: pointer;
+}
+.increaseButton:hover{
+  opacity: 0.7;
+}
+
+@media(max-width: 1500px){
+  .faqContainer{
+    max-width: 1200px;
+  }
+}

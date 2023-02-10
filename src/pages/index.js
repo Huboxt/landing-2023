@@ -5,6 +5,8 @@ import Service from '../components/Service/Service';
 import OurWorks from '../components/OurWorks/OurWorks';
 import Industries from '../components/Industries/Industries.jsx';
 import Clutch from '../components/Clutch/Clutch';
+import FAQ from '../components/FAQ/FAQ';
+import GetTouch from '../components/GetTouch/GetTouch';
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
           <Service />
           <OurWorks />
           <Industries />
-          <Clutch/>
+          <Clutch />
+          <FAQ />
+          <GetTouch />
       </main>
     </>
   )

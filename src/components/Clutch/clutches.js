@@ -9,7 +9,7 @@ export const clutches = [
     projectDescription: "UI/UX Design for Web Application"
   },
   {
-    stars: 4,
+    stars: 5,
     description: 'Huboxt successfully developed a functional ad well-designed website that allowed the client to start listing their company on LinkedIn and Clutch. The team worked with trends and was receptive to the client`s ideas and suggestions. They were versatile and approachable in the partnership.',
     image: projectIcon,
     projectName: "DatBI",

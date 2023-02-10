@@ -77,7 +77,8 @@
 }
 .projectWrapper{
   padding-bottom: 60px;
-  display: flex;
+  min-height: 550px;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
 }
