@@ -1,7 +1,25 @@
 .getTouchWrapper{
   background: #161616;
   padding-top: 228px;
+  padding-bottom: 228px;
 }
 .getTouchIcon{
   max-width: 80%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 173px;
+  padding: 0 15px;
+}
+.title{
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: #E2DFDC;
+}
+@media(max-width: 1500px){
+  .container{
+    gap: 50px;
+  }
 }

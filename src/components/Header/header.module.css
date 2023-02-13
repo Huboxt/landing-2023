@@ -56,3 +56,8 @@
     max-width: 1200px;
   }
 }
+@media(max-width: 950px){
+  .headerButtons{
+    padding: 10px 20px;
+  }
+}

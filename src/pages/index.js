@@ -7,6 +7,7 @@ import Industries from '../components/Industries/Industries.jsx';
 import Clutch from '../components/Clutch/Clutch';
 import FAQ from '../components/FAQ/FAQ';
 import GetTouch from '../components/GetTouch/GetTouch';
+import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Clutch />
           <FAQ />
           <GetTouch />
+          <Footer />
       </main>
     </>
   )

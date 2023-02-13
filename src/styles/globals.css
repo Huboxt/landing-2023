@@ -38,5 +38,15 @@ body{
   gap: 50px;
 }
 
+.footer > .slick-list > .slick-track{
+  display: flex !important;
+  align-items: center;
+  gap: 50px;
+}
+.footer > .slick-list > .slick-track > .slick-slide{
+  width: auto !important;
+  min-height: max-content;
+}
+
 
 
