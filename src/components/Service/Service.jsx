@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import bgSpot from '../../assets/img/bgSpot.svg';
+import servicesIcon from '../../assets/img/servicesIcon.svg';
 import { cards } from './cards';
 import style from './service.module.css';
 
@@ -8,8 +9,10 @@ const Service = () => {
   return(
     <div className={style.servicesWrapper}>
       <Image src={bgSpot} alt="spot" className={style.bgSpot}/>
+      <div className={style.title}>
+        <Image src={servicesIcon} alt="title"/>
+      </div>
       <div className={style.service}>
-        <div className={style.title}>Services</div>
         <div className={style.subtitle}>
           Huboxt is A Software Development Team that get things done. Huboxt is A Software Development Team that get things done
         </div>

@@ -8,14 +8,12 @@
 }
 .service{
   max-width: 1600px;
-  padding: 183px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
   margin: 0 auto;
 }
 .title{
-  font-weight: 500;
-  font-size: 82px;
-  color: #F2F0EE;
-  line-height: 82px;
+  max-width: 80%;
+  margin-top: 183px;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
