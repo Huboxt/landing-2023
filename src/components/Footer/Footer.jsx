@@ -1,10 +1,13 @@
 import React from 'react';
 import Image from "next/image";
+import Link from 'next/link'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dot from '../../assets/img/o.svg';
 import logocur from '../../assets/img/logocur.svg';
+import linkedIn from '../../assets/img/linkedIn.svg';
+import clutchImg from '../../assets/img/clutch.svg';
 import style from './footer.module.css';
 const Footer = () => {
 
@@ -35,6 +38,38 @@ const Footer = () => {
         <Image src={dot} alt="clutchIcon"/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
       </Slider>
+      <div className={style.container}>
+        <div className={style.linksWrapper}>
+          <div>
+            <Link href="/" className={style.link}>ABOUT</Link>
+            <Link href="/" className={style.link}>SERVICES</Link>
+          </div>
+          <div>
+            <Link href="/" className={style.link}>OUR WORK</Link>
+            <Link href="/" className={style.link}>GET IN TOUCH</Link>
+          </div>
+          <div>
+            <Link href="/" className={style.link}>TERMS</Link>
+            <Link href="/" className={style.link}>PRIVACY POLICY</Link>
+          </div>
+        </div>
+        <div className={style.gmailWrapper}>
+          <div>
+            <div className={style.gmail}>huboxt@gmail.com</div>
+            <div className={style.icons}>
+              <Link className={style.link} href="/">
+                <Image src={linkedIn} alt="linkedIn"/>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <Image src={clutchImg} alt="clutch"/>
+          </div>
+        </div>
+      </div>
+      <div className={style.rights}>
+        Huboxt 2023. All rights reserved
+      </div>
     </div>
   )
 }
