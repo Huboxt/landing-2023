@@ -10,11 +10,11 @@ const Header  = () => {
       <div className={style.header}>
         <div className={style.headerContainer}>
           <div><Image src={logo} alt="logo"/></div>
-          <div className={style.headerButtons}>
+          {/* <div className={style.headerButtons}>
             <button className={style.headerButton}>ABOUT</button>
             <button className={style.headerButton}>OUR WORKS</button>
             <button className={style.headerButton}>SERVICES</button>
-          </div>
+          </div> */}
           <div>
             <button className={style.headerGet}>
               <Image src={touch} alt="get" className={style.getInTouchImg}/>

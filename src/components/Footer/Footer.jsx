@@ -41,15 +41,14 @@ const Footer = () => {
       <div className={style.container}>
         <div className={style.linksWrapper}>
           <div>
-            <Link href="/" className={style.link}>ABOUT</Link>
             <Link href="/" className={style.link}>SERVICES</Link>
-          </div>
-          <div>
             <Link href="/" className={style.link}>OUR WORK</Link>
-            <Link href="/" className={style.link}>GET IN TOUCH</Link>
           </div>
           <div>
+            <Link href="/" className={style.link}>GET IN TOUCH</Link>
             <Link href="/" className={style.link}>TERMS</Link>
+          </div>
+          <div>
             <Link href="/" className={style.link}>PRIVACY POLICY</Link>
           </div>
         </div>

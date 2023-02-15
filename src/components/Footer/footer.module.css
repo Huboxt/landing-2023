@@ -8,7 +8,7 @@
   height: 200px;
 }
 .container{
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px 48px 15px;
   margin-top: 134px;
@@ -37,7 +37,7 @@
   opacity: 0.7;
   transition: all 0.4s;
 }
-.link:last-child{
+.link:last-child:not(:first-child){
   margin-top: 24px;
 }
 .gmailWrapper{
@@ -56,7 +56,7 @@
   margin-top: 24px;
 }
 .rights{
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 13px 15px;
   font-weight: 400;

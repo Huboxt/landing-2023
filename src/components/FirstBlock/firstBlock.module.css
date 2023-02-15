@@ -1,4 +1,43 @@
 .firstBlockWrapper{
   background: #F2F0EE;
-  height: 50px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+.titleWrapper{
+  /* width: 40%; */
+  padding-top: 178px;
+  padding-bottom: 254px;;
+}
+.title{
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100px;
+  color: #070707;
+}
+.subTitle{
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: #070707;
+}
+.skillsWrapper{
+  position: absolute;
+  right: -30px;
+  top: 42px;
+  transform: scale(0.9);
+
+}
+
+
+@media(max-width: 1500px){
+  .container{
+    max-width: 1200px;
+  }
 }
