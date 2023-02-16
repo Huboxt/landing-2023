@@ -5,6 +5,14 @@ import touch from '../../assets/img/getInTouch.svg';
 import style from './header.module.css';
 
 const Header  = () => {
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('getInTouch');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return(
     <div className={style.headerWrapper}>
       <div className={style.header}>
@@ -16,7 +24,7 @@ const Header  = () => {
             <button className={style.headerButton}>SERVICES</button>
           </div> */}
           <div>
-            <button className={style.headerGet}>
+            <button className={style.headerGet} onClick={handleClickScroll}>
               <Image src={touch} alt="get" className={style.getInTouchImg}/>
               GET IN TOUCH
             </button>

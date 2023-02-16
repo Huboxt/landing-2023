@@ -46,23 +46,26 @@
   color: #F2F0EE;
 }
 .description{
-  width: 65%;
+  width: 100%;
   padding: 12px 0 10px 0;
   font-weight: 400;
   font-size: 26px;
   color: #E2DFDC;
   max-height: 500px;
-  transition: all 0.5s ease;
+  white-space: pre-line;
+  transition-property: color, max-height, padding;
+  transition-duration: 0.4s, 0.5s, 0.5s;
 }
 .descriptionHidden{
-  width: 65%;
-  /* padding: 0px 0 0px 0; */
+  width: 100%;
+  padding: 0;
   font-weight: 400;
   font-size: 26px;
-  color: #E2DFDC;
   color: transparent;
   max-height: 0px;
-  transition: all 0.5s;
+  white-space: pre-line;
+  transition-property: color, max-height, padding;
+  transition-duration: 0.4s, 0.5s, 0.5s;
 }
 .increaseButton{
   cursor: pointer;
@@ -74,5 +77,14 @@
 @media(max-width: 1500px){
   .faqContainer{
     max-width: 1200px;
+  }
+  .questionTitle{
+    font-size: 38px;
+  }
+  .description{
+    font-size: 23px;
+  }
+  .descriptionHidden{
+    font-size: 23px;
   }
 }

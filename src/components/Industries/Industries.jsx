@@ -88,7 +88,7 @@ const Industries = () => {
           across industries
           </div>
           <div className={style.subtitle}>
-          Huboxt is A Software Development Team that get things done. Huboxt is A Software Development Team that get things done. Huboxt is A Software Development Team that get things done. Huboxt is A Software Development Team that get things done
+            Cutting edge software development to compliment the boldness of your business
           </div>
         </div>
       </div>

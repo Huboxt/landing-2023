@@ -10,7 +10,20 @@ import linkedIn from '../../assets/img/linkedIn.svg';
 import clutchImg from '../../assets/img/clutch.svg';
 import style from './footer.module.css';
 const Footer = () => {
-
+  const handleScrollServices = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  const handleScrollTouch = (e) => {
+    e.preventDefault();
+    const element = document.getElementById('getInTouch');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   const settings = {
     dots: false,
     infinite: true,
@@ -41,11 +54,11 @@ const Footer = () => {
       <div className={style.container}>
         <div className={style.linksWrapper}>
           <div>
-            <Link href="/" className={style.link}>SERVICES</Link>
+            <Link href="/" onClick={handleScrollServices} className={style.link}>SERVICES</Link>
             <Link href="/" className={style.link}>OUR WORK</Link>
           </div>
           <div>
-            <Link href="/" className={style.link}>GET IN TOUCH</Link>
+            <Link href="/" onClick={handleScrollTouch} className={style.link}>GET IN TOUCH</Link>
             <Link href="/" className={style.link}>TERMS</Link>
           </div>
           <div>

@@ -7,15 +7,15 @@ import style from './service.module.css';
 
 const Service = () => {
   return(
-    <div className={style.servicesWrapper}>
+    <div id="services" className={style.servicesWrapper}>
       <Image src={bgSpot} alt="spot" className={style.bgSpot}/>
       <div className={style.title}>
         <Image src={servicesIcon} alt="title"/>
+        <div className={style.subtitle}>
+        Our IT agency work is full cycle and tailored to your company’s goals. Benefit from a blend of experience, state-of-the-art technology, innovation, and code that is intelligent when having your product built for the everyday person
+        </div>
       </div>
       <div className={style.service}>
-        <div className={style.subtitle}>
-          Huboxt is A Software Development Team that get things done. Huboxt is A Software Development Team that get things done
-        </div>
         <div className={style.cardWrapper}>
           {
             cards.map((card, i) => {

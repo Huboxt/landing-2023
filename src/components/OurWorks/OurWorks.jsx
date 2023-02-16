@@ -52,21 +52,21 @@ const OurWorks = () => {
     useTransform: false,
     responsive: [
       {
-        breakpoint: 1480,
+        breakpoint: 1700,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 1110,
+        breakpoint: 1265,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -85,14 +85,28 @@ const OurWorks = () => {
           {
             projects.map((e, index) => {
               return(
-                <div className={style.project} key={e.name+index}>
-                  <div>
-                    <div className={style.projectTitle}>{e.title} {index}</div>
-                    <div className={style.projectDescription}>{e.description}</div>
-                  </div>
-                  <div className={style.projectButtons}>
-                    <button className={style.projectButton}>DESIGN</button>
-                    <button className={style.projectButton}>DEVELOPMENT</button>
+                <div className={style.Wrapper}>
+                  <div className={style.flipCardInner}>
+                    <div className={style.project} key={e.name+index}>
+                      <div>
+                        <div className={style.projectTitle}>{e.title} {index}</div>
+                        <div className={style.projectDescription}>{e.description}</div>
+                      </div>
+                      <div className={style.projectButtons}>
+                        <button className={style.projectButton}>DESIGN</button>
+                        <button className={style.projectButton}>DEVELOPMENT</button>
+                      </div>
+                    </div>
+                    <div className={style.projectBack} key={e.name+index}>
+                      <div>
+                        <div className={style.projectTitle}>BACK</div>
+                        <div className={style.projectDescription}>BACK</div>
+                      </div>
+                      <div className={style.projectButtons}>
+                        <button className={style.projectButton}>DESIGN</button>
+                        <button className={style.projectButton}>DEVELOPMENT</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )

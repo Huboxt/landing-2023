@@ -6,7 +6,7 @@ import style from './getTouch.module.css';
 
 const GetTouch = () => {
   return(
-    <div className={style.getTouchWrapper}>
+    <div className={style.getTouchWrapper} id="getInTouch">
       <Image src={getInTouchBg} alt=" " className={style.getTouchIcon}/>
       <div className={style.container}>
         <div className={style.title}>Contact us if you have any projects in mind</div>
