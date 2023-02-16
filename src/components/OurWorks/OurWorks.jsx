@@ -85,9 +85,9 @@ const OurWorks = () => {
           {
             projects.map((e, index) => {
               return(
-                <div className={style.Wrapper}>
+                <div key={e.id} className={style.Wrapper}>
                   <div className={style.flipCardInner}>
-                    <div className={style.project} key={e.name+index}>
+                    <div className={style.project} >
                       <div>
                         <div className={style.projectTitle}>{e.title} {index}</div>
                         <div className={style.projectDescription}>{e.description}</div>
