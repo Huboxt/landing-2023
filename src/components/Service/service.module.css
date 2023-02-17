@@ -1,5 +1,6 @@
 .servicesWrapper {
   position: relative;
+  z-index: 10;
   background: #161616;
   overflow: hidden;
   border-radius: 60px 60px 0px 0px;
@@ -22,7 +23,6 @@
 }
 .title > img{
   max-width: 60%;
-  width: 100%;
 }
 .subtitle{
   margin: 0 auto;

@@ -8,6 +8,9 @@ import Clutch from '../components/Clutch/Clutch';
 import FAQ from '../components/FAQ/FAQ';
 import GetTouch from '../components/GetTouch/GetTouch';
 import Footer from '../components/Footer/Footer';
+import SecondBlock from '../components/SecondBlock/SecondBlock';
+import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
+import style from './index.module.css';
 
 export default function Home() {
   return (
@@ -19,8 +22,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          <Header />
-          <FirstBlock />
+        <div className={style.firstScreenWrapper}>
+          <div className={style.container}>
+            <div>
+              <Header />
+              <FirstBlock />
+            </div>
+            <div className={style.skillsWrapper}>
+              <div className={style.block}>
+                <span className={style.name}>Development</span>
+              </div>
+              <div className={style.blockSecond}>
+                <span className={style.nameSecond}>Design</span>
+              </div>
+              <div className={style.blockSecond}>
+                <span className={style.nameSecond}>Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          <SecondBlock />
+          <ThirdBlock />
           <Service />
           <OurWorks />
           <Industries />

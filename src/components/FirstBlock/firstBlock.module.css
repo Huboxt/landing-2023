@@ -10,9 +10,8 @@
   padding-left: 15px;
 }
 .titleWrapper{
-  /* width: 40%; */
   padding-top: 178px;
-  padding-bottom: 254px;;
+  padding-bottom: 86px;
 }
 .title{
   font-weight: 500;
@@ -28,11 +27,29 @@
   color: #070707;
 }
 .skillsWrapper{
-  position: absolute;
+  /* position: absolute;
   right: -30px;
   top: 42px;
-  transform: scale(0.9);
+  transform: scale(0.9); */
 
+}
+.getButton{
+  margin-top: 64px;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #E2DFDC;
+  background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+  border-radius: 40px;
+  padding: 20px 40px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.getInTouchImg{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 

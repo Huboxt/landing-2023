@@ -1,0 +1,14 @@
+.secondBlockWrapper{
+  margin-top: -40px;
+  background: #161616;
+  border-radius: 60px 60px 0px 0px;
+  padding-top: 88px;
+  padding-bottom: 158px;
+  padding-right: 45px;
+  position: relative;
+  z-index: 10;
+}
+.secondBlockText{
+  max-width: 100%;
+  box-sizing: border-box;
+}

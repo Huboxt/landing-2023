@@ -1,0 +1,24 @@
+.thirdBlockWrapper{
+  position: relative;
+  z-index: 10;
+  background: #F2F0EE;
+  border-radius: 60px 60px 0px 0px;
+  padding: 177px 140px 217px 140px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 140px;
+  line-height: 140px;
+  color: #070707;
+}
+
+@media(max-width: 1690px){
+  .title{
+    font-size: 100px;
+  }
+}
