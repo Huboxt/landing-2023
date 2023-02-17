@@ -19,8 +19,9 @@
   backface-visibility: hidden;
 }
 .projectBack{
+  background: #F2F0EE;
   min-width: fit-content;
-  border: 1px solid #7E7B78;
+  border: 1px solid #6B99D1;
   border-radius: 40px;
   padding: 56px 24px 24px 24px;
   height: 543px;
@@ -61,11 +62,24 @@
   letter-spacing: 0.03em;
   color: #F2F0EE;
 }
+.projectTitleBack{
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: #161616;
+}
 .projectDescription{
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #E2DFDC;
+}
+.projectDescriptionBack{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5B5B5B;
 }
 .ourWorksIcon{
   max-width: 80%;
@@ -80,6 +94,19 @@
   text-align: center;
   border: 1px solid #86B7E0;
   background: transparent;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #F2F0EE;
+  cursor: pointer;
+}
+.projectButtonBack{
+  position: relative;
+  overflow: hidden;
+  padding: 20px 30px;
+  text-align: center;
+  border: 1px solid #86B7E0;
+  background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
   border-radius: 40px;
   font-weight: 500;
   font-size: 20px;
@@ -108,4 +135,9 @@
 }
 .nextArrow::before{
   display: none;
+}
+.getInTouchImg{
+  position: absolute;
+  top: 0;
+  left: 0;
 }

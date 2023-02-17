@@ -1,0 +1,27 @@
+.fourthBlockWrapper{
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+  border-radius: 60px 60px 0px 0px;
+  padding: 190px 140px 276px 140px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 140px;
+  line-height: 140px;
+  color: #FFFFFF;
+}
+.fourthBlockImage{
+  position: absolute;
+  right: 140px;
+}
+@media(max-width: 1690px){
+  .title{
+    font-size: 100px;
+  }
+}

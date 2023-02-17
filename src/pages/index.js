@@ -10,6 +10,8 @@ import GetTouch from '../components/GetTouch/GetTouch';
 import Footer from '../components/Footer/Footer';
 import SecondBlock from '../components/SecondBlock/SecondBlock';
 import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
+import FourthBlock from '../components/FourthBlock/FourthBlock';
+import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
 
 export default function Home() {
@@ -43,6 +45,8 @@ export default function Home() {
         </div>
           <SecondBlock />
           <ThirdBlock />
+          <FourthBlock />
+          <FifthBlock />
           <Service />
           <OurWorks />
           <Industries />

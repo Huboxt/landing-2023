@@ -5,8 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { projects } from './project';
 import ourWorksIcon from '../../assets/img/ourWorksIcon.svg';
-import nextArrow from '../../assets/img/nextArrow.svg';
-import prevArrow from '../../assets/img/prevArrow.svg';
+import touch from '../../assets/img/getInTouch.svg';
 import style from './ourWorks.module.css';
 
 const OurWorks = () => {
@@ -99,12 +98,18 @@ const OurWorks = () => {
                     </div>
                     <div className={style.projectBack} key={e.name+index}>
                       <div>
-                        <div className={style.projectTitle}>BACK</div>
-                        <div className={style.projectDescription}>BACK</div>
+                        <div className={style.projectTitleBack}>{e.title} {index}</div>
+                        <div className={style.projectDescriptionBack}>{e.description}</div>
                       </div>
                       <div className={style.projectButtons}>
-                        <button className={style.projectButton}>DESIGN</button>
-                        <button className={style.projectButton}>DEVELOPMENT</button>
+                        <button className={style.projectButtonBack}>
+                          <Image src={touch} alt="get" className={style.getInTouchImg}/>
+                          DESIGN
+                        </button>
+                        <button className={style.projectButtonBack}>
+                          <Image src={touch} alt="get" className={style.getInTouchImg}/>
+                          DEVELOPMENT
+                        </button>
                       </div>
                     </div>
                   </div>
