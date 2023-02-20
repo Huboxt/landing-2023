@@ -34,11 +34,11 @@ export default function Home() {
               <div className={style.block}>
                 <span className={style.name}>Development</span>
               </div>
-              <div className={style.blockSecond}>
-                <span className={style.nameSecond}>Design</span>
+              <div className={style.block}>
+                <span className={style.name}>Design</span>
               </div>
-              <div className={style.blockSecond}>
-                <span className={style.nameSecond}>Management</span>
+              <div className={style.block}>
+                <span className={style.name}>Management</span>
               </div>
             </div>
           </div>
