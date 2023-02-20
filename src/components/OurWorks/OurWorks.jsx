@@ -88,7 +88,7 @@ const OurWorks = () => {
                   <div className={style.flipCardInner}>
                     <div className={style.project} >
                       <div>
-                        <div className={style.projectTitle}>{e.title} {index}</div>
+                        <div className={style.projectTitle}>{e.title}</div>
                         <div className={style.projectDescription}>{e.description}</div>
                       </div>
                       <div className={style.projectButtons}>
@@ -98,8 +98,11 @@ const OurWorks = () => {
                     </div>
                     <div className={style.projectBack} key={e.name+index}>
                       <div>
-                        <div className={style.projectTitleBack}>{e.title} {index}</div>
+                        <div className={style.projectTitleBack}>{e.title}</div>
                         <div className={style.projectDescriptionBack}>{e.description}</div>
+                      </div>
+                      <div className={style.projectImage}>
+                        <Image src={e.Image} alt=" " style={{width: "100%", height: "100%"}}/>
                       </div>
                       <div className={style.projectButtons}>
                         <button className={style.projectButtonBack}>
