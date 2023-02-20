@@ -1,4 +1,4 @@
-import DataConceptCard from '../../assets/img/DataConceptCard.svg';
+import DataConceptCard from '../../assets/img/dataConceptCard.svg';
 import SegmaCard from '../../assets/img/segmaCard.svg';
 import uploadLettersCard from '../../assets/img/uploadLettersCard.svg';
 import fleetInsiderCard from '../../assets/img/fleetInsiderCard.svg';
