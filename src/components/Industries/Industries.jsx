@@ -33,7 +33,7 @@ const Industries = () => {
     dots: false,
     infinite: true,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 4,
     arrows: false,
     speed: 2000,
     autoplaySpeed: 2000,

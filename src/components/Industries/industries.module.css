@@ -44,11 +44,14 @@
   transform: rotate(-180deg);
 }
 .titleContainer{
+  position: relative;
+  z-index: 10;
   max-width: 700px
 }
 .title{
+  font-family: "Clash Display Bold";
   font-weight: 500;
-  font-size: 73px;
+  font-size: 82px;
   line-height: 82px;
   color: #F2F0EE;
   margin-bottom: 48px;
@@ -67,20 +70,22 @@
   gap: 20px;
 }
 .industries{
-  display: flex;
+  margin-top: 15px;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
   border-radius: 40px;
   border: 1px solid #86B7E0;
   box-sizing: border-box;
-  max-width: fit-content;
+  width: 257px !important;
+  height: 257px;
 }
 
 
 
 @media(max-width: 1500px){
   .container{
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }

@@ -42,8 +42,8 @@
   z-index: 1;
 }
 .cardWrapper{
-  /* display: flex;
-  flex-wrap: wrap; */
+  position: relative;
+  z-index: 10;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);

@@ -9,7 +9,6 @@
 .Wrapper{
   min-width: fit-content;
   height: 643px;
-  /* perspective: 1000px; */
 }
 .project, .projectBack {
   position: absolute;
@@ -82,7 +81,7 @@
   color: #5B5B5B;
 }
 .ourWorksIcon{
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .projectButtons{
@@ -117,7 +116,7 @@
   opacity: 0.7;
 }
 .prevArrow{
-  top: -40px !important;
+  top: -80px !important;
   right: 300px !important;
   left: auto;
   width: fit-content !important;
@@ -129,7 +128,7 @@
   display: flex !important;
 }
 .nextArrow{
-  top: -40px !important;
+  top: -80px !important;
   right: 110px !important;
   width: fit-content !important;
 }
