@@ -1,4 +1,3 @@
-import React, { useState, useEffect }  from "react";
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import FirstBlock from '../components/FirstBlock/FirstBlock';
@@ -16,8 +15,6 @@ import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
 
 export default function Home() {
-  const [firstAnimation, setFirstAnimation] = useState(true)
-
   return (
     <>
       <Head>
@@ -30,10 +27,10 @@ export default function Home() {
         <div className={style.firstScreenWrapper}>
           <div className={style.container}>
             <div>
-              <Header firstAnimation={firstAnimation} setFirstAnimation={setFirstAnimation}/>
-              {!firstAnimation && <FirstBlock />}
+              <Header />
+              <FirstBlock />
             </div>
-            {!firstAnimation && <div className={style.skillsWrapper}>
+            <div className={style.skillsWrapper}>
               <div className={style.block}>
                 <span className={style.name}>Development</span>
               </div>
@@ -43,24 +40,20 @@ export default function Home() {
               <div className={style.block}>
                 <span className={style.name}>Management</span>
               </div>
-            </div>}
+            </div>
           </div>
         </div>
-          {!firstAnimation &&
-            <>
-              <SecondBlock />
-              <ThirdBlock />
-              <FourthBlock />
-              <FifthBlock />
-              <Service />
-              <OurWorks />
-              <Industries />
-              <Clutch />
-              <FAQ />
-              <GetTouch />
-              <Footer />
-            </> 
-          }
+          <SecondBlock />
+          <ThirdBlock />
+          <FourthBlock />
+          <FifthBlock />
+          <Service />
+          <OurWorks />
+          <Industries />
+          <Clutch />
+          <FAQ />
+          <GetTouch />
+          <Footer />
       </main>
     </>
   )

@@ -9,7 +9,8 @@ import u from '../../assets/img/headerLogo/u.svg';
 import x from '../../assets/img/headerLogo/x.svg';
 import style from './header.module.css';
 
-const Header  = ({firstAnimation, setFirstAnimation}) => {
+const Header  = () => {
+  const [firstAnimation, setFirstAnimation] = useState(true)
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,7 +19,7 @@ const Header  = ({firstAnimation, setFirstAnimation}) => {
   },[])
 
   return(
-    <div className={style.headerWrapper} style={firstAnimation ? {background: "white"} :{}}>
+    <div className={style.headerWrapper}>
       <div className={style.header}>
         <div className={style.headerContainer}>
           <div className={style.logo}>
