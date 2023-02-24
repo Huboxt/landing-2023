@@ -27,7 +27,7 @@ const Header  = () => {
             <Image src={u} alt="u"/>
             <Image src={b} alt="b"/>
             <div className={style.oBgWrapper}>
-              <Image className={`${firstAnimation ?  `${style.firstO} ${style.o}` : style.o}`} src={o} alt="o"/>
+              <Image className={`${firstAnimation ?  `${style.firstO}` : style.o}`} src={o} alt="o"/>
             </div>
             <Image src={x} alt="x"/>
             <Image src={t} alt="t"/>
