@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+import { Parallax, ParallaxLayer } from 'react-parallax';
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import FirstBlock from '../components/FirstBlock/FirstBlock';
@@ -15,6 +17,19 @@ import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
 
 export default function Home() {
+  const [allowHover, setAllowHover] = useState()
+
+  const myEndFunction = () => {
+    setAllowHover(true)
+  }
+  useEffect(() => {
+    if (process.browser){
+      document.getElementById("whiteBackground")?.addEventListener('animationend', myEndFunction)
+    }
+    return() => {
+      document.getElementById("whiteBackground")?.removeEventListener('animationend', myEndFunction)
+    }
+  },[])
   return (
     <>
       <Head>
@@ -31,14 +46,29 @@ export default function Home() {
               <FirstBlock />
             </div>
             <div className={style.skillsWrapper}>
-              <div className={style.block}>
-                <span className={style.name}>Development</span>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+                <span className={style.name}>
+                  Development
+                  <div className={style.whiteBackground}>
+                    Development
+                  </div>
+                </span>
               </div>
-              <div className={style.block}>
-                <span className={style.name}>Design</span>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+                <span className={style.name}>
+                  Design
+                <div className={style.whiteBackground}>
+                  Design
+                </div>
+                </span>
               </div>
-              <div className={style.block}>
-                <span className={style.name}>Management</span>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+                <span className={style.name}>
+                 Management
+                 <div id="whiteBackground" className={style.whiteBackground}>
+                 Management
+                 </div>
+                </span>
               </div>
             </div>
           </div>

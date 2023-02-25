@@ -36,21 +36,45 @@
 .logo{
   display: flex;
   align-items: flex-end;
-  gap: 1.95px;
 }
 .oBgWrapper{
   position: relative;
-  z-index: 20;
-  width: 35.06px;
-  height: 31.93px;
-  background: #F2F0EE;
-  border-radius: 50%;
+  margin-left: -9px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 30;
+}
+.inner{
+  position: relative;
+  z-index: 25;
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+  width: 16px;
+  height: 15px;
+  border-radius:50%;
+  background-size: 150% 150%;
+
+  
+  -webkit-animation-name: o;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: o;
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+
+  animation-name: o;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .o{
+  display: flex;
   position: absolute;
   z-index: 20;
-  top: 50%;
-  left: 50%;
+  top: 56%;
+  left: 17px;
   transform: translate(-50%, -50%);
   transition: all 1s;
 }
@@ -72,3 +96,24 @@
     padding: 10px 20px;
   }
 }
+@-webkit-keyframes o {
+  0%{background-position:0% 50%}
+  100%{background-position: right}
+}
+@-moz-keyframes o {
+  0%{background-position:0% 50%}
+  100%{background-position: right}
+}
+@keyframes o {
+  0%{background-position:0% 50%}
+  100%{background-position: right}
+}
+/* @keyframes o {
+  0%{
+    background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+  }
+  50% {background-position:100% 50%}
+  100%{
+    background: linear-gradient(133.26deg, #082B9B 3.83%, #86B7E0 84.35%);
+  }
+} */
