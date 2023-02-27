@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Parallax, ParallaxLayer } from 'react-parallax';
+import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 import Head from 'next/head';
 import Header from '../components/Header/Header';
 import FirstBlock from '../components/FirstBlock/FirstBlock';
@@ -30,6 +30,15 @@ export default function Home() {
       document.getElementById("whiteBackground")?.removeEventListener('animationend', myEndFunction)
     }
   },[])
+  const darker = (percentage, id) => {
+    if(percentage > 0.08 && percentage < 0.4){
+      document.getElementById(id).style.opacity = 0.3 - percentage
+    } else{
+      document.getElementById(id).style.opacity = percentage
+    }
+    console.log(percentage)
+    // document.getElementById('darkBg').style.opacity = 
+  }
   return (
     <>
       <Head>
@@ -73,17 +82,33 @@ export default function Home() {
             </div>
           </div>
         </div>
-          <SecondBlock />
-          <ThirdBlock />
-          <FourthBlock />
-          <FifthBlock />
-          <Service />
-          <OurWorks />
-          <Industries />
-          <Clutch />
-          <FAQ />
-          <GetTouch />
-          <Footer />
+        <ParallaxProvider>
+          <Parallax speed={40} translateY={[3, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
+              <SecondBlock />
+              <div id="darkBg" className={style.background}></div>
+          </Parallax>
+          <Parallax speed={40} translateY={[-5, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+              <ThirdBlock />
+              <div id="darkBg1" className={style.background}></div>
+          </Parallax>
+          <Parallax speed={40} translateY={[-10, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
+            <FourthBlock />
+            <div id="darkBg2" className={style.background}></div>
+          </Parallax>
+          <Parallax speed={40} translateY={[-15, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+            <FifthBlock />
+            <div id="darkBg3" className={style.background}></div>
+          </Parallax>
+          <Parallax speed={40} translateY={[-5, 5, 'easeInBack']}>
+            <Service />
+            <OurWorks />
+            <Industries />
+            <Clutch />
+            <FAQ />
+            <GetTouch />
+            <Footer />
+          </Parallax>
+        </ParallaxProvider>
       </main>
     </>
   )
