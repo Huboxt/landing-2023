@@ -74,7 +74,7 @@ const OurWorks = () => {
     ]
   }
   return(
-    <div className={`${style.ourWorksWrapper} ourWorksWrap`}>
+    <div id="ourwork" className={`${style.ourWorksWrapper} ourWorksWrap`}>
       <div>
         <Image src={ourWorksIcon} alt="ourWorksIcon" className={style.ourWorksIcon}/>
       </div>

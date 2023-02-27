@@ -12,10 +12,15 @@ import style from './footer.module.css';
 const Footer = () => {
   const handleScrollServices = (e) => {
     e.preventDefault();
-    const element = document.getElementById('services');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    var element = document.getElementById('services');
+    var headerOffset = 45;
+      var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - 300;
+    
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
   }
   const handleScrollTouch = (e) => {
     e.preventDefault();
@@ -23,6 +28,18 @@ const Footer = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+  const handleScrollOurWork = (e) => {
+    e.preventDefault();
+    var element = document.getElementById('ourwork');
+    var headerOffset = 45;
+      var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - 300;
+    
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
   }
   const settings = {
     dots: false,
@@ -55,7 +72,7 @@ const Footer = () => {
         <div className={style.linksWrapper}>
           <div>
             <Link href="/" onClick={handleScrollServices} className={style.link}>SERVICES</Link>
-            <Link href="/" className={style.link}>OUR WORK</Link>
+            <Link href="/" className={style.link} onClick={handleScrollOurWork}>OUR WORK</Link>
           </div>
           <div>
             <Link href="/" onClick={handleScrollTouch} className={style.link}>GET IN TOUCH</Link>
