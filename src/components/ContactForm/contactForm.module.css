@@ -18,6 +18,8 @@
   line-height: 26px;
   color: #E2DFDC;
   text-transform: uppercase;
+  resize: none;
+  font-family: "Clash Display Variable";
 }
 .input::placeholder{
   color: #E2DFDC;

@@ -49,10 +49,12 @@ const ContactFormComponent = () => {
             <div className={style.errorMessage}>{!!errors.email && errors.email}</div>
           </div>
           <div className={style.inputContainer}>
-            <input
+            <textarea
               className={errors.message ? `${style.input} ${style.inputError}` : style.input}
+              style={{height: 'auto'}}
               placeholder="Message"
               name="message"
+              rows="3"
               onChange={handleChange}
               required
               value={values.message || ''}

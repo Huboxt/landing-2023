@@ -9,13 +9,14 @@
   justify-content: space-between;
 }
 .block{
+  cursor: pointer;
   position: relative;
   display: flex;
   background: #F2F0EE;
   max-width: 200px;
   padding-right: 30px;
   box-sizing: border-box;
-  border-right: 1px solid #86B7E0;
+  border-right: 1px solid #21309D;
   max-height: 0px;
   padding-top: 0px;
   animation-name: goup;
@@ -105,7 +106,7 @@
   position: absolute;
   right: 0;
   display: flex;
-  height: 900px;
+  height: 829px;
   transform: rotate(180deg);
 }
 .background{

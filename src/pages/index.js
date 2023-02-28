@@ -17,10 +17,22 @@ import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
 
 export default function Home() {
-  const [allowHover, setAllowHover] = useState()
+  const [allowHover, setAllowHover] = useState(false)
 
   const myEndFunction = () => {
     setAllowHover(true)
+  }
+  const handleScrollServices = (e) => {
+    e.preventDefault();
+    if(allowHover){
+      var element = document.getElementById('services');
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset;      
+      window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
+    }
   }
   useEffect(() => {
     if (process.browser){
@@ -55,7 +67,7 @@ export default function Home() {
               <FirstBlock />
             </div>
             <div className={style.skillsWrapper}>
-              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
                   Development
                   <div className={style.whiteBackground}>
@@ -63,7 +75,7 @@ export default function Home() {
                   </div>
                 </span>
               </div>
-              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
                   Design
                 <div className={style.whiteBackground}>
@@ -71,7 +83,7 @@ export default function Home() {
                 </div>
                 </span>
               </div>
-              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`}>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
                  Management
                  <div id="whiteBackground" className={style.whiteBackground}>

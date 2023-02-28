@@ -3,7 +3,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { array } from './industriesArr';
+import { array, array2 } from './industriesArr';
 import industrialBg from '../../assets/img/industrialBg.svg';
 import style from './industries.module.css';
 
@@ -71,7 +71,7 @@ const Industries = () => {
             <div className={style.shadowTop}/>
             <div className={style.shadowBottom}/>
             <Slider {...settings2}>
-              {array.map((e, i) => {
+              {array2.map((e, i) => {
                 return(
                   <div key={i} className={style.industries}>
                     <Image src={e.image} alt=" "/>

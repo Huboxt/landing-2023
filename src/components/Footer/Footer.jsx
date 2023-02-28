@@ -13,7 +13,6 @@ const Footer = () => {
   const handleScrollServices = (e) => {
     e.preventDefault();
     var element = document.getElementById('services');
-    var headerOffset = 45;
       var elementPosition = element.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - 300;
     

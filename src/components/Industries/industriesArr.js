@@ -19,7 +19,9 @@ export const array = [
   },
   {
     image: deviIcon
-  },
+  }
+]
+export const array2 = [
   {
     image: project4Icon
   },
@@ -31,5 +33,5 @@ export const array = [
   },
   {
     image: globalInternet2
-  },
+  }
 ]
