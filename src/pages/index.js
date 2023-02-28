@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </div>
         <ParallaxProvider>
-          <Parallax speed={40} translateY={[3, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
+          <Parallax speed={40} translateY={[1, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
               <SecondBlock />
               <div id="darkBg" className={style.background}></div>
           </Parallax>
@@ -107,7 +107,7 @@ export default function Home() {
             <FourthBlock />
             <div id="darkBg2" className={style.background}></div>
           </Parallax>
-          <Parallax speed={40} translateY={[-15, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+          <Parallax speed={40} translateY={[-15, 75, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
             <FifthBlock />
             <div id="darkBg3" className={style.background}></div>
           </Parallax>

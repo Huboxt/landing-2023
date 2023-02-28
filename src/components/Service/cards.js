@@ -11,5 +11,5 @@ export const cards = [
   {image: apiIcon, name: "API Development and Integration", description: "We definitely know how to create additional value from you data by producing automated reporting of varying complexity."},
   {image: mobDev, name: "Mobile Development", description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui frameworks, which makes your application look nice and modern while being and fast."},
   {image: devOpsIcon, name: "DevOps", description: "Fast track the pace of your product development with Dev Ops. Here we integrate philosophies,practices, and tools to automate your development, providing you with the edge over yourcompetition"},
-  {image: SoftwareIcon, name: "Software Redesign and Modernization", description: "As a part of customer requirements and our internal agreements we try to use best practices in splitting up, planning, grooming and releasing our work. Our goal to make our team efficient and open for customers."},
+  {image: SoftwareIcon, name: "Software Modernisation", description: "As a part of customer requirements and our internal agreements we try to use best practices in splitting up, planning, grooming and releasing our work. Our goal to make our team efficient and open for customers."},
 ]

@@ -20,7 +20,7 @@ const useContactForm = (validate) => {
         const data = new FormData();
         data.append('name', values.name);
         data.append('email', values.email);
-        data.append('message', values.message);
+        data.append('message', `${values.services ? 'Services: ' + values.services : ''} ${values.ProjectBudget ? 'ProjectBudget: ' + values.ProjectBudget : ''} Message: ${values.message}`);
         const xhr = new XMLHttpRequest();
         xhr.open('post', 'https://formspree.io/f/mgerzjow');
         xhr.setRequestHeader('Accept', 'application/json');

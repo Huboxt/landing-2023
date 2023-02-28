@@ -2,6 +2,16 @@
   max-width: 672px;
   width: 100%;
 }
+.selectsWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 672px;
+  gap: 40px;
+}
+.selectsWrapper > div{
+  width: 100%;
+}
 .inputContainer{
   margin-bottom: 15px;
 }
