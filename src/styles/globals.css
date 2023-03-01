@@ -20,6 +20,11 @@ body{
 .sliderOurWork > .slick-list > .slick-track > .slick-slide {
   margin: 0 10px;
 }
+.sliderOurWork > .slick-list{
+  margin-left: 100px !important;
+  padding-left: 50px;
+
+}
 .sliderOurWork > .slick-list > .slick-track{
   display: flex !important;
 }
@@ -152,6 +157,13 @@ body{
   cursor: pointer !important;
   opacity: 0.7;
   transition: all 0.4s;
+}
+
+@media (max-width: 1270px){
+  .sliderOurWork > .slick-list{
+    margin-left: 0px !important;
+    padding-left: 0px;
+  }
 }
 
 
