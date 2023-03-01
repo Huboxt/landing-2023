@@ -81,7 +81,7 @@ const Clutch = () => {
                     </div>
                   </div>
                   <div className={style.projectDecriptionWrapper}>
-                    <div><Image src={e.image} alt="logo"/></div>
+                    {/* <div className={style.Logo}>{e.image && <Image src={e.image} alt="logo"/>}</div> */}
                     <div>
                       <div className={style.projectName}>{e.projectName}</div>
                       <div className={style.projectDescription}>{e.projectDescription}</div>

@@ -1,37 +1,37 @@
-import industriesIcon from '../../assets/img/industrieIcons/industriesCard.svg';
-import globalIcon from '../../assets/img/industrieIcons/globalIcon.svg';
-import project3Icon from '../../assets/img/industrieIcons/project3Icon.svg';
-import deviIcon from '../../assets/img/industrieIcons/deviIcon.svg';
-import project4Icon from '../../assets/img/industrieIcons/project4Icon.svg';
-import datBiIcon from '../../assets/img/industrieIcons/datBiIcon.svg';
-import infinitiveCircleIcon from '../../assets/img/industrieIcons/infinitiveCircleIcon.svg';
-import globalInternet2 from '../../assets/img/industrieIcons/globalInternet2.svg';
+import dataconcept from '../../assets/img/industrieIcons/dataconcept.svg';
+import uploadletters from '../../assets/img/industrieIcons/uploadletters.svg';
+import goes from '../../assets/img/industrieIcons/goes.svg';
+import datBi from '../../assets/img/industrieIcons/datBi.svg';
+import segma from '../../assets/img/industrieIcons/segma.svg';
+import fleetInsider from '../../assets/img/industrieIcons/fleetInsider.svg';
+import viaBlock from '../../assets/img/industrieIcons/viaBlock.svg';
+import p from '../../assets/img/industrieIcons/p.svg';
 
 export const array = [
   {
-    image: globalIcon
+    image: uploadletters
   },
   {
-    image: industriesIcon
+    image: dataconcept
   },
   {
-    image: project3Icon
+    image: goes
   },
   {
-    image: deviIcon
+    image: datBi
   }
 ]
 export const array2 = [
   {
-    image: project4Icon
+    image: segma
   },
   {
-    image: datBiIcon
+    image: fleetInsider
   },
   {
-    image: infinitiveCircleIcon
+    image: viaBlock
   },
   {
-    image: globalInternet2
+    image: p
   }
 ]

@@ -18,7 +18,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 .sliderOurWork > .slick-list > .slick-track > .slick-slide {
-  margin: 0 27px;
+  margin: 0 10px;
 }
 .sliderOurWork > .slick-list > .slick-track{
   display: flex !important;

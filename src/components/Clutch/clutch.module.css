@@ -10,6 +10,14 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+.Logo > img {
+  width: 84px;
+  height: 84px;
+}
+.Logo {
+  width: 84px;
+  height: 84px;
+}
 .prevArrow{
   bottom: 0px !important;
   top: auto;
@@ -58,11 +66,12 @@
 }
 .projectDecriptionWrapper{
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .projectName{
   font-weight: 500;
-  font-size: 44px;
+  font-size: 35px;
   line-height: 50px;
   letter-spacing: 0.03em;
   color: #F2F0EE;
@@ -76,7 +85,7 @@
 }
 .projectWrapper{
   padding-bottom: 60px;
-  min-height: 550px;
+  min-height: 500px;
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;

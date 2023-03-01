@@ -1,32 +1,41 @@
-import projectIcon from '../../assets/img/projectIcon.svg';
+import datBi from '../../assets/img/industrieIcons/datBi.svg';
+import goes from '../../assets/img/industrieIcons/goes.svg';
+import viaBlock from '../../assets/img/industrieIcons/viaBlock.svg';
 
 export const clutches = [
   {
     stars: 5,
-    description: 'Huboxt has set up an ongoing 2-4–week sprint, which yields several deliverables in each phase. The vendor fosters a collaborative environment, allowing the client to monitor their outputs and provide feedback to improve them. Moreover, Huboxt used various tools to ensure diligent project management.',
-    image: projectIcon,
-    projectName: "Digital Notion",
-    projectDescription: "UI/UX Design for Web Application"
+    description: 'Aside from providing superior products, their ability to genuinely interact on a personal level impresses us the most.',
+    image: null,
+    projectName: "NuVision Investments",
+    projectDescription: "Custom Software Development for Tech Startup"
   },
   {
     stars: 5,
-    description: 'Huboxt successfully developed a functional ad well-designed website that allowed the client to start listing their company on LinkedIn and Clutch. The team worked with trends and was receptive to the client`s ideas and suggestions. They were versatile and approachable in the partnership.',
-    image: projectIcon,
+    description: 'They were flexible and open-minded.',
+    image: datBi,
     projectName: "DatBI",
-    projectDescription: "UI/UX Design for Web Application"
+    projectDescription: "Web Development & Branding for Software Company"
   },
   {
     stars: 5,
-    description: 'Huboxt successfully developed a functional ad well-designed website that allowed the client to start listing their company on LinkedIn and Clutch. The team worked with trends and was receptive to the client`s ideas and suggestions. They were versatile and approachable in the partnership.',
-    image: projectIcon,
-    projectName: "DatBI",
-    projectDescription: "UI/UX Design for Web Application"
-  },
-  {
-    stars: 5,
-    description: 'Huboxt has set up an ongoing 2-4–week sprint, which yields several deliverables in each phase. The vendor fosters a collaborative environment, allowing the client to monitor their outputs and provide feedback to improve them. Moreover, Huboxt used various tools to ensure diligent project management.',
-    image: projectIcon,
+    description: 'Their ability to take an idea and turn it into reality stood out.\nteam is efficient, productive, and on top of the ball. Huboxt excels in turning discrete ideas into tangible designs.',
+    image: null,
     projectName: "Digital Notion",
-    projectDescription: "UI/UX Design for Web Application"
+    projectDescription: "Performance Marketing Leads Platform"
+  },
+  {
+    stars: 5,
+    description: 'They are very creative and engaged, doing software is their passion!',
+    image: goes,
+    projectName: "GOES GmbH & Prime WSI",
+    projectDescription: "DMS Cloud for Oil & Gas Equipment Manufacturer"
+  },
+  {
+    stars: 5,
+    description: 'We can always communicate with them in real-time.\nWe were impressed with Huboxt’s responsiveness and timely delivery. The team was communicative and took ownership of their work, making them an excellent partner.',
+    image: viaBlock,
+    projectName: "viaBlock",
+    projectDescription: "Mobile App Development"
   },
 ]

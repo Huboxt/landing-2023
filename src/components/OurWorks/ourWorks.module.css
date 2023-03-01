@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .Wrapper{
-  min-width: fit-content;
+  /* min-width: fit-content; */
   height: 643px;
 }
 .project, .projectBack {
@@ -33,7 +33,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   opacity: 0;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 0.9) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(0.99, 0.99, 0.99) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transition: all 1s;
 }
 .Wrapper:hover .project {
@@ -66,7 +66,7 @@
   transition: all 1s;
 }
 .project{
-  min-width: fit-content;
+  /* min-width: fit-content; */
   padding: 56px 24px 24px 24px;
   height: 643px;
   box-sizing: border-box;

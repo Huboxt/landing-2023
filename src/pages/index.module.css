@@ -20,7 +20,7 @@
   max-height: 0px;
   padding-top: 0px;
   animation-name: goup;
-  animation-delay: 4.5s;
+  animation-delay: 4.7s;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -35,13 +35,14 @@
   animation-duration: 1s;
 }
 .blockHover:hover::before{
+  /* background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%); */
   background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
   transform: scaleY(200);
   transition: all 1s;
   background-size: 150% 150%;
-  -webkit-animation: Animation 5s ease 1s;
-  -moz-animation: Animation 5s ease 1s;
-  animation: Animation 5s ease 1s;
+  -webkit-animation: Animation 2s ease 0.5s;
+  -moz-animation: Animation 2s ease 0.5s;
+  animation: Animation 2s ease 0.5s;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
