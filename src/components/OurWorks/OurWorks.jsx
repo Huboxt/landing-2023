@@ -40,7 +40,8 @@ const OurWorks = () => {
   const settings = {
     dots: false,
     // autoplay: true,
-    slidesToShow: 4.15,
+    slidesToShow: 4,
+    centerMode: true,
     slidesToScroll: 1,
     infinite: true,
     swipeToSlide: true,
@@ -53,7 +54,7 @@ const OurWorks = () => {
       {
         breakpoint: 1700,
         settings: {
-          slidesToShow: 3.15,
+          slidesToShow: 3,
           slidesToScroll: 1,
         }
       },

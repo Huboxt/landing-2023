@@ -43,12 +43,16 @@ export default function Home() {
     }
   },[])
   const darker = (percentage, id) => {
-    if(percentage > 0.08 && percentage < 0.4){
+    if(percentage > 0.08 && percentage < 0.5){
       document.getElementById(id).style.opacity = 0.3 - percentage
     } else{
-      document.getElementById(id).style.opacity = percentage
+      if(percentage > 0.7){
+        document.getElementById(id).style.opacity = 0.7
+      } else{
+        document.getElementById(id).style.opacity = percentage - 0.2
+      }
     }
-    console.log(percentage)
+    console.log(percentage, id)
     // document.getElementById('darkBg').style.opacity = 
   }
   return (
@@ -95,23 +99,23 @@ export default function Home() {
           </div>
         </div>
         <ParallaxProvider>
-          <Parallax speed={40} translateY={[1, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
+          <Parallax startScroll={0} endScroll={700} translateY={['0px', '-200px']}>
               <SecondBlock />
               <div id="darkBg" className={style.background}></div>
           </Parallax>
-          <Parallax speed={40} translateY={[-5, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+          <Parallax startScroll={400} endScroll={1200} translateY={['-100px', '-450px']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
               <ThirdBlock />
               <div id="darkBg1" className={style.background}></div>
           </Parallax>
-          <Parallax speed={40} translateY={[-10, 70, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
+          <Parallax startScroll={900} endScroll={1500} translateY={['-330px', '-600px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
             <FourthBlock />
             <div id="darkBg2" className={style.background}></div>
           </Parallax>
-          <Parallax speed={40} translateY={[-15, 75, 'easeInBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+          <Parallax startScroll={1400} endScroll={2000} translateY={['-600px', '-800px']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
             <FifthBlock />
             <div id="darkBg3" className={style.background}></div>
           </Parallax>
-          <Parallax speed={40} translateY={[-5, 5, 'easeInBack']}>
+          <Parallax startScroll={2600} endScroll={10000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
             <Service />
             <OurWorks />
             <Industries />
@@ -125,3 +129,34 @@ export default function Home() {
     </>
   )
 }
+
+
+
+{/* <ParallaxProvider>
+<Parallax speed={0} translateY={[7, -30, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
+    <SecondBlock />
+    <div id="darkBg" className={style.background}></div>
+</Parallax>
+<Parallax speed={0} translateY={[-26, -70, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+    <ThirdBlock />
+    <div id="darkBg1" className={style.background}></div>
+</Parallax>
+<Parallax speed={0} translateY={[-57, -110, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
+  <FourthBlock />
+  <div id="darkBg2" className={style.background}></div>
+</Parallax>
+<Parallax speed={0} translateY={[-79, -150, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+  <FifthBlock />
+  <div id="darkBg3" className={style.background}></div>
+</Parallax>
+{/* speed={40} translateY={[-10, -150, 'easeOutBack']}  */}
+{/* <Parallax translateY={[-16, -70, ]}>
+  <Service />
+  <OurWorks />
+  <Industries />
+  <Clutch />
+  <FAQ />
+  <GetTouch />
+  <Footer />
+</Parallax>
+</ParallaxProvider> */}
