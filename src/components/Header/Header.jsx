@@ -1,8 +1,9 @@
 import React, { useState, useEffect }  from "react";
 import Image from "next/image";
 import hub from '../../assets/img/headerLogo/hub.svg';
+import hubMob from '../../assets/img/headerLogo/hubMob.svg';
 import oxt from '../../assets/img/headerLogo/oxt.svg';
-import o from '../../assets/img/headerLogo/o.svg';
+import oxtMob from '../../assets/img/headerLogo/oxtMob.svg';
 import style from './header.module.css';
 
 const Header  = () => {
@@ -22,6 +23,15 @@ const Header  = () => {
             <Image src={hub} alt="hub"/>
               <div className={style.oBgWrapper}>
                 <Image src={oxt} alt="oxt" />
+                <div className={`${firstAnimation ?  `${style.firstO}` : style.o}`}>
+                  <div className={style.inner}/>
+                </div>
+              </div>
+          </div>
+          <div className={style.logoMobile}>
+            <Image src={hubMob} alt="hub"/>
+              <div className={style.oBgWrapper}>
+                <Image src={oxtMob} alt="oxt" />
                 <div className={`${firstAnimation ?  `${style.firstO}` : style.o}`}>
                   <div className={style.inner}/>
                 </div>

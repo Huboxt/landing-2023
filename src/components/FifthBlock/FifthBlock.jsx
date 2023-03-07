@@ -7,7 +7,7 @@ const FifthBlock = () => {
   return(
     <div className={style.fifthBlockWrapper}>
       <div className={style.title}>Organization<br/>that want to<br/>digitalize</div>
-      <div><Image src={fifthBlockIcon} alt="fifthBlockIcon"/></div>
+      <div><Image src={fifthBlockIcon} alt="fifthBlockIcon" className={style.image}/></div>
     </div>
   )
 }

@@ -37,6 +37,9 @@
   display: flex;
   align-items: flex-end;
 }
+.logoMobile{
+  display: none;
+}
 .oBgWrapper{
   position: relative;
   margin-left: -9px;
@@ -94,6 +97,25 @@
 @media(max-width: 950px){
   .headerButtons{
     padding: 10px 20px;
+  }
+}
+@media(max-width: 750px){
+  .logo{
+    display: none;
+  }
+  .logoMobile{
+    display: flex;
+    align-items: flex-end;
+  }
+  .inner{
+    width: 9px;
+    height: 8px;
+  }
+  .o{
+    left: 8.5px;
+  }
+  .oBgWrapper{
+    margin-left: -5px;
   }
 }
 @-webkit-keyframes o {

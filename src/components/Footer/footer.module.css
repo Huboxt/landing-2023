@@ -41,16 +41,24 @@
   margin-top: 24px;
 }
 .gmailWrapper{
-  width: 30%;
   display: flex;
   justify-content: space-between;
   gap: 10px;
+}
+.imagesWrapper{
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+}
+.clutchImage{
+  height: 70px;
 }
 .gmail{
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #161616;
+  margin-top: 24px;
 }
 .icons{
   margin-top: 24px;

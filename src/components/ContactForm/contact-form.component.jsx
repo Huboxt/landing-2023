@@ -16,14 +16,17 @@ const ContactFormComponent = () => {
   } = useContactForm(validate);
 
   const services = [
-    { value: 'design', label: 'DESIGN' },
-    { value: 'development', label: 'DEVELOPMENT' },
-    { value: 'management', label: 'MANAGEMENT' },
+    { value: 'product development from scratch', label: 'Product development from scratch' },
+    { value: 'UI/UX design', label: 'UI/UX design' },
+    { value: 'MVP development', label: 'MVP development' },
+    { value: 'Product enchantment/modernisations', label: 'Product enchantment/modernisations' },
   ];
   const ProjectBudget = [
-    { value: 'more $10k', label: 'more $10k' },
-    { value: 'less $50k', label: 'less $50k' },
-    { value: 'more $50k', label: 'more $50k' },
+    { value: 'N/A', label: 'N/A' },
+    { value: 'less than $10k', label: 'Less than $10k' },
+    { value: '$10k to $50k', label: '$10k to $50k' },
+    { value: '$50k to $200k', label: '$50k to $200k' },
+    { value: '$200k+', label: '$200k+' },
   ];
   const handleChangeServices = (e) => {
     const event = {
@@ -80,7 +83,6 @@ const ContactFormComponent = () => {
             />
             <div className={style.errorMessage}>{!!errors.email && errors.email}</div>
           </div>
-          <div className={style.selectsWrapper}>
             <div className={style.inputContainer}>
               <Select
                 className={"react-select-container"}
@@ -107,7 +109,6 @@ const ContactFormComponent = () => {
               />
               <div className={style.errorMessage}>{false && errors.name}</div>
             </div>
-          </div>
           <div className={style.inputContainer}>
             <textarea
               className={errors.message ? `${style.input} ${style.inputError}` : style.input}

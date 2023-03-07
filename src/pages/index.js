@@ -42,6 +42,7 @@ export default function Home() {
       document.getElementById("whiteBackground")?.removeEventListener('animationend', myEndFunction)
     }
   },[])
+  
   const darker = (percentage, id) => {
     if(percentage > 0.08 && percentage < 0.5){
       document.getElementById(id).style.opacity = 0.3 - percentage
@@ -52,8 +53,6 @@ export default function Home() {
         document.getElementById(id).style.opacity = percentage - 0.2
       }
     }
-    console.log(percentage, id)
-    // document.getElementById('darkBg').style.opacity = 
   }
   return (
     <>
@@ -73,9 +72,9 @@ export default function Home() {
             <div className={style.skillsWrapper}>
               <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
-                  Development
+                  Management
                   <div className={style.whiteBackground}>
-                    Development
+                  Management
                   </div>
                 </span>
               </div>
@@ -89,42 +88,71 @@ export default function Home() {
               </div>
               <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
-                 Management
+                 Development
                  <div id="whiteBackground" className={style.whiteBackground}>
-                 Management
+                 Development
                  </div>
                 </span>
               </div>
             </div>
           </div>
+          <div className={style.skillsWrapperMobile}>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
+                <span className={style.name}>
+                  Management
+                  <div className={style.whiteBackground}>
+                  Management
+                  </div>
+                </span>
+              </div>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
+                <span className={style.name}>
+                  Design
+                <div className={style.whiteBackground}>
+                  Design
+                </div>
+                </span>
+              </div>
+              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
+                <span className={style.name}>
+                 Development
+                 <div id="whiteBackground" className={style.whiteBackground}>
+                 Development
+                 </div>
+                </span>
+              </div>
+            </div>
         </div>
-        <ParallaxProvider>
-          <Parallax startScroll={0} endScroll={700} translateY={['0px', '-200px']}>
-              <SecondBlock />
-              <div id="darkBg" className={style.background}></div>
-          </Parallax>
-          <Parallax startScroll={400} endScroll={1200} translateY={['-100px', '-450px']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
-              <ThirdBlock />
-              <div id="darkBg1" className={style.background}></div>
-          </Parallax>
-          <Parallax startScroll={900} endScroll={1500} translateY={['-330px', '-600px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
-            <FourthBlock />
-            <div id="darkBg2" className={style.background}></div>
-          </Parallax>
-          <Parallax startScroll={1400} endScroll={2000} translateY={['-600px', '-800px']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
-            <FifthBlock />
-            <div id="darkBg3" className={style.background}></div>
-          </Parallax>
-          <Parallax startScroll={2600} endScroll={10000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
-            <Service />
-            <OurWorks />
-            <Industries />
-            <Clutch />
-            <FAQ />
-            <GetTouch />
-            <Footer />
-          </Parallax>
-        </ParallaxProvider>
+
+          <ParallaxProvider>
+            <Parallax startScroll={0} endScroll={700} translateY={['0px', '-200px']}>
+                <SecondBlock />
+                <div id="darkBg" className={style.background}></div>
+            </Parallax>
+            <Parallax startScroll={400} endScroll={1200} translateY={['-100px', '-450px']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
+                <ThirdBlock />
+                <div id="darkBg1" className={style.background}></div>
+            </Parallax>
+            <Parallax startScroll={900} endScroll={1500} translateY={['-330px', '-600px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+              <FourthBlock />
+              <div id="darkBg2" className={style.background}></div>
+            </Parallax>
+            <Parallax startScroll={1400} endScroll={2000} translateY={['-600px', '-800px']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
+              <FifthBlock />
+              <div id="darkBg3" className={style.background}></div>
+            </Parallax>
+            <Parallax startScroll={2600} endScroll={10000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+              <Service />
+              <OurWorks />
+              <Industries />
+              <Clutch />
+              <FAQ />
+              <GetTouch />
+              <Footer />
+        <div style={{display: "none"}}>
+        </div>
+            </Parallax>
+          </ParallaxProvider>
       </main>
     </>
   )

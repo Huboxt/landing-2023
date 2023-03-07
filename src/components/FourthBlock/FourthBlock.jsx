@@ -7,7 +7,7 @@ const FourthBlock = () => {
   return(
     <div className={style.fourthBlockWrapper}>
       <div className={style.title}>Companies launching<br/>their own product<br/>on the market</div>
-      <Image src={fourthBlockIcon} alt="fourthBlockIcon" className={style.fourthBlockImage}/>
+      <div><Image src={fourthBlockIcon} alt="fourthBlockIcon" className={style.fourthBlockImage}/></div>
     </div>
   )
 }

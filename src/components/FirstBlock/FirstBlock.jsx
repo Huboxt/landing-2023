@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import touch from '../../assets/img/getInTouch.svg';
-import wrapperSkills from "../../assets/img/wrapperSkills.svg"
 import style from './firstBlock.module.css';
 
 const FirstBlock = () => {

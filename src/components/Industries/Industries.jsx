@@ -15,8 +15,8 @@ const Industries = () => {
     rtl: true,
     initialSlide: 0,
     arrows: false,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 0,
     cssEase: "linear",
     slidesToShow: 2.5,
     centerMode: true,
@@ -27,7 +27,7 @@ const Industries = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: false
+    useTransform: false,
   }
   const settings2 = {
     dots: false,
@@ -35,8 +35,8 @@ const Industries = () => {
     slidesToScroll: 1,
     initialSlide: 4,
     arrows: false,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 0,
     cssEase: "linear",
     slidesToShow: 2.5,
     centerMode: true,
@@ -47,7 +47,7 @@ const Industries = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: false
+    useTransform: false,
   }
   return(
     <div className={style.industriesWrapper}>

@@ -22,6 +22,7 @@ body{
 }
 .sliderOurWork > .slick-list > .slick-track{
   display: flex !important;
+  cursor: grab;
 }
 
 .industriesSlider > .slick-list > .slick-track{
@@ -43,6 +44,7 @@ body{
 .sliderClutch > .slick-list > .slick-track{
   display: flex !important;
   gap: 50px;
+  cursor: grab;
 }
 
 .footer > .slick-list > .slick-track{
@@ -128,7 +130,7 @@ body{
   border: none !important;
 }
 .react-select__menu {
-  border: 1px solid #082B9B !important;
+  border: 1px solid #86B7E0 !important;
   background-color: #161616 !important;
   cursor: pointer !important;
   border-radius: 10px !important;

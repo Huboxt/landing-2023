@@ -7,7 +7,7 @@ const ThirdBlock = () => {
   return(
     <div className={style.thirdBlockWrapper}>
       <div className={style.title}>Early-stage<br/>startups without<br/>a tech team</div>
-      <div><Image src={thirdBlockIcon} alt="thirdBlockIcon"/></div>
+      <div><Image src={thirdBlockIcon} className={style.image} alt="thirdBlockIcon"/></div>
     </div>
   )
 }
