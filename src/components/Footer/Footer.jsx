@@ -62,8 +62,7 @@ const Footer = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: false,
-    variableHeight: true,
+    useTransform: true,
   }
 
   return(
