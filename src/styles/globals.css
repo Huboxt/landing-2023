@@ -117,7 +117,7 @@ body{
 }
 .react-select__value-container{
   color: #E2DFDC !important;
-  padding: 0;
+  padding: 0 !important;
 }
 .react-select-container:focus-visible{
   outline: none !important;
@@ -156,5 +156,18 @@ body{
   transition: all 0.4s;
 }
 
+
+@media (max-width: 960px){
+  .sliderClutch > .slick-list > .slick-track{
+    gap: 5px;
+  }
+}
+@media (max-width: 879px){
+  .footer > .slick-list > .slick-track{
+    display: flex !important;
+    align-items: center;
+    gap: 20px;
+  }
+}
 
 

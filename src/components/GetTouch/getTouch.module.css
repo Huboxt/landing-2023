@@ -23,3 +23,22 @@
     gap: 50px;
   }
 }
+@media (max-width: 1215px){
+  .getTouchWrapper{
+    padding-top: 0px;
+    padding-bottom: 178px;
+  }
+  .getTouchIcon{
+    height: 100%;
+    margin-bottom: 14px;
+  }
+  .title{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .container{
+    flex-direction: column;
+    gap: 73px;
+    padding: 0 20px;
+  }
+}

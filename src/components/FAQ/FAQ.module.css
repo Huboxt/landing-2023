@@ -87,3 +87,40 @@
     font-size: 23px;
   }
 }
+@media (max-width: 1215px){
+  .faqContainer{
+    padding: 0 20px;
+  }
+  .title{
+    font-size: 42px;
+    line-height: 44px;
+    margin-bottom: 56px;
+  }
+  .numberQuestion{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+  .questionTitle{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+  .plusMinus{
+    width: 20px;
+  }
+  .description{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .descriptionHidden{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .numberWrapper{
+    gap: 10px;
+  }
+  .faqWrapper{
+    padding-bottom: 120px;
+  }
+}

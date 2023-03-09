@@ -122,7 +122,7 @@ const ContactFormComponent = () => {
             />
             <div className={style.errorMessage}>{!!errors.message && errors.message}</div>
           </div>
-          <div>
+          <div className={style.buttonWrapper}>
             <button type="submit" className={style.button} disabled={cantBeSubmitted}>
             <Image src={touch} alt=" " className={style.getInTouchImg}/>
               Submit

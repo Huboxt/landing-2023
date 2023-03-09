@@ -18,9 +18,13 @@
   box-sizing: border-box;
 }
 .background{
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
+}
+.backgroundMobile{
+  display: none;
 }
 .sliderContainer{
   position: relative;
@@ -47,6 +51,12 @@
   position: relative;
   z-index: 10;
   max-width: 700px
+}
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
 }
 .title{
   font-family: "Clash Display Bold";
@@ -86,6 +96,90 @@
 
 @media(max-width: 1500px){
   .container{
-    max-width: 1300px;
+    max-width: 1200px;
+  }
+}
+@media(max-width: 1350px){
+  .container{
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .titleContainer{
+    max-width: 450px;
+  }
+  .title{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .subtitle{
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1015px){
+  .industriesWrapper{
+    padding-top: 15px;
+    padding-bottom: 120px;
+  }
+  .titleContainer{
+    padding: 0 20px 44px 20px;
+  }
+  .title{
+    font-size: 39px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+  .subtitle{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .container{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  /* .industries > img {
+    width: 100%;
+  } */
+  .industries{
+    /* width: 164px !important;
+    height: 164px; */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sliders{
+    width: 100%;
+    display: block;
+  }
+  .shadowTop{
+    display: none;
+  }
+  .shadowBottom{
+    display: none;
+  }
+}
+@media (max-width: 680px ){
+  .industries > img {
+    width: 100%;
+  }
+  .industries{
+    width: 164px !important;
+    height: 164px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .background{
+    display: none;
+  }
+  .backgroundMobile{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }

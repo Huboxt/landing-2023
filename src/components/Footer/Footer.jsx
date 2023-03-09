@@ -9,7 +9,9 @@ import logocur from '../../assets/img/logocur.svg';
 import clutchImg from '../../assets/img/clutch.svg';
 import badgeImg from '../../assets/img/badge.svg';
 import style from './footer.module.css';
+
 const Footer = () => {
+
   const handleScrollServices = (e) => {
     e.preventDefault();
     var element = document.getElementById('services');
@@ -21,6 +23,7 @@ const Footer = () => {
         behavior: "smooth"
     });
   }
+
   const handleScrollTouch = (e) => {
     e.preventDefault();
     const element = document.getElementById('getInTouch');
@@ -28,6 +31,7 @@ const Footer = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
   const handleScrollOurWork = (e) => {
     e.preventDefault();
     var element = document.getElementById('ourwork');
@@ -40,6 +44,7 @@ const Footer = () => {
         behavior: "smooth"
     });
   }
+
   const settings = {
     dots: false,
     infinite: true,
@@ -58,46 +63,33 @@ const Footer = () => {
     touchMove: false,
     swipeToSlide: true,
     useTransform: false,
+    variableHeight: true,
   }
+
   return(
     <div className={style.footerWrapper}>
       <Slider {...settings}>
-        <Image src={dot} alt="clutchIcon" />
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
-        <Image src={dot} alt="clutchIcon"/>
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
-        <Image src={dot} alt="clutchIcon" />
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
-        <Image src={dot} alt="clutchIcon"/>
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
       </Slider>
       <div className={style.container}>
         <div className={style.linksWrapper}>
-          <div>
+          <div className={style.links}>
             <Link href="/" onClick={handleScrollServices} className={style.link}>SERVICES</Link>
-            <div className={style.gmail}>sales@huboxt.com</div>
-          </div>
-          <div>
-            <Link href="/" onClick={handleScrollTouch} className={style.link}>GET IN TOUCH</Link>
-            {/* <Link href="/" className={style.link}>TERMS</Link> */}
-          </div>
-          <div>
-            {/* <Link href="/" className={style.link}>PRIVACY POLICY</Link> */}
             <Link href="/" className={style.link} onClick={handleScrollOurWork}>OUR WORK</Link>
+            <Link href="/" onClick={handleScrollTouch} className={style.link}>GET IN TOUCH</Link>
           </div>
           <div>
-            {/* <Link href="/" className={style.link}>PRIVACY POLICY</Link> */}
+            <div className={style.gmail}>sales@huboxt.com</div>
           </div>
         </div>
         <div className={style.gmailWrapper}>
-          <div>
-            {/* <div className={style.gmail}>sales@huboxt.com</div> */}
-            {/* <div className={style.icons}>
-              <Link className={style.link} href="/">
-                <Image src={linkedIn} alt="linkedIn"/>
-              </Link>
-            </div> */}
-          </div>
           <div className={style.imagesWrapper}>
             <a href="https://www.designrush.com/agency/profile/huboxt" rel="noreferrer" target="_blank"><Image src={badgeImg} alt="badge"/></a>
             <a href="https://clutch.co/profile/huboxt?_gl=1*1dgykuk*_ga*MTgzNjY4MjMxMS4xNjc1MjY2Njgy*_[…]NFJxMUFtT0tXbFJQYTlMQVRpOE5TNDZSNVFFanpYV0E1VHdORXZKOEh3JTNEJTNE" rel="noreferrer" target="_blank"><Image src={clutchImg} className={style.clutchImage} alt="clutch"/></a>

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { array, array2 } from './industriesArr';
 import industrialBg from '../../assets/img/industrialBg.svg';
+import industrialBgMobile from '../../assets/img/industrialBgMobile.svg';
 import style from './industries.module.css';
 
 const Industries = () => {
@@ -28,6 +29,16 @@ const Industries = () => {
     touchMove: false,
     swipeToSlide: true,
     useTransform: false,
+    responsive: [
+      {
+        breakpoint: 1015,
+        settings:{
+          vertical: false,
+          slidesToShow: 1,
+          variableWidth: true
+        }
+      }
+    ]
   }
   const settings2 = {
     dots: false,
@@ -48,11 +59,32 @@ const Industries = () => {
     touchMove: false,
     swipeToSlide: true,
     useTransform: false,
+    responsive: [
+      {
+        breakpoint: 1015,
+        settings:{
+          vertical: false,
+          slidesToShow: 1,
+          variableWidth: true
+        }
+      }
+    ]
   }
   return(
     <div className={style.industriesWrapper}>
       <Image src={industrialBg} alt="bg" className={style.background}/>
+      <Image src={industrialBgMobile} alt="bg" className={style.backgroundMobile}/>
       <div className={style.container}>
+       <div className={`${style.titleContainer} ${style.mobile}`}>
+          <div className={style.title}>
+          Trusted by <br/>
+          innovators <br/>
+          across industries
+          </div>
+          <div className={style.subtitle}>
+            Cutting edge software development to compliment the boldness of your business
+          </div>
+        </div>
         <div className={style.sliders}>
           <div className={style.sliderContainer}>
             <div className={style.shadowTop}/>
@@ -81,7 +113,7 @@ const Industries = () => {
             </Slider>
           </div>
         </div>
-        <div className={style.titleContainer}>
+        <div className={`${style.titleContainer} ${style.desktop}`}>
           <div className={style.title}>
           Trusted by <br/>
           innovators <br/>

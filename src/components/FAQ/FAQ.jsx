@@ -38,7 +38,7 @@ const FAQ = () => {
                       </div>
                     </div>
                     <div className={style.increaseButton}>
-                      <Image onClick={() => handleShowId(e.id)} src={isShow ? minus : plus} alt=" "/>
+                      <Image onClick={() => handleShowId(e.id)} src={isShow ? minus : plus} className={style.plusMinus} alt=" "/>
                     </div>
                   </div>
                 </div>

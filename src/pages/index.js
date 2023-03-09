@@ -141,7 +141,7 @@ export default function Home() {
               <FifthBlock />
               <div id="darkBg3" className={style.background}></div>
             </Parallax>
-            <Parallax startScroll={2600} endScroll={10000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
+            <Parallax startScroll={2600} endScroll={7000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
               <Service />
               <OurWorks />
               <Industries />
@@ -149,8 +149,6 @@ export default function Home() {
               <FAQ />
               <GetTouch />
               <Footer />
-        <div style={{display: "none"}}>
-        </div>
             </Parallax>
           </ParallaxProvider>
       </main>

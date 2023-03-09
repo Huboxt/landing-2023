@@ -90,8 +90,75 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.clutchIconMobile{
+  display: none;
+}
 @media (max-width: 1500px){
   .container{
     max-width: 1200px;
+  }
+}
+@media (max-width: 1215px){
+  .clutchIcon{
+    height: 100%;
+  }
+  .readMore{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .description{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .projectName{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .projectDescription{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .projectWrapper{
+    min-height: 360px !important;
+  }
+  .nextArrow > svg{
+    width: 164px !important;
+  }
+  .prevArrow > svg{
+    width: 164px !important;
+  }
+  .stars{
+    gap: 12px;
+  }
+  .clutchReview{
+    width: 76px;
+  }
+  .stars > img{
+    width: 16px;
+  }
+}
+@media (max-width: 960px){
+  .clutchIcon{
+    display: none;
+  }
+  .clutchIconMobile{
+    display: block;
+    margin-bottom: 56px;
+  }
+  .clutchWrapper{
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 577px) {
+  .nextArrow{
+    right: 0px !important;
+  }
+  .prevArrow{
+    left: 0px !important;
+  }
+}
+@media (max-width: 466px){
+  .clutchIconMobile{
+    width: 100%;
   }
 }

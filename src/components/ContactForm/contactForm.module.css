@@ -75,3 +75,17 @@
   top: 0;
   left: 0;
 }
+
+@media (max-width: 1215px){
+  .input{
+    font-size: 16px;
+  }
+  .buttonWrapper{
+    text-align: center;
+  }
+  .button{
+    padding: 16px 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

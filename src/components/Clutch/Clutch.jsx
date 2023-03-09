@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { clutches } from './clutches';
 import clutchIcon from '../../assets/img/clutchIcon.svg';
+import clutchIconMobile from '../../assets/img/clutchIconMobile.svg';
 import review from '../../assets/img/reviews.svg';
 import star from '../../assets/img/star.svg';
 import style from './clutch.module.css';
@@ -49,11 +50,19 @@ const Clutch = () => {
     className: `${style.slider} sliderClutch`,
     rows: 1,
     useTransform: true,
-    // adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 950,
+        settings: {
+          slidesToShow: 1,
+        } 
+      }
+    ]
   }
   return( 
     <div className={style.clutchWrapper}>
       <Image src={clutchIcon} alt="clutchIcon" className={style.clutchIcon}/>
+      <Image src={clutchIconMobile} alt="clutchIconMobile" className={style.clutchIconMobile}/>
       <div className={style.container}>
         <Slider {...settings}>
           {
@@ -65,7 +74,7 @@ const Clutch = () => {
               return(
                 <div key={e.name + i}className={style.projectWrapper}>
                   <div>
-                    <div><Image src={review} alt="review"/></div>
+                    <div><Image src={review} alt="review" className={style.clutchReview}/></div>
                     <div className={style.starsWrapper}>
                       <div className={style.stars}>
                         {

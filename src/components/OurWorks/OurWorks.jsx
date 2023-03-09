@@ -59,17 +59,26 @@ const OurWorks = () => {
         }
       },
       {
-        breakpoint: 1265,
+        breakpoint: 1355,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          speed: 4000,
+          autoplaySpeed: 4000,
         }
       },
       {
-        breakpoint: 850,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          speed: 1000,
+          autoplaySpeed: 4000,
+          centerMode: false,
         }
       }
     ]
@@ -97,6 +106,27 @@ const OurWorks = () => {
                         <button className={style.projectButton}>DEVELOPMENT</button>
                       </div>
                     </div>
+                    <div className={style.projectBack} key={e.name+index}>
+                      <div>
+                        <div className={style.projectTitleBack}>{e.title}</div>
+                        <div className={style.projectDescriptionBack}>{e.description}</div>
+                      </div>
+                      <div className={style.projectImage}>
+                        <Image src={e.Image} alt=" " style={{width: "100%", height: "100%"}}/>
+                      </div>
+                      <div className={style.projectButtons}>
+                        <button className={style.projectButtonBack}>
+                          <Image src={touch} alt="get" className={style.getInTouchImg}/>
+                          DESIGN
+                        </button>
+                        <button className={style.projectButtonBack}>
+                          <Image src={touch} alt="get" className={style.getInTouchImg}/>
+                          DEVELOPMENT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={style.flipCardInnerMobile}>
                     <div className={style.projectBack} key={e.name+index}>
                       <div>
                         <div className={style.projectTitleBack}>{e.title}</div>

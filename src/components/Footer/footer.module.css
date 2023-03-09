@@ -18,7 +18,12 @@
   border-bottom: 1px solid #E0D8D0;
 }
 .linksWrapper{
-  width: 40%;
+  width: 25%;
+}
+.gmailWrapper{
+
+}
+.links{
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -36,9 +41,6 @@
 .link:hover{
   opacity: 0.7;
   transition: all 0.4s;
-}
-.link:last-child:not(:first-child){
-  margin-top: 24px;
 }
 .gmailWrapper{
   display: flex;
@@ -87,5 +89,57 @@
   }
   .linksWrapper{
     width: auto;
+  }
+}
+@media(max-width: 879px){
+  .footerWrapper{
+    padding-top: 32px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .container{
+    flex-direction: column;
+    margin-top: 54px; 
+    border-bottom: none;
+  }
+  .link{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .gmail{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .gmailWrapper{
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid #E0D8D0;
+    padding-top: 32px;
+  }
+  .linksWrapper{
+    margin-bottom: 44px;
+  }
+  .imagesWrapper{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .imagesWrapper>a>img{
+    width: 80%;
+    height: 100%;
+  }
+  .image{
+    height: 100%;
+  }
+  .rights{
+    border-top: 1px solid #E0D8D0;
+    padding: 13px 0;
+    margin: 0 15px;
+  }
+  .imageDot{
+    width: 12.05px !important;
+    height: 11.03px !important;
+  }
+  .image{
+    width: 235.43px !important;
+    height: 52.89px !important;
   }
 }
