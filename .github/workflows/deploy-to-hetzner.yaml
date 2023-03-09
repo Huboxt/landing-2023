@@ -1,7 +1,7 @@
 name: deploy-hetzner
 on: 
   push:
-    branches: [ dev ]
+    branches: [ main ]
 env: 
   CI: false
 
