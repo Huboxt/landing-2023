@@ -7,19 +7,16 @@ services:
     image: huboxt-landing
     container_name: huboxt-landing
     restart: unless-stopped
-    ports:
-      - 80:80
-    # environment:
-    #   VIRTUAL_HOST: ${DOMAIN_NAME}
-    #   LETSENCRYPT_HOST: ${DOMAIN_NAME}
-    #   LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
-
+    environment:
+      VIRTUAL_HOST: ${DOMAIN_NAME}
+      LETSENCRYPT_HOST: ${DOMAIN_NAME}
+      LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
     logging:
       driver: "json-file"
       options:
         max-size: "256m"
         max-file: "10"
-# networks:
-#   default:
-#     external:
-#       name: nginx-proxy
+networks:
+  default:
+    external:
+      name: nginx-proxy
