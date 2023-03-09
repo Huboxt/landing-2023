@@ -1,29 +1,25 @@
 version: "3.7"
 services:
-  uploadletters-landing:
+  huboxt-landing:
     build:
       context: .
       dockerfile: Dockerfile
-    image: uploadletters-landing
-    container_name: uploadletters-landing
+    image: huboxt-landing
+    container_name: huboxt-landing
     restart: unless-stopped
-    environment:
-      VIRTUAL_HOST: ${DOMAIN_NAME}
-      LETSENCRYPT_HOST: ${DOMAIN_NAME}
-      LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
-    labels:
-      - com.host.description=label
-      - "traefik.enable=true"
-      - "traefik.http.routers.uploadletters-landing.entrypoints=websecure"
-      - "traefik.http.routers.uploadletters-landing.rule=Host(`${DOMAIN_NAME}`)"
-      - "traefik.http.routers.uploadletters-landing.tls=true"
-      - "traefik.http.routers.uploadletters-landing.tls.certresolver=letsencrypt"
+    ports:
+      - 80:80
+    # environment:
+    #   VIRTUAL_HOST: ${DOMAIN_NAME}
+    #   LETSENCRYPT_HOST: ${DOMAIN_NAME}
+    #   LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
+
     logging:
       driver: "json-file"
       options:
         max-size: "256m"
         max-file: "10"
-networks:
-  default:
-    external:
-      name: nginx-proxy
+# networks:
+#   default:
+#     external:
+#       name: nginx-proxy
