@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  huboxt-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: huboxt-landing
+    container_name: huboxt-landing
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: ${DOMAIN_NAME}
+      LETSENCRYPT_HOST: ${DOMAIN_NAME}
+      LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "256m"
+        max-file: "10"
+networks:
+  default:
+    external:
+      name: nginx-proxy
