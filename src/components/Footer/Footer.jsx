@@ -51,7 +51,7 @@ const Footer = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
-    speed: 4000,
+    speed: 5000,
     autoplaySpeed: 0,
     cssEase: "linear",
     className: 'footer',
@@ -63,6 +63,15 @@ const Footer = () => {
     touchMove: false,
     swipeToSlide: true,
     useTransform: true,
+    responsive: [
+      {
+        breakpoint: 1015,
+        settings:{
+          speed: 5000,
+          slidesToShow: 1,
+        }
+      }
+    ]
   }
 
   return(

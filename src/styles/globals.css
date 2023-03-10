@@ -141,6 +141,7 @@ body{
 }
 .react-select__placeholder{
   color: #E2DFDC !important;
+  opacity: 0.7 !important;
 }
 .react-select__option{
   font-family: "Clash Display Variable";

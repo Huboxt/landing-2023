@@ -33,6 +33,7 @@
 }
 .input::placeholder{
   color: #E2DFDC;
+  opacity: 0.7;
 }
 .input:focus-visible{
   outline: none;
