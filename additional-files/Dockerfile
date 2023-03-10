@@ -1,6 +1,22 @@
-FROM nginx:1.21.6-alpine
+FROM node:16-alpine
 
-# Copy the Nginx configuration file
-COPY default.conf /etc/nginx/conf.d/default.conf
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY public/ /usr/share/nginx/html
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application files to the working directory
+COPY . .
+
+# Build the Next.js application
+RUN npm run build
+
+# Expose port 3000 for the application to listen on
+EXPOSE 3000
+
+# Set the command to run the application when the container starts
+CMD ["npm", "start"]
