@@ -20,7 +20,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.2.1
         with:
-          switches: -avzr --delete
+          switches: -avzr
           path: additional-files/ *
           remote_path: /opt/huboxt/huboxt-landing/
           remote_host: ${{ secrets.DEPLOY_HOST }}
