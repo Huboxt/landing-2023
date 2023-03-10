@@ -83,8 +83,9 @@ const Footer = () => {
             <Link href="/" onClick={handleScrollServices} className={style.link}>SERVICES</Link>
             <Link href="/" className={style.link} onClick={handleScrollOurWork}>OUR WORK</Link>
             <Link href="/" onClick={handleScrollTouch} className={style.link}>GET IN TOUCH</Link>
+            <div className={`${style.gmail} ${style.gmailDesktop}`}>sales@huboxt.com</div>
           </div>
-          <div>
+          <div className={style.gmailMobile}>
             <div className={style.gmail}>sales@huboxt.com</div>
           </div>
         </div>

@@ -155,34 +155,3 @@ export default function Home() {
     </>
   )
 }
-
-
-
-{/* <ParallaxProvider>
-<Parallax speed={0} translateY={[7, -30, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg")}>
-    <SecondBlock />
-    <div id="darkBg" className={style.background}></div>
-</Parallax>
-<Parallax speed={0} translateY={[-26, -70, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
-    <ThirdBlock />
-    <div id="darkBg1" className={style.background}></div>
-</Parallax>
-<Parallax speed={0} translateY={[-57, -110, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
-  <FourthBlock />
-  <div id="darkBg2" className={style.background}></div>
-</Parallax>
-<Parallax speed={0} translateY={[-79, -150, 'easeOutBack']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
-  <FifthBlock />
-  <div id="darkBg3" className={style.background}></div>
-</Parallax>
-{/* speed={40} translateY={[-10, -150, 'easeOutBack']}  */}
-{/* <Parallax translateY={[-16, -70, ]}>
-  <Service />
-  <OurWorks />
-  <Industries />
-  <Clutch />
-  <FAQ />
-  <GetTouch />
-  <Footer />
-</Parallax>
-</ParallaxProvider> */}

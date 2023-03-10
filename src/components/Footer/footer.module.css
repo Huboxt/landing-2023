@@ -1,5 +1,5 @@
 .footerWrapper{
-  padding-top: 109px;
+  padding-top: 40px;
   background: #F2F0EE;
   border-radius: 60px 60px 0px 0px;
   margin-top: -60px;
@@ -10,18 +10,13 @@
 .container{
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px 48px 15px;
-  margin-top: 134px;
+  padding: 0 15px 18px 15px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 10px;
   border-bottom: 1px solid #E0D8D0;
-}
-.linksWrapper{
-  width: 25%;
-}
-.gmailWrapper{
-
 }
 .links{
   display: flex;
@@ -52,15 +47,26 @@
   align-items: flex-end;
   gap: 30px;
 }
+.imagesWrapper > a {
+  max-height: 84px;
+}
+.imagesWrapper > a:has(.clutchImage) {
+  max-height: 70px;
+}
 .clutchImage{
   height: 70px;
+}
+.gmailDesktop{
+  display: block;
+}
+.gmailMobile{
+  display: none;
 }
 .gmail{
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #161616;
-  margin-top: 24px;
 }
 .icons{
   margin-top: 24px;
@@ -88,7 +94,16 @@
     width: auto;
   }
   .linksWrapper{
-    width: auto;
+    width: 100%;
+  }
+  .gmailDesktop{
+    display: none;
+  }
+  .gmailMobile{
+    display: block;
+  }
+  .gmail{
+    margin-top: 24px;
   }
 }
 @media(max-width: 879px){
@@ -108,6 +123,7 @@
   .gmail{
     font-size: 14px;
     line-height: 18px;
+    margin-top: 24px;
   }
   .gmailWrapper{
     justify-content: flex-start;
@@ -122,7 +138,7 @@
     width: 100%;
     justify-content: space-between;
   }
-  .imagesWrapper>a>img{
+  .imagesWrapper > a > img{
     width: 80%;
     height: 100%;
   }

@@ -28,7 +28,7 @@ const Industries = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: false,
+    useTransform: true,
     responsive: [
       {
         breakpoint: 1015,
@@ -58,7 +58,7 @@ const Industries = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: false,
+    useTransform: true,
     responsive: [
       {
         breakpoint: 1015,

@@ -227,17 +227,17 @@
     transition: all 1s;
   }
   .Wrapper{
-    height: 543px;
+    height: 570px;
   }
   .Wrapper:hover .flipCardInnerMobile > .projectBack{
     opacity: 1;
   }
   .flipCardInnerMobile > .projectBack{
     opacity: 1;
-    height: 543px;
+    height: 570px;
   }
   .flipCardInnerMobile > .project{
-    height: 543px;
+    height: 570px;
   }
   .projectButtonBack{
     font-size: 14px;
