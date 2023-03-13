@@ -1,6 +1,9 @@
 .firstScreenWrapper{
   background: #F2F0EE;
-  overflow: hidden;
+  /* overflow-x: hidden; */
+}
+.firstScreenWrapper::-webkit-scrollbar {
+  display: none;
 }
 .container{
   max-width: 1600px;
@@ -198,6 +201,9 @@
   }
 }
 @media (max-width: 750px){
+  .skillsWrapperMobile{
+    display: none;
+  }
   .skillsWrapperMobile > .block > .name{
     font-size: 32px;
   }
