@@ -12,7 +12,7 @@ const Header  = () => {
   useEffect(() => {
     setTimeout(() => {
       setFirstAnimation(false)
-    },100)
+    },0)
   },[])
 
   return(

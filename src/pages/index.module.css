@@ -25,18 +25,18 @@
   max-height: 0px;
   padding-top: 0px;
   animation-name: goup;
-  animation-delay: 4.2s;
+  animation-delay: 3.9s;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
 .block:nth-child(2){
-  animation-delay: 3.2s;
+  animation-delay: 2.9s;
   animation-duration: 1s;
 }
 .block:last-child{
-  animation-delay: 2.2s;
+  animation-delay: 1.9s;
   animation-duration: 1s;
 }
 .blockHover:hover::before{
@@ -103,10 +103,11 @@
   color: transparent;
   background: #F2F0EE;
   animation-name: whiteBackground;
-  animation-duration: 0.3s;
-  animation-delay: 5.2s;
+  animation-duration: 0.6s;
+  animation-delay: 4.9s;
   animation-fill-mode: forwards;
-  transform-origin: 100%;
+  /* transform-origin: 100%; */
+  max-width: 100%;
 }
 .skillsWrapper{
   position: absolute;
@@ -161,7 +162,7 @@
     height: 100%;
     max-height: 80px;
     animation-name: goupMobile;
-    animation-delay: 2.2s;
+    animation-delay: 1.9s;
     animation-duration: 1s;
   }
   .skillsWrapperMobile > .blockHover > .name{
@@ -178,11 +179,11 @@
     background: transparent;
   }
   .skillsWrapperMobile > .block:nth-child(2){
-    animation-delay: 3.2s !important;
+    animation-delay: 2.9s !important;
     animation-duration: 1s;
   }
   .skillsWrapperMobile > .block:last-child{
-    animation-delay: 4.2s !important;
+    animation-delay: 3.9s !important;
     animation-duration: 1s;
   }
   .skillsWrapperMobile > .block:first-child{
@@ -232,12 +233,17 @@
   }
 }
 @keyframes whiteBackground {
-  from {
+  0% {
     max-width: 100%;
   }
 
-  to {
-    max-width: 0%;
+  90% {
+    transform: translateX(300px);
+    max-width: 100%;
+  }
+  100%{
+    transform: translateX(300px);
+    max-width: 0px;
   }
 }
 @-webkit-keyframes Animation {
