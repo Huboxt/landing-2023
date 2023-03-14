@@ -22,7 +22,7 @@
   line-height: 100px;
   color: #070707;
   animation-name: rotate;
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -36,7 +36,7 @@
   line-height: 34px;
   color: #070707;
   animation-name: rotate;
-  animation-delay: 1s;
+  animation-delay: 0.9s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -63,7 +63,7 @@
   overflow: hidden;
   cursor: pointer;
   animation-name: rotate;
-  animation-delay: 1.3s;
+  animation-delay: 1.2s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   transition: all 1s !important;
