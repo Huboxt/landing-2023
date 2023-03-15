@@ -5,11 +5,20 @@ import style from './firstBlock.module.css';
 
 const FirstBlock = () => {
 
-  const handleClickScroll = () => {
-    const element = document.getElementById('getInTouch');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleClickScroll = (e) => {
+    e.preventDefault();
+    var element = document.getElementById('getInTouch');
+      var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset + 1000;
+    
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+    // const element = document.getElementById('getInTouch');
+    // if (element) {
+    //   element.scrollIntoView({ behavior: 'smooth' });
+    // }
   };
 
   return(
