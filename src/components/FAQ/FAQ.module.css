@@ -124,3 +124,8 @@
     padding-bottom: 120px;
   }
 }
+@media (max-width: 1215px){
+  .description{
+    width: 90%;
+  }
+}

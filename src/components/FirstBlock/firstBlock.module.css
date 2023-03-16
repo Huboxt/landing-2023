@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 .getButton:hover{
-  opacity: 0.7 !important;
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%) !important;
   transition: all 1s !important;
 }
 .getInTouchImg{
