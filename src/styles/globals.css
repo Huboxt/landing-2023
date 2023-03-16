@@ -24,7 +24,9 @@ body{
   display: flex !important;
   cursor: grab;
 }
-
+.industriesSlider > .slick-list{
+  height: 100% !important;
+}
 .industriesSlider > .slick-list > .slick-track{
   width: min-content;
 }
@@ -158,6 +160,11 @@ body{
 }
 
 
+@media (max-width: 1015px){
+  .industriesSlider > .slick-list{
+    height: 100%;
+  }
+}
 @media (max-width: 960px){
   .sliderClutch > .slick-list > .slick-track{
     gap: 5px;

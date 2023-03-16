@@ -8,7 +8,7 @@
 .container{
   max-width: 1600px;
   padding: 0 32px;
-  height: 910px;
+  height: 922px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -26,18 +26,18 @@
   padding-top: 0px;
   animation-name: goup;
   animation-delay: 3.5s;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
 .block:nth-child(2){
   animation-delay: 2.5s;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 .block:last-child{
   animation-delay: 1.5s;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 .blockHover:hover::before{
   /* background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%); */
@@ -163,7 +163,7 @@
     max-height: 80px;
     animation-name: goupMobile;
     animation-delay: 1.5s;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
   }
   .skillsWrapperMobile > .blockHover > .name{
     background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
@@ -180,11 +180,11 @@
   }
   .skillsWrapperMobile > .block:nth-child(2){
     animation-delay: 2.5s !important;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
   }
   .skillsWrapperMobile > .block:last-child{
     animation-delay: 3.5s !important;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
   }
   .skillsWrapperMobile > .block:first-child{
     border-top: 1px solid #21309D;

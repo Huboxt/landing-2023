@@ -1,7 +1,7 @@
 .ourWorksWrapper{
   background: #161616;
   padding-top: 160px;
-  padding-bottom: 105px;
+  padding-bottom: 265px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,6 +169,7 @@
 @media (max-width: 1330px){
   .ourWorksWrapper{
     padding-top: 43px;
+    padding-bottom: 120px;
   }
   .ourWorksIcon{
     height: 100%;
