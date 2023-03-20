@@ -49,6 +49,7 @@ const Footer = () => {
     infinite: true,
     slidesToScroll: 1,
     initialSlide: 0,
+    currentSlide: 0,
     arrows: false,
     speed: 5000,
     autoplaySpeed: 0,
@@ -61,12 +62,12 @@ const Footer = () => {
     swipe: false,
     touchMove: false,
     swipeToSlide: true,
-    useTransform: true,
+    useTransform: false,
     responsive: [
       {
         breakpoint: 1015,
         settings:{
-          speed: 5000,
+          speed: 7000,
           slidesToShow: 1,
         }
       }
@@ -76,6 +77,10 @@ const Footer = () => {
   return(
     <div className={style.footerWrapper}>
       <Slider {...settings}>
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
+        <Image src={logocur} alt="clutchIcon" className={style.image}/>
+        <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
+        <Image src={logocur} alt="clutchIcon" className={style.image}/>
         <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
         <Image src={logocur} alt="clutchIcon" className={style.image}/>
         <Image src={dot} alt="clutchIcon" className={style.imageDot}/>
