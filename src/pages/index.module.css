@@ -142,7 +142,7 @@
     height: 829px;
   }
 }
-@media(max-width: 1330px){
+@media(max-width: 1300px){
   .container{
     flex-direction: column;
   }
@@ -150,7 +150,7 @@
     display: none;
   }
   .skillsWrapperMobile{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-bottom: 130px;
   }
