@@ -25,7 +25,7 @@ const FirstBlock = () => {
     <div className={style.firstBlockWrapper}>
       <div className={style.container}>
         <div className={style.titleWrapper}>
-          <div className={style.title}>Straight-up<br/>software<br/>development</div>
+          <h1 className={style.title}>Straight-up<br/>software<br/>development</h1>
           <div className={style.subTitle}>Let us code and problem-solve while you sleep,<br/>making your project quickly become a reality</div>
           <button className={style.getButton} onClick={handleClickScroll}>
               <Image src={touch} alt="get" className={style.getInTouchImg}/>

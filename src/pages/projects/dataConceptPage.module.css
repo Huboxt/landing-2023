@@ -1,0 +1,166 @@
+.container {
+    background: #f2f0ee;
+  }
+.background{
+    
+    /* opacity: 0; */
+    transition: all 0.6s;
+  }   
+
+.dataConceptTitle{
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 80%;
+}
+.dataConceptDescr {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: 140px;
+    margin-bottom: 40px;
+    font-size: 26px;
+}
+.stackContainer {
+    margin-top: 40px;
+    display: flex;
+}
+.stackBlock {
+    margin-right: 30px;
+}
+.stackTitle {
+    font-size: 16px;
+}
+.needSameButton {
+    margin-top: 30px;
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 20px 40px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.5s, color 0.4s; 
+}
+
+.needSameButton:hover {
+    background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+    color: #E2DFDC;
+    border: 1px solid white; 
+}
+.dataConceptCard {
+    transition: transform 0.5s ease;
+    overflow: hidden;
+  }
+  
+.dataConceptCard:hover {
+  transform: scale(1.03);
+}
+  
+.aboutContainer {
+    margin-top: -55px;
+    background: #161616;
+    border-radius: 60px 60px 0px 0px;
+    padding-top: 88px;
+    padding-bottom: 300px;
+    position: relative;
+    z-index: 10;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 152px;
+}
+.tableTitle {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #F2F0EE;
+}
+.tableDescr {
+    font-size: 44px;
+    text-align: center;
+    color: #F2F0EE;
+}
+.aboutCard{
+    border: 4px solid;
+    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 810px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: 140px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    color: #F2F0EE;
+  }
+.aboutBlockTitle {
+    font-size: 44px;
+    margin-bottom: 12px;
+}  
+.aboutBlockDescr {
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.researchContainer {
+    margin-top: -55px;
+    background: #f2f0ee;
+    border-radius: 60px 60px 0px 0px;
+    padding-top: 88px;
+    padding-bottom: 158px;
+    padding-right: 45px;
+    position: relative;
+    z-index: 10;
+} 
+.researchCard {
+    border: 4px solid;
+    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 810px;
+    height: 310px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: 140px;
+    margin-bottom: 32px;
+    background: #f2f0ee;
+}
+.researchCard + .researchCard {
+    margin-bottom: 88px;
+}
+
+.researchBlockTitle {
+    font-size: 44px;
+    margin-bottom: 12px;
+    color: #161616;
+    background: #f2f0ee;
+}
+
+.researchBlockDescr {
+    font-size: 20px;
+    color: #161616;
+    background: #f2f0ee;
+}
+
+.dataConceptJobs {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden; 
+}
+
+.dataConceptJobs:hover {
+    transform: scale(1.03); 
+}
+

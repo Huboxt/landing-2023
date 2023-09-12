@@ -22,7 +22,7 @@ const Service = () => {
               return(
                 <div className={style.card} key={card.name + i}>
                   <div><Image src={card.image} alt="logo" style={{marginBottom: '32px'}}/></div>
-                  <div className={style.cardName}>{card.name}</div>
+                  <h3 className={style.cardName}>{card.name}</h3>
                   <div className={style.cardDescription}>{card.description}</div>
                 </div>
               )
