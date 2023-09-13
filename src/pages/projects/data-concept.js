@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React from "react";
 import Header from "@/components/Header/Header";
 import GetTouch from "@/components/GetTouch/GetTouch";
 import Footer from "@/components/Footer/Footer";
@@ -12,9 +12,9 @@ import tsIcon from "../../assets/img/stackIcons/typescript.svg";
 import nodeIcon from "../../assets/img/stackIcons/node-js.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
 import dataConceptTitle from "./dataConceptTitle.svg";
-import dataConceptJobs1 from "./dataConceptJobs1.svg";
-import dataConceptJobs2 from "./dataConceptJobs2.svg";
-import dataConceptJobs3 from "./dataConceptJobs3.svg";
+import dataConceptJobs1 from "./data-concept-jobs1.svg";
+import dataConceptJobs2 from "./data-concept-jobs2.svg";
+import dataConceptJobs3 from "./data-concept-jobs3.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 

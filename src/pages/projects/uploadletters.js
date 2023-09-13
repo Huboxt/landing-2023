@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from "react";
+import React from "react";
 import Header from "@/components/Header/Header";
 import GetTouch from "@/components/GetTouch/GetTouch";
 import Footer from "@/components/Footer/Footer";
@@ -16,9 +16,6 @@ import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
 import numberIcon4 from "../../assets/img/numberIcon4.svg";
-import dataConceptJobs1 from "./dataConceptJobs1.svg";
-import dataConceptJobs2 from "./dataConceptJobs2.svg";
-import dataConceptJobs3 from "./dataConceptJobs3.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 
