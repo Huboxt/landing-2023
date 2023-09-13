@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
 import Head from 'next/head';
 import Header from '../components/Header/Header';
@@ -15,9 +16,14 @@ import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
 import FourthBlock from '../components/FourthBlock/FourthBlock';
 import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
+import OurWorksPage from './our-works/our-works-page';
+import DataConceptPage from './projects/data-concept';
+import UploadlettersPage from './projects/uploadletters';
 
 export default function Home() {
   const [allowHover, setAllowHover] = useState(false)
+
+  const router = useRouter();
 
   const myEndFunction = () => {
     setAllowHover(true)
@@ -57,16 +63,62 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Huboxt</title>
-        <meta name="description" content="Huboxt - A software development agency that get things done." />
+        <title>Software Development Company - HUBOXT</title>
+        <meta name="description" content="HUBOXT - custom software development company. Web Development ✔️ UI/UX ✔️ Mobile Development ✔️ API Integration" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "name": "HUBOXT",
+              "url": "https://huboxt.com/",
+              "logo": "https://huboxt.com/_next/static/media/oxt.0b4789e2.svg",
+              "email": "sales@huboxt.com",
+              "telephone": "[+351963770487]"
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "Software Development Company",
+              "url": "https://huboxt.com/",
+              "description": "Straight-up software development",
+              "startDate": "2023-06-29",
+              "endDate": "2023-10-29",
+              "image": "https://huboxt.com/_next/static/media/thirdBlockIcon.8348d987.svg",
+              "performer": "HUBOXT",
+              "location": {
+                "@type": "Place",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Tornimäe tn 3 // 5 // 7",
+                  "addressLocality": "Tallinn",
+                  "addressRegion": "Kesklinna linnaosa",
+                  "postalCode": "10145",
+                  "addressCountry": "Estonia"
+                }
+              },
+              "offers": {
+                "@type": "Offer",
+                "description": "Straight-up software development",
+                "url": "https://huboxt.com/",
+                "price": 150,
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
       </Head>
       <main>
         <div className={style.firstScreenWrapper}>
           <div className={style.container}>
             <div>
-              <Header />
+              <Header mainHeaderStyle/>
               <FirstBlock />
             </div>
             <div className={style.skillsWrapper}>
@@ -123,7 +175,6 @@ export default function Home() {
               </div>
             </div>
         </div>
-
           <ParallaxProvider>
             <Parallax startScroll={0} endScroll={700} translateY={['0px', '-200px']}>
                 <SecondBlock />
@@ -151,6 +202,9 @@ export default function Home() {
               <Footer />
             </Parallax>
           </ParallaxProvider>
+          {router.pathname === '/our-works-page' && <OurWorksPage />}
+          {router.pathname === '/data-concept' && <DataConceptPage />}
+          {router.pathname === '/uploadletters' && <UploadlettersPage />}
       </main>
     </>
   )

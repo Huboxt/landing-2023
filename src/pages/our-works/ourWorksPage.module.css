@@ -1,0 +1,204 @@
+.container {
+  background: #f2f0ee;
+}
+
+.flex {
+    display: flex;
+}
+
+.leftBlock {
+    flex: 40%;
+}
+
+.ourWorksWrapper{
+    background: #161616;
+    padding-top: 160px;
+    padding-bottom: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Wrapper{
+    max-width: 1363px;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+  .project, .projectBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .projectBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .projectBack{
+    background: #F2F0EE;
+    border: 1px solid #6B99D1;
+    border-radius: 40px;
+    padding: 33px 20px 28px 100px;
+    height: 540px;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  .projectBack {
+    opacity: 1;
+  }
+  .flipCardInner {
+    border: 1px solid #6B99D1;
+    transition: all 1s;
+  }
+  .flipCardInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 40px;
+    border: 1px solid #7E7B78;
+    transition: all 1s;
+  }
+  .project{
+    /* min-width: fit-content; */
+    padding: 56px 24px 24px 24px;
+    height: 643px;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: all 1s ease 0.6s;
+  }
+  .flipCardInnerMobile{
+    display: none;
+  }
+  
+  .projectTitleBack{
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: #161616;
+  }
+  .projectDescriptionBack{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5B5B5B;
+  }
+  .ourWorksIcon{
+    max-width: 60%;
+  }
+ 
+  .projectButtonBack{
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 30px;
+    text-align: center;
+    border: 1px solid #057ddf;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    background: linear-gradient(133.26deg, #082B9B 3.83%, #86B7E0 84.35%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+  }
+  .projectButtonBackDev{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 30px;
+    text-align: center;
+    border: 1px solid #86B7E0;
+    background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F2F0EE;
+    cursor: pointer;
+  }
+  .projectButtonBack:hover{
+    opacity: 0.7;
+  }
+  .projectButtonBackDev:hover{
+    opacity: 0.7;
+  }
+  .getInTouchImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .projectImage{
+    width: 100%;
+    flex: 60%;
+    max-height: 540px;
+  }
+  
+ 
+  @media (max-width: 800px){
+    .flipCardInner{
+      display: none;
+    }
+    .flipCardInnerMobile{
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      border-radius: 40px;
+      border: 1px solid #6B99D1;
+      transition: all 1s;
+    }
+    .Wrapper{
+      height: 570px;
+    }
+    .Wrapper:hover .flipCardInnerMobile > .projectBack{
+      opacity: 1;
+    }
+    .flipCardInnerMobile > .projectBack{
+      opacity: 1;
+      height: 570px;
+    }
+    .flipCardInnerMobile > .project{
+      height: 570px;
+    }
+    .projectButtonBack{
+      font-size: 14px;
+      padding: 12px 16px;
+    }
+    .projectImage{
+      max-height: 300px;
+    }
+    .flipCardInnerMobile > .projectTitleBack{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 50px;
+      letter-spacing: 0.03em;
+      color: #161616;
+    }
+    .flipCardInnerMobile > .projectDescriptionBack{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #5B5B5B;
+    }
+  }
+
+
+
+  

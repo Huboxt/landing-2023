@@ -3,23 +3,31 @@
 }
 .header{
   max-width: 1600px;
-  padding: 15px 5px;
-  margin: 0 auto;
+  padding: 0px 0px;
+  margin: 0;
+}
+.headerWithPadding {
+  padding: 15px 100px;
+  max-width: 2500px;
 }
 .headerContainer{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .headerButtons{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 30px 40px 20px 40px;
   gap: 5px;
-  border: 1.5px solid #070707;
-  border-radius: 40px;
+  margin-left: auto;
+  /* border: 1.5px solid #070707;
+  border-radius: 40px; */
 }
+.marginAuto {
+  margin-right: auto;
+}
+
 .headerButton{
   font-weight: 500;
   font-size: 20px;
@@ -88,17 +96,38 @@
   left: 50%;
   transform: scale(500) !important;
 }
+.getButton{
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #E2DFDC;
+  background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+  border-radius: 40px;
+  padding: 20px 40px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.getButton:hover{
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%) !important;
+  transition: all 1s !important;
+}
+.getInTouchImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 @media(max-width: 1500px){
   .header{
     max-width: 1200px;
   }
 }
-@media(max-width: 950px){
+/* @media(max-width: 950px){
   .headerButtons{
     padding: 10px 20px;
   }
-}
+} */
 @media(max-width: 750px){
   .logo{
     display: none;
@@ -116,6 +145,11 @@
   }
   .oBgWrapper{
     margin-left: -5px;
+  }
+}
+@media(max-width: 565px) {
+  .headerButton{
+    font-size: 12px;
   }
 }
 @-webkit-keyframes o {
@@ -139,3 +173,31 @@
     background: linear-gradient(133.26deg, #082B9B 3.83%, #86B7E0 84.35%);
   }
 } */
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animatedButton {
+  opacity: 0;
+  animation: fadeInFromTop 1s ease-in-out forwards;
+}
+
+.animatedButton:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.animatedButton:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.animatedButton:nth-child(3) {
+  animation-delay: 1s;
+}
