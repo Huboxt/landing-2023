@@ -49,6 +49,10 @@
     color: #E2DFDC;
     border: 1px solid white; 
 }
+.video {
+    width: 90%;
+    border-radius: 60px 60px 0px 0px;
+}
 .dataConceptCard {
     transition: transform 0.5s ease;
     overflow: hidden;

@@ -17,9 +17,7 @@ import dataConceptJobs2 from "./data-concept-jobs2.svg";
 import dataConceptJobs3 from "./data-concept-jobs3.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-
 const DataConceptPage = () => {
-
   const handleClickScroll = (e) => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
@@ -31,7 +29,6 @@ const DataConceptPage = () => {
       behavior: "smooth",
     });
   };
-  
 
   return (
     <div className={style.container}>
@@ -88,22 +85,17 @@ const DataConceptPage = () => {
         </div>
       </div>
       <ParallaxProvider>
-      <Parallax startScroll={0} endScroll={800}>
-          <Image
-            src={dataConceptCard}
-            id="dataConceptCard"
-            className={style.dataConceptCard}
-            alt="dataConceptCard"
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
-          />
+        <Parallax
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <video autoPlay loop muted playsInline className={style.video}>
+            <source src="/dataconcept-video.mp4" type="video/mp4" />
+          </video>
         </Parallax>
         <Parallax
-          startScroll={0}
-          endScroll={1800}
-          translateY={["800px", "-500px"]}
+          startScroll={800}
+          endScroll={1500}
+          translateY={["50px", "-200px"]}
         >
           <div className={style.aboutContainer}>
             <table className={style.table}>
@@ -142,7 +134,7 @@ const DataConceptPage = () => {
             </table>
             <Parallax
               startScroll={300}
-              endScroll={1800}
+              endScroll={1100}
               translateX={["-800px", "0px"]}
             >
               <Image
@@ -153,7 +145,7 @@ const DataConceptPage = () => {
             </Parallax>
             <Parallax
               startScroll={100}
-              endScroll={1900}
+              endScroll={1400}
               translateX={["800px", "0px"]}
             >
               <div className={style.aboutCard}>
@@ -172,7 +164,7 @@ const DataConceptPage = () => {
             </Parallax>
             <Parallax
               startScroll={200}
-              endScroll={2000}
+              endScroll={1500}
               translateX={["800px", "0px"]}
             >
               <div className={style.aboutCard}>
@@ -192,14 +184,14 @@ const DataConceptPage = () => {
           </div>
         </Parallax>
         <Parallax
-          startScroll={1600}
-          endScroll={2400}
-          translateY={["-350px", "-900px"]}
+          startScroll={1300}
+          endScroll={2000}
+          translateY={["-100px", "-800px"]}
         >
           <div className={style.researchContainer}>
             <Parallax
-              startScroll={600}
-              endScroll={2600}
+              startScroll={1500}
+              endScroll={2000}
               translateX={["-800px", "0px"]}
             >
               <Image
@@ -209,8 +201,8 @@ const DataConceptPage = () => {
               />
             </Parallax>
             <Parallax
-              startScroll={700}
-              endScroll={2800}
+              startScroll={300}
+              endScroll={2000}
               translateX={["800px", "50px"]}
             >
               <div className={style.researchCard}>
@@ -228,8 +220,8 @@ const DataConceptPage = () => {
               </div>
             </Parallax>
             <Parallax
-              startScroll={800}
-              endScroll={2900}
+              startScroll={400}
+              endScroll={2100}
               translateX={["800px", "50px"]}
             >
               <div className={style.researchCard}>
@@ -246,61 +238,74 @@ const DataConceptPage = () => {
                 </div>
               </div>
             </Parallax>
-            <div>
-              <Image
-                src={dataConceptJobs1}
-                className={style.dataConceptJobs}
-                alt="dataConceptJobs"
-                style={{
-                  width: "90%",
-                  height: "90%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  display: "flex",
-                  marginBottom: "32px",
-                }}
-              />
-            </div>
-            <div>
-              <Image
-                src={dataConceptJobs2}
-                className={style.dataConceptJobs}
-                alt="dataConceptJobs"
-                style={{
-                  width: "90%",
-                  height: "90%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  display: "flex",
-                  marginBottom: "32px",
-                }}
-              />
-            </div>
-            <div>
-              <Image
-                src={dataConceptJobs3}
-                className={style.dataConceptJobs}
-                alt="dataConceptJobs"
-                style={{
-                  width: "90%",
-                  height: "90%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  display: "flex",
-                }}
-              />
-            </div>
           </div>
         </Parallax>
-        <Parallax 
-          translateY={["-700px", "0px"]}
-          >
-        <div className={style.getTouchWrapper}>
-          <GetTouch  borderRadius="60px 60px 0px 0px" />
-        </div>
+        <Parallax translateY={["-800px", "0px"]}>
+          <div>
+            <Image
+              src={dataConceptCard}
+              id="dataConceptCard"
+              className={style.dataConceptCard}
+              alt="dataConceptCard"
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
+          <div>
+            <Image
+              src={dataConceptJobs1}
+              className={style.dataConceptJobs}
+              alt="dataConceptJobs"
+              style={{
+                width: "90%",
+                height: "90%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "flex",
+                marginBottom: "32px",
+              }}
+            />
+          </div>
+          <div>
+            <Image
+              src={dataConceptJobs2}
+              className={style.dataConceptJobs}
+              alt="dataConceptJobs"
+              style={{
+                width: "90%",
+                height: "90%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "flex",
+                marginBottom: "32px",
+              }}
+            />
+          </div>
+          <div>
+            <Image
+              src={dataConceptJobs3}
+              className={style.dataConceptJobs}
+              alt="dataConceptJobs"
+              style={{
+                width: "90%",
+                height: "90%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "flex",
+              }}
+            />
+          </div>
         </Parallax>
-        <Footer />
-      </ParallaxProvider>
+        </ParallaxProvider>
+        <div>
+          <div className={style.getTouchWrapper}>
+            <GetTouch borderRadius="60px 60px 0px 0px" />
+            <Footer />
+          </div>
+        </div>
+     
     </div>
   );
 };
