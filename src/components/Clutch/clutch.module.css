@@ -48,9 +48,10 @@
   align-items: flex-end;
 }
 .description{
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 34px;
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
   color: #E2DFDC;
   margin-bottom: 62px;
 }
@@ -60,9 +61,10 @@
   gap: 20px;
 }
 .readMore{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; 
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -72,17 +74,19 @@
   gap: 20px;
 }
 .projectName{
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 50px;
-  letter-spacing: 0.03em;
+  font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+letter-spacing: 0.72px;
   color: #F2F0EE;
 }
 .projectDescription{
   margin-top: 8px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
   color: #E2DFDC;
 }
 .projectWrapper{
@@ -95,6 +99,38 @@
 .clutchIconMobile{
   display: none;
 }
+
+@media (min-width: 992px) {
+  .clutchIcon {
+    margin-bottom: 117px;
+  }
+  .clutchReview {
+    width: 115px;
+height: 33px;
+  }
+  .description {
+    font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+  }
+  .readMore {
+    font-size: 20px;
+font-weight: 500;
+line-height: 24px; 
+  }
+  .projectName {
+    font-size: 44px;
+font-weight: 500;
+line-height: 50px; /* 113.636% */
+letter-spacing: 1.32px;
+  }
+  .projectDescription {
+    font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+  }
+}
+
 @media (max-width: 1500px){
   .container{
     max-width: 1200px;
@@ -103,22 +139,6 @@
 @media (max-width: 1215px){
   .clutchIcon{
     height: 100%;
-  }
-  .readMore{
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .description{
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .projectName{
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .projectDescription{
-    font-size: 14px;
-    line-height: 20px;
   }
   .projectWrapper{
     min-height: 360px !important;
@@ -131,9 +151,6 @@
   }
   .stars{
     gap: 12px;
-  }
-  .clutchReview{
-    width: 76px;
   }
   .stars > img{
     width: 16px;

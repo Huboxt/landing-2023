@@ -1,0 +1,378 @@
+.container {
+    background: #f2f0ee;
+}
+
+.background {
+
+    /* opacity: 0; */
+    transition: all 0.6s;
+}
+
+.startupsTitleBlock {
+    position: relative;
+    display: flex;
+    margin-top: 175px;
+    margin-bottom: 243px;
+    padding-left: 100px;
+}
+
+.startupsTitle {
+    margin-bottom: 32px;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140px;
+    width: 948px;
+}
+
+.startupsDescr {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    width: 948px;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .cardBlock {
+    display: inline-flex;
+    align-items: center;
+    padding: 40px;
+    gap: 64px;
+    border-radius: 40px;
+    border: 1px solid var(--gradient-3, #082B9B);
+    background: #f2f0ee;
+    width: max-content;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .card1 {
+    position: absolute;
+    right: 100px;
+    z-index: 1;
+    animation-delay: 0.9s;
+  }
+  
+  .card2 {
+    position: absolute;
+    top: 155px;
+    right: 180px;
+    z-index: 0;
+    animation-delay: 0.7s;
+  }
+  
+  .card3 {
+    position: absolute;
+    top: 312px;
+    right: 30px;
+    z-index: 1;
+    animation-delay: 1.3s;
+  }
+  
+  .card4 {
+    position: absolute;
+    top: 460px;
+    right: 80px;
+    animation-delay: 1.1s;
+  }
+  
+
+.cardTitle {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 113.636% */
+    letter-spacing: 1.32px;
+}
+
+.cardIcon {
+    width: 88px;
+    height: 88px;
+}
+
+
+
+
+.whatCanDoContainer {
+    margin-top: -55px;
+    background: #161616;
+    border-radius: 60px 60px 0px 0px;
+    padding-top: 88px;
+    padding-bottom: 300px;
+    position: relative;
+    z-index: 10;
+}
+
+.whatCanDoTitle {
+    font-family: Clash Display Title;
+    font-size: 190px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 190px;
+    /* 100% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 154px;
+}
+
+.whatCanDoTitle::before {
+    content: "";
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/img/title-background.svg');
+    border-radius: 30px;
+}
+
+.whatCanDoSubTitleBlock {
+    display: flex;
+    padding: 0 137px 0 154px;
+}
+
+.whatCanDoSubTitle {
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140px;
+    color: #F2F0EE;
+    min-width: 950px;
+}
+
+.whatCanDoCard {
+    border: 4px solid;
+    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 810px;
+    box-sizing: border-box;
+    margin-right: 140px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    color: #F2F0EE;
+}
+
+.whatCanDoBlockTitle {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.whatCanDoBlockDescr {
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+.researchContainer {
+    margin-top: -55px;
+    background: #f2f0ee;
+    border-radius: 60px 60px 0px 0px;
+    padding-top: 180px;
+    padding-bottom: 158px;
+    position: relative;
+    z-index: 10;
+}
+
+.researchCard {
+    border: 4px solid;
+    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 810px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    background: #f2f0ee;
+}
+
+.researchCard+.researchCard {
+    margin-bottom: 88px;
+}
+
+.researchBlockTitle {
+    font-size: 44px;
+    margin-bottom: 12px;
+    color: #161616;
+    background: #f2f0ee;
+}
+
+.researchSubTitle {
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140px;
+    min-width: 950px;
+}
+
+.researchBlockDescr {
+    font-size: 20px;
+    color: #161616;
+    background: #f2f0ee;
+}
+
+.startupsJobs {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.startupsJobs:hover {
+    transform: scale(1.03);
+}
+
+.valueTitle {
+    font-family: Clash Display Title;
+    font-size: 190px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 190px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: var(--gradient-3, linear-gradient(133deg, #082B9B 3.83%, #86B7E0 84.35%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 193px;
+    z-index: 100;
+}
+
+/* .grainyGradient {
+    font-family: Clash Display Title;
+    font-size: 190px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 190px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: url('../../assets/img/title-background.svg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 193px;
+  } */
+  
+
+
+
+.valueSubTitle {
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 82px;
+    min-width: 750px;
+}
+
+.valueSubTitleIcon {
+    width: 117px;
+    height: 117px;
+    flex-shrink: 0;
+}
+
+.subTitleFlex {
+    display: flex;
+    gap: 79px;
+}
+
+.valueCard {
+    width: 810px;
+    box-sizing: border-box;
+    background: #f2f0ee;
+}
+
+.line {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    background: #F2F0EE;
+    max-width: 1750px;
+    margin-left: 160px;
+    margin-top: 86px;
+    margin-bottom: 86px;
+    /* width: 100%; */
+    box-sizing: border-box;
+    border-bottom: 1px solid #21309D;
+    max-height: 0px;
+    padding-top: 0px;
+    animation-name: goup;
+    animation-delay: 33.5s;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+
+.getTouchContainer {
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-radius: 60px 60px 0px 0px;
+    padding-top: 180px;
+    padding-bottom: 158px;
+    position: relative;
+    z-index: 10;
+}
+
+.getTouchButton {
+    display: flex;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 120% */
+    text-transform: uppercase;
+    color: #161616;
+    border-radius: 40px;
+    background: var(--beige-background, #F2F0EE);
+    margin-top: 60px;
+    cursor: pointer;
+    margin-bottom: 200px;
+}
+
+.strengthsSubTitle {
+    font-size: 44px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 113.636% */
+letter-spacing: 1.32px;
+color: #F2F0EE;
+    min-width: 950px;
+}
+.strengthsCard {
+    width: 810px;
+    box-sizing: border-box;
+}
+.strengthsDescription {
+    font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+color: #F2F0EE;
+}
+

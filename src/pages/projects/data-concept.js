@@ -6,7 +6,7 @@ import Image from "next/image";
 import dataConceptCard from "../../assets/img/dataConceptCard.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
-import reactIcon from "../../assets/img/stackIcons/react.svg";
+import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
 import reduxIcon from "../../assets/img/stackIcons/redux.svg";
 import tsIcon from "../../assets/img/stackIcons/typescript.svg";
 import nodeIcon from "../../assets/img/stackIcons/node-js.svg";
@@ -42,13 +42,16 @@ const DataConceptPage = () => {
       </div>
       <div className={style.dataConceptDescr}>
         <div>
-          The fast changing world of web development has expanded our skill set
-          and has made us experienced in all major ui frameworks, which makes
-          your application look nice and modern while being and fast.
+          <div className={style.description}>
+            The fast changing world of web development has <br />
+            expanded our skill set and has made us experienced in <br />
+            all major ui frameworks, which makes your application <br />
+            look nice and modern while being and fast.
+          </div>
+          <button className={style.needSameButton} onClick={handleClickScroll}>
+            I NEED THE SAME!
+          </button>
         </div>
-        <button className={style.needSameButton} onClick={handleClickScroll}>
-          I NEED THE SAME!
-        </button>
         <div className={style.stackContainer}>
           <div className={style.stackBlock}>
             <Image
@@ -85,9 +88,7 @@ const DataConceptPage = () => {
         </div>
       </div>
       <ParallaxProvider>
-        <Parallax
-          style={{ display: "flex", justifyContent: "center" }}
-        >
+        <Parallax style={{ display: "flex", justifyContent: "center" }}>
           <video autoPlay loop muted playsInline className={style.video}>
             <source src="/dataconcept-video.mp4" type="video/mp4" />
           </video>
@@ -298,14 +299,13 @@ const DataConceptPage = () => {
             />
           </div>
         </Parallax>
-        </ParallaxProvider>
-        <div>
-          <div className={style.getTouchWrapper}>
-            <GetTouch borderRadius="60px 60px 0px 0px" />
-            <Footer />
-          </div>
+      </ParallaxProvider>
+      <div>
+        <div className={style.getTouchWrapper}>
+          <GetTouch borderRadius="60px 60px 0px 0px" />
+          <Footer />
         </div>
-     
+      </div>
     </div>
   );
 };

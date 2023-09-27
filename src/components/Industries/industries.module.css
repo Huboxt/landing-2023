@@ -51,7 +51,6 @@
 .titleContainer{
   position: relative;
   z-index: 10;
-  max-width: 700px
 }
 .desktop{
   display: block;
@@ -61,16 +60,18 @@
 }
 .title{
   font-family: "Clash Display Bold";
-  font-weight: 500;
-  font-size: 82px;
-  line-height: 82px;
+  font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px;
   color: #F2F0EE;
   margin-bottom: 48px;
 }
 .subtitle{
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 34px;
+  line-height: 22px;
   color: #E2DFDC;
 }
 .sliders{
@@ -93,28 +94,24 @@
   height: 257px;
 }
 
-
-
-@media(max-width: 1500px){
-  .container{
-    max-width: 1200px;
+@media (min-width: 992px) {
+  .title {
+    font-size: 82px;
+font-weight: 500;
+line-height: 82px;
+  }
+  .subtitle {
+    font-size: 20px;
+font-weight: 400;
+line-height: 28px; 
   }
 }
+
+
 @media(max-width: 1350px){
   .container{
     gap: 10px;
     justify-content: space-between;
-  }
-  .titleContainer{
-    max-width: 450px;
-  }
-  .title{
-    font-size: 50px;
-    line-height: 50px;
-  }
-  .subtitle{
-    font-size: 20px;
-    line-height: 28px;
   }
 }
 
@@ -127,15 +124,6 @@
   }
   .titleContainer{
     padding: 0 20px 44px 20px;
-  }
-  .title{
-    font-size: 39px;
-    line-height: 44px;
-    margin-bottom: 20px;
-  }
-  .subtitle{
-    font-size: 16px;
-    line-height: 22px;
   }
   .container{
     display: block;

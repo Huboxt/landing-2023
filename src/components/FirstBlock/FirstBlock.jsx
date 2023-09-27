@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import touch from '../../assets/img/getInTouch.svg';
 import style from './firstBlock.module.css';
+import clutchDesigh from '../../assets/img/design-clutch-icon.svg'
 
 const FirstBlock = () => {
 
@@ -25,12 +26,18 @@ const FirstBlock = () => {
     <div className={style.firstBlockWrapper}>
       <div className={style.container}>
         <div className={style.titleWrapper}>
+        <Image src={clutchDesigh} alt="clutch" className={style.clutchIcon}/>
           <h1 className={style.title}>Straight-up<br/>software<br/>development</h1>
           <div className={style.subTitle}>Let us code and problem-solve while you sleep,<br/>making your project quickly become a reality</div>
           <button className={style.getButton} onClick={handleClickScroll}>
               <Image src={touch} alt="get" className={style.getInTouchImg}/>
               GET IN TOUCH
           </button>
+          <div className={style.skillsBlock}>
+            <div className={style.skillsName}>Development</div>
+            <div className={style.skillsName}>Design</div>
+            <div className={style.skillsName}>Management</div>
+          </div>
         </div>
       </div>
     </div>

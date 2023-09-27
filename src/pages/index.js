@@ -17,6 +17,7 @@ import FourthBlock from '../components/FourthBlock/FourthBlock';
 import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
 import OurWorksPage from './our-works/our-works-page';
+import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
 import UploadlettersPage from './projects/uploadletters';
 
@@ -50,15 +51,17 @@ export default function Home() {
   },[])
   
   const darker = (percentage, id) => {
-    if(percentage > 0.08 && percentage < 0.5){
-      document.getElementById(id).style.opacity = 0.3 - percentage
-    } else{
-      if(percentage > 0.7){
-        document.getElementById(id).style.opacity = 0.7
-      } else{
-        document.getElementById(id).style.opacity = percentage - 0.2
-      }
-    }
+    // if(percentage > 0.08 && percentage < 0.5){
+    //   document.getElementById(id).style.opacity = 0.3 - percentage
+    // } 
+    // else{
+    //   if(percentage > 0.7){
+    //     document.getElementById(id).style.opacity = 0.7
+    //   } 
+    //   else{
+    //     document.getElementById(id).style.opacity = percentage - 0.2
+    //   }
+    // }
   }
   return (
     <>
@@ -184,16 +187,19 @@ export default function Home() {
                 <ThirdBlock />
                 <div id="darkBg1" className={style.background}></div>
             </Parallax>
-            <Parallax startScroll={900} endScroll={1500} translateY={['-330px', '-600px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+            {/* <Parallax startScroll={900} endScroll={1500} translateY={['-330px', '-600px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
               <FourthBlock />
               <div id="darkBg2" className={style.background}></div>
             </Parallax>
             <Parallax startScroll={1400} endScroll={2000} translateY={['-600px', '-800px']} onProgressChange={(percentage) => darker(percentage, "darkBg2")}>
               <FifthBlock />
               <div id="darkBg3" className={style.background}></div>
+            </Parallax> */}
+            <Parallax startScroll={900} endScroll={1500} translateY={['-130px', '-450px']} onProgressChange={(percentage) => darker(percentage, "darkBg1")}>
+            <Service />
+              <div id="darkBg2" className={style.background}></div>
             </Parallax>
-            <Parallax startScroll={2600} endScroll={7000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
-              <Service />
+            <Parallax startScroll={1400} endScroll={10000} translateY={['-800px', '0px']} onProgressChange={(percentage) => darker(percentage, "darkBg3")}>
               <OurWorks />
               <Industries />
               <Clutch />
@@ -205,6 +211,7 @@ export default function Home() {
           {router.pathname === '/our-works-page' && <OurWorksPage />}
           {router.pathname === '/data-concept' && <DataConceptPage />}
           {router.pathname === '/uploadletters' && <UploadlettersPage />}
+          {router.pathname === '/startups' && <StartupsPage />}
       </main>
     </>
   )

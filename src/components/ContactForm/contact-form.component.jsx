@@ -61,14 +61,12 @@ const ContactFormComponent = () => {
             <input
               autoComplete="off"
               type="text"
-              className={errors.name ? `${style.input} ${style.inputError}` : style.input}
+              className={style.input}
               placeholder="Your name"
               name="name"
               onChange={handleChange}
-              required
               value={values.name || ''}
             />
-            <div className={style.errorMessage}>{!!errors.name && errors.name}</div>
           </div>
           <div className={style.inputContainer}>
             <input
@@ -111,16 +109,14 @@ const ContactFormComponent = () => {
             </div>
           <div className={style.inputContainer}>
             <textarea
-              className={errors.message ? `${style.input} ${style.inputError}` : style.input}
+              className={style.input}
               style={{height: 'auto'}}
               placeholder="Message"
               name="message"
               rows="3"
               onChange={handleChange}
-              required
               value={values.message || ''}
             />
-            <div className={style.errorMessage}>{!!errors.message && errors.message}</div>
           </div>
           <div className={style.buttonWrapper}>
             <button type="submit" className={style.button} disabled={cantBeSubmitted}>

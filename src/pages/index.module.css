@@ -6,9 +6,9 @@
   display: none;
 }
 .container{
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding: 0 32px;
-  height: 922px;
+  height: 1022px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -113,7 +113,7 @@
   position: absolute;
   right: 0;
   display: flex;
-  height: 910px;
+  height: 950px;
   transform: rotate(180deg);
 }
 .background{
@@ -132,17 +132,23 @@
 .skillsWrapperMobile{
   display: none;
 }
-@media(max-width: 1500px){
-  .container{
-    max-width: 1200px;
-    height: auto;
-    padding: 0 15px;
-  }
-  .skillsWrapper{
-    height: 829px;
+@media (min-width: 992px) {
+  .container {
+    height: 1450px;
   }
 }
-@media(max-width: 1300px){
+@media (min-width: 1280px) {
+  .container {
+    height: 1580px;
+  }
+}
+@media (min-width: 1435px) {
+  .container {
+    height: 980px;
+  }
+}
+
+@media(max-width: 1435px){
   .container{
     flex-direction: column;
   }

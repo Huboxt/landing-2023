@@ -1,39 +1,47 @@
-.firstBlockWrapper{
+.firstBlockWrapper {
   background: #F2F0EE;
 }
-.container{
-  display: flex;
+
+.container {
   justify-content: space-between;
   gap: 10px;
-  max-width: 1600px;
   margin: 0 auto;
 }
-.titleWrapper{
-  padding-top: 130px;
+
+.titleWrapper {
+  padding-top: 60px;
   padding-bottom: 106px;
 }
-.title{
-  font-weight: 500;
+
+.title {
   font-family: "Clash Display Bold";
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1.5px;
   color: #070707;
+  margin-top: 10px;
 }
-.subTitle{
+
+.subTitle {
   margin-top: 25px;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 34px;
+  line-height: 22px;
   color: #070707;
 }
-.skillsWrapper{
+
+.skillsWrapper {
   /* position: absolute;
   right: -30px;
   top: 42px;
   transform: scale(0.9); */
 
 }
-.getButton{
+
+.getButton {
   margin-top: 64px;
   position: relative;
   font-weight: 500;
@@ -46,18 +54,129 @@
   overflow: hidden;
   cursor: pointer;
 }
-.getButton:hover{
+
+.getButton:hover {
   background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%) !important;
   transition: all 1s !important;
 }
-.getInTouchImg{
+
+.getInTouchImg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
+.skillsName {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  /* 125% */
+  letter-spacing: 0.96px;
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border-bottom: 1px solid var(--gradient-2, #030D42);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-@media(max-width: 1500px){
+.skillsBlock {
+  margin-top: 44px;
+  border-top: 1px solid var(--gradient-2, #030D42);
+  border-bottom: 1px solid var(--gradient-2, #030D42);
+}
+
+@media (min-width: 992px) {
+  .clutchIcon {
+    width: 424px;
+    height: 94px;
+  }
+
+  .title {
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 120px;
+  }
+
+  .subTitle {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  .getButton {
+    margin-top: 90px;
+  }
+
+  .skillsBlock {
+    margin-top: 90px;
+  }
+
+  .skillsName {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .titleWrapper {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .clutchIcon {
+    display: none;
+  }
+
+  .titleWrapper {
+    padding-left: 140px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-family: "Clash Display Bold";
+    font-size: 100px;
+    font-style: normal;
+    line-height: 100px;
+    color: #070707;
+    margin-top: 10px;
+  }
+
+  .subTitle {
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #070707;
+  }
+}
+
+@media (min-width: 1434px) {
+  .skillsBlock {
+    display: none;
+  }
+}
+
+
+/* @media(max-width: 1500px){
   .container{
     max-width: 1200px;
   }
@@ -93,15 +212,16 @@
     line-height: 18px;
     padding: 16px 40px;
   }
-}
+} */
 
 @keyframes rotate {
-  from{
+  from {
     opacity: 0.5;
     transform: translate3d(0px, 1em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(5deg) skew(-5deg, 0deg);
     transform-style: preserve-3d;
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
