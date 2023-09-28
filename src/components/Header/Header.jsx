@@ -98,12 +98,15 @@ const Header = ({ showGetTouchBtn }) => {
             </div>
           </Link> */}
           {isMenuOpen ? (
+            <Link href="/">
             <Image
               src={logoMobileWhite}
               alt="logoMobileWhite"
               className={style.logoMobileWhite}
             />
+            </Link>
           ) : (
+            <Link href="/">
             <div className={style.logoMobile}>
               <Image src={hubMob} alt="hub" className={style.logoMobileFirst}/>
               <div className={style.oBgWrapper}>
@@ -115,6 +118,7 @@ const Header = ({ showGetTouchBtn }) => {
                 </div>
               </div>
             </div>
+            </Link>
           )}
           <div
             className={`${style.headerButtons} ${
