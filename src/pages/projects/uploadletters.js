@@ -7,10 +7,15 @@ import uploadLettersCard from "../../assets/img/uploadLettersCard.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
 import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
+import reactIconWhite from "../../assets/img/stackIcons/react-icon-white.svg";
 import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
+import golangIconWhite from "../../assets/img/stackIcons/golang-icon-white.svg";
 import lavarelIcon from "../../assets/img/stackIcons/lavarel-icon.svg";
+import lavarelIconWhite from "../../assets/img/stackIcons/lavarel-icon-white.svg";
+import lavarelLine from "../../assets/img/stackIcons/lavarel-line.svg";
 import awsIcon from "../../assets/img/stackIcons/aws-icon.svg";
 import phpIcon from "../../assets/img/stackIcons/php-icon.svg";
+import reactLine from "../../assets/img/stackIcons/react-line.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
 import uploadlettersTitle from "./uploadlettersTitle.svg";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
@@ -21,6 +26,7 @@ import numberIcon5 from "../../assets/img/numberIcon5.svg";
 import numberIcon6 from "../../assets/img/numberIcon6.svg";
 import numberIcon7 from "../../assets/img/numberIcon7.svg";
 import numberIcon8 from "../../assets/img/numberIcon8.svg";
+import arrowBack from "../../assets/img/arrow-back.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Link from "next/link";
 
@@ -43,34 +49,23 @@ const UploadlettersPage = () => {
       <div className={style.backBtn}>
         <Link href="/our-works/our-works-page">
           <div className={style.arrow}>
-            <svg
-              width="181"
-              height="16"
-              viewBox="0 0 181 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.292892 8.70711C-0.0976257 8.31658 -0.0976257 7.68342 0.292892 7.29289L6.65686 0.928932C7.04738 0.538408 7.68054 0.538408 8.07108 0.928932C8.46159 1.31946 8.46159 1.95262 8.07108 2.34315L2.41422 8L8.07108 13.6569C8.46159 14.0474 8.46159 14.6805 8.07108 15.0711C7.68054 15.4616 7.04738 15.4616 6.65686 15.0711L0.292892 8.70711ZM181 9H1V7H181V9Z"
-                fill="#4E76D1"
-              />
-            </svg>
+            <Image src={arrowBack} alt="arrowBack" />
           </div>
         </Link>
         <div>BACK</div>
       </div>
-      <div>
-        <Image
-          src={uploadlettersTitle}
-          alt="uploadlettersTitle"
-          className={style.dataConceptTitle}
-        />
+      <div className={`${style.whatCanDoTitle} ${style.mobileTitle}`}>
+        UPLOAD <br />
+        LETTERS
+      </div>
+      <div className={`${style.whatCanDoTitle} ${style.desktopTitle}`}>
+        UPLOADLETTERS
       </div>
       <div className={style.dataConceptDescr}>
         <div>
           <div className={style.description}>
-            UploadLetters is a Texas based startup that provides <br />
-            sending First-Class Mail®, Certified Mail® and Priority <br />
+            UploadLetters is a Texas based startup that provides 
+            sending First-Class Mail®, Certified Mail® and Priority 
             Mail® letters digitally.
           </div>
           <button className={style.needSameButton} onClick={handleClickScroll}>
@@ -78,30 +73,46 @@ const UploadlettersPage = () => {
           </button>
         </div>
         <div className={style.stackContainer}>
-          <div className={style.stackBlock}>
-            <Image src={golangIcon} alt="golangIcon" />
-            <div className={style.stackTitle}>Golang</div>
+          <div className={style.stackContainerUp}>
+            <div className={style.stackBlock}>
+              <Image
+                src={golangIcon}
+                alt="golangIcon"
+                className={style.stackIcon}
+              />
+              <div className={style.stackTitle}>Golang</div>
+            </div>
+            <div className={style.stackBlock}>
+              <Image src={awsIcon} alt="awsIcon" className={style.stackIcon} />
+              <div className={style.stackTitle}>AWS</div>
+            </div>
+            <div className={style.stackBlock}>
+              <Image
+                src={reactIcon}
+                alt="reactIcon"
+                className={style.stackIcon}
+              />
+              <div className={style.stackTitle}>React</div>
+            </div>
           </div>
-          <div className={style.stackBlock}>
-            <Image src={awsIcon} alt="awsIcon" />
-            <div className={style.stackTitle}>AWS</div>
-          </div>
-          <div className={style.stackBlock}>
-            <Image src={reactIcon} alt="reactIcon" />
-            <div className={style.stackTitle}>React</div>
-          </div>
-          <div className={style.stackBlock}>
-            <Image src={lavarelIcon} alt="lavarelIcon" />
-            <div className={style.stackTitle}>Lavarel</div>
-          </div>
-          <div className={style.stackBlock}>
-            <Image src={phpIcon} alt="phpIcon" />
-            <div className={style.stackTitle}>PHP</div>
+          <div className={style.stackContainerDown}>
+            <div className={style.stackBlock}>
+              <Image
+                src={lavarelIcon}
+                alt="lavarelIcon"
+                className={style.stackIcon}
+              />
+              <div className={style.stackTitle}>Lavarel</div>
+            </div>
+            <div className={style.stackBlock}>
+              <Image src={phpIcon} alt="phpIcon" className={style.stackIcon} />
+              <div className={style.stackTitle}>PHP</div>
+            </div>
           </div>
         </div>
       </div>
       <ParallaxProvider>
-        <Parallax startScroll={0} endScroll={800}>
+        <Parallax>
           <Image
             src={uploadLettersCard}
             id="uploadLettersCard"
@@ -114,70 +125,44 @@ const UploadlettersPage = () => {
           />
         </Parallax>
         <Parallax
-          startScroll={0}
-          endScroll={1800}
-          translateY={["800px", "-500px"]}
+          startScroll={300}
+          endScroll={600}
+          translateY={["-100px", "-200px"]}
         >
           <div className={style.aboutContainer}>
-            <table className={style.table}>
-              <thead>
-                <tr>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "20%" }}
-                  >
-                    CLIENT
-                  </th>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "10%" }}
-                  >
-                    TEAM
-                  </th>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "10%" }}
-                  >
-                    TIMELINE
-                  </th>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "25%" }}
-                  >
-                    SERVICES
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className={style.tableDescr}>UploadLetters</td>
-                  <td className={style.tableDescr}>6</td>
-                  <td className={style.tableDescr}>14 month</td>
-                  <td className={style.tableDescr}>Development</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className={style.table}>
+              <div>
+                <div className={style.tableTitle}>CLIENT</div>
+                <div className={style.tableDescr}>Uploadletters</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>TEAM</div>
+                <div className={style.tableDescr}>6</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>TIMELINE</div>
+                <div className={style.tableDescr}>14 months</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>SERVICES</div>
+                <div className={style.tableDescr}>Development</div>
+              </div>
+            </div>
             <Parallax
               startScroll={300}
               endScroll={1800}
               translateX={["-800px", "0px"]}
+              className={style.parallaxActive}
             >
-              <Image
-                src={aboutTitle}
-                alt="aboutTitle"
-                style={{ width: "40%", height: "40%" }}
-              />
+              <div className={style.whatCanDoTitle}>ABOUT</div>
             </Parallax>
             <Parallax
               startScroll={100}
               endScroll={1900}
               translateX={["800px", "0px"]}
+              className={style.parallaxActive}
             >
-              <div className={style.aboutCard}>
+              <div className={style.cardWithoutBorder}>
                 <div className={style.aboutBlockDescr}>
                   The main idea of Uploadletters is that you submit a PDF
                   document online and your addressee receives it as a physical
@@ -197,15 +182,16 @@ const UploadlettersPage = () => {
         </Parallax>
 
         <Parallax
-          startScroll={1600}
-          endScroll={2400}
-          translateY={["-350px", "-900px"]}
+          startScroll={800}
+          endScroll={1200}
+          translateY={["-250px", "-400px"]}
         >
           <div className={style.aboutContainer}>
             <Parallax
               startScroll={600}
               endScroll={2600}
               translateX={["-800px", "0px"]}
+              className={style.parallaxActive}
             >
               <div className={style.whatCanDoTitle}>
                 Business <br /> requirements
@@ -282,15 +268,16 @@ const UploadlettersPage = () => {
         </Parallax>
 
         <Parallax
-          startScroll={1900}
-          endScroll={3000}
-          translateY={["-450px", "-900px"]}
+          startScroll={1300}
+          endScroll={2000}
+          translateY={["-200px", "-600px"]}
         >
           <div className={style.researchContainer}>
             <Parallax
               startScroll={600}
               endScroll={2600}
               translateX={["-800px", "0px"]}
+              className={style.parallaxActive}
             >
               <div className={style.whatCanDoTitle}>SCOPE</div>
             </Parallax>
@@ -393,9 +380,9 @@ const UploadlettersPage = () => {
         </Parallax>
 
         <Parallax
-          startScroll={1900}
+          startScroll={2000}
           endScroll={3000}
-          translateY={["-450px", "-900px"]}
+          translateY={["-200px", "-600px"]}
         >
           <div className={style.blueContainer}>
             <div className={style.clientBlock}>
@@ -404,17 +391,163 @@ const UploadlettersPage = () => {
                 <br /> genuinely interact on a personal <br /> level impresses
                 us the most!”
               </div>
-              <div className={style.clientSubTitle}><div className={style.clientSubTitleLine}></div> Client</div>
+              <div className={style.clientSubTitle}>
+                <div className={style.clientSubTitleLine}></div> Client
+              </div>
             </div>
           </div>
         </Parallax>
 
-        <Parallax translateY={["-700px", "0px"]}>
+        <Parallax
+          startScroll={2500}
+          endScroll={7500}
+          translateY={["-900px", "0px"]}
+        >
+          <div  className={`${style.aboutContainer} ${style.architectureBlockMargin}`}>
+            <Parallax
+              startScroll={600}
+              endScroll={2600}
+              translateX={["-800px", "0px"]}
+            >
+              <div className={style.whatCanDoTitle}>
+                Project <br /> architecture
+              </div>
+            </Parallax>
+            <div className={style.architectureBlock}>
+              <Parallax
+                // startScroll={600}
+                // endScroll={2600}
+                // translateX={["-800px", "0px"]}
+              >
+                <div className={style.aboutCard}>
+                  <div className={style.architectureImageBlock}>
+                    <Image
+                      src={reactIconWhite}
+                      alt="reactIconWhite"
+                      className={style.architectureIcon}
+                    />
+                    <Image scr={reactLine} alt="reactLine" />
+                  </div>
+                  <div className={style.architectureImageBlock}>
+                    <Image
+                      src={lavarelIconWhite}
+                      alt="lavarelIconWhite"
+                      className={style.architectureIcon}
+                    />
+                    <Image scr={lavarelLine} alt="lavarelLine" />
+                  </div>
+                  <div className={style.architectureImageBlock}>
+                    <Image
+                      src={golangIconWhite}
+                      alt="golangIconWhite"
+                      className={style.architectureIcon}
+                    />
+                    <Image scr={lavarelLine} alt="lavarelLine" />
+                  </div>
+                </div>
+              </Parallax>
+              <Parallax
+                startScroll={100}
+                endScroll={1900}
+                translateX={["800px", "0px"]}
+              >
+                <div className={style.cardWithoutBorder}>
+                  <div className={style.aboutBlockDescr}>
+                    We started building the application already with
+                    microservice architecture from the very beginning. It makes
+                    the app more overload-resilient and creates a firm
+                    foundation for future scaling.
+                  </div>
+                  <div className={style.aboutBlockDescr}>
+                    Frontend was made with React as an easy-to-develop and
+                    support mainstream solution. Considering the app features
+                    set, Laravel + Laravel Nova was an optimal choice for the
+                    back-end in terms of development speed & budget.  We
+                    deployed the cloud infrastructure at Amazon Web Services.
+                    Also, we’ve built an external API module for Enterprise
+                    customers, which are submitting their batches via API and
+                    integrating with their internal CRMs. We used Golang for
+                    this as it’s fast, memory-optimized and it looked ideal
+                    stack for that specific task
+                  </div>
+                  <div className={style.aboutBlockDescr}>
+                    Stripe was chosen as a payment processing platform for this
+                    project. We also integrated a third-party print shop.
+                  </div>
+                  <div className={style.aboutBlockDescr}>
+                    Also, one of the killer features is the OCR scrapping
+                    module, which allows users to scrap addresses from the huge
+                    PDF letter images and split them based on that. We got a
+                    benchmark, where we are able to scrap 5000 addresses in 7.7
+                    seconds.
+                  </div>
+                </div>
+              </Parallax>
+            </div>
+          </div>
+          <div className={style.aboutContainer}>
+            <div className={style.whatCanDoTitle}>Development</div>
+
+            <div className={style.cardWithoutBorder}>
+              <div className={style.aboutBlockDescr}>
+                We started cooperation as a partnership to develop an API
+                integration with the United States Postal Service. Then, having
+                good results and positive experience with the customer we
+                extended our partnership to full-cycle turnkey web application
+                development.
+              </div>
+              <div className={style.aboutBlockDescr}>
+                The team consisted of a full-stack developer, a Golang
+                developer, a part-time designer, a DevOps, and a PM/QA.
+              </div>
+              <div className={style.aboutBlockDescr}>
+                Frontend, backend, AWS development went smoothly and it was fun
+                to do it after finishing the most challenging parts.
+              </div>
+            </div>
+
+            <div>
+              <div className={style.developmentCards}>
+                <div className={style.developmentCard}>
+                  <Image
+                    src={numberIcon1}
+                    alt="numberIcon1"
+                    className={style.numberIcon1}
+                  />
+                  <div className={style.aboutBlockTitle}>API Integration</div>
+                  <div className={style.aboutBlockDescr}>
+                    The main challenge was to make API integration with the
+                    United States Postal Service (USPS). It should comply with
+                    USPS strict terms of use and XML-only request standards.
+                    Plus there was fairly basic documentation, limited user
+                    support, no SDK, and example code.
+                  </div>
+                </div>
+
+                <div className={style.developmentCard}>
+                  <Image
+                    src={numberIcon2}
+                    alt="numberIcon2"
+                    className={style.numberIcon}
+                  />
+                  <div className={style.aboutBlockTitle}>Productive OCR</div>
+                  <div className={style.aboutBlockDescr}>
+                    The second challenge was developing a highly productive OCR,
+                    as it is the killer feature for non-enterprise users, which
+                    allow them to upload huge PDFs, select an area on the first
+                    page and step, and after the software makes the split and
+                    builds the letters
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className={style.getTouchWrapper}>
             <GetTouch borderRadius="60px 60px 0px 0px" />
           </div>
+          <Footer />
         </Parallax>
-        <Footer />
       </ParallaxProvider>
     </div>
   );

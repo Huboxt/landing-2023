@@ -9,69 +9,92 @@
 }
 
 .backBtn {
-    padding-left: 100px;
-    margin-top: 140px;
+    padding-left: 20px;
+    margin-top: 30px;
     display: flex;
     gap: 16px;
 }
 
 .dataConceptTitle {
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 20px;
     max-width: 80%;
 }
 
 .dataConceptDescr {
-    padding: 24px 100px 40px 100px;
+    padding: 0px 20px 0px 20px;
     font-size: 26px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 64px;
 }
 
 .description {
-    font-size: 26px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px;
+    line-height: 22px;
+    max-width: 460px;
 }
 
 .stackContainer {
-    display: flex;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 40px;
     border: 3px solid #618EC9;
-    padding: 40px;
-    gap: 25px;
+    padding: 15px 15px;
+    gap: 32px;
     align-items: center;
 }
 
+.stackContainerUp {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-bottom: 16px;
+}
+
+.stackContainerDown {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
 .stackTitle {
-    font-size: 26px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 34px;
+    line-height: 20px;
 }
 
 .stackBlock {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
+}
+
+.stackIcon {
+    height: 36px;
 }
 
 .needSameButton {
     margin-top: 30px;
+    margin-bottom: 32px;
     position: relative;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    line-height: 18px;
     border: 1px solid black;
     border-radius: 40px;
-    padding: 20px 40px;
+    padding: 16px 40px;
     overflow: hidden;
     cursor: pointer;
     background-color: transparent;
     color: black;
     transition: background-color 0.5s, color 0.4s;
+    width: 100%;
 }
 
 .needSameButton:hover {
@@ -95,41 +118,55 @@
 }
 
 .aboutContainer {
-    margin-top: -55px;
+    padding: 50px 0px 120px 0px;
     background: #161616;
-    border-radius: 60px 60px 0px 0px;
-    padding-top: 88px;
-    padding-bottom: 300px;
+    border-radius: 20px 20px 0px 0px;
     position: relative;
     z-index: 10;
+    margin-top: -20px;
 }
 
 .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 152px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .tableTitle {
     border: none;
     padding: 10px;
     text-align: center;
-    font-size: 26px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
     color: #F2F0EE;
 }
 
 .tableDescr {
-    font-size: 44px;
+    font-family: Clash Display Variable;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: 0.72px;
     text-align: center;
     color: #F2F0EE;
 }
 
+.parallaxActive {
+    transform: none !important;
+}
+
 .whatCanDoTitle {
     font-family: Clash Display Title;
-    font-size: 190px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 190px;
+    line-height: 90%;
     /* 100% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -137,7 +174,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 154px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.desktopTitle {
+    display: none;
 }
 
 .aboutCard {
@@ -145,24 +187,22 @@
     border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
     border-image-slice: 1;
     border-radius: 20px;
-    padding: 40px;
-    width: 810px;
+    padding: 20px;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: 140px;
     margin-bottom: 32px;
     margin-top: 40px;
     color: #F2F0EE;
 }
 
 .aboutBlockTitle {
-    font-size: 44px;
+    font-size: 32px;
     margin-bottom: 12px;
 }
 
 .aboutBlockDescr {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -172,10 +212,8 @@
 .researchContainer {
     margin-top: -55px;
     background: #f2f0ee;
-    border-radius: 60px 60px 0px 0px;
-    padding-top: 88px;
-    padding-bottom: 158px;
-    padding-right: 45px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 100px;
     position: relative;
     z-index: 10;
 }
@@ -207,10 +245,11 @@
 }
 
 .researchBlockDescr {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
     color: #161616;
     background: #f2f0ee;
-    line-height: 28px;
 }
 
 .dataConceptJobs {
@@ -231,29 +270,27 @@
     border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
     border-image-slice: 1;
     border-radius: 20px;
-    padding: 40px;
-    max-width: 532px;
-    height: 450px;
+    padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 32px;
-    margin-top: 40px;
     color: #F2F0EE;
 }
 
 .requirementsCards {
     display: flex;
+    flex-direction: column;
     gap: 22px;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .numberIcon {
-    width: 47px;
-    height: 50px;
+    width: 26px;
+    height: 28px;
 }
 
 .numberIcon1 {
-    width: 37px;
-    height: 50px;
+    width: 22px;
+    height: 24px;
 }
 
 .requirementsCardTitle {
@@ -273,21 +310,21 @@
 
 .scopeBlock {
     display: flex;
-    padding: 0 140px;
+    flex-direction: column;
+    padding: 0 20px;
     justify-content: space-between;
+    gap: 24px;
 }
+
 .scopeSubTitle {
-    font-size: 26px;
-font-style: normal;
-font-weight: 400;
-line-height: 34px;
-max-width: 690px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .scopeCards {
     display: flex;
-    width: 45%;
-    padding: 40px;
+    padding: 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
@@ -302,44 +339,1032 @@ max-width: 690px;
     gap: 20px;
     align-items: center;
 }
+
 .blueContainer {
     position: relative;
     z-index: 10;
     background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-radius: 60px 60px 0px 0px;
-    padding-top: 180px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 100px;
     padding-bottom: 158px;
-    position: relative;
-    z-index: 10;
 }
+
 .clientBlock {
     display: flex;
     flex-direction: column;
-    padding: 0 140px;
+    padding: 0 20px;
 }
+
 .clientTitle {
-    font-size: 82px;
-font-style: normal;
-font-weight: 500;
-line-height: 82px;
-color: #F2F0EE;
-margin-bottom: 170px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.96px;
+    color: #F2F0EE;
+    margin-bottom: 80px;
 }
+
 .clientSubTitle {
     display: flex;
     justify-content: flex-end;
-    font-size: 44px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: 0.72px;
+    color: #F2F0EE;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.clientSubTitleLine {
+    width: 40px;
+    height: 2px;
+    border-radius: 30px;
+    background: #F2F0EE;
+}
+
+.cardWithoutBorder {
+    padding: 0 20px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    color: #F2F0EE;
+}
+
+.architectureBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.architectureImageBlock {
+    margin-bottom: 12px;
+}
+
+.architectureIcon {
+    height: 36px;
+}
+
+.developmentCards {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 24px;
+}
+
+.developmentCard {
+    border: 4px solid;
+    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #F2F0EE;
+}
+
+@media (min-width: 992px) {
+    .backBtn {
+        padding-left: 80px;
+        margin-top: 140px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .dataConceptTitle {
+        margin-top: 20px;
+        margin-left: 100px;
+        max-width: 80%;
+    }
+
+    .dataConceptDescr {
+        padding: 24px 80px 40px 80px;
+        font-size: 26px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    .description {
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+max-width: 600px;
+    }
+
+    .whatCanDoTitle {
+        font-family: Clash Display Title;
+        font-size: 90px;
+        line-height: 90px; /* 100% */
+letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 60px;
+    }
+
+    .mobileTitle {
+        display: none;
+    }
+    .desktopTitle {
+        display: block;
+    }
+
+    .needSameButton {
+        margin-top: 30px;
+        position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 20px 40px;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        transition: background-color 0.5s, color 0.4s;
+        max-width: 270px;
+    }
+
+    .stackContainer {
+        display: flex;
+        border-radius: 40px;
+        border: 3px solid #618EC9;
+        padding: 20px;
+        gap: 25px;
+        align-items: center;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .stackContainerUp {
+        margin-bottom: 0;
+        gap: 25px;
+    }
+    .stackContainerDown {
+        gap: 25px;
+    }
+
+    .stackBlock {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .stackTitle {
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+    }
+    .stackIcon {
+        height: 56px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 152px;
+    }
+
+    .tableTitle {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+        color: #F2F0EE;
+    }
+
+    .tableDescr {
+        font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 125% */
+letter-spacing: 0.96px;
+        text-align: center;
+        color: #F2F0EE;
+    }
+
+    .aboutContainer {
+        margin-top: -200px;
+        background: #161616;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 280px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .aboutBlockDescr {
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .cardWithoutBorder {
+        padding: 80px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .requirementsCards {
+        display: flex;
+        gap: 22px;
+        justify-content: center;
+        padding: 0 80px;
+    }
+
+    .requirementsCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #F2F0EE;
+    }
+
+    .numberIcon1 {
+        width: 47px;
+        height: 50px;
+    }
+
+    .numberIcon {
+        width: 60px;
+        height: 50px;
+    }
+
+    .aboutBlockTitle {
+        font-size: 44px;
 font-style: normal;
 font-weight: 500;
 line-height: 50px; /* 113.636% */
 letter-spacing: 1.32px;
-color: #F2F0EE;
-align-items: center;
-    gap: 24px;
+        margin-bottom: 12px;
+    }
+
+    .researchContainer {
+        margin-top: 90px;
+        background: #f2f0ee;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 158px;
+        padding-right: 45px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .scopeBlock {
+        display: flex;
+        padding: 0 80px;
+        justify-content: space-between;
+    }
+
+    .scopeSubTitle {
+        font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+    }
+
+    .scopeCards {
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-radius: 20px;
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+    }
+
+    .researchBlockDescr {
+        font-size: 20px;
+        color: #161616;
+        background: #f2f0ee;
+        line-height: 28px;
+    }
+
+    .blueContainer {
+        position: relative;
+        z-index: 10;
+        background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 180px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .clientBlock {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px;
+    }
+
+    .clientTitle {
+        font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 100% */
+letter-spacing: 1.5px;
+        color: #F2F0EE;
+        margin-bottom: 100px;
+    }
+
+    .clientSubTitle {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 125% */
+letter-spacing: 0.96px;
+        color: #F2F0EE;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .clientSubTitleLine {
+        width: 64px;
+height: 4px;
+        border-radius: 30px;
+        background: #F2F0EE;
+    }
+
+    .architectureBlock {
+        display: flex;
+    }
+    .architectureBlockMargin {
+        margin-top: -315px;
+    }
+    .architectureIcon {
+        height: 56px;
+    }
+
+    .aboutCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .developmentCards {
+        display: flex;
+        padding: 0 80px;
+        gap: 20px;
+    }
+
+    .developmentCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        /* max-width: 532px; */
+        width: 100%;
+        box-sizing: border-box;
+        color: #F2F0EE;
+    }
 }
-.clientSubTitleLine {
-    width: 79px;
-height: 6px;
-border-radius: 30px;
-background: #F2F0EE;
+
+
+@media (min-width: 1280px) {
+    .backBtn {
+        padding-left: 100px;
+        margin-top: 140px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .dataConceptTitle {
+        margin-top: 20px;
+        margin-left: 100px;
+        max-width: 80%;
+    }
+
+    .dataConceptDescr {
+        padding: 24px 100px 40px 100px;
+        font-size: 26px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    .description {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    .whatCanDoTitle {
+        font-family: Clash Display Title;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 190px;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 154px;
+    }
+
+    .needSameButton {
+        margin-top: 30px;
+        position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 20px 40px;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        transition: background-color 0.5s, color 0.4s;
+    }
+
+    .stackContainer {
+        display: flex;
+        border-radius: 40px;
+        border: 3px solid #618EC9;
+        padding: 40px;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .stackBlock {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stackTitle {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 152px;
+    }
+
+    .tableTitle {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        font-size: 26px;
+        color: #F2F0EE;
+    }
+
+    .tableDescr {
+        font-size: 44px;
+        text-align: center;
+        color: #F2F0EE;
+    }
+
+    .aboutContainer {
+        margin-top: -55px;
+        background: #161616;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 300px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .aboutBlockDescr {
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .cardWithoutBorder {
+        padding: 40px;
+        width: 810px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-bottom: 32px;
+        margin-top: 0px;
+        color: #F2F0EE;
+    }
+
+    .requirementsCards {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        justify-content: center;
+    }
+
+    .requirementsCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 532px;
+        height: 450px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .numberIcon1 {
+        width: 37px;
+        height: 50px;
+    }
+
+    .numberIcon {
+        width: 47px;
+        height: 50px;
+    }
+
+    .aboutBlockTitle {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    .researchContainer {
+        margin-top: -55px;
+        background: #f2f0ee;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 158px;
+        padding-right: 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .scopeBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 0 80px;
+        justify-content: space-between;
+    }
+
+    .scopeSubTitle {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        max-width: 690px;
+    }
+
+    .scopeCards {
+        display: flex;
+        width: 45%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-radius: 20px;
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+    }
+
+    .researchBlockDescr {
+        font-size: 20px;
+        color: #161616;
+        background: #f2f0ee;
+        line-height: 28px;
+    }
+
+    .blueContainer {
+        position: relative;
+        z-index: 10;
+        background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 180px;
+        padding-bottom: 158px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .clientBlock {
+        display: flex;
+        flex-direction: column;
+        padding: 0 140px;
+    }
+
+    .clientTitle {
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px;
+        color: #F2F0EE;
+        margin-bottom: 170px;
+    }
+
+    .clientSubTitle {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
+        color: #F2F0EE;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .clientSubTitleLine {
+        width: 79px;
+        height: 6px;
+        border-radius: 30px;
+        background: #F2F0EE;
+    }
+
+    .architectureBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 0 80px;
+        justify-content: space-between;
+    }
+    .architectureBlockMargin {
+        margin-top: -575px;
+    }
+
+    .aboutCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .developmentCards {
+        display: flex;
+        flex-direction: row;
+        padding: 0 140px;
+        gap: 20px;
+    }
+
+    .developmentCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        /* max-width: 532px; */
+        width: 100%;
+        height: 450px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+}
+
+@media (min-width: 1600px) {
+    .backBtn {
+        padding-left: 100px;
+        margin-top: 140px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .dataConceptTitle {
+        margin-top: 20px;
+        margin-left: 100px;
+        max-width: 80%;
+    }
+
+    .dataConceptDescr {
+        padding: 24px 100px 40px 100px;
+        font-size: 26px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    .description {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    .whatCanDoTitle {
+        font-family: Clash Display Title;
+        font-size: 160px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 190px;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 154px;
+    }
+
+    .needSameButton {
+        margin-top: 30px;
+        position: relative;
+        font-weight: 500;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 20px 40px;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        transition: background-color 0.5s, color 0.4s;
+    }
+
+    .stackContainer {
+        display: flex;
+        border-radius: 40px;
+        border: 3px solid #618EC9;
+        padding: 40px;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .stackBlock {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stackTitle {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 152px;
+    }
+
+    .tableTitle {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        font-size: 26px;
+        color: #F2F0EE;
+    }
+
+    .tableDescr {
+        font-size: 44px;
+        text-align: center;
+        color: #F2F0EE;
+    }
+
+    .aboutContainer {
+        margin-top: -55px;
+        background: #161616;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 300px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .aboutBlockDescr {
+        font-size: 20px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .cardWithoutBorder {
+        padding: 40px;
+        width: 810px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: 140px;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .requirementsCards {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        justify-content: center;
+    }
+
+    .requirementsCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 532px;
+        height: 450px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .numberIcon1 {
+        width: 37px;
+        height: 50px;
+    }
+
+    .numberIcon {
+        width: 47px;
+        height: 50px;
+    }
+
+    .aboutBlockTitle {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    .researchContainer {
+        margin-top: -55px;
+        background: #f2f0ee;
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 158px;
+        padding-right: 45px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .scopeBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 0 140px;
+        justify-content: space-between;
+    }
+
+    .scopeSubTitle {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        max-width: 690px;
+    }
+
+    .scopeCards {
+        display: flex;
+        width: 45%;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        border-radius: 20px;
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+    }
+
+    .researchBlockDescr {
+        font-size: 20px;
+        color: #161616;
+        background: #f2f0ee;
+        line-height: 28px;
+    }
+
+    .blueContainer {
+        position: relative;
+        z-index: 10;
+        background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-radius: 60px 60px 0px 0px;
+        padding-top: 180px;
+        padding-bottom: 158px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .clientBlock {
+        display: flex;
+        flex-direction: column;
+        padding: 0 140px;
+    }
+
+    .clientTitle {
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px;
+        color: #F2F0EE;
+        margin-bottom: 170px;
+    }
+
+    .clientSubTitle {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
+        color: #F2F0EE;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .clientSubTitleLine {
+        width: 79px;
+        height: 6px;
+        border-radius: 30px;
+        background: #F2F0EE;
+    }
+
+    .architectureBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 0 140px;
+    }
+    .architectureBlockMargin {
+        margin-top: -575px;
+    }
+
+    .aboutCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+
+    .developmentCards {
+        display: flex;
+        flex-direction: row;
+        padding: 0 140px;
+        gap: 20px;
+    }
+
+    .developmentCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        /* max-width: 532px; */
+        width: 100%;
+        height: 450px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
 }

@@ -109,7 +109,6 @@ const Footer = () => {
               <Link href="/" onClick={handleScrollTouch} className={style.link}>
                 Web development
               </Link>
-              {/* <div className={`${style.gmail} ${style.gmailDesktop}`} onClick={() => {window.location.href = "mailto:sales@huboxt.com"}}>sales@huboxt.com</div> */}
             </div>
           </div>
           <div className={style.infoBlock}>

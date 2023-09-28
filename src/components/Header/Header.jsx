@@ -99,25 +99,35 @@ const Header = ({ showGetTouchBtn }) => {
           </Link> */}
           {isMenuOpen ? (
             <Link href="/">
-            <Image
-              src={logoMobileWhite}
-              alt="logoMobileWhite"
-              className={style.logoMobileWhite}
-            />
+              <Image
+                src={logoMobileWhite}
+                alt="logoMobileWhite"
+                className={style.logoMobileWhite}
+              />
             </Link>
           ) : (
             <Link href="/">
-            <div className={style.logoMobile}>
-              <Image src={hubMob} alt="hub" className={style.logoMobileFirst}/>
-              <div className={style.oBgWrapper}>
-                <Image src={oxtMob} alt="oxt" className={style.logoMobileSecond}/>
-                <div
-                  className={`${firstAnimation ? `${style.firstO}` : style.o}`}
-                >
-                  <div className={style.inner} />
+              <div className={style.logoMobile}>
+                <Image
+                  src={hubMob}
+                  alt="hub"
+                  className={style.logoMobileFirst}
+                />
+                <div className={style.oBgWrapper}>
+                  <Image
+                    src={oxtMob}
+                    alt="oxt"
+                    className={style.logoMobileSecond}
+                  />
+                  <div
+                    className={`${
+                      firstAnimation ? `${style.firstO}` : style.o
+                    }`}
+                  >
+                    <div className={style.inner} />
+                  </div>
                 </div>
               </div>
-            </div>
             </Link>
           )}
           <div
@@ -206,59 +216,86 @@ const Header = ({ showGetTouchBtn }) => {
             unmountOnExit
           >
             <div className={style.mobileMenu}>
-              <ul>
-                <li>ABOUT</li>
-                <li
-                  ref={dropdownRef}
-                  onClick={toggleDropdown}
-                >
-                  <div style={{ display: "flex"}}>
-                  <div>SERVICES</div>
-                  <Image
-                    src={isDropdownVisible ? arrowUpWhite : arrowDownWhite}
-                    alt="arrow"
-                    className={style.mobileMenuArrow}
-                  />
+              <div>
+                <div className={style.mobileMenuItem}>ABOUT</div>
+                <div ref={dropdownRef} onClick={toggleDropdown}>
+                  <div style={{ display: "flex" }}>
+                    <div className={style.mobileMenuItem}>SERVICES</div>
+                    <Image
+                      src={isDropdownVisible ? arrowUpWhite : arrowDownWhite}
+                      alt="arrow"
+                      className={style.mobileMenuArrow}
+                    />
                   </div>
-                    {isDropdownVisible ? 
+                  {isDropdownVisible ? (
                     <div className={style.mobileMenudropdown}>
-                    <Link href="/services/startups">
+                      <Link href="/services/startups">
+                        <div className={style.mobileDropdownBlock}>
+                          <Image
+                            src={pcMobile}
+                            alt="pc"
+                            className={style.mobileDropdownIcon}
+                          />
+                          <div className={style.mobileDropdownText}>
+                            Software development for startups
+                          </div>
+                        </div>
+                      </Link>
                       <div className={style.mobileDropdownBlock}>
                         <Image
-                          src={pcMobile}
-                          alt="pc"
+                          src={phoneMobile}
+                          alt="phone"
                           className={style.mobileDropdownIcon}
                         />
-                        <div className={style.mobileDropdownText}>Software development for startups</div>
+                        <div className={style.mobileDropdownText}>
+                          Mobile development
+                        </div>
                       </div>
-                    </Link>
-                    <div className={style.mobileDropdownBlock}>
-                      <Image
-                        src={phoneMobile}
-                        alt="phone"
-                        className={style.mobileDropdownIcon}
-                      />
-                      <div className={style.mobileDropdownText}>Mobile development</div>
+                      <div className={style.mobileDropdownBlock}>
+                        <Image
+                          src={monitorMobile}
+                          alt="monitor"
+                          className={style.mobileDropdownIcon}
+                        />
+                        <div className={style.mobileDropdownText}>
+                          Web development
+                        </div>
+                      </div>
                     </div>
-                    <div className={style.mobileDropdownBlock}>
-                      <Image
-                        src={monitorMobile}
-                        alt="monitor"
-                        className={style.mobileDropdownIcon}
-                      />
-                      <div className={style.mobileDropdownText}>Web development</div>
-                    </div>
-                  </div> : ""}
-                </li>
-                <li>OUR WORK</li>
-                <li>GET IN TOUCH</li>
-                <li>TERMS</li>
-                <li>PRIVACY POLICY</li>
-              </ul>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <div className={style.mobileMenuItem}>
+                <Link href="/our-works/our-works-page">OUR WORKS
+                </Link>
+                </div>
+                <div className={style.mobileMenuItem}>GET IN TOUCH</div>
+                <div className={style.mobileMenuItem}>TERMS</div>
+                <div className={style.mobileMenuItem}>PRIVACY POLICY</div>
+              </div>
               <div className={style.mobileSocialBlock}>
-                <Link href="https://www.facebook.com"><Image src={facebook} alt="facebook" className={style.mobileSocialIcon}/></Link>
-                <Link href="https://www.instagram.com"><Image src={instagram} alt="instagram" className={style.mobileSocialIcon}/></Link>
-                <Link href="https://www.linkedin.com"><Image src={linkedin} alt="linkedin" className={style.mobileSocialIcon}/></Link>
+                <Link href="https://www.facebook.com">
+                  <Image
+                    src={facebook}
+                    alt="facebook"
+                    className={style.mobileSocialIcon}
+                  />
+                </Link>
+                <Link href="https://www.instagram.com">
+                  <Image
+                    src={instagram}
+                    alt="instagram"
+                    className={style.mobileSocialIcon}
+                  />
+                </Link>
+                <Link href="https://www.linkedin.com">
+                  <Image
+                    src={linkedin}
+                    alt="linkedin"
+                    className={style.mobileSocialIcon}
+                  />
+                </Link>
               </div>
             </div>
           </CSSTransition>

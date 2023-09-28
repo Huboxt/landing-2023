@@ -1,18 +1,24 @@
-.getTouchWrapper{
+.getTouchWrapper {
   background: #161616;
   padding-top: 228px;
   padding-bottom: 228px;
+  margin-top: -60px;
+  z-index: 15;
+  position: relative;
 }
-.getTouchIcon{
+
+.getTouchIcon {
   max-width: 80%;
 }
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   gap: 173px;
   padding: 0 15px;
 }
-.title{
+
+.title {
   font-weight: 400;
   font-size: 26px;
   line-height: 34px;
@@ -23,29 +29,33 @@
   .container {
     padding: 0 80px;
   }
+
   .title {
     font-size: 26px;
-font-weight: 400;
-line-height: 34px;
+    font-weight: 400;
+    line-height: 34px;
   }
-  
+
 }
 
-@media(max-width: 1500px){
-  .container{
+@media(max-width: 1500px) {
+  .container {
     gap: 50px;
   }
 }
-@media (max-width: 1215px){
-  .getTouchWrapper{
+
+@media (max-width: 1215px) {
+  .getTouchWrapper {
     padding-top: 0px;
     padding-bottom: 178px;
   }
-  .getTouchIcon{
+
+  .getTouchIcon {
     height: 100%;
     margin-bottom: 14px;
   }
-  .container{
+
+  .container {
     flex-direction: column;
     gap: 73px;
   }
