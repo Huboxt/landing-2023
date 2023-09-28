@@ -129,7 +129,7 @@ const UploadlettersPage = () => {
           endScroll={600}
           translateY={["-100px", "-200px"]}
         >
-          <div className={style.aboutContainer}>
+          <div  className={`${style.aboutContainer} ${style.aboutContainerMargin}`}>
             <div className={style.table}>
               <div>
                 <div className={style.tableTitle}>CLIENT</div>

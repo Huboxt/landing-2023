@@ -456,6 +456,10 @@ line-height: 28px;
 max-width: 600px;
     }
 
+    .aboutContainerMargin {
+        margin-top: 100px !important;
+    }
+
     .whatCanDoTitle {
         font-family: Clash Display Title;
         font-size: 90px;
