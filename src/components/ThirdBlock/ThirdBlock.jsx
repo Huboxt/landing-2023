@@ -9,6 +9,7 @@ const ThirdBlock = () => {
   return (
     <div className={style.thirdBlockWrapper}>
       <div className={style.thirdBlockCard}>
+        <Link href="/services/startups">
         <div>
           <Image
             src={thirdBlockIcon}
@@ -18,15 +19,13 @@ const ThirdBlock = () => {
         </div>
         <div className={style.title}>
           Early-stage
-          <br />
           startups without
-          <br />a tech team
+          a tech team
         </div>
         <div className={style.description}>
           Some small description <br /> As a part of customer requirements and
           our internal <br /> agreements we try to use best practices{" "}
         </div>
-        <Link href="/services/startups">
           <div className={style.arrow}>
             <svg
               width="181"
@@ -53,10 +52,8 @@ const ThirdBlock = () => {
         </div>
         <div className={style.title}>
           Companies
-          <br />
           launching their
-          <br />
-          own product
+          own  product
         </div>
         <div className={style.description}>
           Some small description <br /> As a part of customer requirements and

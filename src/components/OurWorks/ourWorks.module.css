@@ -182,6 +182,24 @@
   overflow: hidden;
   cursor: pointer;
 }
+.viewMoreBtn {
+  margin-top: 64px;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  color: #E2DFDC;
+  background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+  border-radius: 40px;
+  padding: 20px 40px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.viewMoreBtn:hover {
+  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%) !important;
+  transition: all 1s !important;
+}
 @media (min-width: 992px) {
   .ourWorksWrapper {
     margin-top: -60px;

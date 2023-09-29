@@ -112,6 +112,9 @@ const StartupsPage = () => {
                   <div className={style.whatCanDoSubTitle}>
                     Early stage <br /> startup
                   </div>
+                  <div className={style.whatCanDoSubTitleDesktop}>
+                    Early <br /> stage <br /> startup
+                  </div>
                 </Parallax>
               </div>
               <div>

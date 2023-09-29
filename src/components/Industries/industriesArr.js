@@ -1,5 +1,6 @@
 import dataconcept from '../../assets/img/industrieIcons/dataconcept.svg';
 import uploadletters from '../../assets/img/industrieIcons/uploadletters.svg';
+import petmate from '../../assets/img/industrieIcons/petmate.svg';
 import goes from '../../assets/img/industrieIcons/goes.svg';
 import datBi from '../../assets/img/industrieIcons/datBi.svg';
 import segma from '../../assets/img/industrieIcons/segma.svg';
@@ -22,6 +23,9 @@ export const array = [
   }
 ]
 export const array2 = [
+  {
+    image: petmate
+  },
   {
     image: segma
   },

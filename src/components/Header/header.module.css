@@ -65,8 +65,8 @@
   position: relative;
   z-index: 25;
   background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-  width: 16px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-size: 150% 150%;
 
@@ -214,6 +214,9 @@
 
 .logoMobileWhite {
   z-index: 1000;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .mobileMenuArrow {
@@ -289,17 +292,17 @@
   }
 
   .inner {
-    width: 35px;
-    height: 32px;
+    width: 20px;
+    height: 20px;
   }
 
   .o {
-    left: 11px;
+    left: 14px;
     top: 55%;
   }
 
   .oBgWrapper {
-    margin-left: -5px;
+    margin-left: -9px;
   }
 
   .logoMobileSecond {
@@ -322,6 +325,8 @@
   }
 
   .logoMobileWhite {
+    top: 40px;
+    left: 80px;
     width: 190px;
     height: 56px;
   }
@@ -338,8 +343,8 @@
   }
 
   .mobileMenuArrow {
-    height: 48px;
-    width: 48px;
+    height: 28px;
+    width: 30px;
   }
 
   .mobileDropdownText {
@@ -462,7 +467,7 @@
   width: 415px;
   transition: transform 0.3s ease-in-out;
   transform-origin: top left;
-  padding: 0 40px;
+  padding: 0 5px;
   background: #F2F0EE;
   border-radius: 40px;
   font-size: 24px;
@@ -490,7 +495,7 @@
   gap: 44px;
   align-self: stretch;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 .dropdownIcon {

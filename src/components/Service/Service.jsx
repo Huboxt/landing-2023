@@ -22,6 +22,7 @@ const Service = () => {
 
       <div className={style.thirdBlockWrapper}>
         <div className={style.thirdBlockCard}>
+          <Link href="/services/startups">
           <div>
             <Image
               src={thirdBlockIcon}
@@ -34,7 +35,6 @@ const Service = () => {
             Some small description <br /> As a part of customer requirements and
             our internal <br /> agreements we try to use best practices{" "}
           </div>
-          <Link href="/services/startups">
             <div className={style.arrow}>
               <svg
                 width="181"

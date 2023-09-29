@@ -202,7 +202,10 @@ const OurWorks = () => {
         </div>
         <div className={style.viewMoreBlock}>
           <Link href="/our-works/our-works-page">
-          <button className={style.viewMoreBtn}>VIEW MORE</button>
+            <button className={style.viewMoreBtn}>
+              <Image src={touch} alt="get" className={style.getInTouchImg} />
+              VIEW MORE
+            </button>
           </Link>
         </div>
       </div>

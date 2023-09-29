@@ -12,7 +12,7 @@ export const projects = [
   {
     id: '1',
     title: "PetmateAI", 
-    description: "Petmate AI",
+    description: "Petmate AI is a multiplatform (iOS/Android) mobile application for pet owners. It is a chat with AI (resembles ChatGPT experience) where you can ask any pet-related questions about health, treatment, training, breeding, feeding etc.",
     folder: 'projects',
     Image: petmateCard,
     page: "petmate"

@@ -36,8 +36,8 @@
 
 .bgSpot {
   position: absolute;
-  top: 0px;
-  left: -50px;
+  top: 670px;
+  left: -650px;
   z-index: 1;
 }
 
@@ -60,6 +60,13 @@
   border-radius: 20px;
   display: flex;
   padding: 40px 20px;
+  transition: transform 0.5s ease;
+}
+.thirdBlockCard a {
+  text-decoration: none;
+}
+.thirdBlockCard:hover {
+  transform: scale(1.02);
 }
 
 .cardTitle {
