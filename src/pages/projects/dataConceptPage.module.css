@@ -163,7 +163,7 @@
 
 .whatCanDoTitle {
     font-family: Clash Display Title;
-    font-size: 48px;
+    font-size: 10vw;
     font-style: normal;
     font-weight: 700;
     line-height: 90%;
@@ -450,10 +450,10 @@
 
     .description {
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
-max-width: 600px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        max-width: 600px;
     }
 
     .aboutContainerMargin {
@@ -462,9 +462,10 @@ max-width: 600px;
 
     .whatCanDoTitle {
         font-family: Clash Display Title;
-        font-size: 90px;
-        line-height: 90px; /* 100% */
-letter-spacing: 1.5px;
+        font-size: 10vw;
+        line-height: 90%;
+        /* 100% */
+        letter-spacing: 1.5px;
         text-transform: uppercase;
         background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
         background-clip: text;
@@ -476,6 +477,7 @@ letter-spacing: 1.5px;
     .mobileTitle {
         display: none;
     }
+
     .desktopTitle {
         display: block;
     }
@@ -508,10 +510,12 @@ letter-spacing: 1.5px;
         margin-right: 0;
         justify-content: center;
     }
+
     .stackContainerUp {
         margin-bottom: 0;
         gap: 25px;
     }
+
     .stackContainerDown {
         gap: 25px;
     }
@@ -525,10 +529,11 @@ letter-spacing: 1.5px;
 
     .stackTitle {
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
     }
+
     .stackIcon {
         height: 56px;
     }
@@ -544,18 +549,19 @@ line-height: 28px;
         padding: 10px;
         text-align: center;
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; 
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
         color: #F2F0EE;
     }
 
     .tableDescr {
         font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 125% */
-letter-spacing: 0.96px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        /* 125% */
+        letter-spacing: 0.96px;
         text-align: center;
         color: #F2F0EE;
     }
@@ -572,9 +578,9 @@ letter-spacing: 0.96px;
 
     .aboutBlockDescr {
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
         display: flex;
         align-items: center;
         gap: 12px;
@@ -619,10 +625,11 @@ line-height: 28px;
 
     .aboutBlockTitle {
         font-size: 44px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 113.636% */
-letter-spacing: 1.32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
         margin-bottom: 12px;
     }
 
@@ -645,9 +652,9 @@ letter-spacing: 1.32px;
 
     .scopeSubTitle {
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
     }
 
     .scopeCards {
@@ -687,10 +694,11 @@ line-height: 28px;
 
     .clientTitle {
         font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 100% */
-letter-spacing: 1.5px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 100% */
+        letter-spacing: 1.5px;
         color: #F2F0EE;
         margin-bottom: 100px;
     }
@@ -699,10 +707,11 @@ letter-spacing: 1.5px;
         display: flex;
         justify-content: flex-end;
         font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 125% */
-letter-spacing: 0.96px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        /* 125% */
+        letter-spacing: 0.96px;
         color: #F2F0EE;
         align-items: center;
         gap: 24px;
@@ -710,7 +719,7 @@ letter-spacing: 0.96px;
 
     .clientSubTitleLine {
         width: 64px;
-height: 4px;
+        height: 4px;
         border-radius: 30px;
         background: #F2F0EE;
     }
@@ -718,9 +727,11 @@ height: 4px;
     .architectureBlock {
         display: flex;
     }
+
     .architectureBlockMargin {
         margin-top: -315px;
     }
+
     .architectureIcon {
         height: 56px;
     }
@@ -1026,6 +1037,7 @@ height: 4px;
         padding: 0 80px;
         justify-content: space-between;
     }
+
     .architectureBlockMargin {
         margin-top: -575px;
     }
@@ -1333,6 +1345,7 @@ height: 4px;
         flex-direction: row;
         padding: 0 140px;
     }
+
     .architectureBlockMargin {
         margin-top: -575px;
     }

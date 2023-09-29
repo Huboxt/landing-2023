@@ -20,6 +20,7 @@ import OurWorksPage from './our-works/our-works-page';
 import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
 import UploadlettersPage from './projects/uploadletters';
+import PetmateAI from './projects/petmate';
 
 export default function Home() {
   const [allowHover, setAllowHover] = useState(false)
@@ -211,6 +212,7 @@ export default function Home() {
           {router.pathname === '/our-works-page' && <OurWorksPage />}
           {router.pathname === '/data-concept' && <DataConceptPage />}
           {router.pathname === '/uploadletters' && <UploadlettersPage />}
+          {router.pathname === '/petmate' && <PetmateAI />}
           {router.pathname === '/startups' && <StartupsPage />}
       </main>
     </>
