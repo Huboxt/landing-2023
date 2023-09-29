@@ -32,10 +32,11 @@ const StartupsPage = () => {
   return (
     <div className={style.container}>
       <Header showGetTouchBtn />
+      <div className={style.startupsTitleContainer}>
       <div className={style.startupsTitleBlock}>
         <div>
           <div className={style.startupsTitle}>
-            Software development for startups
+            Software <br /> development <br /> for startups
           </div>
           <div className={style.startupsDescr}>
             <div>
@@ -45,41 +46,56 @@ const StartupsPage = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className={`${style.cardBlock} ${style.card1}`}>
+        <div className={style.cardContainer}>
+        <div className={style.cardBlock}>
+          <div className={style.card1}>
             <Image src={appsIcon} alt="app" className={style.cardIcon} />
             <div className={style.cardTitle}>
+              Apps scaling
+            </div>
+            <div className={style.cardTitleDesktop}>
               Apps <br /> scaling
             </div>
           </div>
-          <div className={`${style.cardBlock} ${style.card2}`}>
+          <div className={style.card2}>
             <Image src={webIcon} alt="web" className={style.cardIcon} />
             <div className={style.cardTitle}>
               Web, Mobile, <br /> SaaS apps
             </div>
+            <div className={style.cardTitleDesktop}>
+              Web, Mobile, <br /> SaaS apps
+            </div>
           </div>
-          <div className={`${style.cardBlock} ${style.card3}`}>
+          <div className={style.card3}>
             <Image src={uiIcon} alt="ui" className={style.cardIcon} />
             <div className={style.cardTitle}>UI/UX</div>
+            <div className={style.cardTitleDesktop}>UI/UX</div>
           </div>
-          <div className={`${style.cardBlock} ${style.card4}`}>
+          <div className={style.card4}>
             <Image src={mvpIcon} alt="mvp" className={style.cardIcon} />
             <div className={style.cardTitle}>
+              Prototyping & MVP
+            </div>
+            <div className={style.cardTitleDesktop}>
               Prototyping <br /> & MVP
             </div>
           </div>
         </div>
+        </div>
+      </div>
       </div>
 
       <ParallaxProvider>
         <Parallax
           startScroll={0} endScroll={700} translateY={['0px', '-200px']}
+          className={style.staticParallax}
         >
           <div className={style.whatCanDoContainer}>
             <Parallax
               startScroll={0}
               endScroll={500}
               translateX={["-800px", "0px"]}
+              className={style.staticParallax}
             >
               <div className={style.whatCanDoTitle}>
                 What we can <br /> do for you
@@ -91,9 +107,10 @@ const StartupsPage = () => {
                   startScroll={200}
                   endScroll={700}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoSubTitle}>
-                    Early <br /> stage <br /> startup
+                    Early stage <br /> startup
                   </div>
                 </Parallax>
               </div>
@@ -102,6 +119,7 @@ const StartupsPage = () => {
                   startScroll={200}
                   endScroll={800}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoCard}>
                     <div className={style.whatCanDoBlockTitle}>
@@ -120,6 +138,7 @@ const StartupsPage = () => {
                   startScroll={400}
                   endScroll={1000}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoCard}>
                     <div className={style.whatCanDoBlockTitle}>Prototyping</div>
@@ -137,6 +156,7 @@ const StartupsPage = () => {
                   startScroll={700}
                   endScroll={1300}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoCard}>
                     <div className={style.whatCanDoBlockTitle}>MVP</div>
@@ -157,6 +177,7 @@ const StartupsPage = () => {
 
         <Parallax
           startScroll={1200} endScroll={1900} translateY={['-100px', '-450px']}
+          className={style.staticParallax}
         >
           <div className={style.researchContainer}>
             <div className={style.whatCanDoSubTitleBlock}>
@@ -165,6 +186,7 @@ const StartupsPage = () => {
                   startScroll={1300}
                   endScroll={1800}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.researchSubTitle}>
                     Growing <br /> startups
@@ -176,6 +198,7 @@ const StartupsPage = () => {
                   startScroll={1300}
                   endScroll={1900}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
                     <div className={style.whatCanDoBlockTitle}>Web apps</div>
@@ -192,6 +215,7 @@ const StartupsPage = () => {
                   startScroll={1500}
                   endScroll={2100}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
                     <div className={style.whatCanDoBlockTitle}>Mobile apps</div>
@@ -206,6 +230,7 @@ const StartupsPage = () => {
                   startScroll={1750}
                   endScroll={2400}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
                     <div className={style.whatCanDoBlockTitle}>SaaS</div>
@@ -224,6 +249,7 @@ const StartupsPage = () => {
                   startScroll={2100}
                   endScroll={2800}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
                     <div className={style.whatCanDoBlockTitle}>UI/UX</div>
@@ -242,6 +268,7 @@ const StartupsPage = () => {
 
         <Parallax
           startScroll={2500} endScroll={3400} translateY={['200px', '-650px']}
+          className={style.staticParallax} 
         >
           <div className={style.whatCanDoContainer}>
             <div className={style.whatCanDoSubTitleBlock}>
@@ -250,6 +277,7 @@ const StartupsPage = () => {
                   startScroll={2800}
                   endScroll={3400}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoSubTitle}>
                     Fast- <br /> growing <br /> startups
@@ -261,6 +289,7 @@ const StartupsPage = () => {
                   startScroll={2800}
                   endScroll={3400}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoCard}>
                     <div className={style.whatCanDoBlockTitle}>Scaling</div>
@@ -281,12 +310,14 @@ const StartupsPage = () => {
 
         <Parallax
           startScroll={3200} endScroll={3900} translateY={['-500px', '-850px']}
+          className={style.staticParallax}
         >
           <div className={style.researchContainer}>
             <Parallax
               startScroll={3300}
               endScroll={3900}
               translateX={["-800px", "0px"]}
+              className={style.staticParallax}
             >
               <div className={style.valueTitle}>
                 The walue <br /> we give
@@ -298,6 +329,7 @@ const StartupsPage = () => {
                   startScroll={3900}
                   endScroll={4400}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
                     <Image
@@ -308,6 +340,9 @@ const StartupsPage = () => {
                     <div className={style.valueSubTitle}>
                       Go to <br /> market <br /> faster
                     </div>
+                    <div className={style.valueSubTitleDesktop}>
+                      Go to market faster
+                    </div>
                   </div>
                 </Parallax>
               </div>
@@ -316,6 +351,7 @@ const StartupsPage = () => {
                   startScroll={3900}
                   endScroll={4400}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
@@ -344,6 +380,7 @@ const StartupsPage = () => {
                   startScroll={4200}
                   endScroll={4700}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
                     <Image
@@ -354,6 +391,9 @@ const StartupsPage = () => {
                     <div className={style.valueSubTitle}>
                       Decent <br /> quality, <br /> less costs
                     </div>
+                    <div className={style.valueSubTitleDesktop}>
+                      Decent quality, less costs
+                    </div>
                   </div>
                 </Parallax>
               </div>
@@ -362,6 +402,7 @@ const StartupsPage = () => {
                   startScroll={4200}
                   endScroll={4700}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
@@ -390,6 +431,7 @@ const StartupsPage = () => {
                  startScroll={4600}
                  endScroll={5100}
                  translateX={["-800px", "0px"]}
+                 className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
                     <Image
@@ -398,6 +440,7 @@ const StartupsPage = () => {
                       className={style.valueSubTitleIcon}
                     />
                     <div className={style.valueSubTitle}>Flexibility</div>
+                    <div className={style.valueSubTitleDesktop}>Flexibility</div>
                   </div>
                 </Parallax>
               </div>
@@ -406,6 +449,7 @@ const StartupsPage = () => {
                   startScroll={4600}
                   endScroll={5100}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
@@ -430,6 +474,7 @@ const StartupsPage = () => {
 
         <Parallax
           startScroll={5100} endScroll={5800} translateY={['-100px', '-850px']}
+          className={style.staticParallax}
         >
           <div className={style.getTouchContainer}>
             <div className={style.whatCanDoSubTitleBlock}>
@@ -438,7 +483,8 @@ const StartupsPage = () => {
                   startScroll={5700}
                   endScroll={6200}
                 //   translateX={["-800px", "0px"]}
-                  opacity={[0,1]}
+                  // opacity={[0,1]}
+                  className={style.staticParallax}
                 >
                   <div className={style.whatCanDoSubTitle}>
                     Have a startup? <br /> Share your thoughts <br /> with us
@@ -457,12 +503,14 @@ const StartupsPage = () => {
 
         <Parallax
          startScroll={5300} endScroll={6500} translateY={['-100px', '-950px']}
+         className={style.staticParallax}
         >
           <div className={style.whatCanDoContainer}>
             <Parallax
               startScroll={2600}
               endScroll={3600}
               translateX={["-800px", "0px"]}
+              className={style.staticParallax}
             >
               <div className={style.whatCanDoTitle}>
                 Our main <br /> strengths
@@ -474,10 +522,14 @@ const StartupsPage = () => {
                   startScroll={3000}
                   endScroll={3800}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
                     <div className={style.strengthsSubTitle}>
-                      Elite nterprise training <br /> + startup mindset
+                      Elite enterprise <br /> training  + startup <br /> mindset
+                    </div>
+                    <div className={style.strengthsSubTitleDesktop}>
+                      Elite enterprise training  + startup  mindset
                     </div>
                   </div>
                 </Parallax>
@@ -487,6 +539,7 @@ const StartupsPage = () => {
                   startScroll={3200}
                   endScroll={3800}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.strengthsCard}>
                     <div className={style.strengthsDescription}>
@@ -512,11 +565,14 @@ const StartupsPage = () => {
             <div className={style.whatCanDoSubTitleBlock}>
               <div>
                 <Parallax
-                  
                 >
                   <div className={style.subTitleFlex}>
                     <div className={style.strengthsSubTitle}>
                       Minimum bureaucracy and quick <br /> and quick
+                      communication
+                    </div>
+                    <div className={style.strengthsSubTitleDesktop}>
+                      Minimum bureaucracy and quick  and quick
                       communication
                     </div>
                   </div>
@@ -527,6 +583,7 @@ const StartupsPage = () => {
                   startScroll={3600}
                   endScroll={4100}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.strengthsCard}>
                     <div className={style.strengthsDescription}>
@@ -552,10 +609,14 @@ const StartupsPage = () => {
                   startScroll={4100}
                   endScroll={4600}
                   translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
                     <div className={style.strengthsSubTitle}>
                       Our own frameworks <br /> and best practices
+                    </div>
+                    <div className={style.strengthsSubTitleDesktop}>
+                      Our own frameworks and best practices
                     </div>
                   </div>
                 </Parallax>
@@ -565,6 +626,7 @@ const StartupsPage = () => {
                   startScroll={4100}
                   endScroll={4600}
                   translateX={["800px", "0px"]}
+                  className={style.staticParallax}
                 >
                   <div className={style.strengthsCard}>
                     <div className={style.strengthsDescription}>
@@ -588,11 +650,13 @@ const StartupsPage = () => {
         </Parallax>
         <Parallax
             startScroll={8000} endScroll={12900} translateY={['-1300px', '0px']}
+            className={style.staticParallax}
         >
           <OurWorks />
           <FAQ />
           <Parallax
             translateY={['-150px', '0px']}
+            className={style.staticParallax}
           >
           <div className={style.getTouchWrapper}>
             <GetTouch borderRadius="60px 60px 0px 0px" />

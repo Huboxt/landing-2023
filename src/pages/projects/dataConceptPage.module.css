@@ -1,5 +1,6 @@
 .container {
     background: #f2f0ee;
+    overflow-x: hidden;
 }
 
 .background {

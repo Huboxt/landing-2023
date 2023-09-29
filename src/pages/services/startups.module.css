@@ -1,5 +1,6 @@
 .container {
     background: #f2f0ee;
+    overflow-x: hidden;
 }
 
 .background {
@@ -7,30 +8,28 @@
     /* opacity: 0; */
     transition: all 0.6s;
 }
-
 .startupsTitleBlock {
-    position: relative;
     display: flex;
-    margin-top: 175px;
-    margin-bottom: 243px;
-    padding-left: 100px;
+    flex-direction: column;
+    margin-top: 76px;
+    padding: 0 20px;
 }
 
 .startupsTitle {
     margin-bottom: 32px;
-    font-size: 140px;
+    font-size: 12vw;
     font-style: normal;
     font-weight: 500;
-    line-height: 140px;
+    line-height: 90%;
     width: 948px;
 }
 
 .startupsDescr {
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px;
-    width: 948px;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+margin-bottom: 75px;
 }
 
 @keyframes fadeIn {
@@ -41,63 +40,95 @@
       opacity: 1;
     }
   }
+  .cardContainer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .cardBlock {
-    display: inline-flex;
+   height: 450px;
+  }
+  
+  .card1 {
+    display: flex;
     align-items: center;
-    padding: 40px;
-    gap: 64px;
+    padding: 20px;
+    gap: 24px;
     border-radius: 40px;
     border: 1px solid var(--gradient-3, #082B9B);
     background: #f2f0ee;
     width: max-content;
-    animation: fadeIn 1s ease-in-out forwards;
-    opacity: 0;
-  }
-  
-  .card1 {
-    position: absolute;
-    right: 100px;
     z-index: 1;
     animation-delay: 0.9s;
+    animation: fadeIn 1s ease-in-out forwards;
   }
   
   .card2 {
     position: absolute;
-    top: 155px;
-    right: 180px;
+    top: 70px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 24px;
+    border-radius: 40px;
+    border: 1px solid var(--gradient-3, #082B9B);
+    background: #f2f0ee;
+    width: max-content;
     z-index: 0;
     animation-delay: 0.7s;
+    animation: fadeIn 1s ease-in-out forwards;
   }
   
   .card3 {
     position: absolute;
-    top: 312px;
-    right: 30px;
+    top: 150px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 24px;
+    border-radius: 40px;
+    border: 1px solid var(--gradient-3, #082B9B);
+    background: #f2f0ee;
+    width: max-content;
     z-index: 1;
     animation-delay: 1.3s;
+    animation: fadeIn 1s ease-in-out forwards;
   }
   
   .card4 {
     position: absolute;
-    top: 460px;
-    right: 80px;
+    top: 230px;
+    left: -8%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 24px;
+    border-radius: 40px;
+    border: 1px solid var(--gradient-3, #082B9B);
+    background: #f2f0ee;
+    width: max-content;
     animation-delay: 1.1s;
+    animation: fadeIn 1s ease-in-out forwards;
   }
   
 
 .cardTitle {
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 50px;
-    /* 113.636% */
-    letter-spacing: 1.32px;
+    font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 116.667% */
+letter-spacing: 0.72px
+}
+.cardTitleDesktop {
+    display: none;
 }
 
 .cardIcon {
-    width: 88px;
-    height: 88px;
+    width: 44px;
+    height: 44px;
 }
 
 
@@ -106,7 +137,7 @@
 .whatCanDoContainer {
     margin-top: -55px;
     background: #161616;
-    border-radius: 60px 60px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     padding-top: 88px;
     padding-bottom: 300px;
     position: relative;
@@ -115,10 +146,10 @@
 
 .whatCanDoTitle {
     font-family: Clash Display Title;
-    font-size: 190px;
+    font-size: 10vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 190px;
+    line-height: 90%;
     /* 100% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -126,7 +157,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 154px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .whatCanDoTitle::before {
@@ -143,16 +175,18 @@
 
 .whatCanDoSubTitleBlock {
     display: flex;
-    padding: 0 137px 0 154px;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
 }
 
 .whatCanDoSubTitle {
-    font-size: 140px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140px;
-    color: #F2F0EE;
-    min-width: 950px;
+    font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 100% */
+letter-spacing: 1.5px;
+color: #F2F0EE;
+margin-bottom: 24px;
 }
 
 .whatCanDoCard {
@@ -160,25 +194,26 @@
     border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
     border-image-slice: 1;
     border-radius: 20px;
-    padding: 40px;
-    width: 810px;
+    padding: 20px;
     box-sizing: border-box;
-    margin-right: 140px;
-    margin-bottom: 32px;
-    margin-top: 40px;
     color: #F2F0EE;
+    margin-bottom: 20px;
 }
 
 .whatCanDoBlockTitle {
-    font-size: 44px;
+    font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 125% */
+letter-spacing: 0.96px;
     margin-bottom: 12px;
 }
 
 .whatCanDoBlockDescr {
-    font-size: 20px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
     gap: 12px;
     margin-bottom: 12px;
 }
@@ -188,8 +223,8 @@
 .researchContainer {
     margin-top: -55px;
     background: #f2f0ee;
-    border-radius: 60px 60px 0px 0px;
-    padding-top: 180px;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 88px;
     padding-bottom: 158px;
     position: relative;
     z-index: 10;
@@ -200,15 +235,11 @@
     border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
     border-image-slice: 1;
     border-radius: 20px;
-    padding: 40px;
-    width: 810px;
+    padding: 20px;
     box-sizing: border-box;
     margin-bottom: 32px;
     background: #f2f0ee;
-}
-
-.researchCard+.researchCard {
-    margin-bottom: 88px;
+    margin-bottom: 20px;
 }
 
 .researchBlockTitle {
@@ -219,11 +250,12 @@
 }
 
 .researchSubTitle {
-    font-size: 140px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140px;
-    min-width: 950px;
+    font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 100% */
+letter-spacing: 1.5px;
+margin-bottom: 24px;
 }
 
 .researchBlockDescr {
@@ -247,59 +279,46 @@
 
 .valueTitle {
     font-family: Clash Display Title;
-    font-size: 190px;
+    font-size: 10vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 190px;
+    line-height: 90%;
+    /* 100% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    background: var(--gradient-3, linear-gradient(133deg, #082B9B 3.83%, #86B7E0 84.35%));
+    background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 193px;
-    z-index: 100;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
-/* .grainyGradient {
-    font-family: Clash Display Title;
-    font-size: 190px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 190px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    background: url('../../assets/img/title-background.svg');
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 193px;
-  } */
-  
-
-
-
 .valueSubTitle {
-    font-size: 82px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 82px;
-    min-width: 750px;
+    font-size: 44px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 113.636% */
+letter-spacing: 1.32px;
+}
+.valueSubTitleDesktop {
+    display: none;
 }
 
 .valueSubTitleIcon {
-    width: 117px;
-    height: 117px;
+    width: 72px;
+    height: 72px;
     flex-shrink: 0;
 }
 
 .subTitleFlex {
     display: flex;
-    gap: 79px;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
 .valueCard {
-    width: 810px;
     box-sizing: border-box;
     background: #f2f0ee;
 }
@@ -309,10 +328,8 @@
     position: relative;
     display: flex;
     background: #F2F0EE;
-    max-width: 1750px;
-    margin-left: 160px;
-    margin-top: 86px;
-    margin-bottom: 86px;
+    margin-top: 48px;
+    margin-bottom: 48px;
     /* width: 100%; */
     box-sizing: border-box;
     border-bottom: 1px solid #21309D;
@@ -331,7 +348,7 @@
     position: relative;
     z-index: 10;
     background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-radius: 60px 60px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     padding-top: 180px;
     padding-bottom: 158px;
     position: relative;
@@ -356,23 +373,793 @@
 }
 
 .strengthsSubTitle {
-    font-size: 44px;
+    font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 125% */
+letter-spacing: 0.96px;
+color: #F2F0EE;
+    min-width: 950px;
+}
+.strengthsSubTitleDesktop {
+    display: none;
+}
+.strengthsCard {
+    box-sizing: border-box;
+}
+.strengthsDescription {
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+color: #F2F0EE;
+}
+
+@media (max-width: 1280px) {
+    .staticParallax {
+      transform: none !important;
+    }
+  }
+
+@media (min-width: 992px) {
+    .startupsTitleBlock {
+       
+        display: flex;
+        flex-direction: column;
+        margin-top: 172px;
+        padding: 0 80px;
+    }
+    
+    .startupsTitle {
+        margin-bottom: 32px;
+        font-size: 12vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 90%;
+        width: 948px;
+    }
+    
+    .startupsDescr {
+        font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; 
+    margin-bottom: 118px;
+    }
+ 
+      
+      .cardBlock {
+       height: 550px;
+      }
+      
+      .card1 {
+        position: absolute;
+        left: -25px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        gap: 24px;
+        border-radius: 40px;
+        border: 1px solid var(--gradient-3, #082B9B);
+        background: #f2f0ee;
+        width: max-content;
+        z-index: 1;
+        animation-delay: 0.9s;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      
+      .card2 {
+        position: absolute;
+        left: -335px;
+        top: 110px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        gap: 24px;
+        border-radius: 40px;
+        border: 1px solid var(--gradient-3, #082B9B);
+        background: #f2f0ee;
+        width: max-content;
+        z-index: 0;
+        animation-delay: 0.7s;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      
+      .card3 {
+        position: absolute;
+        top: 220px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        gap: 24px;
+        border-radius: 40px;
+        border: 1px solid var(--gradient-3, #082B9B);
+        background: #f2f0ee;
+        width: max-content;
+        z-index: 1;
+        animation-delay: 1.3s;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      
+      .card4 {
+        position: absolute;
+        top: 315px;
+        left: -210px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        gap: 24px;
+        border-radius: 40px;
+        border: 1px solid var(--gradient-3, #082B9B);
+        background: #f2f0ee;
+        width: max-content;
+        animation-delay: 1.1s;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+      
+    
+    .cardTitle {
+        display: none;
+    }
+    .cardTitleDesktop {
+        display: block;
+        font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 44px;
+    }
+    
+    .cardIcon {
+        width: 72px;
+        height: 72px;
+    }
+    
+    
+    
+    
+    .whatCanDoContainer {
+        margin-top: -55px;
+        background: #161616;
+        border-radius: 20px 20px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 300px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .whatCanDoTitle {
+        font-family: Clash Display Title;
+        font-size: 10vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .whatCanDoTitle::before {
+        content: "";
+        flex-shrink: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../assets/img/title-background.svg');
+        border-radius: 30px;
+    }
+    
+    .whatCanDoSubTitleBlock {
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px;
+    }
+    
+    .whatCanDoSubTitle {
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px; 
+    color: #F2F0EE;
+    margin-bottom: 48px;
+    }
+    
+    .whatCanDoCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        color: #F2F0EE;
+        margin-bottom: 20px;
+    }
+    
+    .whatCanDoBlockTitle {
+        font-size: 44px;
 font-style: normal;
 font-weight: 500;
 line-height: 50px; /* 113.636% */
 letter-spacing: 1.32px;
-color: #F2F0EE;
-    min-width: 950px;
-}
-.strengthsCard {
-    width: 810px;
-    box-sizing: border-box;
-}
-.strengthsDescription {
-    font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .whatCanDoBlockDescr {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    .researchContainer {
+        margin-top: -55px;
+        background: #f2f0ee;
+        border-radius: 20px 20px 0px 0px;
+        padding-top: 88px;
+        padding-bottom: 158px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .researchCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        background: #f2f0ee;
+        margin-bottom: 20px;
+    }
+    
+    .researchBlockTitle {
+        font-size: 44px;
+        margin-bottom: 12px;
+        color: #161616;
+        background: #f2f0ee;
+    }
+    
+    .researchSubTitle {
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px; 
+    margin-bottom: 48px;
+    }
+    
+    .researchBlockDescr {
+        font-size: 20px;
+        color: #161616;
+        background: #f2f0ee;
+    }
+    
+    .startupsJobs {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        transition: transform 0.5s ease;
+        overflow: hidden;
+    }
+    
+    .startupsJobs:hover {
+        transform: scale(1.03);
+    }
+    
+    .valueTitle {
+        font-family: Clash Display Title;
+        font-size: 10vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .valueSubTitle {
+        display: none;
+    }
+
+    .valueSubTitleDesktop {
+        display: block;
+        font-size: 44px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 113.636% */
+letter-spacing: 1.32px;
+    }
+    
+    .valueSubTitleIcon {
+        width: 72px;
+        height: 72px;
+        flex-shrink: 0;
+    }
+    
+    .subTitleFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .valueCard {
+        box-sizing: border-box;
+        background: #f2f0ee;
+    }
+    
+    .line {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        background: #F2F0EE;
+        margin-top: 48px;
+        margin-bottom: 48px;
+        /* width: 100%; */
+        box-sizing: border-box;
+        border-bottom: 1px solid #21309D;
+        max-height: 0px;
+        padding-top: 0px;
+        animation-name: goup;
+        animation-delay: 33.5s;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+    }
+    
+    
+    .getTouchContainer {
+        position: relative;
+        z-index: 10;
+        background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-radius: 20px 20px 0px 0px;
+        padding-top: 180px;
+        padding-bottom: 158px;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .getTouchButton {
+        display: flex;
+        padding: 20px 40px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 120% */
+        text-transform: uppercase;
+        color: #161616;
+        border-radius: 40px;
+        background: var(--beige-background, #F2F0EE);
+        margin-top: 60px;
+        cursor: pointer;
+        margin-bottom: 200px;
+    }
+    
+    .strengthsSubTitle {
+        display: none;
+    }
+    .strengthsSubTitleDesktop {
+        display: block;
+        font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 125% */
+letter-spacing: 0.96px;
+    color: #F2F0EE;
+    }
+    .strengthsCard {
+        box-sizing: border-box;
+    }
+    .strengthsDescription {
+        font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 140% */
-color: #F2F0EE;
+    color: #F2F0EE;
+    }
+    
+    @media (min-width: 1280px) {
+        .startupsTitleContainer {
+            position: relative;
+        }
+        .startupsTitleBlock {
+            display: flex;
+            flex-direction: row;
+            margin-top: 175px;
+            margin-bottom: 243px;
+            padding: 0 140px;
+            width: 60%;
+        }
+        
+        .startupsTitle {
+            margin-bottom: 32px;
+            font-size: 7vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 90%;
+            width: 70%;
+        }
+        
+        .startupsDescr {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            width: 70%;
+        }
+        .cardContainer {
+            position: static;
+            margin-left: 0;
+            margin-right: 0;
+          }
+          
+        .cardBlock {
+            height: 450px;
+           }
+          
+           .card1 {
+            position: absolute;
+            
+            right: 140px !important;
+            left: auto;
+            display: flex;
+            align-items: center;
+            padding: 40px 40px;
+            gap: 24px;
+            border-radius: 40px;
+            border: 1px solid var(--gradient-3, #082B9B);
+            background: #f2f0ee;
+            width: max-content;
+            z-index: 1;
+            animation-delay: 0.9s;
+            animation: fadeIn 1s ease-in-out forwards;
+          }
+          
+          .card2 {
+            position: absolute;
+            right: 180px;
+            left: auto;
+            top: 150px;
+            display: flex;
+            align-items: center;
+            padding: 40px 40px;
+            gap: 24px;
+            border-radius: 40px;
+            border: 1px solid var(--gradient-3, #082B9B);
+            background: #f2f0ee;
+            width: max-content;
+            z-index: 0;
+            animation-delay: 0.7s;
+            animation: fadeIn 1s ease-in-out forwards;
+          }
+          
+          .card3 {
+            position: absolute;
+            top: 285px;
+            right: 60px;
+            left: auto;
+            display: flex;
+            align-items: center;
+            padding: 40px 40px;
+            gap: 24px;
+            border-radius: 40px;
+            border: 1px solid var(--gradient-3, #082B9B);
+            background: #f2f0ee;
+            width: max-content;
+            z-index: 1;
+            animation-delay: 1.3s;
+            animation: fadeIn 1s ease-in-out forwards;
+          }
+          
+          .card4 {
+            position: absolute;
+            right: 100px;
+            left: auto;
+            top: 425px;
+            display: flex;
+            align-items: center;
+            padding: 40px 40px;
+            gap: 24px;
+            border-radius: 40px;
+            border: 1px solid var(--gradient-3, #082B9B);
+            background: #f2f0ee;
+            width: max-content;
+            animation-delay: 1.1s;
+            animation: fadeIn 1s ease-in-out forwards;
+          }
+          
+        
+        .cardTitle {
+            font-size: 44px;
+font-style: normal;
+font-weight: 500;
+line-height: 50px; /* 113.636% */
+letter-spacing: 1.32px;
+        }
+        
+        .cardIcon {
+            width: 88px;
+            height: 88px;
+        }
+        
+        
+        
+        
+        .whatCanDoContainer {
+            margin-top: -55px;
+            background: #161616;
+            border-radius: 60px 60px 0px 0px;
+            padding-top: 88px;
+            padding-bottom: 300px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .whatCanDoTitle {
+            font-family: Clash Display Title;
+            font-size: 16vh;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 90%;
+            /* 100% */
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 154px;
+        }
+        
+        .whatCanDoTitle::before {
+            content: "";
+            flex-shrink: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../../assets/img/title-background.svg');
+            border-radius: 30px;
+        }
+        
+        .whatCanDoSubTitleBlock {
+            display: flex;
+            padding: 0 137px 0 154px;
+        }
+        
+        .whatCanDoSubTitle {
+            font-size: 140px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140px;
+            color: #F2F0EE;
+            min-width: 950px;
+        }
+        
+        .whatCanDoCard {
+            border: 4px solid;
+            border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+            border-image-slice: 1;
+            border-radius: 20px;
+            padding: 40px;
+            width: 810px;
+            box-sizing: border-box;
+            margin-right: 140px;
+            margin-bottom: 32px;
+            margin-top: 40px;
+            color: #F2F0EE;
+        }
+        
+        .whatCanDoBlockTitle {
+            font-size: 44px;
+            margin-bottom: 12px;
+        }
+        
+        .whatCanDoBlockDescr {
+            font-size: 20px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        
+        
+        .researchContainer {
+            margin-top: -55px;
+            background: #f2f0ee;
+            border-radius: 60px 60px 0px 0px;
+            padding-top: 180px;
+            padding-bottom: 158px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .researchCard {
+            border: 4px solid;
+            border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+            border-image-slice: 1;
+            border-radius: 20px;
+            padding: 40px;
+            width: 810px;
+            box-sizing: border-box;
+            margin-bottom: 32px;
+            background: #f2f0ee;
+        }
+        
+        .researchCard+.researchCard {
+            margin-bottom: 88px;
+        }
+        
+        .researchBlockTitle {
+            font-size: 44px;
+            margin-bottom: 12px;
+            color: #161616;
+            background: #f2f0ee;
+        }
+        
+        .researchSubTitle {
+            font-size: 140px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140px;
+            min-width: 950px;
+        }
+        
+        .researchBlockDescr {
+            font-size: 20px;
+            color: #161616;
+            background: #f2f0ee;
+        }
+        
+        .startupsJobs {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            transition: transform 0.5s ease;
+            overflow: hidden;
+        }
+        
+        .startupsJobs:hover {
+            transform: scale(1.03);
+        }
+        
+        .valueTitle {
+            font-family: Clash Display Title;
+            font-size: 190px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 190px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: var(--gradient-3, linear-gradient(133deg, #082B9B 3.83%, #86B7E0 84.35%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 193px;
+            z-index: 100;
+        }
+        
+        .valueSubTitle {
+            font-size: 82px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 82px;
+            min-width: 750px;
+        }
+        
+        .valueSubTitleIcon {
+            width: 117px;
+            height: 117px;
+            flex-shrink: 0;
+        }
+        
+        .subTitleFlex {
+            display: flex;
+            gap: 79px;
+        }
+        
+        .valueCard {
+            width: 810px;
+            box-sizing: border-box;
+            background: #f2f0ee;
+        }
+        
+        .line {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            background: #F2F0EE;
+            max-width: 1750px;
+            margin-left: 160px;
+            margin-top: 86px;
+            margin-bottom: 86px;
+            /* width: 100%; */
+            box-sizing: border-box;
+            border-bottom: 1px solid #21309D;
+            max-height: 0px;
+            padding-top: 0px;
+            animation-name: goup;
+            animation-delay: 33.5s;
+            animation-duration: 0.8s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            overflow: hidden;
+        }
+        
+        
+        .getTouchContainer {
+            position: relative;
+            z-index: 10;
+            background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+            border-radius: 60px 60px 0px 0px;
+            padding-top: 180px;
+            padding-bottom: 158px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .getTouchButton {
+            display: flex;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            /* 120% */
+            text-transform: uppercase;
+            color: #161616;
+            border-radius: 40px;
+            background: var(--beige-background, #F2F0EE);
+            margin-top: 60px;
+            cursor: pointer;
+            margin-bottom: 200px;
+        }
+        
+        .strengthsSubTitle {
+            font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px; /* 113.636% */
+        letter-spacing: 1.32px;
+        color: #F2F0EE;
+            min-width: 950px;
+        }
+        .strengthsCard {
+            width: 810px;
+            box-sizing: border-box;
+        }
+        .strengthsDescription {
+            font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 140% */
+        color: #F2F0EE;
+        }
+    }
 }
+
 
