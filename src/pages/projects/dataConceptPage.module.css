@@ -189,7 +189,7 @@
     display: none;
 }
 .dataConceptAboutMargin {
-    margin-top: -60px;
+    margin-top: -10px;
 }
 
 .aboutCard {
@@ -229,13 +229,12 @@
 }
 
 .researchCard {
+    width: 100%;
     border: 4px solid;
     border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
     border-image-slice: 1;
     border-radius: 20px;
     padding: 40px;
-    width: 810px;
-    height: 310px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: 140px;
@@ -408,6 +407,12 @@
     margin-top: 40px;
     color: #F2F0EE;
 }
+.cardWithoutBorderBlack {
+    padding: 0 20px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    color: black;
+}
 
 .architectureBlock {
     display: flex;
@@ -480,7 +485,7 @@
         margin-top: 100px !important;
     }
     .dataConceptAboutMargin {
-        margin-top: -60px !important;
+        margin-top: -15px !important;
     }
 
     .whatCanDoTitle {
