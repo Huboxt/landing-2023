@@ -86,15 +86,15 @@ const DataConceptPage = () => {
           <div className={style.table}>
               <div>
                 <div className={style.tableTitle}>CLIENT</div>
-                <div className={style.tableDescr}>Uploadletters</div>
+                <div className={style.tableDescr}>Dataconcepts</div>
               </div>
               <div>
                 <div className={style.tableTitle}>TEAM</div>
-                <div className={style.tableDescr}>6</div>
+                <div className={style.tableDescr}>4</div>
               </div>
               <div>
                 <div className={style.tableTitle}>TIMELINE</div>
-                <div className={style.tableDescr}>14 months</div>
+                <div className={style.tableDescr}>5 months</div>
               </div>
               <div>
                 <div className={style.tableTitle}>SERVICES</div>

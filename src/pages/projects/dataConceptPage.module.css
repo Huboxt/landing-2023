@@ -112,6 +112,7 @@
 .video {
     width: 90%;
     border-radius: 60px 60px 0px 0px;
+    border: 9.998000000000001px solid #ececec;
 }
 
 .dataConceptCard {
@@ -188,7 +189,7 @@
     display: none;
 }
 .dataConceptAboutMargin {
-    margin-top: -50px;
+    margin-top: -60px;
 }
 
 .aboutCard {
@@ -479,7 +480,7 @@
         margin-top: 100px !important;
     }
     .dataConceptAboutMargin {
-        margin-top: -50px !important;
+        margin-top: -60px !important;
     }
 
     .whatCanDoTitle {
