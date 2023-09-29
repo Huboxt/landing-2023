@@ -6,8 +6,8 @@ import Image from "next/image";
 import dataConceptCard from "../../assets/img/dataConceptCard.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
-import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
-import reduxIcon from "../../assets/img/stackIcons/redux.svg";
+import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
+import mysqlIcon from "../../assets/img/stackIcons/mysql-icon.svg";
 import tsIcon from "../../assets/img/stackIcons/typescript.svg";
 import nodeIcon from "../../assets/img/stackIcons/node-js.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
@@ -52,38 +52,22 @@ const DataConceptPage = () => {
             I NEED THE SAME!
           </button>
         </div>
-        <div className={style.stackContainer}>
+        <div  className={`${style.stackContainer} ${style.dataConceptStackContainer}`}>
           <div className={style.stackBlock}>
             <Image
-              src={reactIcon}
-              alt="reactIcon"
-              style={{ width: "50px", height: "50px" }}
+              src={golangIcon}
+              alt="golangIcon"
+              className={style.stackIcon}
             />
-            <div className={style.stackTitle}>React</div>
+            <div className={style.stackTitle}>Golang</div>
           </div>
           <div className={style.stackBlock}>
             <Image
-              src={reduxIcon}
-              alt="reduxIcon"
-              style={{ width: "37px", height: "50px", marginLeft: "5px" }}
+              src={mysqlIcon}
+              alt="mysqlIcon"
+              className={style.stackIcon}
             />
-            <div className={style.stackTitle}>Redux</div>
-          </div>
-          <div className={style.stackBlock}>
-            <Image
-              src={nodeIcon}
-              alt="nodeIcon"
-              style={{ width: "37px", height: "50px", marginLeft: "7px" }}
-            />
-            <div className={style.stackTitle}>Node.js</div>
-          </div>
-          <div className={style.stackBlock}>
-            <Image
-              src={tsIcon}
-              alt="tsIcon"
-              style={{ width: "37px", height: "50px", marginLeft: "20px" }}
-            />
-            <div className={style.stackTitle}>TypeScript</div>
+            <div className={style.stackTitle}>MySQL</div>
           </div>
         </div>
       </div>
@@ -98,45 +82,30 @@ const DataConceptPage = () => {
           endScroll={1500}
           translateY={["50px", "-200px"]}
         >
-          <div className={style.aboutContainer}>
-            <table className={style.table}>
-              <thead>
-                <tr>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "20%" }}
-                  >
-                    CLIENT
-                  </th>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "10%" }}
-                  >
-                    TIMELINE
-                  </th>
-                  <th
-                    className={style.tableTitle}
-                    scope="col"
-                    style={{ width: "25%" }}
-                  >
-                    SERVICES
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className={style.tableDescr}>DataConcept</td>
-                  <td className={style.tableDescr}>8 weeks</td>
-                  <td className={style.tableDescr}>Design, Development</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className={`${style.aboutContainer} ${style.dataConceptAboutMargin}`}>
+          <div className={style.table}>
+              <div>
+                <div className={style.tableTitle}>CLIENT</div>
+                <div className={style.tableDescr}>Uploadletters</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>TEAM</div>
+                <div className={style.tableDescr}>6</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>TIMELINE</div>
+                <div className={style.tableDescr}>14 months</div>
+              </div>
+              <div>
+                <div className={style.tableTitle}>SERVICES</div>
+                <div className={style.tableDescr}>Development</div>
+              </div>
+            </div>
             <Parallax
               startScroll={300}
               endScroll={1100}
               translateX={["-800px", "0px"]}
+              className={style.staticParallax}
             >
               <Image
                 src={aboutTitle}
@@ -148,6 +117,7 @@ const DataConceptPage = () => {
               startScroll={100}
               endScroll={1400}
               translateX={["800px", "0px"]}
+              className={style.staticParallax}
             >
               <div className={style.aboutCard}>
                 <div className={style.aboutBlockTitle}>UI/UX Design</div>
@@ -167,6 +137,7 @@ const DataConceptPage = () => {
               startScroll={200}
               endScroll={1500}
               translateX={["800px", "0px"]}
+              className={style.staticParallax}
             >
               <div className={style.aboutCard}>
                 <div className={style.aboutBlockTitle}>Development</div>
@@ -187,13 +158,14 @@ const DataConceptPage = () => {
         <Parallax
           startScroll={1300}
           endScroll={2000}
-          translateY={["-100px", "-800px"]}
+          translateY={["-100px", "-300px"]}
         >
           <div className={style.researchContainer}>
             <Parallax
               startScroll={1500}
               endScroll={2000}
               translateX={["-800px", "0px"]}
+              className={style.staticParallax}
             >
               <Image
                 src={researchTitle}
@@ -205,6 +177,7 @@ const DataConceptPage = () => {
               startScroll={300}
               endScroll={2000}
               translateX={["800px", "50px"]}
+              className={style.staticParallax}
             >
               <div className={style.researchCard}>
                 <div className={style.researchBlockTitle}>Problem</div>
@@ -224,6 +197,7 @@ const DataConceptPage = () => {
               startScroll={400}
               endScroll={2100}
               translateX={["800px", "50px"]}
+              className={style.staticParallax}
             >
               <div className={style.researchCard}>
                 <div className={style.researchBlockTitle}>Solution</div>
@@ -241,8 +215,8 @@ const DataConceptPage = () => {
             </Parallax>
           </div>
         </Parallax>
-        <Parallax translateY={["-800px", "0px"]}>
-          <div>
+        <Parallax >
+          <div className={style.dataConceptCardsMargin}>
             <Image
               src={dataConceptCard}
               id="dataConceptCard"

@@ -48,6 +48,12 @@
     gap: 32px;
     align-items: center;
 }
+.dataConceptStackContainer {
+    display: flex;
+    max-width: 320px;
+    width: 100%;
+    justify-content: space-around;
+}
 
 .stackContainerUp {
     display: grid;
@@ -181,6 +187,9 @@
 .desktopTitle {
     display: none;
 }
+.dataConceptAboutMargin {
+    margin-top: -50px;
+}
 
 .aboutCard {
     border: 4px solid;
@@ -250,6 +259,10 @@
     line-height: 22px;
     color: #161616;
     background: #f2f0ee;
+}
+
+.dataConceptCardsMargin {
+    margin-top: -200px;
 }
 
 .dataConceptJobs {
@@ -426,6 +439,12 @@
     color: #F2F0EE;
 }
 
+@media (max-width: 992px) {
+    .staticParallax {
+      transform: none !important;
+    }
+  }
+
 @media (min-width: 992px) {
     .backBtn {
         padding-left: 80px;
@@ -458,6 +477,9 @@
 
     .aboutContainerMargin {
         margin-top: 100px !important;
+    }
+    .dataConceptAboutMargin {
+        margin-top: -50px !important;
     }
 
     .whatCanDoTitle {
@@ -509,6 +531,10 @@
         margin-left: 0;
         margin-right: 0;
         justify-content: center;
+    }
+    .dataConceptStackContainer {
+        max-width: 422px;
+        gap: 65px;
     }
 
     .stackContainerUp {
@@ -837,6 +863,7 @@
         padding: 40px;
         gap: 25px;
         align-items: center;
+        height: 100px;
     }
 
     .stackBlock {

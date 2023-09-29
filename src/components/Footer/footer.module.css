@@ -3,6 +3,8 @@
   background: #F2F0EE;
   border-radius: 20px 20px 0px 0px;
   margin-top: -60px;
+  z-index: 20;
+  position: relative;
 }
 
 .image {
