@@ -178,7 +178,23 @@
     /* 100% */
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+    background: var(--gradient-1, linear-gradient(125deg, #030D42 5.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.whatCanDoTitleLight {
+    font-family: Clash Display Title;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 100% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 58.09%, #C2F4FF 99.77%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -194,10 +210,8 @@
 }
 
 .aboutCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 32px;
@@ -225,7 +239,7 @@
     margin-top: -55px;
     background: #f2f0ee;
     border-radius: 20px 20px 0px 0px;
-    padding-top: 100px;
+    padding-top: 50px;
     position: relative;
     z-index: 10;
 }
@@ -281,10 +295,8 @@
 }
 
 .requirementsCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     color: #F2F0EE;
@@ -323,6 +335,10 @@
     line-height: 34px;
 }
 
+.scopeMargin {
+    margin-top: 80px;
+}
+
 .scopeBlock {
     display: flex;
     flex-direction: column;
@@ -344,9 +360,7 @@
     align-items: flex-start;
     gap: 12px;
     border-radius: 20px;
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
+  border: 2px solid var(--gradient-3, #082B9B);
 }
 
 .scopeCard {
@@ -440,10 +454,8 @@
 }
 
 .developmentCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     color: #F2F0EE;
@@ -499,7 +511,21 @@
         /* 100% */
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 5.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0px;
+    }
+
+    .whatCanDoTitleLight {
+        font-family: Clash Display Title;
+        font-size: 10vw;
+        line-height: 90%;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 78.09%, #C2F4FF 99.77%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -603,13 +629,16 @@
     }
 
     .aboutContainer {
-        margin-top: -200px;
         background: #161616;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
-        padding-bottom: 280px;
+        padding-bottom: 100px;
         position: relative;
         z-index: 10;
+        margin-top: -30px;
+    }
+    .challengeMargin {
+        margin-top: -80px;
     }
 
     .aboutBlockDescr {
@@ -637,13 +666,12 @@
         gap: 22px;
         justify-content: center;
         padding: 0 80px;
+        margin-top: 100px;
     }
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         box-sizing: border-box;
         color: #F2F0EE;
@@ -670,7 +698,7 @@
     }
 
     .researchContainer {
-        margin-top: 90px;
+        margin-top: 130px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
@@ -680,6 +708,10 @@
         z-index: 10;
     }
 
+    .scopeMargin {
+        margin-top: 160px;
+    }
+
     .scopeBlock {
         display: flex;
         padding: 0 80px;
@@ -687,6 +719,7 @@
     }
 
     .scopeSubTitle {
+        margin-top: 100px;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -700,9 +733,7 @@
         align-items: flex-start;
         gap: 12px;
         border-radius: 20px;
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
+  border: 2px solid var(--gradient-3, #082B9B);
     }
 
     .researchBlockDescr {
@@ -773,16 +804,18 @@
     }
 
     .aboutCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         max-width: 100%;
         box-sizing: border-box;
         margin-bottom: 32px;
         margin-top: 40px;
         color: #F2F0EE;
+    }
+
+    .developmentTitleMargin {
+        margin-top: -60px;
     }
 
     .developmentCards {
@@ -792,10 +825,8 @@
     }
 
     .developmentCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         /* max-width: 532px; */
         width: 100%;
@@ -844,11 +875,27 @@
         /* 100% */
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 5.39%, #338EDB 28.09%, #C2F4FF 90.77%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 154px;
+        margin-bottom: 60px;
+    }
+
+    .whatCanDoTitleLight {
+        font-family: Clash Display Title;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 190px;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 78.09%, #C2F4FF 99.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 60px;
     }
 
     .needSameButton {
@@ -911,13 +958,16 @@
     }
 
     .aboutContainer {
-        margin-top: -55px;
+        margin-top: 40px;
         background: #161616;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
         position: relative;
         z-index: 10;
+    }
+    .challengeMargin {
+        margin-top: -80px;
     }
 
     .aboutBlockDescr {
@@ -938,6 +988,9 @@
         margin-top: 0px;
         color: #F2F0EE;
     }
+    .requirementsMargin {
+        margin-top: -20px;
+    }
 
     .requirementsCards {
         display: flex;
@@ -947,10 +1000,8 @@
     }
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         max-width: 532px;
         height: 450px;
@@ -976,7 +1027,7 @@
     }
 
     .researchContainer {
-        margin-top: -55px;
+        margin-top: 100px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
@@ -984,6 +1035,10 @@
         padding-right: 0;
         position: relative;
         z-index: 10;
+    }
+
+    .scopeMargin {
+        margin-top: 260px;
     }
 
     .scopeBlock {
@@ -994,6 +1049,7 @@
     }
 
     .scopeSubTitle {
+        margin-top: 0;
         font-size: 26px;
         font-style: normal;
         font-weight: 400;
@@ -1009,9 +1065,7 @@
         align-items: flex-start;
         gap: 12px;
         border-radius: 20px;
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
+  border: 2px solid var(--gradient-3, #082B9B);
     }
 
     .researchBlockDescr {
@@ -1039,7 +1093,7 @@
     }
 
     .clientTitle {
-        font-size: 82px;
+        font-size: 62px;
         font-style: normal;
         font-weight: 500;
         line-height: 82px;
@@ -1076,20 +1130,22 @@
     }
 
     .architectureBlockMargin {
-        margin-top: -575px;
+        margin-top: -450px;
     }
 
     .aboutCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         box-sizing: border-box;
         margin-left: auto;
         margin-bottom: 32px;
         margin-top: 40px;
         color: #F2F0EE;
+    }
+
+    .developmentTitleMargin {
+        margin-top: -100px;
     }
 
     .developmentCards {
@@ -1100,10 +1156,8 @@
     }
 
     .developmentCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         /* max-width: 532px; */
         width: 100%;
@@ -1153,11 +1207,27 @@
         /* 100% */
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 5.39%, #338EDB 28.09%, #C2F4FF 90.77%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 154px;
+        margin-bottom: 60px;
+    }
+
+    .whatCanDoTitleLight {
+        font-family: Clash Display Title;
+        font-size: 160px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 190px;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 78.09%, #C2F4FF 99.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 60px;
     }
 
     .needSameButton {
@@ -1223,7 +1293,7 @@
         background: #161616;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
         position: relative;
         z-index: 10;
     }
@@ -1256,10 +1326,8 @@
     }
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         max-width: 532px;
         height: 450px;
@@ -1295,6 +1363,16 @@
         z-index: 10;
     }
 
+    .scopeMargin {
+        margin-top: 260px;
+    }
+    .requirementsMargin {
+        margin-top: -20px;
+    }
+    .getTouchWrapper {
+        margin-top: -120px;
+    }
+
     .scopeBlock {
         display: flex;
         flex-direction: row;
@@ -1318,9 +1396,7 @@
         align-items: flex-start;
         gap: 12px;
         border-radius: 20px;
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
+  border: 2px solid var(--gradient-3, #082B9B);
     }
 
     .researchBlockDescr {
@@ -1348,7 +1424,7 @@
     }
 
     .clientTitle {
-        font-size: 82px;
+        font-size: 62px;
         font-style: normal;
         font-weight: 500;
         line-height: 82px;
@@ -1384,14 +1460,12 @@
     }
 
     .architectureBlockMargin {
-        margin-top: -575px;
+        margin-top: -475px;
     }
 
     .aboutCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         box-sizing: border-box;
         margin-left: auto;
@@ -1408,10 +1482,8 @@
     }
 
     .developmentCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         /* max-width: 532px; */
         width: 100%;

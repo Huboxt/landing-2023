@@ -267,10 +267,9 @@
 }
 
 .requirementsCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
+        padding: 40px;
     padding: 20px;
     box-sizing: border-box;
     color: #F2F0EE;
@@ -770,13 +769,13 @@
         gap: 22px;
         justify-content: center;
         padding: 0 80px;
+        padding-bottom: 200px;
     }
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
+        padding: 40px;
         padding: 20px;
         box-sizing: border-box;
         color: #F2F0EE;
@@ -803,7 +802,7 @@
     }
 
     .researchContainer {
-        margin-top: 90px;
+        margin-top: -100px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
@@ -1110,10 +1109,9 @@
 
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
+        padding: 40px;
         padding: 20px;
         box-sizing: border-box;
         color: #F2F0EE;
@@ -1135,7 +1133,7 @@
     }
 
     .researchContainer {
-        margin-top: -55px;
+        margin-top: -300px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
@@ -1423,10 +1421,9 @@
 
 
     .requirementsCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
+        padding: 40px;
         padding: 40px;
         box-sizing: border-box;
         color: #F2F0EE;
@@ -1448,7 +1445,7 @@
     }
 
     .researchContainer {
-        margin-top: -55px;
+        margin-top: -255px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;

@@ -251,26 +251,11 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 3px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
-    border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     display: flex;
     padding: 40px;
   }
-
-  .thirdBlockCard {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    border: 3px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
-    border-radius: 20px;
-    display: flex;
-    padding: 40px;
-  }
+  
 
   .cardTitle {
     font-family: 'Clash Display Bold';
@@ -318,10 +303,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 3px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
-    border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
   }
 
   .serviceCardImage {

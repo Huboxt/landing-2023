@@ -54,11 +54,11 @@ const UploadlettersPage = () => {
         </Link>
         <div>BACK</div>
       </div>
-      <div className={`${style.whatCanDoTitle} ${style.mobileTitle}`}>
+      <div className={`${style.whatCanDoTitleLight} ${style.mobileTitle}`}>
         UPLOAD <br />
         LETTERS
       </div>
-      <div className={`${style.whatCanDoTitle} ${style.desktopTitle}`}>
+      <div className={`${style.whatCanDoTitleLight} ${style.desktopTitle}`}>
         UPLOADLETTERS
       </div>
       <div className={style.dataConceptDescr}>
@@ -186,7 +186,7 @@ const UploadlettersPage = () => {
           endScroll={1200}
           translateY={["-250px", "-400px"]}
         >
-          <div className={style.aboutContainer}>
+          <div className={`${style.aboutContainer} ${style.requirementsMargin}`}>
             <Parallax
               startScroll={600}
               endScroll={2600}
@@ -272,7 +272,7 @@ const UploadlettersPage = () => {
           endScroll={2000}
           translateY={["-200px", "-600px"]}
         >
-          <div className={style.researchContainer}>
+          <div className={`${style.researchContainer} ${style.scopeMargin}`}>
             <Parallax
               startScroll={600}
               endScroll={2600}
@@ -485,7 +485,7 @@ const UploadlettersPage = () => {
               </Parallax>
             </div>
           </div>
-          <div className={style.aboutContainer}>
+          <div className={`${style.aboutContainer} ${style.developmentTitleMargin}`}>
             <div className={style.whatCanDoTitle}>Development</div>
 
             <div className={style.cardWithoutBorder}>

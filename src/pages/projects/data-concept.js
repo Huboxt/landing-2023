@@ -148,7 +148,7 @@ const DataConceptPage = () => {
         // endScroll={2000}
         // translateY={["-100px", "-300px"]}
         >
-          <div className={style.aboutContainer}>
+          <div className={`${style.aboutContainer} ${style.challengeMargin}`}>
             <Parallax
               startScroll={1500}
               endScroll={2000}
@@ -353,7 +353,7 @@ const DataConceptPage = () => {
         // endScroll={2000}
         // translateY={["-100px", "-300px"]}
         >
-          <div className={style.aboutContainer}>
+          <div className={`${style.aboutContainer} ${style.challengeMargin}`}>
             <Parallax
               startScroll={1500}
               endScroll={2000}
