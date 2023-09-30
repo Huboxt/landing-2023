@@ -275,7 +275,7 @@ const Header = ({ showGetTouchBtn }) => {
                 <div className={style.mobileMenuItem}>PRIVACY POLICY</div>
               </div>
               <div className={style.mobileSocialBlock}>
-                <Link href="https://www.facebook.com">
+                {/* <Link href="https://www.facebook.com">
                   <Image
                     src={facebook}
                     alt="facebook"
@@ -288,7 +288,7 @@ const Header = ({ showGetTouchBtn }) => {
                     alt="instagram"
                     className={style.mobileSocialIcon}
                   />
-                </Link>
+                </Link> */}
                 <Link href="https://www.linkedin.com">
                   <Image
                     src={linkedin}

@@ -158,12 +158,12 @@ const Footer = () => {
               huboxt@gmail.com
             </div>
             <div className={style.socialBlock}>
-              <Link href="/our-works/our-works-page" className={style.link}>
+              {/* <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={facebook} alt="facebook" />
               </Link>
               <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={instagram} alt="instagram" />
-              </Link>
+              </Link> */}
               <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={linkedin} alt="linkedin" />
               </Link>

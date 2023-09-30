@@ -44,6 +44,14 @@
   opacity: 0.7;
 }
 
+.dropdownBlock div:hover {
+  opacity: 0.7;
+}
+
+.mobileDropdownText:hover {
+  opacity: 0.7;
+}
+
 .logo {
   display: flex;
   align-items: flex-end;
@@ -540,4 +548,15 @@
 
 .animatedExiting {
   animation: fadeOut 0.33s ease-in-out forwards;
+}
+
+@media (min-width: 1436px) {
+  .headerContainer {
+    gap: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .headerContainer {
+    gap: 170px;
+  }
 }
