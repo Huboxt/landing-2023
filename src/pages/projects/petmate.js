@@ -13,6 +13,7 @@ import petmateDesign3 from "../../assets/img/petmate-design3.svg";
 import appStore from "../../assets/img/appstore-icon.svg";
 import googlePlay from "../../assets/img/googleplay-icon.svg";
 import petmateCard from "../../assets/img/petmateCard.svg";
+import pawIcon from "../../assets/img/paw-icon.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
 import nextIcon from "../../assets/img/stackIcons/nextjs-icon.svg";
@@ -61,14 +62,16 @@ const PetmateAI = () => {
         </Link>
         <div>BACK</div>
       </div>
-      <div className={style.whatCanDoTitle}>
-        PETMATEAI
-      </div>
+      <div className={style.whatCanDoTitle}>PETMATEAI</div>
       <div className={style.dataConceptDescr}>
         <div>
           <div className={style.description}>
-            UploadLetters is a Texas based startup that provides 
-            Petmate AI is a multiplatform (iOS/Android) mobile application for pet owners. It is a chat with AI (resembles ChatGPT experience) where you can ask any pet-related questions about health, treatment, training, breeding, feeding etc. You create your pet’s account in the app and submit info about sex, breed, age, and weight to receive accurate answers.
+            UploadLetters is a Texas based startup that provides Petmate AI is a
+            multiplatform (iOS/Android) mobile application for pet owners. It is
+            a chat with AI (resembles ChatGPT experience) where you can ask any
+            pet-related questions about health, treatment, training, breeding,
+            feeding etc. You create your pet’s account in the app and submit
+            info about sex, breed, age, and weight to receive accurate answers.
           </div>
           <button className={style.needSameButton} onClick={handleClickScroll}>
             I NEED THE SAME!
@@ -85,7 +88,11 @@ const PetmateAI = () => {
               <div className={style.stackTitle}>Flutter</div>
             </div>
             <div className={style.stackBlock}>
-              <Image src={openAiIcon} alt="openAiIcon" className={style.stackIcon} />
+              <Image
+                src={openAiIcon}
+                alt="openAiIcon"
+                className={style.stackIcon}
+              />
               <div className={style.stackTitle}>Open AI</div>
             </div>
             <div className={style.stackBlock}>
@@ -118,9 +125,10 @@ const PetmateAI = () => {
             alt="dataConceptCard"
           />
         </div>
-        <div
-        >
-          <div  className={`${style.aboutContainer} ${style.aboutContainerMargin}`}>
+        <div>
+          <div
+            className={`${style.aboutContainer} ${style.ideaContainerMargin}`}
+          >
             <div className={style.table}>
               <div>
                 <div className={style.tableTitle}>CLIENT</div>
@@ -138,62 +146,103 @@ const PetmateAI = () => {
                 <div className={style.tableTitle}>SERVICES</div>
                 <div className={style.tableDescr}>Development</div>
               </div>
+              <Image
+            src={pawIcon}
+            className={style.pawIcon}
+            alt="pawIcon"
+          />
+          <Image
+            src={pawIcon}
+            className={style.pawIcon2}
+            alt="pawIcon2"
+          />
+          <Image
+            src={pawIcon}
+            className={style.pawIcon3}
+            alt="pawIcon3"
+          />
+          <Image
+            src={pawIcon}
+            className={style.pawIcon4}
+            alt="pawIcon4"
+          />
             </div>
-            <div
-            >
+            <div>
               <div className={style.whatCanDoTitle}>IDEA</div>
             </div>
-            <div
-            >
+            <div>
               <div className={style.cardWithoutBorder}>
                 <div className={style.aboutBlockDescr}>
-                The product owner of Petmate AI is a tech-savvy person and a keen pet owner. The idea came unexpectedly when she was ambushed by some sudden health issues with her Welsh Corgi dog. It was night and a Vet didn’t take a call. So this woman decided to check info quickly on the Internet before going to the 24/7 vet clinic.
+                  The product owner of Petmate AI is a tech-savvy person and a
+                  keen pet owner. The idea came unexpectedly when she was
+                  ambushed by some sudden health issues with her Welsh Corgi
+                  dog. It was night and a Vet didn’t take a call. So this woman
+                  decided to check info quickly on the Internet before going to
+                  the 24/7 vet clinic.
                 </div>
                 <div className={style.aboutBlockDescr}>
-                She asked Chat GPT instead of Google to get info faster. It appeared to be an acute allergy attack according to symptoms. She rushed to the clinic immediately and her dog got first-aid treatment, which literally saved his life. It appeared that he ate a bee that stings him inside his throat.
+                  She asked Chat GPT instead of Google to get info faster. It
+                  appeared to be an acute allergy attack according to symptoms.
+                  She rushed to the clinic immediately and her dog got first-aid
+                  treatment, which literally saved his life. It appeared that he
+                  ate a bee that stings him inside his throat.
                 </div>
                 <div className={style.aboutBlockDescr}>
-                After this case, the woman came up with an idea to create an application for pet owners that gives quick pet-related answers any time faster than Google and easier than chat GPT.
+                  After this case, the woman came up with an idea to create an
+                  application for pet owners that gives quick pet-related
+                  answers any time faster than Google and easier than chat GPT.
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div
-        >
-          <div className={style.aboutContainer}>
-            <div
-            >
-              <div className={style.whatCanDoTitle}>
-                About
-              </div>
+        <div>
+          <div className={`${style.aboutContainer} ${style.aboutContainerMargin}`}>
+            <div>
+              <div className={style.whatCanDoTitle}>About</div>
             </div>
             <div className={style.requirementsCards}>
-              <div
-              >
+              <div>
                 <div className={style.requirementsCard}>
-                  <div className={style.aboutBlockTitle}>Business requirements</div>
+                  <div className={style.aboutBlockTitle}>
+                    Business requirements
+                  </div>
                   <div className={style.aboutBlockDescr}>
-                  The product owner funded app development from her own finances. She wanted to hit the market as fast as possible with a multiplatform (iOS + Android) mobile app for a reasonable budget-effective price. The mobile app was to be published in App Store and Google Play. She also wanted a landing page for mobile.
+                    The product owner funded app development from her own
+                    finances. She wanted to hit the market as fast as possible
+                    with a multiplatform (iOS + Android) mobile app for a
+                    reasonable budget-effective price. The mobile app was to be
+                    published in App Store and Google Play. She also wanted a
+                    landing page for mobile.
                   </div>
                 </div>
               </div>
-              <div
-              >
+              <div>
                 <div className={style.requirementsCard}>
                   <div className={style.aboutBlockTitle}>Architecture</div>
                   <div className={style.aboutBlockDescr}>
-                  We designed app architecture to satisfy the main needs: go-to-market fast, multiplatform, and cost-efficient development.
-                  <br />
-                  <br />
-                  The core of the application is a ChatGPT integration. The ChatGPT session is pre-setup with a special prompt (which also includes data about your pet) to make answers the most accurate and relevant. This integration is handled by a PHP back-end.
-                  <br />
-                  <br />
-                  We chose Flutter for mobile application development. As a cross-platform framework it saves you from developing the same app twice for each platform (iOS and Android) plus you need a Flutter developer instead of two iOS and Android devs.
-                  <br />
-                  <br />
-                  We used Next.js for making a landing page. It has useful built-in features that skyrockets development.
+                    We designed app architecture to satisfy the main needs:
+                    go-to-market fast, multiplatform, and cost-efficient
+                    development.
+                    <br />
+                    <br />
+                    The core of the application is a ChatGPT integration. The
+                    ChatGPT session is pre-setup with a special prompt (which
+                    also includes data about your pet) to make answers the most
+                    accurate and relevant. This integration is handled by a PHP
+                    back-end.
+                    <br />
+                    <br />
+                    We chose Flutter for mobile application development. As a
+                    cross-platform framework it saves you from developing the
+                    same app twice for each platform (iOS and Android) plus you
+                    need a Flutter developer instead of two iOS and Android
+                    devs.
+                    <br />
+                    <br />
+                    We used Next.js for making a landing page. It has useful
+                    built-in features that skyrockets development.
                   </div>
                 </div>
               </div>
@@ -201,15 +250,13 @@ const PetmateAI = () => {
           </div>
         </div>
 
-        <div
-        >
+        <div>
           <div className={style.researchContainer}>
-            <div
-            >
+            <div>
               <div className={style.whatCanDoTitle}>UI DESIGN</div>
             </div>
             <div className={style.scopeBlock}>
-            <Image
+              <Image
                 src={petmateDesign1}
                 alt="petmateDesign1"
                 className={style.petmateDesign1}
@@ -219,7 +266,7 @@ const PetmateAI = () => {
                 alt="petmateDesign1"
                 className={style.petmateDesign1Desktop}
               />
-              
+
               <Image
                 src={petmateDesign2}
                 alt="petmateDesign2"
@@ -232,62 +279,74 @@ const PetmateAI = () => {
               />
             </div>
             <Image
-                src={petmateDesign3}
-                alt="petmateDesign3"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  display: "flex"
-                }}
-              />
+              src={petmateDesign3}
+              alt="petmateDesign3"
+              style={{
+                width: "100%",
+                height: "100%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "flex",
+              }}
+            />
           </div>
         </div>
 
-        <div
-        >
+        <div>
           <div className={style.blueContainer}>
             <div className={style.clientBlock}>
               <div className={style.clientTitle}>
-                Get <br /> PetmateAI on 
-                <br /> AppStore <br />  & Google Play
+                Get <br /> PetmateAI on
+                <br /> AppStore <br /> & Google Play
               </div>
               <div className={style.storeBlock}>
-              <Image
-                src={appStore}
-                alt="appStore"
-                className={style.storeIcon}
-              />
-              <Image
-                src={googlePlay}
-                alt="googlePlay"
-                className={style.storeIcon}
-              />
+                <Link
+                  href="https://apps.apple.com/app/petmateai/id6462674725"
+                  target="_blank"
+                >
+                  <button className={style.storeBtn}>
+                    <Image
+                      src={appStore}
+                      alt="appStore"
+                      className={style.storeIcon}
+                    />
+                  </button>
+                </Link>
+
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.petmateai.app"
+                  target="_blank"
+                >
+                  <button className={style.storeBtn}>
+                    <Image
+                      src={googlePlay}
+                      alt="googlePlay"
+                      className={style.storeIcon}
+                    />
+                  </button>
+                </Link>
               </div>
               <Image
-            src={petmateChat}
-            className={style.petmateChatPhone}
-            alt="petmateChat"
-          />
+                src={petmateChat}
+                className={style.petmateChatPhone}
+                alt="petmateChat"
+              />
             </div>
           </div>
         </div>
 
-        <div
-        >
-          <div  className={`${style.aboutContainer} ${style.architectureBlockMargin}`}>
-            <div
-            >
-              <div className={style.whatCanDoTitle}>
-                WebSite
-              </div>
+        <div>
+          <div
+            className={`${style.aboutContainer} ${style.architectureBlockMargin}`}
+          >
+            <div>
+              <div className={style.whatCanDoTitle}>WebSite</div>
             </div>
             <Image
-                src={petmateCard}
-                alt="petmateCard"
-                className={style.petmateWebsite}
-              />
+              src={petmateCard}
+              alt="petmateCard"
+              className={style.petmateWebsite}
+            />
           </div>
           <div className={style.getTouchWrapper}>
             <GetTouch borderRadius="60px 60px 0px 0px" />

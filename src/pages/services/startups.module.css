@@ -16,6 +16,7 @@
 }
 
 .startupsTitle {
+    font-family: "Clash Display Bold";
     margin-bottom: 32px;
     font-size: 12vw;
     font-style: normal;
@@ -180,6 +181,7 @@ letter-spacing: 0.72px
 }
 
 .whatCanDoSubTitle {
+    font-family: "Clash Display Bold";
     font-size: 50px;
 font-style: normal;
 font-weight: 500;
@@ -298,6 +300,7 @@ margin-bottom: 24px;
 }
 
 .valueSubTitle {
+    font-family: "Clash Display Bold";
     font-size: 44px;
 font-style: normal;
 font-weight: 500;
@@ -376,6 +379,7 @@ letter-spacing: 1.32px;
 }
 
 .strengthsSubTitle {
+    font-family: "Clash Display Bold";
     font-size: 32px;
 font-style: normal;
 font-weight: 500;
@@ -566,6 +570,7 @@ line-height: 44px;
     }
     
     .whatCanDoSubTitle {
+        font-family: "Clash Display Bold";
         font-size: 82px;
         font-style: normal;
         font-weight: 500;
@@ -635,6 +640,7 @@ letter-spacing: 1.32px;
     }
     
     .researchSubTitle {
+        font-family: "Clash Display Bold";
         font-size: 82px;
         font-style: normal;
         font-weight: 500;
@@ -683,6 +689,7 @@ letter-spacing: 1.32px;
     }
 
     .valueSubTitleDesktop {
+        font-family: "Clash Display Bold";
         display: block;
         font-size: 44px;
 font-style: normal;
@@ -762,6 +769,7 @@ letter-spacing: 1.32px;
         display: none;
     }
     .strengthsSubTitleDesktop {
+        font-family: "Clash Display Bold";
         display: block;
         font-size: 32px;
 font-style: normal;

@@ -206,6 +206,7 @@
 }
 
 .aboutBlockTitle {
+    font-family: "Clash Display Bold";
     font-size: 32px;
     margin-bottom: 12px;
 }
@@ -370,6 +371,7 @@
 }
 
 .clientTitle {
+    font-family: "Clash Display Bold";
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -381,6 +383,7 @@
 }
 
 .clientSubTitle {
+    font-family: "Clash Display Bold";
     display: flex;
     justify-content: flex-end;
     font-size: 24px;

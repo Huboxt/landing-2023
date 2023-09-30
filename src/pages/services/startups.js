@@ -285,6 +285,9 @@ const StartupsPage = () => {
                   <div className={style.whatCanDoSubTitle}>
                     Fast- <br /> growing <br /> startups
                   </div>
+                  <div className={style.whatCanDoSubTitleDesktop}>
+                    Fast- <br /> growing <br /> startups
+                  </div>
                 </Parallax>
               </div>
               <div>
@@ -323,7 +326,7 @@ const StartupsPage = () => {
               className={style.staticParallax}
             >
               <div className={style.valueTitle}>
-                The walue <br /> we give
+                The value <br /> we give
               </div>
             </Parallax>
             <div className={style.whatCanDoSubTitleBlock}>

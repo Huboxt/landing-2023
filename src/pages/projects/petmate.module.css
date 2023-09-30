@@ -195,6 +195,7 @@
 }
 
 .aboutBlockTitle {
+    font-family: "Clash Display Bold";
     font-size: 32px;
     margin-bottom: 12px;
 }
@@ -213,7 +214,7 @@
     margin-top: -55px;
     background: #f2f0ee;
     border-radius: 20px 20px 0px 0px;
-    padding-top: 100px;
+    padding-top: 50px;
     position: relative;
     z-index: 10;
 }
@@ -356,11 +357,13 @@
 }
 
 .clientTitle {
+    font-family: "Clash Display Bold";
     font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 100% */
-letter-spacing: 1.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: 1.5px;
     color: #F2F0EE;
     margin-bottom: 80px;
 }
@@ -394,11 +397,28 @@ letter-spacing: 1.5px;
     color: #F2F0EE;
 }
 
+.pawIcon {
+    display: none;
+}
+
+.pawIcon2 {
+    display: none;
+}
+
+.pawIcon3 {
+    display: none;
+}
+
+.pawIcon4 {
+    display: none;
+}
+
 .architectureBlock {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
 }
+
 .architectureBlockMargin {
     margin-top: -350px;
 }
@@ -427,6 +447,7 @@ letter-spacing: 1.5px;
     box-sizing: border-box;
     color: #F2F0EE;
 }
+
 .storeBlock {
     display: flex;
     gap: 12px;
@@ -434,9 +455,18 @@ letter-spacing: 1.5px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.storeBtn {
+    height: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .storeIcon {
     width: 168px;
 }
+
 .petmateChat {
     width: 247px;
     height: 536px;
@@ -444,19 +474,23 @@ letter-spacing: 1.5px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .petmateChatDesktop {
     display: none;
 }
+
 .petmateDesign1 {
     width: 374px;
     height: 257px;
     display: flex;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .petmateDesign1Desktop {
     display: none;
 }
+
 .petmateChatPhone {
     width: 247px;
     height: 536px;
@@ -464,6 +498,7 @@ letter-spacing: 1.5px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .petmateWebsite {
     width: 357px;
     height: 257px;
@@ -473,44 +508,56 @@ letter-spacing: 1.5px;
 }
 
 @media (min-width: 992px) {
+    .aboutContainerMargin {
+        margin-top: -250px !important;
+    }
+
     .petmateChat {
         display: none;
     }
+
     .petmateChatDesktop {
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
+
     .petmateChatPhone {
         width: 492.121px;
-height: 1065px;
+        height: 1065px;
     }
+
     .petmateDesign1 {
         display: none;
     }
+
     .petmateDesign1Desktop {
         width: 679px;
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
+
     .backBtn {
         padding-left: 80px;
         margin-top: 140px;
         display: flex;
         gap: 16px;
     }
+
     .storeBlock {
         margin-left: 0;
         margin-right: 0;
     }
+
     .storeIcon {
         width: 215px;
         height: 115px;
     }
+
     .petmateWebsite {
         width: 872px;
-height: 490.5px;
+        height: 490.5px;
     }
 
     .dataConceptTitle {
@@ -535,7 +582,7 @@ height: 490.5px;
         max-width: 600px;
     }
 
-    .aboutContainerMargin {
+    .ideaContainerMargin {
         margin-top: 100px !important;
     }
 
@@ -639,6 +686,7 @@ height: 490.5px;
     }
 
     .tableDescr {
+        position: relative;
         font-size: 32px;
         font-style: normal;
         font-weight: 500;
@@ -647,6 +695,44 @@ height: 490.5px;
         letter-spacing: 0.96px;
         text-align: center;
         color: #F2F0EE;
+    }
+
+    .pawIcon {
+        display: block;
+        position: absolute;
+        right: 90px;
+        top: 290px;
+        width: 77px;
+        height: 77px;
+    }
+
+    .pawIcon2 {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 330px;
+        width: 77px;
+        height: 77px;
+    }
+
+    .pawIcon3 {
+        display: block;
+        position: absolute;
+        right: 72px;
+        top: 376px;
+        rotate: 322deg;
+        width: 77px;
+        height: 77px;
+    }
+
+    .pawIcon4 {
+        display: block;
+        position: absolute;
+        right: -29px;
+        top: 410px;
+        rotate: 331deg;
+        width: 77px;
+        height: 77px;
     }
 
     .aboutContainer {
@@ -762,7 +848,7 @@ height: 490.5px;
         z-index: 10;
         background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
         border-radius: 60px 60px 0px 0px;
-        padding-top: 180px;
+        padding-top: 120px;
         position: relative;
         z-index: 10;
     }
@@ -775,9 +861,9 @@ height: 490.5px;
 
     .clientTitle {
         font-size: 82px;
-font-style: normal;
-font-weight: 500;
-line-height: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px;
         color: #F2F0EE;
         margin-bottom: 100px;
     }
@@ -891,7 +977,7 @@ line-height: 82px;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 154px;
+        margin-bottom: 60px;
     }
 
     .needSameButton {
@@ -953,6 +1039,46 @@ line-height: 82px;
         color: #F2F0EE;
     }
 
+    .pawIcon {
+        display: block;
+        position: absolute;
+        left: 177px;
+        top: 690px;
+        width: 100px;
+        height: 100px;
+        rotate: 107deg;
+    }
+
+    .pawIcon2 {
+        display: block;
+        position: absolute;
+        left: 60px;
+        top: 678px;
+        width: 100px;
+        height: 100px;
+        rotate: 71deg;
+    }
+
+    .pawIcon3 {
+        display: block;
+        position: absolute;
+        left: 86px;
+        top: 790px;
+        width: 100px;
+        height: 100px;
+        rotate: 122deg;
+    }
+
+    .pawIcon4 {
+        display: block;
+        position: absolute;
+        left: -30px;
+        top: 770px;
+        width: 100px;
+        height: 100px;
+        rotate: 71deg;
+    }
+
     .aboutContainer {
         margin-top: -55px;
         background: #161616;
@@ -981,7 +1107,7 @@ line-height: 82px;
         margin-top: 0px;
         color: #F2F0EE;
     }
-    
+
 
     .requirementsCard {
         border: 4px solid;
@@ -1054,16 +1180,18 @@ line-height: 82px;
         background: #f2f0ee;
         line-height: 28px;
     }
+
     .petmateDesign1Desktop {
         width: 530px;
     }
 
     .blueContainer {
         position: relative;
+        margin-top: -220px;
         z-index: 10;
         background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
         border-radius: 60px 60px 0px 0px;
-        padding-top: 180px;
+        padding-top: 120px;
         padding-bottom: 158px;
         position: relative;
         z-index: 10;
@@ -1081,7 +1209,7 @@ line-height: 82px;
         font-weight: 500;
         line-height: 82px;
         color: #F2F0EE;
-        margin-bottom: 170px;
+        margin-bottom: 120px;
     }
 
     .clientSubTitle {
@@ -1149,6 +1277,10 @@ line-height: 82px;
         margin-bottom: 32px;
         margin-top: 40px;
         color: #F2F0EE;
+    }
+
+    .getTouchWrapper {
+        margin-top: -350px;
     }
 }
 
@@ -1288,7 +1420,7 @@ line-height: 82px;
         margin-top: 40px;
         color: #F2F0EE;
     }
-  
+
 
     .requirementsCard {
         border: 4px solid;
@@ -1366,7 +1498,7 @@ line-height: 82px;
         z-index: 10;
         background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
         border-radius: 60px 60px 0px 0px;
-        padding-top: 180px;
+        padding-top: 120px;
         padding-bottom: 158px;
         position: relative;
         z-index: 10;

@@ -156,7 +156,7 @@ const DataConceptPage = () => {
               className={style.staticParallax}
             >
               <div className={style.whatCanDoTitle}>
-                THE <br /> CHALLENGE
+                CHALLENGE
               </div>
             </Parallax>
             <Parallax
