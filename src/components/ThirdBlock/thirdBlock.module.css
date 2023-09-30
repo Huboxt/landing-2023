@@ -13,10 +13,8 @@
 .thirdBlockCard {
   display: flex;
   flex-direction: column;
-  border: 3px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
-    border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
   display: flex;
   padding: 20px 20px;
   transition: transform 0.5s ease;
