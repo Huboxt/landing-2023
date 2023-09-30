@@ -495,6 +495,9 @@ const StartupsPage = () => {
                   <div className={style.whatCanDoSubTitle}>
                     Have a startup? <br /> Share your thoughts <br /> with us
                   </div>
+                  <div className={style.whatCanDoSubTitleDesktop}>
+                    Have a startup? <br /> Share your thoughts <br /> with us
+                  </div>
                 </Parallax>
                 <button
                   className={style.getTouchButton}
@@ -531,10 +534,10 @@ const StartupsPage = () => {
                   className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitle}>
+                    <div className={style.strengthsSubTitleDesktop}>
                       Elite enterprise <br /> training  + startup <br /> mindset
                     </div>
-                    <div className={style.strengthsSubTitleDesktop}>
+                    <div className={style.strengthsSubTitle}>
                       Elite enterprise training  + startup  mindset
                     </div>
                   </div>
@@ -573,12 +576,12 @@ const StartupsPage = () => {
                 <Parallax
                 >
                   <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitle}>
-                      Minimum bureaucracy and quick <br /> and quick
+                    <div className={style.strengthsSubTitleDesktop}>
+                      Minimum bureaucracy <br /> and quick
                       communication
                     </div>
-                    <div className={style.strengthsSubTitleDesktop}>
-                      Minimum bureaucracy and quick  and quick
+                    <div className={style.strengthsSubTitle}>
+                      Minimum bureaucracy  and quick
                       communication
                     </div>
                   </div>
@@ -618,10 +621,10 @@ const StartupsPage = () => {
                   className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitle}>
+                    <div className={style.strengthsSubTitleDesktop}>
                       Our own frameworks <br /> and best practices
                     </div>
-                    <div className={style.strengthsSubTitleDesktop}>
+                    <div className={style.strengthsSubTitle}>
                       Our own frameworks and best practices
                     </div>
                   </div>
@@ -658,17 +661,12 @@ const StartupsPage = () => {
             startScroll={8000} endScroll={12900} translateY={['-1300px', '0px']}
             className={style.staticParallax}
         >
-          <OurWorks />
+          <OurWorks className={style.ourWorksContainer}/>
           <FAQ />
-          <Parallax
-            translateY={['-150px', '0px']}
-            className={style.staticParallax}
-          >
           <div className={style.getTouchWrapper}>
             <GetTouch borderRadius="60px 60px 0px 0px" />
             <Footer />
           </div>
-          </Parallax>
         </Parallax>
       </ParallaxProvider>
     </div>

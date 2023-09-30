@@ -255,6 +255,7 @@ line-height: 22px;
 }
 
 .researchSubTitle {
+    font-family: "Clash Display Bold";
     font-size: 50px;
 font-style: normal;
 font-weight: 500;
@@ -956,14 +957,12 @@ letter-spacing: 1.32px;
         
         .whatCanDoSubTitleBlock {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             padding: 0 137px 0 154px;
         }
         
         .whatCanDoSubTitle {
-            display: none;
-        }
-        .whatCanDoSubTitleDesktop {
+            font-family: "Clash Display Bold";
             display: block;
             font-size: 140px;
             font-style: normal;
@@ -972,6 +971,9 @@ letter-spacing: 1.32px;
             color: #F2F0EE;
             min-width: 550px;
         }
+        .whatCanDoSubTitleDesktop {
+            display: none;
+        }
         
         .whatCanDoCard {
             border: 4px solid;
@@ -979,7 +981,7 @@ letter-spacing: 1.32px;
             border-image-slice: 1;
             border-radius: 20px;
             padding: 40px;
-            width: 810px;
+            width: 100%;
             box-sizing: border-box;
             margin-right: 140px;
             margin-bottom: 32px;
@@ -1019,7 +1021,7 @@ letter-spacing: 1.32px;
             border-image-slice: 1;
             border-radius: 20px;
             padding: 40px;
-            width: 810px;
+            width: 100%;
             box-sizing: border-box;
             margin-bottom: 32px;
             background: #f2f0ee;
@@ -1037,6 +1039,7 @@ letter-spacing: 1.32px;
         }
         
         .researchSubTitle {
+            font-family: "Clash Display Bold";
             font-size: 140px;
             font-style: normal;
             font-weight: 500;
@@ -1099,7 +1102,7 @@ letter-spacing: 1.32px;
         }
         
         .valueCard {
-            width: 810px;
+            width: 100%;
             box-sizing: border-box;
             background: #f2f0ee;
         }
@@ -1109,8 +1112,7 @@ letter-spacing: 1.32px;
             position: relative;
             display: flex;
             background: #F2F0EE;
-            max-width: 1750px;
-            margin-left: 160px;
+            max-width: 100%;
             margin-top: 86px;
             margin-bottom: 86px;
             /* width: 100%; */
@@ -1154,8 +1156,12 @@ letter-spacing: 1.32px;
             cursor: pointer;
             margin-bottom: 200px;
         }
+        .strengthsSubTitleDesktop {
+            display: none;
+        }
         
         .strengthsSubTitle {
+            display: block;
             font-size: 44px;
         font-style: normal;
         font-weight: 500;
@@ -1175,6 +1181,121 @@ letter-spacing: 1.32px;
         line-height: 28px; /* 140% */
         color: #F2F0EE;
         }
+        .ourWorksContainer {
+            margin-top: -550px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .whatCanDoSubTitleBlock {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px 0 20px;
+    }
+    .whatCanDoSubTitleDesktop {
+        font-family: "Clash Display Bold";
+        display: block;
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140px;
+        color: #F2F0EE;
+        min-width: 750px;
+        padding-left: 80px;
+    }
+    .researchSubTitle {
+        font-family: "Clash Display Bold";
+        font-size: 140px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140px;
+        min-width: 750px;
+        padding-left: 80px;
+    }
+    .whatCanDoSubTitle {
+        display: none;
+    }
+    .whatCanDoCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        width: 810px;
+        box-sizing: border-box;
+        margin-right: 140px;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        color: #F2F0EE;
+    }
+    .researchCard {
+        border: 4px solid;
+        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        padding: 40px;
+        width: 810px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        background: #f2f0ee;
+    }
+    .valueCard {
+        width: 810px;
+        box-sizing: border-box;
+        background: #f2f0ee;
+    }
+    .valueSubTitle {
+        font-family: "Clash Display Bold";
+        display: block;
+        font-size: 82px;
+font-style: normal;
+font-weight: 500;
+line-height: 82px;
+min-width: 650px;
+    }
+    .valueSubTitleDesktop {
+        display: none;
+    }
+    .subTitleFlex {
+        flex-direction: row;
+    }
+    .line {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        background: #F2F0EE;
+        margin-top: 86px;
+        margin-bottom: 86px;
+        /* width: 100%; */
+        box-sizing: border-box;
+        border-bottom: 1px solid #21309D;
+        max-height: 0px;
+        padding-top: 0px;
+        animation-name: goup;
+        animation-delay: 33.5s;
+        animation-duration: 0.8s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+    }
+    .getTouchButton {
+        margin-left: 80px;
+    }
+    .strengthsSubTitle {
+        display: none;
+    }
+    
+    .strengthsSubTitleDesktop {
+        padding-left: 120px;
+        display: block;
+        font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 113.636% */
+    letter-spacing: 1.32px;
+    color: #F2F0EE;
+        min-width: 750px;
     }
 }
 
