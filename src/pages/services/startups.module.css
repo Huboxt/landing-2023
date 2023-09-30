@@ -195,10 +195,8 @@ margin-bottom: 24px;
 }
 
 .whatCanDoCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     color: #F2F0EE;
@@ -236,10 +234,8 @@ line-height: 22px;
 }
 
 .researchCard {
-    border: 4px solid;
-    border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-    border-image-slice: 1;
     border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 32px;
@@ -581,10 +577,8 @@ line-height: 44px;
     }
     
     .whatCanDoCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         box-sizing: border-box;
         color: #F2F0EE;
@@ -622,10 +616,8 @@ letter-spacing: 1.32px;
     }
     
     .researchCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         box-sizing: border-box;
         margin-bottom: 32px;
@@ -976,10 +968,8 @@ letter-spacing: 1.32px;
         }
         
         .whatCanDoCard {
-            border: 4px solid;
-            border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-            border-image-slice: 1;
             border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
             padding: 40px;
             width: 100%;
             box-sizing: border-box;
@@ -1016,10 +1006,8 @@ letter-spacing: 1.32px;
         }
         
         .researchCard {
-            border: 4px solid;
-            border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-            border-image-slice: 1;
             border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
             padding: 40px;
             width: 100%;
             box-sizing: border-box;
@@ -1217,10 +1205,8 @@ letter-spacing: 1.32px;
         display: none;
     }
     .whatCanDoCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         width: 810px;
         box-sizing: border-box;
@@ -1230,10 +1216,8 @@ letter-spacing: 1.32px;
         color: #F2F0EE;
     }
     .researchCard {
-        border: 4px solid;
-        border-image: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-        border-image-slice: 1;
         border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         width: 810px;
         box-sizing: border-box;
