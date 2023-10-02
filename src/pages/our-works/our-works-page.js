@@ -23,6 +23,7 @@ const OurWorksPage = () => {
       <div>
       {
             projects.map((e, index) => {
+              const isExcludedPage = ["segma", "fleetInsider", "carbookingservice", "dms", "datbi"].includes(e.page);
               return (
                 <div key={e.id} className={style.Wrapper}>
                   <div className={style.flipCardInner}>
@@ -38,14 +39,16 @@ const OurWorksPage = () => {
                           <div className={style.projectDescriptionBack}>
                             {e.description}
                           </div>
-                          <button className={style.projectButtonBackDev} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
-                            <Image
-                              src={touch}
-                              alt="get"
-                              className={style.getInTouchImg}
-                            />
-                            VIEW PROJECT
-                          </button>
+                          {!isExcludedPage && (
+                        <button className={style.projectButtonBackDev} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
+                          <Image
+                            src={touch}
+                            alt="get"
+                            className={style.getInTouchImg}
+                          />
+                          VIEW PROJECT
+                        </button>
+                      )}
                         </div>
                         <div className={style.projectImage}>
                           <Image
