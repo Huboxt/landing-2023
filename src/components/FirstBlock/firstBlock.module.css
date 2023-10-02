@@ -94,8 +94,8 @@
 
 @media (min-width: 992px) {
   .clutchIcon {
-    width: 424px;
-    height: 94px;
+    width: 400px;
+    height: 100px;
   }
 
   .title {
@@ -142,9 +142,9 @@
     margin: 0 auto;
   }
 
-  .clutchIcon {
+  /* .clutchIcon {
     display: none;
-  }
+  } */
 
   .titleWrapper {
     padding-left: 140px;

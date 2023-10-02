@@ -383,7 +383,6 @@ font-weight: 500;
 line-height: 40px; /* 125% */
 letter-spacing: 0.96px;
 color: #F2F0EE;
-    min-width: 950px;
 }
 .strengthsSubTitleDesktop {
     display: none;
@@ -758,10 +757,10 @@ letter-spacing: 1.32px;
         margin-bottom: 200px;
     }
     
-    .strengthsSubTitle {
+    .strengthsSubTitleDesktop {
         display: none;
     }
-    .strengthsSubTitleDesktop {
+    .strengthsSubTitle {
         font-family: "Clash Display Bold";
         display: block;
         font-size: 32px;

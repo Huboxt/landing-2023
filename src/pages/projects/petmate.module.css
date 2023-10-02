@@ -461,6 +461,9 @@
     border: none;
     cursor: pointer;
 }
+.storeBtn:hover {
+    opacity: 0.7;
+  }
 
 .storeIcon {
     width: 168px;

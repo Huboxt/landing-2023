@@ -12,7 +12,7 @@ export const projects = [
   {
     id: '1',
     title: "PetmateAI", 
-    description: "Petmate AI is a multiplatform (iOS/Android) mobile application for pet owners. It is a chat with AI (resembles ChatGPT experience) where you can ask any pet-related questions about health, treatment, training, breeding, feeding etc.",
+    description: "It is how we helped to hit the market fast. It took 2 months from just an idea of the app to App Store and Google Play publication. Petmate.ai is a chat-like mobile application that answers any question about keeping, training and treating your pet.",
     folder: 'projects',
     Image: petmateCard,
     page: "petmate"
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: '2',
     title: "UploadLetters", 
-    description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui",
+    description: "This is how we launched an early version of a SaaS product and made it comply with the United States Postal Service regulations. UploadLetters is an app where you submit your PDF document online in a few clicks and your partner receives physical mail in an envelope delivered by USPS.",
     folder: 'projects',
     Image: uploadLettersCard,
     page: "uploadletters"
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: '3',
     title: "DataConcept", 
-    description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui frameworks, which makes your application look nice and modern while being and fast.",
+    description: "Here is an example of how we scaled an application that unpredictably grew much faster than expected. Dataconcept is a middle-layer data aggregation service for a marketing agency that handles more than 2 million requests per day.",
     Image: DataConceptCard,
     folder: 'projects',
     page: "data-concept"
