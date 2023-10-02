@@ -37,3 +37,4 @@ jobs:
             cd /opt/huboxt/huboxt-landing/
             docker-compose build --no-cache
             docker-compose up -d 
+            docker system prune -af 
