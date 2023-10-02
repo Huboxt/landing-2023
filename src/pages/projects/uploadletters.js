@@ -10,6 +10,7 @@ import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
 import reactIconWhite from "../../assets/img/stackIcons/react-icon-white.svg";
 import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
 import golangIconWhite from "../../assets/img/stackIcons/golang-icon-white.svg";
+import golangLine from "../../assets/img/stackIcons/golang-line.svg";
 import lavarelIcon from "../../assets/img/stackIcons/lavarel-icon.svg";
 import lavarelIconWhite from "../../assets/img/stackIcons/lavarel-icon-white.svg";
 import lavarelLine from "../../assets/img/stackIcons/lavarel-line.svg";
@@ -419,14 +420,14 @@ const UploadlettersPage = () => {
                 // endScroll={2600}
                 // translateX={["-800px", "0px"]}
               >
-                <div className={style.aboutCard}>
+                <div className={style.architectureImageContainer}>
                   <div className={style.architectureImageBlock}>
                     <Image
                       src={reactIconWhite}
                       alt="reactIconWhite"
                       className={style.architectureIcon}
                     />
-                    <Image scr={reactLine} alt="reactLine" />
+                    <Image src={reactLine} alt="reactLine" className={style.architectureLine}/>
                   </div>
                   <div className={style.architectureImageBlock}>
                     <Image
@@ -434,7 +435,7 @@ const UploadlettersPage = () => {
                       alt="lavarelIconWhite"
                       className={style.architectureIcon}
                     />
-                    <Image scr={lavarelLine} alt="lavarelLine" />
+                    <Image src={lavarelLine} alt="lavarelLine" className={style.architectureLine}/>
                   </div>
                   <div className={style.architectureImageBlock}>
                     <Image
@@ -442,7 +443,7 @@ const UploadlettersPage = () => {
                       alt="golangIconWhite"
                       className={style.architectureIcon}
                     />
-                    <Image scr={lavarelLine} alt="lavarelLine" />
+                    <Image src={golangLine} alt="golangLine" className={style.architectureLine}/>
                   </div>
                 </div>
               </Parallax>

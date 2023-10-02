@@ -30,6 +30,10 @@
   color: black;
 }
 
+.description:visited {
+  color: black;
+}
+
 .title {
   font-family: 'Clash Display Bold';
   font-size: 50px;

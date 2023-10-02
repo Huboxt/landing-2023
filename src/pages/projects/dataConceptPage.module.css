@@ -437,13 +437,28 @@
     flex-direction: column;
     padding: 0 20px;
 }
+.architectureImageContainer {
+    border-radius: 20px;
+  border: 2px solid var(--gradient-3, #082B9B);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    color: #F2F0EE;
+}
 
 .architectureImageBlock {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 12px;
 }
 
 .architectureIcon {
+    width: 200px;
     height: 36px;
+}
+.architectureLine {
+    width: 206px;
 }
 
 .developmentCards {
@@ -794,6 +809,10 @@
     .architectureBlock {
         display: flex;
     }
+    .architectureImageContainer {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
 
     .architectureBlockMargin {
         margin-top: -315px;
@@ -1038,7 +1057,7 @@
     }
 
     .scopeMargin {
-        margin-top: 260px;
+        margin-top: 130px;
     }
 
     .scopeBlock {
@@ -1120,6 +1139,10 @@
         height: 6px;
         border-radius: 30px;
         background: #F2F0EE;
+    }
+
+    .architectureImageContainer {
+        margin-top: 45px;
     }
 
     .architectureBlock {
@@ -1364,7 +1387,7 @@
     }
 
     .scopeMargin {
-        margin-top: 260px;
+        margin-top: 140px;
     }
     .requirementsMargin {
         margin-top: -20px;
@@ -1451,6 +1474,9 @@
         height: 6px;
         border-radius: 30px;
         background: #F2F0EE;
+    }
+    .architectureImageContainer {
+        margin-top: 80px;
     }
 
     .architectureBlock {
