@@ -49,7 +49,7 @@ const ContactFormComponent = () => {
     handleChange(event)
   }
 
-  const cantBeSubmitted = errors.name || errors.email || errors.message;
+  const cantBeSubmitted = errors.email;
 
   return (
     <div className={style.formWrapper} id="contact-form">
@@ -73,7 +73,7 @@ const ContactFormComponent = () => {
               autoComplete="off"
               type="email"
               className={errors.email ? `${style.input} ${style.inputError}` : style.input}
-              placeholder="Your email address"
+              placeholder="Your email address *"
               name="email"
               onChange={handleChange}
               required

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 const useContactForm = (validate) => {
     // const { status } = this.state;
@@ -10,8 +11,8 @@ const useContactForm = (validate) => {
     const handleSubmit = (ev) => {
         ev.preventDefault();
         const errors = validate(values);
-
-        if (errors.name || errors.email || errors.message) {
+    
+        if (errors.email) {
             setErrors(validate(values));
             return;
         }
@@ -27,8 +28,8 @@ const useContactForm = (validate) => {
         xhr.onreadystatechange = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 200) {
-                setValues({})
-                // this.setState({ status: "SUCCESS" });
+                setValues({});
+                toast.success("Success! Your message has been successfully delivered to our team.");
             } else {
                 // this.setState({ status: "ERROR" });
             }

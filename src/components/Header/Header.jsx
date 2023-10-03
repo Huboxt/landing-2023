@@ -135,13 +135,13 @@ const Header = ({ showGetTouchBtn }) => {
               showGetTouchBtn ? style.marginAuto : ""
             }`}
           >
-            <button
+            {/* <button
               className={`${style.headerButton} ${
                 animationComplete ? style.animatedButton : ""
               }`}
             >
               ABOUT
-            </button>
+            </button> */}
             <Link href="/our-works/our-works-page">
               <button
                 className={`${style.headerButton} ${
@@ -180,14 +180,16 @@ const Header = ({ showGetTouchBtn }) => {
                       <div>Software development for startups</div>
                     </div>
                   </Link>
-                  <div className={style.dropdownBlock}>
-                    <Image
-                      src={phone}
-                      alt="phone"
-                      className={style.dropdownIcon}
-                    />
-                    <div>Mobile development</div>
-                  </div>
+                  <Link href="/services/flutter">
+                    <div className={style.dropdownBlock}>
+                      <Image
+                        src={phone}
+                        alt="phone"
+                        className={style.dropdownIcon}
+                      />
+                      <div>Mobile development</div>
+                    </div>
+                  </Link>
                   <div className={style.dropdownBlock}>
                     <Image
                       src={monitor}
@@ -217,7 +219,7 @@ const Header = ({ showGetTouchBtn }) => {
           >
             <div className={style.mobileMenu}>
               <div>
-                <div className={style.mobileMenuItem}>ABOUT</div>
+                {/* <div className={style.mobileMenuItem}>ABOUT</div> */}
                 <div ref={dropdownRef} onClick={toggleDropdown}>
                   <div style={{ display: "flex" }}>
                     <div className={style.mobileMenuItem}>SERVICES</div>
@@ -241,16 +243,18 @@ const Header = ({ showGetTouchBtn }) => {
                           </div>
                         </div>
                       </Link>
-                      <div className={style.mobileDropdownBlock}>
-                        <Image
-                          src={phoneMobile}
-                          alt="phone"
-                          className={style.mobileDropdownIcon}
-                        />
-                        <div className={style.mobileDropdownText}>
-                          Mobile development
+                      <Link href="/services/flutter">
+                        <div className={style.mobileDropdownBlock}>
+                          <Image
+                            src={phoneMobile}
+                            alt="phone"
+                            className={style.mobileDropdownIcon}
+                          />
+                          <div className={style.mobileDropdownText}>
+                            Mobile development
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                       <div className={style.mobileDropdownBlock}>
                         <Image
                           src={monitorMobile}
@@ -267,12 +271,11 @@ const Header = ({ showGetTouchBtn }) => {
                   )}
                 </div>
                 <div className={style.mobileMenuItem}>
-                <Link href="/our-works/our-works-page">OUR WORKS
-                </Link>
+                  <Link href="/our-works/our-works-page">OUR WORKS</Link>
                 </div>
                 <div className={style.mobileMenuItem}>GET IN TOUCH</div>
-                <div className={style.mobileMenuItem}>TERMS</div>
-                <div className={style.mobileMenuItem}>PRIVACY POLICY</div>
+                <div className={style.mobileMenuItem}><Link href="/termspolicy/terms">TERMS</Link></div>
+                <div className={style.mobileMenuItem}><Link href="/termspolicy/policy">PRIVACY POLICY</Link></div>
               </div>
               <div className={style.mobileSocialBlock}>
                 {/* <Link href="https://www.facebook.com">

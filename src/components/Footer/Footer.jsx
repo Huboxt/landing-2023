@@ -97,16 +97,15 @@ const Footer = () => {
           <div className={style.linksWrapper}>
             <div className={style.links}>
               <Link
-                href="/"
-                onClick={handleScrollServices}
+                href="/services/startups"
                 className={style.link}
               >
                 Development for startups
               </Link>
-              <Link href="/our-works/our-works-page" className={style.link}>
+              <Link href="/services/flutter" className={style.link}>
                 Mobile development
               </Link>
-              <Link href="/" onClick={handleScrollTouch} className={style.link}>
+              <Link href="/" className={style.link}>
                 Web development
               </Link>
             </div>
@@ -114,13 +113,13 @@ const Footer = () => {
           <div className={style.infoBlock}>
             <div className={style.infoBlockLinks}>
               <div className={style.aboutLink}>
-                <Link
+                {/* <Link
                   href="/"
                   onClick={handleScrollServices}
                   className={style.link}
                 >
                   ABOUT
-                </Link>
+                </Link> */}
                 <Link href="/our-works/our-works-page" className={style.link}>
                   OUR WORKS
                 </Link>
@@ -134,13 +133,12 @@ const Footer = () => {
               </div>
               <div className={style.termsLink}>
                 <Link
-                  href="/"
-                  onClick={handleScrollServices}
+                  href="/termspolicy/terms"
                   className={style.link}
                 >
                   TERMS
                 </Link>
-                <Link href="/our-works/our-works-page" className={style.link}>
+                <Link href="/termspolicy/policy" className={style.link}>
                   PRIVACY POLICY
                 </Link>
               </div>
@@ -155,7 +153,7 @@ const Footer = () => {
                 window.location.href = "mailto:sales@huboxt.com";
               }}
             >
-              huboxt@gmail.com
+              sales@huboxt.com
             </div>
             <div className={style.socialBlock}>
               {/* <Link href="/our-works/our-works-page" className={style.link}>

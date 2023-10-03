@@ -11,6 +11,8 @@ import Clutch from '../components/Clutch/Clutch';
 import FAQ from '../components/FAQ/FAQ';
 import GetTouch from '../components/GetTouch/GetTouch';
 import Footer from '../components/Footer/Footer';
+import Terms from './termspolicy/terms';
+import Policy from './termspolicy/policy';
 import SecondBlock from '../components/SecondBlock/SecondBlock';
 import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
 import FourthBlock from '../components/FourthBlock/FourthBlock';
@@ -21,6 +23,10 @@ import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
 import UploadlettersPage from './projects/uploadletters';
 import PetmateAI from './projects/petmate';
+import FlutterPage from './services/flutter';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Home() {
   const [allowHover, setAllowHover] = useState(false)
@@ -209,11 +215,15 @@ export default function Home() {
               <Footer />
             </Parallax>
           </ParallaxProvider>
+          <ToastContainer />
           {router.pathname === '/our-works-page' && <OurWorksPage />}
           {router.pathname === '/data-concept' && <DataConceptPage />}
           {router.pathname === '/uploadletters' && <UploadlettersPage />}
           {router.pathname === '/petmate' && <PetmateAI />}
           {router.pathname === '/startups' && <StartupsPage />}
+          {router.pathname === '/flutter' && <FlutterPage />}
+          {router.pathname === '/terms' && <Terms />}
+          {router.pathname === '/policy' && <Policy />}
       </main>
     </>
   )

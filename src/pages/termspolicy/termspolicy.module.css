@@ -1,0 +1,164 @@
+.container {
+    background: #f2f0ee;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 50px;
+}
+
+.termsContainer {
+    padding: 0 20px;
+}
+
+.title {
+    font-family: "Clash Display Title";
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 100% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.subTitle {
+    font-family: "Clash Display Bold";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    margin-top: 56px;
+}
+
+.titleBlock {
+    font-family: "Clash Display Bold";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.96px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        background: #f2f0ee;
+        border-radius: 20px 20px 0px 0px;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 10;
+    }
+    .termsContainer {
+        padding: 0 150px;
+    }
+
+    .title {
+        font-family: Clash Display Title;
+        font-size: 10vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%;
+        /* 100% */
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-1, linear-gradient(125deg, #030D42 12.39%, #338EDB 28.09%, #C2F4FF 90.77%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 150px;
+        margin-bottom: 60px;
+    }
+
+    .subTitle {
+
+        font-family: "Clash Display Bold";
+        font-size: 82px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px;
+        margin-bottom: 48px;
+
+    }
+
+    .titleBlock {
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+    background: #f2f0ee;
+    border-radius: 60px 60px 0px 0px;
+    padding-bottom: 65px;
+    position: relative;
+    z-index: 10;
+    }
+    .termsContainer {
+        padding: 0 220px;
+    }
+
+    .title {
+        font-family: Clash Display Title;
+        font-size: 10vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background: var(--gradient-3, linear-gradient(133deg, #082B9B 3.83%, #86B7E0 84.35%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 193px;
+        z-index: 100;
+    }
+
+    .titleBlock {
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+}
