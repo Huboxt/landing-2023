@@ -15,26 +15,30 @@ const Service = () => {
       <div className={style.title}>
         <Image src={servicesIcon} alt="title" />
         <div className={style.subtitle}>
-          Huboxt is A Software Development Team that get things done. Huboxt is
-          A Software Development Team that get things done
+          Huboxt is A Software Development Team to get things done. We are
+          veterans that worked both in enterprises and startups. Elite
+          enterprise training and mentorship combined with a startup mindset is
+          our main strength.
         </div>
       </div>
 
       <div className={style.thirdBlockWrapper}>
         <div className={style.thirdBlockCard}>
           <Link href="/services/startups">
-          <div>
-            <Image
-              src={thirdBlockIcon}
-              className={style.image}
-              alt="thirdBlockIcon"
-            />
-          </div>
-          <div className={style.cardTitle}>Development for startups</div>
-          <div className={style.description}>
-            Some small description <br /> As a part of customer requirements and
-            our internal <br /> agreements we try to use best practices{" "}
-          </div>
+            <div>
+              <Image
+                src={thirdBlockIcon}
+                className={style.image}
+                alt="thirdBlockIcon"
+              />
+            </div>
+            <div className={style.cardTitle}>Development for startups</div>
+            <div className={`${style.description} ${style.marginDescr}`}>
+              We understand your challenges and help early-stage startups to get
+              funding, growing ones to beat competitors attracting more users
+              and fast-growing to scale smoothly by developing scalable quality
+              apps for reasonable prices fast.
+            </div>
             <div className={style.arrow}>
               <svg
                 width="181"
@@ -65,8 +69,10 @@ const Service = () => {
             development
           </div>
           <div className={style.description}>
-            Some small description <br /> As a part of customer requirements and
-            our internal <br /> agreements we try to use best practices{" "}
+            Leverage cross-platform approach to develop mobile apps faster and
+            less costly. Building both iOS and Android apps from the single
+            codebase. Useful to go-to-market faster with a smaller team and
+            maintain apps easier.
           </div>
           <Link href="/services/startups">
             <div className={style.arrow}>
@@ -86,9 +92,9 @@ const Service = () => {
           </Link>
         </div>
       </div>
-      
+
       <div className={style.service}>
-      <div className={style.cardWrapperTitle}>More Services</div>
+        <div className={style.cardWrapperTitle}>More Services</div>
         <div className={style.cardWrapper}>
           {cards.map((card, i) => {
             return (

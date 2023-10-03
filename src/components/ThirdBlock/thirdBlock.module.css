@@ -119,4 +119,7 @@ line-height: 28px;
     display: flex;
     flex-direction: row;
   }
+  .marginDescr {
+    padding-bottom: 35px;
+  }
 }

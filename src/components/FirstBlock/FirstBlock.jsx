@@ -28,7 +28,7 @@ const FirstBlock = () => {
         <div className={style.titleWrapper}>
         <Image src={clutchDesigh} alt="clutch" className={style.clutchIcon}/>
           <h1 className={style.title}>Straight-up<br/>software<br/>development</h1>
-          <div className={style.subTitle}>Let us code and problem-solve while you sleep,<br/>making your project quickly become a reality</div>
+          <div className={style.subTitle}>Quality apps developed by an experienced<br/>offshore team in time within your budget</div>
           <button className={style.getButton} onClick={handleClickScroll}>
               <Image src={touch} alt="get" className={style.getInTouchImg}/>
               GET IN TOUCH

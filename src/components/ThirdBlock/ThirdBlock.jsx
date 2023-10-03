@@ -10,22 +10,19 @@ const ThirdBlock = () => {
     <div className={style.thirdBlockWrapper}>
       <div className={style.thirdBlockCard}>
         <Link href="/services/startups">
-        <div>
-          <Image
-            src={thirdBlockIcon}
-            className={style.image}
-            alt="thirdBlockIcon"
-          />
-        </div>
-        <div className={style.title}>
-          Early-stage
-          startups without
-          a tech team
-        </div>
-        <div className={style.description}>
-          Some small description <br /> As a part of customer requirements and
-          our internal <br /> agreements we try to use best practices{" "}
-        </div>
+          <div>
+            <Image
+              src={thirdBlockIcon}
+              className={style.image}
+              alt="thirdBlockIcon"
+            />
+          </div>
+          <div className={style.title}>Early-stage and growing startups</div>
+          <div className={`${style.description} ${style.marginDescr}`}>
+            We develop MVP, prototypes, proofs of concept for early-stage.
+            Mobile, web, SaaS apps for growing startups. Help fast-growing ones
+            to scale.
+          </div>
           <div className={style.arrow}>
             <svg
               width="181"
@@ -50,14 +47,11 @@ const ThirdBlock = () => {
             alt="thirdBlockSecondIcon"
           />
         </div>
-        <div className={style.title}>
-          Companies
-          launching their
-          own  product
-        </div>
+        <div className={style.title}>Small And Midsize Business</div>
         <div className={style.description}>
-          Some small description <br /> As a part of customer requirements and
-          our internal <br /> agreements we try to use best practices{" "}
+          Applications for your staff to optimize workflow. Applications for
+          your customers to earn more, giving them extra value. All main
+          platforms: mobile, web, desktop, cloud.
         </div>
         <Link href="/services/startups">
           <div className={style.arrow}>

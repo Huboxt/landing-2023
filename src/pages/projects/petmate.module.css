@@ -75,6 +75,7 @@
 }
 
 .stackIcon {
+    width: 80px;
     height: 36px;
 }
 
@@ -663,6 +664,7 @@
     }
 
     .stackIcon {
+        width: 130px;
         height: 56px;
     }
 

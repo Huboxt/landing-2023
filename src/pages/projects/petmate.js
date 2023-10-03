@@ -24,7 +24,7 @@ import lavarelIcon from "../../assets/img/stackIcons/lavarel-icon.svg";
 import lavarelIconWhite from "../../assets/img/stackIcons/lavarel-icon-white.svg";
 import lavarelLine from "../../assets/img/stackIcons/lavarel-line.svg";
 import openAiIcon from "../../assets/img/stackIcons/openai-icon.svg";
-import phpIcon from "../../assets/img/stackIcons/php-icon.svg";
+import phpIcon from "../../assets/img/stackIcons/python-icon.svg";
 import reactLine from "../../assets/img/stackIcons/react-line.svg";
 import style from "@/pages/projects/petmate.module.css";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
@@ -66,12 +66,7 @@ const PetmateAI = () => {
       <div className={style.dataConceptDescr}>
         <div>
           <div className={style.description}>
-            UploadLetters is a Texas based startup that provides Petmate AI is a
-            multiplatform (iOS/Android) mobile application for pet owners. It is
-            a chat with AI (resembles ChatGPT experience) where you can ask any
-            pet-related questions about health, treatment, training, breeding,
-            feeding etc. You create your pet’s account in the app and submit
-            info about sex, breed, age, and weight to receive accurate answers.
+          Petmate AI is a multiplatform (iOS/Android) mobile application for pet owners. It is a chat with AI (resembles ChatGPT experience) where you can ask any pet-related questions about health, treatment, training, breeding, feeding etc. You create your pet’s account in the app and submit info about sex, breed, age, and weight to receive accurate answers.
           </div>
           <button className={style.needSameButton} onClick={handleClickScroll}>
             I NEED THE SAME!
@@ -105,7 +100,7 @@ const PetmateAI = () => {
             </div>
             <div className={style.stackBlock}>
               <Image src={phpIcon} alt="phpIcon" className={style.stackIcon} />
-              <div className={style.stackTitle}>PHP</div>
+              <div className={style.stackTitle}>Python</div>
             </div>
           </div>
         </div>

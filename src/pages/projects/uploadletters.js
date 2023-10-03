@@ -15,7 +15,7 @@ import lavarelIcon from "../../assets/img/stackIcons/lavarel-icon.svg";
 import lavarelIconWhite from "../../assets/img/stackIcons/lavarel-icon-white.svg";
 import lavarelLine from "../../assets/img/stackIcons/lavarel-line.svg";
 import awsIcon from "../../assets/img/stackIcons/aws-icon.svg";
-import phpIcon from "../../assets/img/stackIcons/php-icon.svg";
+import phpIcon from "../../assets/img/stackIcons/python-icon.svg";
 import reactLine from "../../assets/img/stackIcons/react-line.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
 import uploadlettersTitle from "./uploadlettersTitle.svg";
@@ -107,7 +107,7 @@ const UploadlettersPage = () => {
             </div>
             <div className={style.stackBlock}>
               <Image src={phpIcon} alt="phpIcon" className={style.stackIcon} />
-              <div className={style.stackTitle}>PHP</div>
+              <div className={style.stackTitle}>Python</div>
             </div>
           </div>
         </div>
