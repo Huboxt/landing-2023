@@ -105,18 +105,19 @@
     margin-top: 25px;
     position: relative;
     overflow: hidden;
-    padding: 20px 30px;
+    padding: 10px 15px;
     text-align: center;
     border: 1px solid #057ddf;
     border-radius: 40px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
     background: linear-gradient(133.26deg, #082B9B 3.83%, #86B7E0 84.35%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
     cursor: pointer;
+    margin-right: 10px;
   }
   .projectButtonBackDev{
     margin-top: 50px;
