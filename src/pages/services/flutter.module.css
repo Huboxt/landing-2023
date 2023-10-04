@@ -8,6 +8,7 @@
     /* opacity: 0; */
     transition: all 0.6s;
 }
+
 .startupsTitleBlock {
     display: flex;
     flex-direction: column;
@@ -27,31 +28,33 @@
 
 .startupsDescr {
     font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
-margin-bottom: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 75px;
 }
 
 @keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  .cardContainer {
+}
+
+.cardContainer {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .cardBlock {
-   height: 450px;
-  }
-  
-  
+}
+
+.cardBlock {
+    /* height: 450px; */
+}
+
+
 
 .heroImage {
     width: 100%;
@@ -100,6 +103,14 @@ margin-bottom: 75px;
     border-radius: 30px;
 }
 
+.flutterIcon {
+    width: 67px;
+    height: 56px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
 .whatCanDoSubTitleBlock {
     display: flex;
     flex-direction: column;
@@ -109,13 +120,15 @@ margin-bottom: 75px;
 .whatCanDoSubTitle {
     font-family: "Clash Display Bold";
     font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 100% */
-letter-spacing: 1.5px;
-color: #F2F0EE;
-margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: 1.5px;
+    color: #F2F0EE;
+    margin-bottom: 24px;
 }
+
 .whatCanDoSubTitleDesktop {
     display: none;
 }
@@ -124,6 +137,16 @@ margin-bottom: 24px;
     margin-bottom: 32px;
     margin-top: 40px;
     color: #F2F0EE;
+}
+
+.cardWithoutBorderBlack {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 24px;
+    margin-top: 30px;
+    color: black;
 }
 
 .numberIcon {
@@ -138,7 +161,7 @@ margin-bottom: 24px;
 
 .whatCanDoCard {
     border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+    border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     color: #F2F0EE;
@@ -147,18 +170,19 @@ margin-bottom: 24px;
 
 .whatCanDoBlockTitle {
     font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 125% */
-letter-spacing: 0.96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.96px;
     margin-bottom: 12px;
 }
 
 .whatCanDoBlockDescr {
     font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
     gap: 12px;
     margin-bottom: 12px;
 }
@@ -177,7 +201,7 @@ line-height: 22px;
 
 .researchCard {
     border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+    border: 2px solid var(--gradient-3, #082B9B);
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 32px;
@@ -195,11 +219,12 @@ line-height: 22px;
 .researchSubTitle {
     font-family: "Clash Display Bold";
     font-size: 50px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 100% */
-letter-spacing: 1.5px;
-margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 100% */
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
 }
 
 .researchBlockDescr {
@@ -241,11 +266,13 @@ margin-bottom: 24px;
 .valueSubTitle {
     font-family: "Clash Display Bold";
     font-size: 44px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 113.636% */
-letter-spacing: 1.32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    /* 113.636% */
+    letter-spacing: 1.32px;
 }
+
 .valueSubTitleDesktop {
     display: none;
 }
@@ -320,148 +347,82 @@ letter-spacing: 1.32px;
 .strengthsSubTitle {
     font-family: "Clash Display Bold";
     font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 125% */
-letter-spacing: 0.96px;
-color: #F2F0EE;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.96px;
+    color: #F2F0EE;
 }
+
 .strengthsSubTitleDesktop {
     display: none;
 }
+
 .strengthsCard {
     box-sizing: border-box;
 }
+
 .strengthsDescription {
     font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; 
-color: #F2F0EE;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #F2F0EE;
 }
 
 @media (max-width: 1280px) {
     .staticParallax {
-      transform: none !important;
+        transform: none !important;
     }
-  }
+}
 
 @media (min-width: 992px) {
     .startupsTitleBlock {
-       
+
         display: flex;
         flex-direction: column;
         margin-top: 172px;
         padding: 0 80px;
     }
-    
+
     .startupsTitle {
         margin-bottom: 32px;
-        font-size: 12vw;
+        font-size: 10vw;
         font-style: normal;
         font-weight: 500;
         line-height: 90%;
         width: 948px;
     }
-    
+
     .startupsDescr {
         font-size: 26px;
-font-style: normal;
-font-weight: 400;
-line-height: 34px; 
-    margin-bottom: 118px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        margin-bottom: 118px;
     }
- 
-      
-      .cardBlock {
-       height: 550px;
-      }
-      
-      .card1 {
-        position: absolute;
-        left: -25px;
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        gap: 24px;
-        border-radius: 40px;
-        border: 1px solid var(--gradient-3, #082B9B);
-        background: #f2f0ee;
-        width: max-content;
-        z-index: 1;
-        animation-delay: 0.9s;
-        animation: fadeIn 1s ease-in-out forwards;
-      }
-      
-      .card2 {
-        position: absolute;
-        left: -335px;
-        top: 110px;
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        gap: 24px;
-        border-radius: 40px;
-        border: 1px solid var(--gradient-3, #082B9B);
-        background: #f2f0ee;
-        width: max-content;
-        z-index: 0;
-        animation-delay: 0.7s;
-        animation: fadeIn 1s ease-in-out forwards;
-      }
-      
-      .card3 {
-        position: absolute;
-        top: 220px;
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        gap: 24px;
-        border-radius: 40px;
-        border: 1px solid var(--gradient-3, #082B9B);
-        background: #f2f0ee;
-        width: max-content;
-        z-index: 1;
-        animation-delay: 1.3s;
-        animation: fadeIn 1s ease-in-out forwards;
-      }
-      
-      .card4 {
-        position: absolute;
-        top: 315px;
-        left: -210px;
-        display: flex;
-        align-items: center;
-        padding: 20px 40px;
-        gap: 24px;
-        border-radius: 40px;
-        border: 1px solid var(--gradient-3, #082B9B);
-        background: #f2f0ee;
-        width: max-content;
-        animation-delay: 1.1s;
-        animation: fadeIn 1s ease-in-out forwards;
-      }
-      
-    
+
     .cardTitle {
         display: none;
     }
+
     .cardTitleDesktop {
         display: block;
         font-size: 42px;
-font-style: normal;
-font-weight: 500;
-line-height: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 44px;
     }
-    
+
     .cardIcon {
         width: 72px;
         height: 72px;
     }
-    
-    
-    
-    
+
+
+
+
     .whatCanDoContainer {
         margin-top: -55px;
         background: #161616;
@@ -471,7 +432,7 @@ line-height: 44px;
         position: relative;
         z-index: 10;
     }
-    
+
     .whatCanDoTitle {
         font-family: Clash Display Title;
         font-size: 10vw;
@@ -488,7 +449,7 @@ line-height: 44px;
         margin-top: 20px;
         margin-bottom: 80px;
     }
-    
+
     .whatCanDoTitle::before {
         content: "";
         flex-shrink: 0;
@@ -500,41 +461,67 @@ line-height: 44px;
         background: url('../../assets/img/title-background.svg');
         border-radius: 30px;
     }
-    
+
+    .flutterIcon {
+        width: 107px;
+        height: 98px;
+    }
+
     .whatCanDoSubTitleBlock {
         display: flex;
         flex-direction: column;
         padding: 0 80px;
     }
-    
+
     .whatCanDoSubTitle {
         font-family: "Clash Display Bold";
         font-size: 82px;
         font-style: normal;
         font-weight: 500;
-        line-height: 82px; 
-    color: #F2F0EE;
-    margin-bottom: 48px;
+        line-height: 82px;
+        color: #F2F0EE;
+        margin-bottom: 48px;
     }
-    
+
+    .cardsFirstBlock {
+        display: flex;
+        gap: 20px;
+    }
+
+    .firstCardWidth {
+        flex: 1;
+        max-width: calc(33.33%);
+    }
+
+    .cardsSecondBlock {
+        display: flex;
+        gap: 20px
+    }
+
+    .secondCardWidth {
+        flex: 1;
+        max-width: calc(50%);
+    }
+
     .whatCanDoCard {
         border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+        border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         box-sizing: border-box;
         color: #F2F0EE;
         margin-bottom: 20px;
     }
-    
+
     .whatCanDoBlockTitle {
-        font-size: 44px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 113.636% */
-letter-spacing: 1.32px;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
         margin-bottom: 12px;
     }
-    
+
     .whatCanDoBlockDescr {
         font-size: 20px;
         font-style: normal;
@@ -543,9 +530,9 @@ letter-spacing: 1.32px;
         gap: 12px;
         margin-bottom: 20px;
     }
-    
-    
-    
+
+
+
     .researchContainer {
         margin-top: -55px;
         background: #f2f0ee;
@@ -555,39 +542,39 @@ letter-spacing: 1.32px;
         position: relative;
         z-index: 10;
     }
-    
+
     .researchCard {
         border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+        border: 2px solid var(--gradient-3, #082B9B);
         padding: 20px;
         box-sizing: border-box;
         margin-bottom: 32px;
         background: #f2f0ee;
         margin-bottom: 20px;
     }
-    
+
     .researchBlockTitle {
         font-size: 44px;
         margin-bottom: 12px;
         color: #161616;
         background: #f2f0ee;
     }
-    
+
     .researchSubTitle {
         font-family: "Clash Display Bold";
         font-size: 82px;
         font-style: normal;
         font-weight: 500;
-        line-height: 82px; 
-    margin-bottom: 48px;
+        line-height: 82px;
+        margin-bottom: 48px;
     }
-    
+
     .researchBlockDescr {
         font-size: 20px;
         color: #161616;
         background: #f2f0ee;
     }
-    
+
     .startupsJobs {
         max-width: 90%;
         margin-left: auto;
@@ -596,11 +583,11 @@ letter-spacing: 1.32px;
         transition: transform 0.5s ease;
         overflow: hidden;
     }
-    
+
     .startupsJobs:hover {
         transform: scale(1.03);
     }
-    
+
     .valueTitle {
         font-family: Clash Display Title;
         font-size: 10vw;
@@ -617,7 +604,7 @@ letter-spacing: 1.32px;
         margin-top: 20px;
         margin-bottom: 60px;
     }
-    
+
     .valueSubTitle {
         display: none;
     }
@@ -626,30 +613,31 @@ letter-spacing: 1.32px;
         font-family: "Clash Display Bold";
         display: block;
         font-size: 44px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 113.636% */
-letter-spacing: 1.32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
     }
-    
+
     .valueSubTitleIcon {
         width: 72px;
         height: 72px;
         flex-shrink: 0;
     }
-    
+
     .subTitleFlex {
         display: flex;
         flex-direction: column;
         gap: 24px;
         margin-bottom: 24px;
     }
-    
+
     .valueCard {
         box-sizing: border-box;
         background: #f2f0ee;
     }
-    
+
     .line {
         cursor: pointer;
         position: relative;
@@ -669,8 +657,8 @@ letter-spacing: 1.32px;
         animation-fill-mode: forwards;
         overflow: hidden;
     }
-    
-    
+
+
     .getTouchContainer {
         position: relative;
         z-index: 10;
@@ -681,7 +669,7 @@ letter-spacing: 1.32px;
         position: relative;
         z-index: 10;
     }
-    
+
     .getTouchButton {
         display: flex;
         padding: 20px 40px;
@@ -698,44 +686,50 @@ letter-spacing: 1.32px;
         cursor: pointer;
         margin-bottom: 200px;
     }
-    
+
     .strengthsSubTitleDesktop {
         display: none;
     }
+
     .strengthsSubTitle {
         font-family: "Clash Display Bold";
         display: block;
         font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 40px; /* 125% */
-letter-spacing: 0.96px;
-    color: #F2F0EE;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        /* 125% */
+        letter-spacing: 0.96px;
+        color: #F2F0EE;
     }
+
     .strengthsCard {
         box-sizing: border-box;
     }
+
     .strengthsDescription {
         font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 140% */
-    color: #F2F0EE;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        /* 140% */
+        color: #F2F0EE;
     }
-    
+
     @media (min-width: 1280px) {
         .startupsTitleContainer {
             position: relative;
         }
+
         .startupsTitleBlock {
             display: flex;
             flex-direction: row;
             margin-top: 175px;
             margin-bottom: 243px;
             padding: 0 140px;
-            width: 60%;
+            width: 70%;
         }
-        
+
         .startupsTitle {
             margin-bottom: 32px;
             font-size: 7vw;
@@ -744,7 +738,7 @@ line-height: 28px; /* 140% */
             line-height: 90%;
             width: 70%;
         }
-        
+
         .startupsDescr {
             font-size: 26px;
             font-style: normal;
@@ -752,104 +746,19 @@ line-height: 28px; /* 140% */
             line-height: 34px;
             width: 70%;
         }
+
         .cardContainer {
-            position: static;
-            margin-left: 0;
-            margin-right: 0;
-          }
-          
-        .cardBlock {
-            height: 450px;
-           }
-          
-           .card1 {
             position: absolute;
-            
-            right: 140px !important;
-            left: auto;
-            display: flex;
-            align-items: center;
-            padding: 40px 40px;
-            gap: 24px;
-            border-radius: 40px;
-            border: 1px solid var(--gradient-3, #082B9B);
-            background: #f2f0ee;
-            width: max-content;
-            z-index: 1;
-            animation-delay: 0.9s;
-            animation: fadeIn 1s ease-in-out forwards;
-          }
-          
-          .card2 {
-            position: absolute;
-            right: 180px;
-            left: auto;
-            top: 150px;
-            display: flex;
-            align-items: center;
-            padding: 40px 40px;
-            gap: 24px;
-            border-radius: 40px;
-            border: 1px solid var(--gradient-3, #082B9B);
-            background: #f2f0ee;
-            width: max-content;
-            z-index: 0;
-            animation-delay: 0.7s;
-            animation: fadeIn 1s ease-in-out forwards;
-          }
-          
-          .card3 {
-            position: absolute;
-            top: 285px;
-            right: 60px;
-            left: auto;
-            display: flex;
-            align-items: center;
-            padding: 40px 40px;
-            gap: 24px;
-            border-radius: 40px;
-            border: 1px solid var(--gradient-3, #082B9B);
-            background: #f2f0ee;
-            width: max-content;
-            z-index: 1;
-            animation-delay: 1.3s;
-            animation: fadeIn 1s ease-in-out forwards;
-          }
-          
-          .card4 {
-            position: absolute;
-            right: 100px;
-            left: auto;
-            top: 425px;
-            display: flex;
-            align-items: center;
-            padding: 40px 40px;
-            gap: 24px;
-            border-radius: 40px;
-            border: 1px solid var(--gradient-3, #082B9B);
-            background: #f2f0ee;
-            width: max-content;
-            animation-delay: 1.1s;
-            animation: fadeIn 1s ease-in-out forwards;
-          }
-          
-        
-        .cardTitle {
-            font-size: 44px;
-font-style: normal;
-font-weight: 500;
-line-height: 50px; /* 113.636% */
-letter-spacing: 1.32px;
+            right: 20px;
         }
-        
-        .cardIcon {
-            width: 88px;
-            height: 88px;
+
+        .heroImage {
+            width: 550px;
         }
-        
-        
-        
-        
+
+
+
+
         .whatCanDoContainer {
             margin-top: -55px;
             background: #161616;
@@ -859,7 +768,7 @@ letter-spacing: 1.32px;
             position: relative;
             z-index: 10;
         }
-        
+
         .whatCanDoTitle {
             font-family: Clash Display Title;
             font-size: 16vh;
@@ -875,7 +784,7 @@ letter-spacing: 1.32px;
             -webkit-text-fill-color: transparent;
             margin-bottom: 154px;
         }
-        
+
         .whatCanDoTitle::before {
             content: "";
             flex-shrink: 0;
@@ -887,13 +796,21 @@ letter-spacing: 1.32px;
             background: url('../../assets/img/title-background.svg');
             border-radius: 30px;
         }
-        
+
+        .flutterIcon {
+            width: 140px;
+            height: 120px;
+            right: 40px;
+            top: 40px;
+        }
+
         .whatCanDoSubTitleBlock {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             padding: 0 137px 0 154px;
+            gap: 40px;
         }
-        
+
         .whatCanDoSubTitle {
             font-family: "Clash Display Bold";
             display: block;
@@ -904,27 +821,26 @@ letter-spacing: 1.32px;
             color: #F2F0EE;
             min-width: 550px;
         }
+
         .whatCanDoSubTitleDesktop {
             display: none;
         }
-        
+
         .whatCanDoCard {
             border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+            border: 2px solid var(--gradient-3, #082B9B);
             padding: 40px;
             width: 100%;
             box-sizing: border-box;
-            margin-right: 140px;
             margin-bottom: 32px;
-            margin-top: 40px;
             color: #F2F0EE;
         }
-        
+
         .whatCanDoBlockTitle {
-            font-size: 44px;
+            font-size: 42px;
             margin-bottom: 12px;
         }
-        
+
         .whatCanDoBlockDescr {
             font-size: 20px;
             line-height: 28px;
@@ -932,10 +848,15 @@ letter-spacing: 1.32px;
             align-items: center;
             gap: 12px;
             margin-bottom: 12px;
+            margin-top: 10px;
         }
-        
-        
-        
+        .marginDescr {
+            width: 50%;
+            margin-left: auto;
+            margin-bottom: 110px;
+        }
+
+
         .researchContainer {
             margin-top: -55px;
             background: #f2f0ee;
@@ -945,43 +866,43 @@ letter-spacing: 1.32px;
             position: relative;
             z-index: 10;
         }
-        
+
         .researchCard {
             border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+            border: 2px solid var(--gradient-3, #082B9B);
             padding: 40px;
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 32px;
             background: #f2f0ee;
         }
-        
+
         .researchCard+.researchCard {
             margin-bottom: 88px;
         }
-        
+
         .researchBlockTitle {
             font-size: 44px;
             margin-bottom: 12px;
             color: #161616;
             background: #f2f0ee;
         }
-        
+
         .researchSubTitle {
             font-family: "Clash Display Bold";
             font-size: 140px;
             font-style: normal;
             font-weight: 500;
             line-height: 140px;
-            min-width: 950px;
+            min-width: 550px;
         }
-        
+
         .researchBlockDescr {
             font-size: 20px;
             color: #161616;
             background: #f2f0ee;
         }
-        
+
         .startupsJobs {
             max-width: 90%;
             margin-left: auto;
@@ -990,11 +911,11 @@ letter-spacing: 1.32px;
             transition: transform 0.5s ease;
             overflow: hidden;
         }
-        
+
         .startupsJobs:hover {
             transform: scale(1.03);
         }
-        
+
         .valueTitle {
             font-family: Clash Display Title;
             font-size: 190px;
@@ -1010,7 +931,7 @@ letter-spacing: 1.32px;
             margin-bottom: 193px;
             z-index: 100;
         }
-        
+
         .valueSubTitle {
             font-size: 82px;
             font-style: normal;
@@ -1018,24 +939,26 @@ letter-spacing: 1.32px;
             line-height: 82px;
             min-width: 750px;
         }
-        
+
         .valueSubTitleIcon {
             width: 117px;
             height: 117px;
             flex-shrink: 0;
         }
-        
+
         .subTitleFlex {
             display: flex;
+            flex-direction: row;
+            align-items: center;
             gap: 79px;
         }
-        
+
         .valueCard {
             width: 100%;
             box-sizing: border-box;
             background: #f2f0ee;
         }
-        
+
         .line {
             cursor: pointer;
             position: relative;
@@ -1056,8 +979,8 @@ letter-spacing: 1.32px;
             animation-fill-mode: forwards;
             overflow: hidden;
         }
-        
-        
+
+
         .getTouchContainer {
             position: relative;
             z-index: 10;
@@ -1068,7 +991,7 @@ letter-spacing: 1.32px;
             position: relative;
             z-index: 10;
         }
-        
+
         .getTouchButton {
             display: flex;
             padding: 20px 40px;
@@ -1085,31 +1008,37 @@ letter-spacing: 1.32px;
             cursor: pointer;
             margin-bottom: 200px;
         }
+
         .strengthsSubTitleDesktop {
             display: none;
         }
-        
+
         .strengthsSubTitle {
             display: block;
             font-size: 44px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px; /* 113.636% */
-        letter-spacing: 1.32px;
-        color: #F2F0EE;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 50px;
+            /* 113.636% */
+            letter-spacing: 1.32px;
+            color: #F2F0EE;
             min-width: 950px;
         }
+
         .strengthsCard {
             width: 810px;
             box-sizing: border-box;
         }
+
         .strengthsDescription {
             font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px; /* 140% */
-        color: #F2F0EE;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            /* 140% */
+            color: #F2F0EE;
         }
+
         .ourWorksContainer {
             margin-top: -550px;
         }
@@ -1118,10 +1047,10 @@ letter-spacing: 1.32px;
 
 @media (min-width: 1600px) {
     .whatCanDoSubTitleBlock {
-        display: flex;
-        flex-direction: row;
-        padding: 0 20px 0 20px;
+        padding: 0 140px 0 140px;
+        gap: 90px;
     }
+
     .whatCanDoSubTitleDesktop {
         font-family: "Clash Display Bold";
         display: block;
@@ -1130,61 +1059,64 @@ letter-spacing: 1.32px;
         font-weight: 500;
         line-height: 140px;
         color: #F2F0EE;
-        min-width: 750px;
-        padding-left: 80px;
+        min-width: 550px;
     }
+
     .researchSubTitle {
         font-family: "Clash Display Bold";
         font-size: 140px;
         font-style: normal;
         font-weight: 500;
         line-height: 140px;
-        min-width: 750px;
-        padding-left: 80px;
+        min-width: 550px;
     }
+
     .whatCanDoSubTitle {
         display: none;
     }
+
     .whatCanDoCard {
         border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+        border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
-        width: 810px;
         box-sizing: border-box;
-        margin-right: 140px;
         margin-bottom: 32px;
-        margin-top: 40px;
         color: #F2F0EE;
     }
+
     .researchCard {
         border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+        border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         width: 810px;
         box-sizing: border-box;
         margin-bottom: 32px;
         background: #f2f0ee;
     }
+
     .valueCard {
-        width: 810px;
         box-sizing: border-box;
         background: #f2f0ee;
     }
+
     .valueSubTitle {
         font-family: "Clash Display Bold";
         display: block;
         font-size: 82px;
-font-style: normal;
-font-weight: 500;
-line-height: 82px;
-min-width: 650px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 82px;
+        min-width: 650px;
     }
+
     .valueSubTitleDesktop {
         display: none;
     }
+
     .subTitleFlex {
         flex-direction: row;
     }
+
     .line {
         cursor: pointer;
         position: relative;
@@ -1204,22 +1136,34 @@ min-width: 650px;
         animation-fill-mode: forwards;
         overflow: hidden;
     }
+
     .getTouchButton {
         margin-left: 80px;
     }
+
     .strengthsSubTitle {
         display: none;
     }
-    
+
     .strengthsSubTitleDesktop {
         padding-left: 120px;
         display: block;
         font-size: 44px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 50px; /* 113.636% */
-    letter-spacing: 1.32px;
-    color: #F2F0EE;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 113.636% */
+        letter-spacing: 1.32px;
+        color: #F2F0EE;
         min-width: 750px;
+    }
+
+    .cardContainer {
+        position: absolute;
+        right: 40px;
+    }
+
+    .heroImage {
+        width: 650px;
     }
 }

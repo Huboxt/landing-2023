@@ -14,11 +14,10 @@
 .container {
   margin: 0 auto;
   padding: 0 15px 18px 15px;
-  margin-top: 137px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 32px;
-  border-bottom: 1px solid #E0D8D0;
 }
 
 .linksBlock {
@@ -151,14 +150,19 @@
   margin-top: 24px;
 }
 
+.rightsContainer {
+  padding: 0 15px;
+}
+
 .rights {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 13px 15px;
+  padding: 15px 0px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #161616;
+  border-top: 1px solid #E0D8D0;
 }
 
 .socialBlock {
@@ -175,6 +179,9 @@
   .container {
     padding: 0 80px;
     margin-top: 50px;
+  }
+  .rightsContainer {
+    padding: 0 80px;
   }
 
   .link {
@@ -218,11 +225,13 @@
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 140px 0px 140px;
-    margin-top: 137px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    border-bottom: 1px solid #E0D8D0;
+  }
+  .rightsContainer {
+    padding: 0 140px;
   }
 
   .image {

@@ -14,6 +14,7 @@ import titleBG from "../../assets/img/title-background.svg";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
+import flutterIcon from "../../assets/img/flutter-page-icon.svg";
 import OurWorks from "@/components/OurWorks/OurWorks";
 import FAQ from "@/components/FAQ/FAQ";
 
@@ -39,18 +40,24 @@ const FlutterPage = () => {
         <div className={style.startupsTitleBlock}>
           <div>
             <div className={style.startupsTitle}>
-            Flutter cross- <br /> platform <br /> mobile apps <br /> development
+              Flutter cross- <br /> platform <br /> mobile apps <br />{" "}
+              development
             </div>
             <div className={style.startupsDescr}>
               <div>
-              We develop powerful, native-like mobile apps for iOS and Android faster and cheaper taking a cross-platform advantage.
+                We develop powerful, native-like mobile apps for iOS and Android
+                faster and cheaper taking a cross-platform advantage.
               </div>
             </div>
           </div>
           <div className={style.cardContainer}>
             <div className={style.cardBlock}>
               <div className={style.card1}>
-                <Image src={flutterHeroIcon} alt="flutterHeroIcon" className={style.heroImage} />
+                <Image
+                  src={flutterHeroIcon}
+                  alt="flutterHeroIcon"
+                  className={style.heroImage}
+                />
               </div>
             </div>
           </div>
@@ -65,6 +72,13 @@ const FlutterPage = () => {
           className={style.staticParallax}
         >
           <div className={style.whatCanDoContainer}>
+            <div>
+              <Image
+                src={flutterIcon}
+                alt="flutterIcon"
+                className={style.flutterIcon}
+              />
+            </div>
             <Parallax
               startScroll={0}
               endScroll={500}
@@ -72,111 +86,108 @@ const FlutterPage = () => {
               className={style.staticParallax}
             >
               <div className={style.whatCanDoTitle}>
-                Flutter<br /> benefits
+                Flutter
+                <br /> benefits
               </div>
             </Parallax>
             <div className={style.whatCanDoSubTitleBlock}>
               <div>
-                <Parallax
-                  startScroll={200}
-                  endScroll={800}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
+                <Parallax>
                   <div className={style.cardWithoutBorder}>
-                    <div className={style.whatCanDoBlockDescr}>
-                      Proof of Concept is an experimental software designed to
-                      test whether your idea is technically feasible. It is
-                      mainly used to prove investors that your idea is not just
-                      a dream, but something real that can be done. You can also
-                      use it for your own experiments to make things work.
+                    <div className={`${style.whatCanDoBlockDescr} ${style.marginDescr}`}>
+                      Official website describes Flutter as an open source
+                      framework by Google for building beautiful, natively
+                      compiled, multi-platform applications from a single
+                      codebase. Flutter makes development faster and cheaper
+                      which is valuable for startups and small/medium
+                      businesses. At the same time Flutter apps are as fast and
+                      functional as native iOS and Android apps.
                     </div>
                   </div>
                 </Parallax>
-                <Parallax
-                  startScroll={400}
-                  endScroll={1000}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                  <Image
-                    src={numberIcon1}
-                    alt="numberIcon1"
-                    className={style.numberIcon1}
-                  />
-                    <div className={style.whatCanDoBlockTitle}>Faster time to <br /> market</div>
-                  </div>
-                </Parallax>
-                <Parallax
-                  startScroll={700}
-                  endScroll={1300}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                  <Image
-                    src={numberIcon2}
-                    alt="numberIcon2"
-                    className={style.numberIcon}
-                  />
-                    <div className={style.whatCanDoBlockTitle}>Cheaper <br /> development</div>
-                  </div>
-                </Parallax>
-                <Parallax
-                  startScroll={1000}
-                  endScroll={1600}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                  <Image
-                    src={numberIcon3}
-                    alt="numberIcon3"
-                    className={style.numberIcon}
-                  />
-                    <div className={style.whatCanDoBlockTitle}>Native speed and <br /> functionality</div>
-                  </div>
-                </Parallax>
-                <Parallax
-                  startScroll={1300}
-                  endScroll={1900}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                  <div className={style.whatCanDoBlockTitle}>Cross-platform <br />  development</div>
-                    <div className={style.whatCanDoBlockDescr}>
-                    You write code one time and then build iOS and Android apps. No need to write code two times for each platform, no need to hire two developers. This is how Flutter saves time and budget.
+
+                <div className={style.cardsFirstBlock}>
+                  <div
+                    className={`${style.whatCanDoCard} ${style.firstCardWidth}`}
+                  >
+                    <Image
+                      src={numberIcon1}
+                      alt="numberIcon1"
+                      className={style.numberIcon1}
+                    />
+                    <div className={style.whatCanDoBlockTitle}>
+                      Faster time to <br /> market
                     </div>
                   </div>
-                </Parallax>
-                <Parallax
-                  startScroll={1600}
-                  endScroll={2200}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                  <div className={style.whatCanDoBlockTitle}>Native performance and features</div>
-                    <div className={style.whatCanDoBlockDescr}>
-                    Flutter apps work as fast as native ones. They also have access to hardware features such as camera, microphone, GPS, compass, accelerometer etc. It makes Flutter a viable alternative to native development.
+
+                  <div
+                    className={`${style.whatCanDoCard} ${style.firstCardWidth}`}
+                  >
+                    <Image
+                      src={numberIcon2}
+                      alt="numberIcon2"
+                      className={style.numberIcon}
+                    />
+                    <div className={style.whatCanDoBlockTitle}>
+                      Cheaper <br /> development
                     </div>
                   </div>
-                </Parallax>
-                <Parallax
-                  startScroll={1900}
-                  endScroll={2500}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
+
+                  <div
+                    className={`${style.whatCanDoCard} ${style.firstCardWidth}`}
+                  >
+                    <Image
+                      src={numberIcon3}
+                      alt="numberIcon3"
+                      className={style.numberIcon}
+                    />
+                    <div className={style.whatCanDoBlockTitle}>
+                      Native speed and <br /> functionality
+                    </div>
+                  </div>
+                </div>
+
+                <div className={style.cardsSecondBlock}>
+                  <div
+                    className={`${style.whatCanDoCard} ${style.secondCardWidth}`}
+                  >
+                    <div className={style.whatCanDoBlockTitle}>
+                      Cross-platform <br /> development
+                    </div>
+                    <div className={style.whatCanDoBlockDescr}>
+                      You write code one time and then build iOS and Android
+                      apps. No need to write code two times for each platform,
+                      no need to hire two developers. This is how Flutter saves
+                      time and budget.
+                    </div>
+                  </div>
+
+                  <div
+                    className={`${style.whatCanDoCard} ${style.secondCardWidth}`}
+                  >
+                    <div className={style.whatCanDoBlockTitle}>
+                      Native performance and features
+                    </div>
+                    <div className={style.whatCanDoBlockDescr}>
+                      Flutter apps work as fast as native ones. They also have
+                      access to hardware features such as camera, microphone,
+                      GPS, compass, accelerometer etc. It makes Flutter a viable
+                      alternative to native development.
+                    </div>
+                  </div>
+                </div>
+
+                <div className={style.whatCanDoCard}>
                   <div className={style.whatCanDoBlockTitle}>MVP</div>
-                    <div className={style.whatCanDoBlockDescr}>
-                    Minimal Viable Product has a minimum set of core features enough for your real customers to try it. It helps to get feedback from your target audience to find out if there is demand and what to do next. If you have an MVP and a positive market feedback your chance to get investors money skyrockets 🚀
-                    </div>
+                  <div className={style.whatCanDoBlockDescr}>
+                    Minimal Viable Product has a minimum set of core features
+                    enough for your real customers to try it. It helps to get
+                    feedback from your target audience to find out if there is
+                    demand and what to do next. If you have an MVP and a
+                    positive market feedback your chance to get investors money
+                    skyrockets 🚀
                   </div>
-                </Parallax>
+                </div>
               </div>
             </div>
           </div>
@@ -189,6 +200,9 @@ const FlutterPage = () => {
           className={style.staticParallax}
         >
           <div className={style.researchContainer}>
+            <div className={style.valueTitle}>
+              The value <br /> of flutter
+            </div>
             <div className={style.whatCanDoSubTitleBlock}>
               <div>
                 <Parallax
@@ -197,8 +211,20 @@ const FlutterPage = () => {
                   translateX={["-800px", "0px"]}
                   className={style.staticParallax}
                 >
-                  <div className={style.researchSubTitle}>
-                    Growing <br /> startups
+                  <div className={style.researchSubTitle}>For startups</div>
+                </Parallax>
+                <Parallax
+                  startScroll={1300}
+                  endScroll={1800}
+                  translateX={["-800px", "0px"]}
+                  className={style.staticParallax}
+                >
+                  <div className={style.cardWithoutBorderBlack}>
+                    Startups often have to deal with budget limitations and high
+                    competition. Cost-efficient and fast solution as Flutter is
+                    a gamechanger here. Built-in libraries and cross-platform
+                    capacities help you develop faster than competitors with no
+                    need to extend a team.
                   </div>
                 </Parallax>
               </div>
@@ -210,12 +236,10 @@ const FlutterPage = () => {
                   className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
-                    <div className={style.whatCanDoBlockTitle}>Web apps</div>
+                    <div className={style.whatCanDoBlockTitle}>Prototype</div>
                     <div className={style.whatCanDoBlockDescr}>
-                      Full-cycle development from scratch. Frontend, backend,
-                      user interface/experience, QA, post-release support. We
-                      gather your requirements, decide on optimal architecture,
-                      technology and frameworks, develop, test, and release.
+                      Flutter is the easiest way to make a clickable mobile app
+                      prototype to show investors and business partners.
                     </div>
                   </div>
                 </Parallax>
@@ -226,11 +250,12 @@ const FlutterPage = () => {
                   className={style.staticParallax}
                 >
                   <div className={style.researchCard}>
-                    <div className={style.whatCanDoBlockTitle}>Mobile apps</div>
+                    <div className={style.whatCanDoBlockTitle}>MVP</div>
                     <div className={style.whatCanDoBlockDescr}>
-                      Multiplatform and native mobile apps (iOS, Android).
-                      Full-cycle development from requirement gathering to App
-                      Store & Google Play Approval.
+                      Hit App Store and Google Play faster than competitors,
+                      attract early users and gather insightful feedback,
+                      improve, find your product-market fit and win the next
+                      round of funding.
                     </div>
                   </div>
                 </Parallax>
@@ -243,27 +268,10 @@ const FlutterPage = () => {
                   <div className={style.researchCard}>
                     <div className={style.whatCanDoBlockTitle}>SaaS</div>
                     <div className={style.whatCanDoBlockDescr}>
-                      Software as a service is a multi-platform ecosystem
-                      (mobile, web, desktop) based on cloud infrastructure. It
-                      is designed to give value to users, earn money for
-                      subscriptions and gain better data-based understanding to
-                      make grounded marketing decisions.
-                    </div>
-                  </div>
-                </Parallax>
-                <Parallax
-                  startScroll={2100}
-                  endScroll={2800}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.researchCard}>
-                    <div className={style.whatCanDoBlockTitle}>UI/UX</div>
-                    <div className={style.whatCanDoBlockDescr}>
-                      Intuitive modern up-to-trend design for your app. Made
-                      from scratch or by updating an existing one. We start with
-                      a UX (user experience) audit to make your app simple to
-                      use, fast to learn and fun to interact with.
+                      Cover all the platforms: mobile (iOS/Android), web,
+                      desktop (Win/Mac) with a single codebase. Make third-party
+                      integrations easily (including billing), gather insightful
+                      data and be ready to grow fast with Flutter.
                     </div>
                   </div>
                 </Parallax>
@@ -282,38 +290,51 @@ const FlutterPage = () => {
             <div className={style.whatCanDoSubTitleBlock}>
               <div>
                 <Parallax
-                  startScroll={2800}
-                  endScroll={3400}
+                  startScroll={1300}
+                  endScroll={1800}
                   translateX={["-800px", "0px"]}
                   className={style.staticParallax}
                 >
-                  <div className={style.whatCanDoSubTitle}>
-                    Fast- <br /> growing <br /> startups
-                  </div>
-                  <div className={style.whatCanDoSubTitleDesktop}>
-                    Fast- <br /> growing <br /> startups
-                  </div>
+                  <div className={style.whatCanDoSubTitle}>For SMB</div>
+                  <div className={style.whatCanDoSubTitleDesktop}>For SMB</div>
                 </Parallax>
+
+                <div className={style.cardWithoutBorder}>
+                  <div className={style.whatCanDoBlockDescr}>
+                    Small and Medium size businesses stand on firm ground of
+                    their own finances, product-market fit and loyal customers.
+                    However, it is important to optimize the business process
+                    and budget to stay competitive and provide maximum value to
+                    buyers. Flutter works here perfectly.
+                  </div>
+                </div>
               </div>
               <div>
-                <Parallax
-                  startScroll={2800}
-                  endScroll={3400}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoCard}>
-                    <div className={style.whatCanDoBlockTitle}>Scaling</div>
-                    <div className={style.whatCanDoBlockDescr}>
-                      When your product starts growing fast it is important to
-                      handle the load properly to avoid downtimes and bad user
-                      experience. Many businesses failed here! Let us upgrade
-                      your architecture and infrastructure and help to scale
-                      smoothly, providing a great user experience for your
-                      customers.
-                    </div>
+                <div className={style.whatCanDoCard}>
+                  <div className={style.whatCanDoBlockTitle}>
+                    Apps for employees
                   </div>
-                </Parallax>
+                  <div className={style.whatCanDoBlockDescr}>
+                    Flatter is good for custom mobile-based solutions that
+                    optimize workflows and workforce. It leverages both iOS and
+                    Android features like camera, flashlight, GPS, gyroscope,
+                    microphone, bluetooth and speakers to scan, track, trace,
+                    report, signal and do many other things that matter to your
+                    business process.
+                  </div>
+                </div>
+                <div className={style.whatCanDoCard}>
+                  <div className={style.whatCanDoBlockTitle}>
+                    Apps for clients
+                  </div>
+                  <div className={style.whatCanDoBlockDescr}>
+                    Launch your app for iOS and Android to reach the majority of
+                    target audience. Flutter helps you to optimize budget on
+                    development and maintenance so that you can focus on
+                    providing the best user experience, releasing updates faster
+                    than competitors and selling more goods or services.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -333,7 +354,7 @@ const FlutterPage = () => {
               className={style.staticParallax}
             >
               <div className={style.valueTitle}>
-                The value <br /> we give
+                Our <br /> services
               </div>
             </Parallax>
             <div className={style.whatCanDoSubTitleBlock}>
@@ -351,10 +372,10 @@ const FlutterPage = () => {
                       className={style.valueSubTitleIcon}
                     />
                     <div className={style.valueSubTitle}>
-                      Go to <br /> market <br /> faster
+                      Flutter app development
                     </div>
                     <div className={style.valueSubTitleDesktop}>
-                      Go to market faster
+                      Flutter app development
                     </div>
                   </div>
                 </Parallax>
@@ -368,20 +389,9 @@ const FlutterPage = () => {
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
-                      It is vital for startups to launch and update apps faster
-                      than competitors. It takes up to several months to build
-                      an in-house team: hiring, onboarding, setting up
-                      workflows. Your competitors won’t wait for you to do it.
-                      They already released their applications and attracted new
-                      users.
-                      <br />
-                      <br />
-                      Having an outsourced development partner is like steroids
-                      that make you faster and stronger. Our experienced,
-                      well-cohesive (like Navy Seals) team is ready to start
-                      immediately. Minimum bureaucracy combined with our own
-                      best practices gives you enough speed to win a competitive
-                      race.
+                      We can develop a mobile app from scratch for you.
+                      Requirements gathering, UX/UI design, development, QA, App
+                      Store and Google play publishing, post-production support.
                     </div>
                   </div>
                 </Parallax>
@@ -404,10 +414,10 @@ const FlutterPage = () => {
                       className={style.valueSubTitleIcon}
                     />
                     <div className={style.valueSubTitle}>
-                      Decent <br /> quality, <br /> less costs
+                      Support and Maintenance
                     </div>
                     <div className={style.valueSubTitleDesktop}>
-                      Decent quality, less costs
+                      Support and Maintenance
                     </div>
                   </div>
                 </Parallax>
@@ -421,18 +431,9 @@ const FlutterPage = () => {
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
-                      Every startup has to deal with budget limitations and
-                      spend wisely. The more you pay for development the less
-                      money remains for marketing and sales. Local dev’s
-                      salaries are high and you have to pay for perks and an
-                      office.
-                      <br />
-                      <br />
-                      Our team is located in Eastern Europe where salaries are
-                      not as high as in your region. You get a team of
-                      experienced developers for reasonable offshore prices. Our
-                      expertise, best practices and senior developers assure
-                      quality work and smooth delivery.
+                      Make sure that your app is stable and works well giving a
+                      pleasant experience to your customers. Fix things quickly
+                      and update architecture when needed.
                     </div>
                   </div>
                 </Parallax>
@@ -449,10 +450,13 @@ const FlutterPage = () => {
                   className={style.staticParallax}
                 >
                   <div className={style.subTitleFlex}>
-                    <div className={style.valueSubTitle}>Flexibility</div>
-                    <div className={style.valueSubTitleDesktop}>
-                      Flexibility
-                    </div>
+                    <Image
+                      src={mvpIcon}
+                      alt="market"
+                      className={style.valueSubTitleIcon}
+                    />
+                    <div className={style.valueSubTitle}>Scaling</div>
+                    <div className={style.valueSubTitleDesktop}>Scaling</div>
                   </div>
                 </Parallax>
               </div>
@@ -465,18 +469,9 @@ const FlutterPage = () => {
                 >
                   <div className={style.valueCard}>
                     <div className={style.whatCanDoBlockDescr}>
-                      Launching a startup, you have to change fast. It is common
-                      to experiment with features, design and positioning.
-                      Sometimes you have to pivot or scale really fast. It is
-                      important to have a partner who understands it and gives
-                      you enough support and options.
-                      <br />
-                      <br />
-                      Working with us you can easily start, stop and pause a
-                      partnership any time and change scope of work, team
-                      structure, technologies, and frameworks easily. Due to the
-                      time & material model you pay for a 1-2 weeks sprint. It
-                      gives flexibility and saves your budget.
+                      We are ready to help you scale smoothly, improving
+                      architecture, balancing load and expanding infrastructure.
+                      Welcome a flow of new users without issues.
                     </div>
                   </div>
                 </Parallax>
@@ -486,196 +481,6 @@ const FlutterPage = () => {
           </div>
         </Parallax>
 
-        <Parallax
-          startScroll={5100}
-          endScroll={5800}
-          translateY={["-100px", "-850px"]}
-          className={style.staticParallax}
-        >
-          <div className={style.getTouchContainer}>
-            <div className={style.whatCanDoSubTitleBlock}>
-              <div>
-                <Parallax
-                  startScroll={5700}
-                  endScroll={6200}
-                  //   translateX={["-800px", "0px"]}
-                  // opacity={[0,1]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.whatCanDoSubTitle}>
-                    Have a startup? <br /> Share your thoughts <br /> with us
-                  </div>
-                  <div className={style.whatCanDoSubTitleDesktop}>
-                    Have a startup? <br /> Share your thoughts <br /> with us
-                  </div>
-                </Parallax>
-                <button
-                  className={style.getTouchButton}
-                  onClick={handleClickScroll}
-                >
-                  GET IN TOUCH
-                </button>
-              </div>
-            </div>
-          </div>
-        </Parallax>
-
-        <Parallax
-          startScroll={5300}
-          endScroll={6500}
-          translateY={["-100px", "-950px"]}
-          className={style.staticParallax}
-        >
-          <div className={style.whatCanDoContainer}>
-            <Parallax
-              startScroll={2600}
-              endScroll={3600}
-              translateX={["-800px", "0px"]}
-              className={style.staticParallax}
-            >
-              <div className={style.whatCanDoTitle}>
-                Our main <br /> strengths
-              </div>
-            </Parallax>
-            <div className={style.whatCanDoSubTitleBlock}>
-              <div>
-                <Parallax
-                  startScroll={3000}
-                  endScroll={3800}
-                  translateX={["-800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitleDesktop}>
-                      Elite enterprise <br /> training + startup <br /> mindset
-                    </div>
-                    <div className={style.strengthsSubTitle}>
-                      Elite enterprise training + startup mindset
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-              <div>
-                <Parallax
-                  startScroll={3200}
-                  endScroll={3800}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.strengthsCard}>
-                    <div className={style.strengthsDescription}>
-                      Most of our developers combine work experience in top
-                      software development enterprises and startups. We hunt for
-                      this kind of devs.
-                      <br />
-                      <br />
-                      Previous work in top enterprises gives the best training
-                      and mentorship, experience in expensive complex projects,
-                      and access to top-notch expertise and connections.
-                      <br />
-                      <br />
-                      Startup experience teaches to work under budget and time
-                      limits in a highly competitive environment, making you
-                      creative in finding optimal solutions.
-                      <br />
-                      <br />
-                      As a result, our developers understand startups’
-                      challenges, feel their unique vibe and apply their elite
-                      enterprise-level skills to give maximum value.
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-            </div>
-            <div className={style.line}></div>
-
-            <div className={style.whatCanDoSubTitleBlock}>
-              <div>
-                <Parallax>
-                  <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitleDesktop}>
-                      Minimum bureaucracy <br /> and quick communication
-                    </div>
-                    <div className={style.strengthsSubTitle}>
-                      Minimum bureaucracy and quick communication
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-              <div>
-                <Parallax
-                  startScroll={3600}
-                  endScroll={4100}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.strengthsCard}>
-                    <div className={style.strengthsDescription}>
-                      It is important to communicate and make decisions quickly
-                      doing projects for startups. It assures a proper speed and
-                      quality of work. We built our teams and processes in a way
-                      to get it.
-                      <br />
-                      <br />
-                      The hierarchical structure of a superior core team and
-                      inferior support teams helps to scale projects almost
-                      infinitely preserving speed and flexibility of small
-                      companies.
-                      <br />
-                      <br />
-                      You mainly communicate with our core team of senior
-                      developers and architects who lead, supervise and make key
-                      decisions for every project. They are highly available to
-                      discuss things at any time.
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-            </div>
-            <div className={style.line}></div>
-
-            <div className={style.whatCanDoSubTitleBlock}>
-              <div>
-                <Parallax
-                  startScroll={4100}
-                  endScroll={4600}
-                  translateX={["-800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.subTitleFlex}>
-                    <div className={style.strengthsSubTitleDesktop}>
-                      Our own frameworks <br /> and best practices
-                    </div>
-                    <div className={style.strengthsSubTitle}>
-                      Our own frameworks and best practices
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-              <div>
-                <Parallax
-                  startScroll={4100}
-                  endScroll={4600}
-                  translateX={["800px", "0px"]}
-                  className={style.staticParallax}
-                >
-                  <div className={style.strengthsCard}>
-                    <div className={style.strengthsDescription}>
-                      Experience and knowledge is the main thing in software
-                      development that assures quality work. We treat it
-                      seriously and accumulate knowledge, experience and
-                      insights doing every new project to create our own best
-                      practices, frameworks and ready-made solutions. It helps
-                      to deliver projects easier, faster and less expensively.
-                      This is a way we give you a competitive advantage.
-                    </div>
-                  </div>
-                </Parallax>
-              </div>
-            </div>
-            <div className={style.line}></div>
-          </div>
-        </Parallax>
         <Parallax
           startScroll={8000}
           endScroll={12900}

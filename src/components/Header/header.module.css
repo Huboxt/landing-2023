@@ -356,7 +356,7 @@
   }
 
   .mobileDropdownText {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 40px;
     /* 125% */
@@ -493,6 +493,10 @@
 }
 
 .dropdown a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.dropdownBlock a:visited {
   text-decoration: none;
   color: #000000;
 }

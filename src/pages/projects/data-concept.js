@@ -9,7 +9,7 @@ import researchTitle from "../../assets/img/researchTitle.svg";
 import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
 import mysqlIcon from "../../assets/img/stackIcons/mysql-icon.svg";
 import tsIcon from "../../assets/img/stackIcons/typescript.svg";
-import nodeIcon from "../../assets/img/stackIcons/node-js.svg";
+import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
 import dataConceptTitle from "./dataConceptTitle.svg";
 import dataConceptJobs1 from "./data-concept-jobs1.svg";
@@ -46,9 +46,9 @@ const DataConceptPage = () => {
       <div className={style.dataConceptDescr}>
         <div>
           <div className={style.description}>
-            The fast changing world of web development has <br />
-            expanded our skill set and has made us experienced in <br />
-            all major ui frameworks, which makes your application <br />
+            The fast changing world of web development has
+            expanded our skill set and has made us experienced in 
+            all major ui frameworks, which makes your application 
             look nice and modern while being and fast.
           </div>
           <button className={style.needSameButton} onClick={handleClickScroll}>
@@ -73,6 +73,14 @@ const DataConceptPage = () => {
               className={style.stackIcon}
             />
             <div className={style.stackTitle}>MySQL</div>
+          </div>
+          <div className={style.stackBlock}>
+            <Image
+              src={reactIcon}
+              alt="mysqlIcon"
+              className={style.stackIcon}
+            />
+            <div className={style.stackTitle}>React</div>
           </div>
         </div>
       </div>

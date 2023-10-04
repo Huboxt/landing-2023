@@ -182,7 +182,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={style.rightsContainer}>
       <div className={style.rights}>Huboxt 2023. All rights reserved</div>
+      </div>
     </div>
   );
 };

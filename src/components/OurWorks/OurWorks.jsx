@@ -8,8 +8,10 @@ import ourWorksIcon from "../../assets/img/ourWorksIcon.svg";
 import touch from "../../assets/img/getInTouch.svg";
 import style from "./ourWorks.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const OurWorks = () => {
+  const router = useRouter();
   function SampleNextArrow(props) {
     const { className, onClick } = props;
     return (
@@ -109,6 +111,13 @@ const OurWorks = () => {
         <div>
           <Slider {...settings}>
             {projects.map((e, index) => {
+              const isExcludedPage = [
+                "segma",
+                "fleetInsider",
+                "carbookingservice",
+                "dms",
+                "datbi",
+              ].includes(e.page);
               return (
                 <div key={e.id} className={style.Wrapper}>
                   <div className={style.flipCardInner}>
@@ -120,10 +129,17 @@ const OurWorks = () => {
                         </div>
                       </div>
                       <div className={style.projectButtons}>
-                        <button className={style.projectButton}>DESIGN</button>
-                        <button className={style.projectButton}>
-                          DEVELOPMENT
-                        </button>
+                      {!isExcludedPage && (
+                        <button className={style.projectButton} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
+                        {/* <Image
+                          src={touch}
+                          alt="get"
+                          className={style.getInTouchImg}
+                        /> */}
+                        Read More
+                      </button>
+                      )}
+
                       </div>
                     </div>
                     <div className={style.projectBack} key={e.name + index}>
@@ -141,22 +157,24 @@ const OurWorks = () => {
                         />
                       </div>
                       <div className={style.projectButtons}>
-                        <button className={style.projectButtonBack}>
+                        {/* <button className={style.projectButtonBack}>
                           <Image
                             src={touch}
                             alt="get"
                             className={style.getInTouchImg}
                           />
                           DESIGN
-                        </button>
-                        <button className={style.projectButtonBack}>
-                          <Image
-                            src={touch}
-                            alt="get"
-                            className={style.getInTouchImg}
-                          />
-                          DEVELOPMENT
-                        </button>
+                        </button> */}
+                        {!isExcludedPage && (
+                        <button className={style.projectButtonBack} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
+                        {/* <Image
+                          src={touch}
+                          alt="get"
+                          className={style.getInTouchImg}
+                        /> */}
+                        Read More
+                      </button>
+                      )}
                       </div>
                     </div>
                   </div>
@@ -176,21 +194,21 @@ const OurWorks = () => {
                         />
                       </div>
                       <div className={style.projectButtons}>
-                        <button className={style.projectButtonBack}>
+                        {/* <button className={style.projectButtonBack}>
                           <Image
                             src={touch}
                             alt="get"
                             className={style.getInTouchImg}
                           />
                           DESIGN
-                        </button>
-                        <button className={style.projectButtonBack}>
-                          <Image
+                        </button> */}
+                        <button className={style.projectButtonBack} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
+                          {/* <Image
                             src={touch}
                             alt="get"
                             className={style.getInTouchImg}
-                          />
-                          DEVELOPMENT
+                          /> */}
+                          Read More
                         </button>
                       </div>
                     </div>

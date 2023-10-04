@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 20px 20px 0 0;
 }
 .Wrapper{
   /* min-width: fit-content; */
@@ -116,26 +117,28 @@
 .projectButton{
   padding: 20px 30px;
   text-align: center;
-  border: 1px solid #86B7E0;
+  border: none;
   background: transparent;
   border-radius: 40px;
   font-weight: 500;
   font-size: 20px;
   color: #F2F0EE;
   cursor: pointer;
+  margin-left: auto;
 }
 .projectButtonBack{
   position: relative;
   overflow: hidden;
   padding: 20px 30px;
   text-align: center;
-  border: 1px solid #86B7E0;
-  background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%);
+  border: none;
+  /* background: linear-gradient(128.6deg, #082B9B 13.07%, #86B7E0 104.43%); */
   border-radius: 40px;
   font-weight: 500;
   font-size: 20px;
-  color: #F2F0EE;
+  color: black;
   cursor: pointer;
+  margin-left: auto;
 }
 .projectButton:hover{
   opacity: 0.7;
@@ -299,5 +302,11 @@
     font-size: 16px;
     line-height: 28px;
     color: #5B5B5B;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ourWorksWrapper {
+    border-radius: 60px 60px 0 0;
   }
 }
