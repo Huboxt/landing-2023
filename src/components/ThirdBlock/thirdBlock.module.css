@@ -22,6 +22,7 @@
 }
 .thirdBlockCard a {
   text-decoration: none;
+  color: black;
 }
 .thirdBlockCard:hover {
   transform: scale(1.02);
