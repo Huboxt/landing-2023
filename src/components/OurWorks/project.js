@@ -39,7 +39,7 @@ export const projects = [
   {
     id: '4',
     title: "Segma", 
-    description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui frameworks.",
+    description: "Our IT agency has given the SMS Marketing application a stunning makeover. We’ve redesigned the user interface to make every action smoother, faster and easier. The interface has become sleek and user-friendly, and navigating through campaigns, analyzing data, and managing contacts has never been so effortless.",
     Image: SegmaCard,
     page: "segma",
     tags: "design, development, management"
@@ -55,7 +55,7 @@ export const projects = [
   {
     id: '6',
     title: "Car Booking service", 
-    description: "The fast changing world of web development...",
+    description: "Our IT agency has unleashed its creative prowess to craft a captivating design for a Car Booking service mobile app. We specialize in a seamless, visually stunning interface that makes booking a car a breeze.",
     Image: cardBookingCard,
     page: "carbookingservice",
     tags: "design, development, management"
@@ -63,7 +63,7 @@ export const projects = [
   {
     id: '7',
     title: "DMS/MMS", 
-    description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui frameworks, which makes your application look nice and modern while being and fast.",
+    description: "Introducing our all-in-one Asset Maintenance App, meticulously crafted by our IT agency. We’ve combined cutting-edge development and elegant design to simplify asset management like never before. From maintenance schedules to sending scheduled reports, our app has got you covered.",
     Image: DMSCard,
     page: "dms",
     tags: "design, development, management"
@@ -71,7 +71,7 @@ export const projects = [
   {
     id: '8',
     title: "Datbi", 
-    description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui",
+    description: "Our IT agency crafted a stunning landing page for a Data Analytics company. We specialize in creating engaging, user-centric web solutions that make data come alive. Explore how we turn complex data into an inviting, informative experience.",
     Image: DatBiCard,
     page: "datbi",
     tags: "design, development, management"

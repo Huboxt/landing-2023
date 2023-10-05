@@ -143,6 +143,9 @@
 .projectButton:hover{
   opacity: 0.7;
 }
+.projectButtonBack:hover{
+  text-decoration: underline;
+}
 .prevArrow{
   top: -80px !important;
   right: 300px !important;
