@@ -153,6 +153,11 @@
   cursor: pointer;
 }
 
+.headerMenuBtn:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .headerMenuCloseBtn {
   display: flex;
   padding: 8px 24px;
