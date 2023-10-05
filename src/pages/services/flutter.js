@@ -196,7 +196,7 @@ const FlutterPage = () => {
         <Parallax
           startScroll={1200}
           endScroll={1900}
-          translateY={["-100px", "-450px"]}
+          translateY={["-100px", "-550px"]}
           className={style.staticParallax}
         >
           <div className={style.researchContainer}>
