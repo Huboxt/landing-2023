@@ -487,12 +487,14 @@ const FlutterPage = () => {
           translateY={["-1300px", "0px"]}
           className={style.staticParallax}
         >
-          <OurWorks className={style.ourWorksContainer} />
+          <div className={style.ourWorksContainer}>
+          <OurWorks />
+          </div>
           <FAQ />
           <div className={style.getTouchWrapper}>
             <GetTouch borderRadius="60px 60px 0px 0px" />
-            <Footer />
           </div>
+          <Footer />
         </Parallax>
       </ParallaxProvider>
     </div>
