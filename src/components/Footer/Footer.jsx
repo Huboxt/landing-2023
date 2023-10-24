@@ -183,8 +183,8 @@ const Footer = () => {
             >
               <Image
                 src={badgeImg}
-                className={style.clutchImage}
-                alt="clutch"
+                className={style.badgeImage}
+                alt="badge"
               />
             </a>
             <a
