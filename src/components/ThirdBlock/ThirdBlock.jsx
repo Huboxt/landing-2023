@@ -18,7 +18,7 @@ const ThirdBlock = () => {
             />
           </div>
           <div className={style.title}>Early-stage and growing startups</div>
-          <div className={`${style.description} ${style.marginDescr}`}>
+          <div className={`${style.description}`}>
             We develop MVP, prototypes, proofs of concept for early-stage.
             Mobile, web, SaaS apps for growing startups. Help fast-growing ones
             to scale.
