@@ -214,7 +214,8 @@
 
 @media (max-width: 1330px){
   .ourWorksWrapper{
-    padding-top: 43px;
+    margin-top: -20px;
+    padding-top: 20px;
     padding-bottom: 120px;
   }
   .ourWorksIcon{
