@@ -25,10 +25,9 @@ const DataConceptPage = () => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
     var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset + 500;
-
+  
     window.scrollTo({
-      top: offsetPosition,
+      top: 6000,
       behavior: "smooth",
     });
   };
@@ -481,7 +480,7 @@ const DataConceptPage = () => {
       </ParallaxProvider>
       <div>
         <div className={style.getTouchWrapper}>
-          <GetTouch />
+          <GetTouch id="getInTouch" />
           <Footer />
         </div>
       </div>

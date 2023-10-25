@@ -43,10 +43,9 @@ const PetmateAI = () => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
     var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset + 500;
-
+  
     window.scrollTo({
-      top: offsetPosition,
+      top: 6500,
       behavior: "smooth",
     });
   };
@@ -344,7 +343,7 @@ const PetmateAI = () => {
             />
           </div>
           <div className={style.getTouchWrapper}>
-            <GetTouch borderRadius="60px 60px 0px 0px" />
+            <GetTouch borderRadius="60px 60px 0px 0px" id="getInTouch"/>
           </div>
           <Footer />
         </div>

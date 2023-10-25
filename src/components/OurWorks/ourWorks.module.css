@@ -127,7 +127,9 @@
   margin-left: auto;
 }
 .projectButtonBack{
-  position: relative;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   overflow: hidden;
   padding: 20px 30px;
   text-align: center;

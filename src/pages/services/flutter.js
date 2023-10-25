@@ -25,10 +25,9 @@ const FlutterPage = () => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
     var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset + 1500;
-
+  
     window.scrollTo({
-      top: offsetPosition,
+      top: 6900,
       behavior: "smooth",
     });
   };

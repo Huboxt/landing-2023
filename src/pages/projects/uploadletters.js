@@ -36,10 +36,9 @@ const UploadlettersPage = () => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
     var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset + 500;
-
+  
     window.scrollTo({
-      top: offsetPosition,
+      top: 6900,
       behavior: "smooth",
     });
   };
@@ -545,7 +544,7 @@ const UploadlettersPage = () => {
           </div>
 
           <div className={style.getTouchWrapper}>
-            <GetTouch borderRadius="60px 60px 0px 0px" />
+            <GetTouch borderRadius="60px 60px 0px 0px" id="getInTouch"/>
           </div>
           <Footer />
         </Parallax>

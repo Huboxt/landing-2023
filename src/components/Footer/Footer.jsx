@@ -177,7 +177,7 @@ const Footer = () => {
           {/* </div> */}
           <div className={style.imagesWrapper}>
           <a
-              href="https://clutch.co/profile/huboxt?_gl=1*1dgykuk*_ga*MTgzNjY4MjMxMS4xNjc1MjY2Njgy*_[…]NFJxMUFtT0tXbFJQYTlMQVRpOE5TNDZSNVFFanpYV0E1VHdORXZKOEh3JTNEJTNE"
+              href="https://www.designrush.com/agency/profile/huboxt"
               rel="noreferrer"
               target="_blank"
             >

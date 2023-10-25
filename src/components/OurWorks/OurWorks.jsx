@@ -202,14 +202,16 @@ const OurWorks = () => {
                           />
                           DESIGN
                         </button> */}
+                        {!isExcludedPage && (
                         <button className={style.projectButtonBack} onClick={() => router.push(`/${e.folder}/${e.page}`)}>
-                          {/* <Image
-                            src={touch}
-                            alt="get"
-                            className={style.getInTouchImg}
-                          /> */}
-                          Read More
-                        </button>
+                        {/* <Image
+                          src={touch}
+                          alt="get"
+                          className={style.getInTouchImg}
+                        /> */}
+                        Read More
+                      </button>
+                      )}
                       </div>
                     </div>
                   </div>

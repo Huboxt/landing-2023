@@ -152,9 +152,9 @@
   
  
   @media (max-width: 800px){
-    .flipCardInner{
+    /* .flipCardInner{
       display: none;
-    }
+    } */
     .flipCardInnerMobile{
       display: block;
       position: relative;
