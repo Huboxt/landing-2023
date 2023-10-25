@@ -121,11 +121,13 @@
 }
 
 .clutchImage {
-  height: 70px;
-  
+  height: 40px;
+  width: 100px;
+  margin-bottom: 6px;
 }
 .badgeImage {
-  height: 84px;
+  height: 50px;
+  width: 150px;
 }
 
 .gmailDesktop {
@@ -227,13 +229,14 @@
   }
 
   .container {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     padding: 0 140px 0px 140px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    justify-content: space-between;
+    /* gap: 150px; */
   }
   .rightsContainer {
     padding: 0 140px;
@@ -265,13 +268,22 @@
     gap: 24px;
   }
   .linksWrapper {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
 @media (min-width: 1550px) {
   .container {
     flex-direction: row;
+  }
+  .badgeImage {
+    height: 100px;
+    width: 310px;
+  }
+  .clutchImage {
+    height: 70px;
+    width: 150px;
+    margin-bottom: 0px;
   }
 }
 

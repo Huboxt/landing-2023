@@ -154,7 +154,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.linksWrapper}>
-          <div className={style.contactsBlock}>
+          {/* <div className={style.contactsBlock}> */}
             {/* <div
               className={`${style.gmail} ${style.gmailDesktop}`}
               onClick={() => {
@@ -163,18 +163,18 @@ const Footer = () => {
             >
               sales@huboxt.com
             </div> */}
-            <div className={style.socialBlock}>
-              {/* <Link href="/our-works/our-works-page" className={style.link}>
+            {/* <div className={style.socialBlock}>
+              <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={facebook} alt="facebook" />
               </Link>
               <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={instagram} alt="instagram" />
-              </Link> */}
-              {/* <Link href="/our-works/our-works-page" className={style.link}>
+              </Link>
+              <Link href="/our-works/our-works-page" className={style.link}>
                 <Image src={linkedin} alt="linkedin" />
-              </Link> */}
-            </div>
-          </div>
+              </Link>
+            </div> */}
+          {/* </div> */}
           <div className={style.imagesWrapper}>
           <a
               href="https://clutch.co/profile/huboxt?_gl=1*1dgykuk*_ga*MTgzNjY4MjMxMS4xNjc1MjY2Njgy*_[…]NFJxMUFtT0tXbFJQYTlMQVRpOE5TNDZSNVFFanpYV0E1VHdORXZKOEh3JTNEJTNE"
