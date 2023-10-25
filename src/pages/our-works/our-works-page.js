@@ -23,7 +23,7 @@ const OurWorksPage = () => {
           className={style.ourWorksIcon}
         />
       </div>
-      <div>
+      <div className={style.ourWorksDesktop}>
         {projects.map((e, index) => {
           const isExcludedPage = [
             "segma",
@@ -32,14 +32,13 @@ const OurWorksPage = () => {
             "dms",
             "datbi",
           ].includes(e.page);
-          const tagsArray = e.tags.split(", "); // Розділити рядок тегів на масив
+          const tagsArray = e.tags.split(", ");
           return (
             <div key={e.id} className={style.Wrapper}>
               <div className={style.flipCardInner}>
                 <div className={style.projectBack} key={e.name + index}>
                   <div className={style.flex}>
                     <div className={style.leftBlock}>
-                      {/* Мапимо кнопки для кожного тега */}
                       {tagsArray.map((tag, tagIndex) => (
                         <button
                           key={tagIndex}
@@ -73,6 +72,64 @@ const OurWorksPage = () => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+
+      <div className={style.ourWorksMobile}>
+        {projects.map((e, index) => {
+          const isExcludedPage = [
+            "segma",
+            "fleetInsider",
+            "carbookingservice",
+            "dms",
+            "datbi",
+          ].includes(e.page);
+          const tagsArray = e.tags.split(", ");
+          return (
+            <div key={e.id} className={style.Wrapper}>
+              <div className={style.flipCardInner}>
+                <div className={style.projectBack} key={e.name + index}>
+                  <div>
+                    <div className={style.leftBlock}>
+                      {tagsArray.map((tag, tagIndex) => (
+                        <button
+                          key={tagIndex}
+                          className={style.projectButtonBack}
+                        >
+                          {tag}
+                        </button>
+                      ))}
+                      <div className={style.projectTitleBack}>{e.title}</div>
+                      <div className={style.projectDescriptionBack}>
+                        {e.description}
+                      </div>
+                    </div>
+                    <div className={style.projectImage}>
+                      <Image
+                        src={e.Image}
+                        alt=" "
+                        style={{ width: "100%", height: "100%" }}
+                      />
+                    </div>
+                    {!isExcludedPage && (
+                        <button
+                          className={style.projectButtonBackDev}
+                          onClick={() => router.push(`/${e.folder}/${e.page}`)}
+                        >
+                          <Image
+                            src={touch}
+                            alt="get"
+                            className={style.getInTouchImg}
+                          />
+                          VIEW PROJECT
+                        </button>
+                      )}
                   </div>
                 </div>
               </div>

@@ -2,12 +2,22 @@
   background: #f2f0ee;
 }
 
+.ourWorksDesktop {
+  display: block;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.ourWorksMobile {
+  display: none;
+}
+
 .flex {
     display: flex;
 }
 
 .leftBlock {
     flex: 40%;
+    margin-right: 40px;
 }
 
 .ourWorksWrapper{
@@ -19,7 +29,7 @@
     justify-content: space-between;
   }
   .Wrapper{
-    max-width: 1363px;
+    /* max-width: 1363px; */
     height: 540px;
     margin-left: auto;
     margin-right: auto;
@@ -147,14 +157,35 @@
   .projectImage{
     width: 100%;
     flex: 60%;
-    max-height: 540px;
+    max-height: 460px;
   }
-  
  
-  @media (max-width: 800px){
+
+  @media (max-width: 1280px){
     /* .flipCardInner{
       display: none;
     } */
+    .ourWorksDesktop {
+      display: none;
+    }
+    .ourWorksMobile {
+      display: block;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    .projectBack{
+      padding: 20px;
+      height: 540px;
+      position: relative;
+      height: auto;
+    }
+    .projectDescriptionBack {
+      margin-bottom: 20px;
+    }
+    .projectButtonBackDev {
+      margin-top: 25px;
+    }
+
     .flipCardInnerMobile{
       display: block;
       position: relative;
@@ -167,24 +198,24 @@
       transition: all 1s;
     }
     .Wrapper{
-      height: 570px;
+      height: auto;
     }
     .Wrapper:hover .flipCardInnerMobile > .projectBack{
       opacity: 1;
     }
     .flipCardInnerMobile > .projectBack{
       opacity: 1;
-      height: 570px;
+      /* height: 570px; */
     }
     .flipCardInnerMobile > .project{
-      height: 570px;
+      /* height: 570px; */
     }
     .projectButtonBack{
       font-size: 14px;
       padding: 12px 16px;
     }
     .projectImage{
-      max-height: 300px;
+      max-height: 580px;
     }
     .flipCardInnerMobile > .projectTitleBack{
       font-weight: 500;
@@ -198,6 +229,22 @@
       font-size: 16px;
       line-height: 28px;
       color: #5B5B5B;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .ourWorksMobile {
+      display: block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    .ourWorksDesktop {
+      display: block;
+      padding-left: 140px;
+      padding-right: 140px;
     }
   }
 
