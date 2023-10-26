@@ -23,7 +23,7 @@ import instagram from "../../assets/img/instagram-mobile.svg";
 import linkedin from "../../assets/img/linkedin-mobile.svg";
 import { CSSTransition } from "react-transition-group";
 
-const Header = ({ showGetTouchBtn }) => {
+const Header = ({ showGetTouchBtn, offsetPosition }) => {
   const [firstAnimation, setFirstAnimation] = useState(true);
   const [animationComplete, setAnimationComplete] = useState(false);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -68,7 +68,6 @@ const Header = ({ showGetTouchBtn }) => {
     e.preventDefault();
     var element = document.getElementById("getInTouch");
     var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset + 1000;
 
     window.scrollTo({
       top: offsetPosition,
@@ -273,7 +272,12 @@ const Header = ({ showGetTouchBtn }) => {
                 <div className={style.mobileMenuItem}>
                   <Link href="/our-works/our-works-page">OUR WORKS</Link>
                 </div>
-                <div className={style.mobileMenuItem}>GET IN TOUCH</div>
+                <div className={style.mobileMenuItem} onClick={(e) => {
+                  toggleMenu();
+                  handleClickScroll(e);
+                }}>
+                  GET IN TOUCH
+                </div>
                 <div className={style.mobileMenuItem}><Link href="/termspolicy/terms">TERMS</Link></div>
                 <div className={style.mobileMenuItem}><Link href="/termspolicy/policy">PRIVACY POLICY</Link></div>
               </div>

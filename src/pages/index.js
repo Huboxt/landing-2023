@@ -48,6 +48,7 @@ export default function Home() {
       });
     }
   }
+ 
   useEffect(() => {
     if (process.browser){
       document.getElementById("whiteBackground")?.addEventListener('animationend', myEndFunction)
@@ -128,7 +129,7 @@ export default function Home() {
         <div className={style.firstScreenWrapper}>
           <div className={style.container}>
             <div>
-              <Header mainHeaderStyle/>
+              <Header mainHeaderStyle offsetPosition={9200}/>
               <FirstBlock />
             </div>
             <div className={style.skillsWrapper}>

@@ -73,6 +73,13 @@ const Footer = () => {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          speed: 5000,
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 

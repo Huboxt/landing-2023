@@ -23,7 +23,7 @@ const StartupsPage = () => {
     var elementPosition = element.getBoundingClientRect().top;
   
     window.scrollTo({
-      top: 11500,
+      top: 12200,
       behavior: "smooth",
     });
   };
@@ -31,7 +31,7 @@ const StartupsPage = () => {
 
   return (
     <div className={style.container}>
-      <Header showGetTouchBtn />
+      <Header showGetTouchBtn offsetPosition={12200}/>
       <div className={style.startupsTitleContainer}>
         <div className={style.startupsTitleBlock}>
           <div>
