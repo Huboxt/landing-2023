@@ -129,7 +129,7 @@ const PetmateAI = () => {
                 <div className={style.tableDescr}>PetmateAI</div>
               </div>
               <div>
-                <div className={style.tableTitle}>TEAM</div>
+                <div className={style.tableTitle}>TEAM MEMBERS</div>
                 <div className={style.tableDescr}>5</div>
               </div>
               <div>

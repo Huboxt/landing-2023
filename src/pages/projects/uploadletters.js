@@ -136,7 +136,7 @@ const UploadlettersPage = () => {
                 <div className={style.tableDescr}>Uploadletters</div>
               </div>
               <div>
-                <div className={style.tableTitle}>TEAM</div>
+                <div className={style.tableTitle}>TEAM MEMBERS</div>
                 <div className={style.tableDescr}>6</div>
               </div>
               <div>

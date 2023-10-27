@@ -103,7 +103,7 @@ const DataConceptPage = () => {
                 <div className={style.tableDescr}>Dataconcepts</div>
               </div>
               <div>
-                <div className={style.tableTitle}>TEAM</div>
+                <div className={style.tableTitle}>TEAM MEMBERS</div>
                 <div className={style.tableDescr}>4</div>
               </div>
               <div>
