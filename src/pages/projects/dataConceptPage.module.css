@@ -585,7 +585,7 @@
         justify-content: center;
     }
     .dataConceptStackContainer {
-        max-width: 422px;
+        max-width: 480px;
         gap: 65px;
     }
 
@@ -715,7 +715,7 @@
     }
 
     .researchContainer {
-        margin-top: 130px;
+        margin-top: -55px;
         background: #f2f0ee;
         border-radius: 60px 60px 0px 0px;
         padding-top: 88px;
@@ -723,6 +723,10 @@
         padding-right: 45px;
         position: relative;
         z-index: 10;
+    }
+    
+    .padding45 {
+        padding-left: 45px;
     }
 
     .scopeMargin {

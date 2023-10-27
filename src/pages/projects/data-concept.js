@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header";
 import GetTouch from "@/components/GetTouch/GetTouch";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
-import dataConceptCard from "../../assets/img/dataConceptCard.svg";
+import dataConceptCard from "../../assets/img/dataConceptCard.png";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
 import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
@@ -12,9 +12,9 @@ import tsIcon from "../../assets/img/stackIcons/typescript.svg";
 import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
 import style from "@/pages/projects/dataConceptPage.module.css";
 import dataConceptTitle from "./dataConceptTitle.svg";
-import dataConceptJobs1 from "./data-concept-jobs1.svg";
-import dataConceptJobs2 from "./data-concept-jobs2.svg";
-import dataConceptJobs3 from "./data-concept-jobs3.svg";
+import dataConceptJobs1 from "./data-concept-jobs1.png";
+import dataConceptJobs2 from "./data-concept-jobs2.png";
+import dataConceptJobs3 from "./data-concept-jobs3.png";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
@@ -242,7 +242,7 @@ const DataConceptPage = () => {
           </div>
         </Parallax>
         <Parallax>
-          <div className={style.researchContainer}>
+          <div className={`${style.researchContainer} ${style.padding45}`}>
             <Image
               src={dataConceptCard}
               id="dataConceptCard"
@@ -430,7 +430,7 @@ const DataConceptPage = () => {
         </Parallax>
 
         <Parallax>
-        <div className={style.researchContainer}>
+        <div className={`${style.researchContainer} ${style.padding45}`}>
           <div>
             <Image
               src={dataConceptJobs1}

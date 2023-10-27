@@ -503,11 +503,14 @@
 }
 
 .petmateWebsite {
-    width: 357px;
-    height: 257px;
+    width: 90%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+}
+.getTouchWrapper {
+    margin-top: -50px;
 }
 
 @media (min-width: 992px) {
@@ -559,8 +562,9 @@
     }
 
     .petmateWebsite {
-        width: 872px;
-        height: 490.5px;
+        width: 90%;
+        height: 100%;
+        padding-bottom: 75px
     }
 
     .dataConceptTitle {

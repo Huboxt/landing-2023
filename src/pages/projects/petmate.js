@@ -12,7 +12,7 @@ import petmateDesign2Desktop from "../../assets/img/petmate-design2-desktop.svg"
 import petmateDesign3 from "../../assets/img/petmate-design3.svg";
 import appStore from "../../assets/img/appstore-icon.svg";
 import googlePlay from "../../assets/img/googleplay-icon.svg";
-import petmateCard from "../../assets/img/petmateCard.svg";
+import petmateCard from "../../assets/img/petmateCard.png";
 import pawIcon from "../../assets/img/paw-icon.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
