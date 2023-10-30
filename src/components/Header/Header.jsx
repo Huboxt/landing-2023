@@ -141,7 +141,7 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
             >
               ABOUT
             </button> */}
-            <Link href="/our-works/our-works-page">
+            <Link href="/our-works-page">
               <button
                 className={`${style.headerButton} ${
                   animationComplete ? style.animatedButton : ""
@@ -201,14 +201,27 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
               </CSSTransition>
             </div>
           </div>
-          <button
+          {/* <button
             className={
               isMenuOpen ? style.headerMenuCloseBtn : style.headerMenuBtn
             }
             onClick={toggleMenu}
           >
             {isMenuOpen ? "CLOSE" : "MENU"}
+          </button> */}
+          <div className={style.btnWrapper}>
+          <button
+            onClick={toggleMenu}
+            className={style.button}
+            aria-pressed={isMenuOpen ? "true" : "false"}
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="black">
+              <rect width="18" height="1.5" fill="black" ry="0.75" x="3" y="6.25" />
+              <rect width="18" height="1.5" fill="black" ry="0.75" x="3" y="11.25" />
+              <rect width="18" height="1.5" fill="black" ry="0.75" x="3" y="16.25" />
+            </svg>
           </button>
+          </div>
           {/* Mobile menu */}
           <CSSTransition
             in={isMenuOpen}
@@ -270,7 +283,7 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
                   )}
                 </div>
                 <div className={style.mobileMenuItem}>
-                  <Link href="/our-works/our-works-page">OUR WORKS</Link>
+                  <Link href="/our-works-page">OUR WORKS</Link>
                 </div>
                 <div className={style.mobileMenuItem} onClick={(e) => {
                   toggleMenu();

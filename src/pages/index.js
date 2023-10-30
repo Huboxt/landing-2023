@@ -18,7 +18,7 @@ import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
 import FourthBlock from '../components/FourthBlock/FourthBlock';
 import FifthBlock from '../components/FifthBlock/FifthBlock';
 import style from './index.module.css';
-import OurWorksPage from './our-works/our-works-page';
+import OurWorksPage from './our-works-page';
 import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
 import UploadlettersPage from './projects/uploadletters';

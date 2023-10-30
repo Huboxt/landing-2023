@@ -4,9 +4,9 @@ import GetTouch from "@/components/GetTouch/GetTouch";
 import Footer from "@/components/Footer/Footer";
 import { projects } from "@/components/OurWorks/project";
 import Image from "next/image";
-import ourWorksIcon from "../../assets/img/ourWorksIcon.svg";
+import ourWorksIcon from "../assets/img/ourWorksIcon.svg";
 import style from "@/pages/our-works/ourWorksPage.module.css";
-import touch from "../../assets/img/getInTouch.svg";
+import touch from "../assets/img/getInTouch.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 

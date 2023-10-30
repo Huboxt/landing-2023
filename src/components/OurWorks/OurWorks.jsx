@@ -221,7 +221,7 @@ const OurWorks = () => {
           </Slider>
         </div>
         <div className={style.viewMoreBlock}>
-          <Link href="/our-works/our-works-page">
+          <Link href="/our-works-page">
             <button className={style.viewMoreBtn}>
               <Image src={touch} alt="get" className={style.getInTouchImg} />
               VIEW MORE

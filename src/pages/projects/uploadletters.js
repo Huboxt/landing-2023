@@ -47,7 +47,7 @@ const UploadlettersPage = () => {
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.backBtn}>
-        <Link href="/our-works/our-works-page">
+        <Link href="/our-works-page">
           <div className={style.arrow}>
             <Image src={arrowBack} alt="arrowBack" />
           </div>

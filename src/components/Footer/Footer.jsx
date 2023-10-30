@@ -112,7 +112,7 @@ const Footer = () => {
               <Link href="/services/flutter" className={style.link}>
                 Mobile development
               </Link>
-              <Link href="/our-works/our-works-page" className={style.link}>
+              <Link href="/our-works-page" className={style.link}>
                 <Image src={linkedin} alt="linkedin" />
               </Link>
             </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                 >
                   ABOUT
                 </Link> */}
-                <Link href="/our-works/our-works-page" className={style.link}>
+                <Link href="/our-works-page" className={style.link}>
                   OUR WORKS
                 </Link>
                 <Link
@@ -161,27 +161,6 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.linksWrapper}>
-          {/* <div className={style.contactsBlock}> */}
-            {/* <div
-              className={`${style.gmail} ${style.gmailDesktop}`}
-              onClick={() => {
-                window.location.href = "mailto:sales@huboxt.com";
-              }}
-            >
-              sales@huboxt.com
-            </div> */}
-            {/* <div className={style.socialBlock}>
-              <Link href="/our-works/our-works-page" className={style.link}>
-                <Image src={facebook} alt="facebook" />
-              </Link>
-              <Link href="/our-works/our-works-page" className={style.link}>
-                <Image src={instagram} alt="instagram" />
-              </Link>
-              <Link href="/our-works/our-works-page" className={style.link}>
-                <Image src={linkedin} alt="linkedin" />
-              </Link>
-            </div> */}
-          {/* </div> */}
           <div className={style.imagesWrapper}>
           <a
               href="https://www.designrush.com/agency/profile/huboxt"

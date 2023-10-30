@@ -92,7 +92,7 @@ const ContactFormComponent = () => {
                 onChange={handleChangeServices}
                 options={services}
               />
-              <div className={style.errorMessage}>{false && errors.name}</div>
+              {/* <div className={style.errorMessage}>{false && errors.name}</div> */}
             </div>
             <div className={style.inputContainer}>
             <Select
@@ -105,7 +105,7 @@ const ContactFormComponent = () => {
                 onChange={handleChangeProjectBudget}
                 options={ProjectBudget}
               />
-              <div className={style.errorMessage}>{false && errors.name}</div>
+              {/* <div className={style.errorMessage}>{false && errors.name}</div> */}
             </div>
           <div className={style.inputContainer}>
             <textarea
