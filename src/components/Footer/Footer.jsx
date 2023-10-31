@@ -112,7 +112,7 @@ const Footer = () => {
               <Link href="/services/flutter" className={style.link}>
                 Mobile development
               </Link>
-              <Link href="/our-works-page" className={style.link}>
+              <Link href="https://www.linkedin.com/company/huboxt" className={style.link} target="_blank">
                 <Image src={linkedin} alt="linkedin" />
               </Link>
             </div>
