@@ -11,6 +11,7 @@ services:
       VIRTUAL_HOST: ${DOMAIN_NAME}
       LETSENCRYPT_HOST: ${DOMAIN_NAME}
       LETSENCRYPT_EMAIL: ${NOTIFICATION_EMAIL}
+      VIRTUAL_PORT: 3000
     logging:
       driver: "json-file"
       options:
