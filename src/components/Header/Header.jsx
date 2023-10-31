@@ -83,19 +83,6 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
         }`}
       >
         <div className={style.headerContainer}>
-          {/* <Link href="/">
-            <div className={style.logo}>
-              <Image src={hub} alt="hub" />
-              <div className={style.oBgWrapper}>
-                <Image src={oxt} alt="oxt" />
-                <div
-                  className={`${firstAnimation ? `${style.firstO}` : style.o}`}
-                >
-                  <div className={style.inner} />
-                </div>
-              </div>
-            </div>
-          </Link> */}
           {isMenuOpen ? (
             <Link href="/">
               <Image
@@ -309,7 +296,7 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
                     className={style.mobileSocialIcon}
                   />
                 </Link> */}
-                <Link href="https://www.linkedin.com">
+                <Link href="https://www.linkedin.com/company/huboxt" target="_blank">
                   <Image
                     src={linkedin}
                     alt="linkedin"

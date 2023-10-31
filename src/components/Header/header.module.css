@@ -63,7 +63,7 @@
 
 .oBgWrapper {
   position: relative;
-  margin-left: -9px;
+  margin-left: -4px;
   display: flex;
   align-items: flex-end;
   z-index: 30;
@@ -72,9 +72,9 @@
 .inner {
   position: relative;
   z-index: 25;
-  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-  width: 10px;
-  height: 10px;
+  background: linear-gradient(131.77deg, #030D42 0.09%, #7ba9ff 97.17%);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-size: 150% 150%;
 
@@ -404,13 +404,13 @@
   }
 
   .inner {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
   }
 
   .o {
     left: 14px;
-    top: 55%;
+    top: 57%;
   }
 
   .oBgWrapper {
