@@ -71,6 +71,7 @@ const PetmateAI = () => {
             I NEED THE SAME!
           </button>
         </div>
+        <div className={style.stackWrapper}>
         <div className={style.stackContainer}>
           <div className={style.stackContainerUp}>
             <div className={style.stackBlock}>
@@ -102,6 +103,10 @@ const PetmateAI = () => {
               <div className={style.stackTitle}>Python</div>
             </div>
           </div>
+        </div>
+        <div className={style.url}>
+          <Link href="https://petmateai.com/" target="_blank">petmateai.com</Link>
+        </div>
         </div>
       </div>
       <div>

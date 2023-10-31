@@ -107,7 +107,7 @@ const Header = ({ showGetTouchBtn, offsetPosition }) => {
                   />
                   <div
                     className={`${
-                      firstAnimation ? `${style.firstO}` : style.o
+                      firstAnimation  && !showGetTouchBtn ? `${style.firstO}` : style.o
                     }`}
                   >
                     <div className={style.inner} />

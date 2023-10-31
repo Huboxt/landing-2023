@@ -72,6 +72,7 @@ const UploadlettersPage = () => {
             I NEED THE SAME!
           </button>
         </div>
+        <div>
         <div className={style.stackContainer}>
           <div className={style.stackContainerUp}>
             <div className={style.stackBlock}>
@@ -109,6 +110,10 @@ const UploadlettersPage = () => {
               <div className={style.stackTitle}>Python</div>
             </div>
           </div>
+        </div>
+        <div className={style.url}>
+          <Link href="https://uploadletters.com/" target="_blank">uploadletters.com</Link>
+        </div>
         </div>
       </div>
       <ParallaxProvider>

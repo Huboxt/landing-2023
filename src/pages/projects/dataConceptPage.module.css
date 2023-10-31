@@ -48,6 +48,7 @@
     padding: 15px 15px;
     gap: 32px;
     align-items: center;
+    margin-bottom: 20px;
 }
 .dataConceptStackContainer {
     display: flex;
@@ -84,6 +85,19 @@
 .stackIcon {
     width: 80px;
     height: 36px;
+}
+
+.url {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.url a {
+    text-decoration: none;
+}
+.url a:hover {
+    opacity: 0.7;
+    transition: all 0.4s;
 }
 
 .needSameButton {
@@ -583,6 +597,7 @@
         margin-left: 0;
         margin-right: 0;
         justify-content: center;
+        margin-bottom: 40px;
     }
     .dataConceptStackContainer {
         max-width: 480px;
@@ -615,6 +630,10 @@
     .stackIcon {
         width: 130px;
         height: 56px;
+    }
+
+    .url {
+        font-size: 30px;
     }
 
     .table {
@@ -962,6 +981,11 @@
         line-height: 34px;
     }
 
+    .url {
+        justify-content: start;
+        font-size: 30px;
+    }
+
     .table {
         width: 100%;
         border-collapse: collapse;
@@ -1295,6 +1319,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 34px;
+    }
+
+    .url {
+        font-size: 40px;
     }
 
     .table {
