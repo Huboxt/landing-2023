@@ -8,5 +8,6 @@ COPY package*.json ./
 COPY .next .next
 COPY node_modules node_modules
 COPY src src
+COPY public public
 # Set the command to run the application when the container starts
 CMD ["npm", "start"]
