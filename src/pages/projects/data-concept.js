@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header";
 import GetTouch from "@/components/GetTouch/GetTouch";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
-import dataConceptCard from "../../assets/img/dataConceptCard.png";
+import dataConceptCard from "../../assets/img/dataConceptCard.svg";
 import aboutTitle from "../../assets/img/aboutTitle.svg";
 import researchTitle from "../../assets/img/researchTitle.svg";
 import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";

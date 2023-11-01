@@ -257,6 +257,15 @@
     }
   }
 
+  @media (min-width: 1600px) {
+    .projectImage{
+      max-height: 480px;
+      max-width: 900px;
+      width: 900px;
+      width: 100%;
+    }
+  }
+
 
 
   

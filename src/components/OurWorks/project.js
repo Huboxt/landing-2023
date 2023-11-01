@@ -1,11 +1,11 @@
-import DataConceptCard from '../../assets/img/dataConceptCard.png';
-import SegmaCard from '../../assets/img/segmaCard.png';
-import uploadLettersCard from '../../assets/img/uploadLettersCard.png';
-import petmateCard from '../../assets/img/petmateCard.png';
-import fleetInsiderCard from '../../assets/img/fleetInsiderCard.png';
+import DataConceptCard from '../../assets/img/dataConceptCard.svg';
+import SegmaCard from '../../assets/img/segmaCard.svg';
+import uploadLettersCard from '../../assets/img/uploadLettersCard.svg';
+import petmateCard from '../../assets/img/petmateCard.svg';
+import fleetInsiderCard from '../../assets/img/fleetInsiderCard.svg';
 import cardBookingCard from '../../assets/img/cardBookingCard.svg';
-import DMSCard from '../../assets/img/DMSCard.png';
-import DatBiCard from '../../assets/img/DatBiCard.png';
+import DMSCard from '../../assets/img/DMSCard.svg';
+import DatBiCard from '../../assets/img/DatBiCard.svg';
 
 
 export const projects = [
