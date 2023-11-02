@@ -428,10 +428,18 @@
     font-weight: 500;
     line-height: 24px;
   }
+  .headerButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 20px 40px;
+    gap: 5px;
+    margin-left: auto;
+    /* border: 1.5px solid #070707;
+    border-radius: 40px; */
+  }
   .button {
-    right: 80px;
-    top: 40px;
-    width: 60px;
+    display: none;
   }
 
   .headerMenuCloseBtn {
@@ -482,24 +490,11 @@
   .header {
     padding: 32px 140px 0 140px;
   }
-  .headerButtons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 40px 20px 40px;
-    gap: 5px;
-    margin-left: auto;
-    /* border: 1.5px solid #070707;
-    border-radius: 40px; */
-  }
   .getButton {
     display: block;
   }
 
   .headerMenuBtn {
-    display: none;
-  }
-  .button {
     display: none;
   }
 }
