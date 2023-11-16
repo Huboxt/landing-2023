@@ -18,56 +18,83 @@
   position: relative;
   display: flex;
   background: #F2F0EE;
-  max-width: 200px;
+  width: 100px;
+  min-width: 100px;
   padding-right: 30px;
   box-sizing: border-box;
   border-right: 1px solid #21309D;
   max-height: 0px;
   padding-top: 0px;
   animation-name: goup;
-  animation-delay: 3.5s;
+  animation-delay: 1.5s;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   overflow: hidden;
+  transition: all 1000ms ease;
+}
+.block:hover {
+  min-width: 400px;
+  .name {
+    transform: rotate(180deg);
+    transition: all 500ms ease;
+  }
 }
 .block:nth-child(2){
-  animation-delay: 2.5s;
+  animation-delay: 1s;
   animation-duration: 0.8s;
 }
 .block:last-child{
-  animation-delay: 1.5s;
+  animation-delay: 0.5s;
   animation-duration: 0.8s;
 }
 .blockHover:hover::before{
-  /* background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%); */
-  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-  transform: scaleY(200);
-  transition: all 1s;
-  background-size: 150% 150%;
-  -webkit-animation: Animation 2s ease 0.5s;
-  -moz-animation: Animation 2s ease 0.5s;
-  animation: Animation 2s ease 0.5s;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  /* animation-name: backgroundBlock; 
-  animation-delay: 1s;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;  */
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.blockHover2:hover::before{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.blockHover3:hover::before{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.blockHover3::before{
+  position: absolute;
+  top: 0;
+  content:"";
+  opacity: 0;
+  background:  url('./../assets/img/management.jpg');
+  background-size: cover;
+  background-position: left;
+  rotate: 180deg;
+  filter: grayscale(100%);
 }
 .blockHover::before{
   position: absolute;
   top: 0;
-  content:"1";
-  color: transparent;
-  width:100%;
-  min-width: 100%;
-  height: 10px;
-  background: linear-gradient(131.77deg, #030D42 0.09%, #437FED 97.17%);
-  background-size: 200% 200%;
-  transform: scaleY(0);
-  transition: all 0.5s;
+  content:"";
+  opacity: 0;
+  background:  url('./../assets/img/laptop.jpg');
+  background-size: cover;
+  background-position: center;
+  rotate: 180deg;
+  filter: grayscale(100%);
+}
+.blockHover2::before{
+  position: absolute;
+  top: 0;
+  content:"";
+  opacity: 0;
+  background:  url('./../assets/img/design.jpg');
+  background-size: cover;
+  background-position: center;
+  rotate: 180deg;
+  filter: grayscale(100%);
 }
 .blockHover:hover .name{
   background: #F2F0EE;
@@ -76,6 +103,29 @@
   background-clip: text;
   text-fill-color: transparent;
   transition: 0.6s all;
+  margin-left: 0px;
+  margin-top: 100px;
+}
+.blockHover2:hover .name{
+  background: #F2F0EE;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: 0.6s all;
+  justify-content: end;
+  margin-left: 5px;
+  margin-top: 100px;
+}
+.blockHover3:hover .name{
+  background: #F2F0EE;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: 0.6s all;
+  margin-left: 0px;
+  margin-top: 100px;
 }
 .name{
   position: relative;
@@ -84,7 +134,7 @@
   display: flex;
   width: 300px;
   height: 300px;
-  align-items: center;
+  align-items: end;
   font-weight: 500;
   font-size: 44px;
   line-height: 50px;
@@ -96,6 +146,49 @@
   text-fill-color: transparent;
   transition: 0.5s all ease;
   transform: rotate(90deg);
+  margin-left: 25px;
+}
+.blockHover:hover .description {
+  display: block;
+  position: absolute;
+  rotate: 180deg;
+  color: white;
+  font-size: 22px;
+  left: -30px;
+  top: 85px;
+  width: 348px;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.blockHover2:hover .description {
+  display: block;
+  position: absolute;
+  rotate: 180deg;
+  color: white;
+  font-size: 22px;
+  left: -65px;
+  top: 110px;
+  width: 348px;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.blockHover3:hover .description {
+  display: block;
+  position: absolute;
+  rotate: 180deg;
+  color: white;
+  font-size: 22px;
+  left: 10px;
+  top: 110px;
+  width: 348px;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.description {
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0s ease;
 }
 .whiteBackground{
   display: inline-block;
@@ -104,7 +197,7 @@
   background: #F2F0EE;
   animation-name: whiteBackground;
   animation-duration: 0.6s;
-  animation-delay: 4.5s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
   /* transform-origin: 100%; */
   max-width: 100%;
@@ -147,8 +240,20 @@
     height: 980px;
   }
 }
+@media (min-width: 1600px) {
+  .block {
+    width: 150px;
+    min-width: 150px;
+  }
+  .block:hover {
+    min-width: 500px;
+  }
+  .name {
+    margin-left: 50px;
+  }
+}
 
-@media(max-width: 1435px){
+@media(max-width: 1433px){
   .container{
     flex-direction: column;
   }

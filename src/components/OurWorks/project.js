@@ -1,5 +1,6 @@
 import DataConceptCard from '../../assets/img/dataConceptCard.svg';
 import SegmaCard from '../../assets/img/segmaCard.svg';
+import LeadsCard from '../../assets/img/leadsCard.png';
 import uploadLettersCard from '../../assets/img/uploadLettersCard.svg';
 import petmateCard from '../../assets/img/petmateCard.svg';
 import fleetInsiderCard from '../../assets/img/fleetInsiderCard.svg';
@@ -38,6 +39,15 @@ export const projects = [
   },
   {
     id: '4',
+    title: "Leads", 
+    description: "Our IT agency has given the SMS Marketing application a stunning makeover. We’ve redesigned the user interface to make every action smoother, faster and easier. The interface has become sleek and user-friendly, and navigating through campaigns, analyzing data, and managing contacts has never been so effortless.",
+    Image: LeadsCard,
+    folder: 'projects',
+    page: "leads",
+    tags: "design, development, management"
+  },
+  {
+    id: '5',
     title: "Segma", 
     description: "Our IT agency has given the SMS Marketing application a stunning makeover. We’ve redesigned the user interface to make every action smoother, faster and easier. The interface has become sleek and user-friendly, and navigating through campaigns, analyzing data, and managing contacts has never been so effortless.",
     Image: SegmaCard,
@@ -45,7 +55,7 @@ export const projects = [
     tags: "design, development, management"
   },
   {
-    id: '5',
+    id: '6',
     title: "FleetInsider", 
     description: "The fast changing world of web development has expanded our skill set and has made us experienced in all major ui frameworks, which makes your application look nice and modern while being and fast.",
     Image: fleetInsiderCard,
@@ -53,7 +63,7 @@ export const projects = [
     tags: "design, development, management"
   },
   {
-    id: '6',
+    id: '7',
     title: "Car Booking service", 
     description: "Our IT agency has unleashed its creative prowess to craft a captivating design for a Car Booking service mobile app. We specialize in a seamless, visually stunning interface that makes booking a car a breeze.",
     Image: cardBookingCard,
@@ -61,7 +71,7 @@ export const projects = [
     tags: "design, development, management"
   },
   {
-    id: '7',
+    id: '8',
     title: "DMS/MMS", 
     description: "Introducing our all-in-one Asset Maintenance App, meticulously crafted by our IT agency. We’ve combined cutting-edge development and elegant design to simplify asset management like never before. From maintenance schedules to sending scheduled reports, our app has got you covered.",
     Image: DMSCard,
@@ -69,7 +79,7 @@ export const projects = [
     tags: "design, development, management"
   },
   {
-    id: '8',
+    id: '9',
     title: "Datbi", 
     description: "Our IT agency crafted a stunning landing page for a Data Analytics company. We specialize in creating engaging, user-centric web solutions that make data come alive. Explore how we turn complex data into an inviting, informative experience.",
     Image: DatBiCard,

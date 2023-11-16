@@ -21,6 +21,7 @@ import style from './index.module.css';
 import OurWorksPage from './our-works-page';
 import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
+import LeadsPage from './projects/leads';
 import UploadlettersPage from './projects/uploadletters';
 import PetmateAI from './projects/petmate';
 import FlutterPage from './services/flutter';
@@ -133,21 +134,23 @@ export default function Home() {
               <FirstBlock />
             </div>
             <div className={style.skillsWrapper}>
-              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
+              <div className={`${style.block} ${allowHover ? style.blockHover3 : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
                   Management
                   <div className={style.whiteBackground}>
-                  Management
+                  Management 
                   </div>
                 </span>
+                <span className={style.description}>Orchestrating efficiency  through proactive management solutions</span>
               </div>
-              <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
+              <div className={`${style.block} ${allowHover ? style.blockHover2 : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
                   Design
                 <div className={style.whiteBackground}>
                   Design
                 </div>
                 </span>
+                <span className={style.description}>Transforming vision into seamless user interfaces</span>
               </div>
               <div className={`${style.block} ${allowHover ? style.blockHover : ""}`} onClick={handleScrollServices}>
                 <span className={style.name}>
@@ -156,6 +159,7 @@ export default function Home() {
                  Development
                  </div>
                 </span>
+                <span className={style.description}>Empowering your growth through expert development services</span>
               </div>
             </div>
           </div>
@@ -219,6 +223,7 @@ export default function Home() {
           <ToastContainer />
           {router.pathname === '/our-works-page' && <OurWorksPage />}
           {router.pathname === '/data-concept' && <DataConceptPage />}
+          {router.pathname === '/leads' && <LeadsPage />}
           {router.pathname === '/uploadletters' && <UploadlettersPage />}
           {router.pathname === '/petmate' && <PetmateAI />}
           {router.pathname === '/startups' && <StartupsPage />}
