@@ -40,11 +40,11 @@ export const projects = [
   {
     id: '4',
     title: "Leads", 
-    description: "Our IT agency has given the SMS Marketing application a stunning makeover. We’ve redesigned the user interface to make every action smoother, faster and easier. The interface has become sleek and user-friendly, and navigating through campaigns, analyzing data, and managing contacts has never been so effortless.",
+    description: "We created an SMS & Email marketing platform that enables businesses to create, manage, and execute marketing campaigns through text messages.",
     Image: LeadsCard,
     folder: 'projects',
     page: "leads",
-    tags: "design, development, management"
+    tags: "design, twilio integration, sms/email sending"
   },
   {
     id: '5',

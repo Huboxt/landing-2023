@@ -1036,6 +1036,7 @@
         margin-left: auto;
         margin-bottom: 32px;
         margin-top: 0px;
+        margin-right: 80px;
         color: #F2F0EE;
     }
     .requirementsMargin {
@@ -1089,6 +1090,9 @@
 
     .scopeMargin {
         margin-top: 130px;
+    }
+    .scopeMarginUpload {
+        margin-top: -60px;
     }
 
     .scopeBlock {
@@ -1387,7 +1391,7 @@
         border-radius: 20px;
   border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
-        max-width: 532px;
+        max-width: 750px;
         height: 450px;
         box-sizing: border-box;
         margin-bottom: 32px;

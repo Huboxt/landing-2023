@@ -15,6 +15,9 @@ import leadsCard3 from "../../assets/img/leadsCard3.png";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
+import numberIcon4 from "../../assets/img/numberIcon4.svg";
+import numberIcon5 from "../../assets/img/numberIcon5.svg";
+import numberIcon6 from "../../assets/img/numberIcon6.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import arrowBack from "../../assets/img/arrow-back.svg";
 import Link from "next/link";
@@ -61,9 +64,7 @@ const LeadsPage = () => {
             I NEED THE SAME!
           </button>
         </div>
-        <div
-          className={`${style.stackContainer}`}
-        >
+        <div className={`${style.stackContainer}`}>
           <div className={style.stackBlock}>
             <Image
               src={golangIcon}
@@ -135,7 +136,7 @@ const LeadsPage = () => {
               translateX={["-800px", "0px"]}
               className={style.staticParallax}
             >
-               <div className={style.whatCanDoTitle}>ABOUT</div>
+              <div className={style.whatCanDoTitle}>ABOUT</div>
             </Parallax>
             <Parallax
               startScroll={100}
@@ -150,105 +151,118 @@ const LeadsPage = () => {
                   through SMS and Email-based campaigns. It offers a range of
                   functionalities to create, automate, fostering direct
                   communication with customers or prospects.
+                  <br />
+                  <br />
+                  Our development process focused on scalability and
+                  flexibility, enabling users to customize campaigns based on
+                  diverse scheduling parameters. Rigorous testing and
+                  optimization were integral, ensuring a flawless experience,
+                  empowering businesses to engage audiences consistently and
+                  efficiently through our innovative Recurring SMS Campaign
+                  solution
                 </div>
               </div>
             </Parallax>
           </div>
         </Parallax>
+
         <Parallax
+        // startScroll={1300}
+        // endScroll={2000}
+        // translateY={["-200px", "-600px"]}
         >
-          <div className={`${style.aboutContainer} ${style.challengeMargin}`}>
+          <div
+            className={`${style.researchContainer} ${style.scopeMarginUpload}`}
+          >
             <Parallax
-              className={style.staticParallax}
+              startScroll={600}
+              endScroll={2600}
+              translateX={["-800px", "0px"]}
+              className={style.parallaxActive}
             >
               <div className={style.whatCanDoTitle}>SCOPE</div>
             </Parallax>
-            <Parallax
-              startScroll={300}
-              endScroll={2000}
-              translateX={["800px", "50px"]}
-              className={style.staticParallax}
-            >
-              <div className={style.cardWithoutBorder}>
-                <div className={style.aboutBlockDescr}>
-                  We started with full-cycle web application development:
-                  requirements gathering, UX/UI prototyping, frontend and
-                  backend development, cloud infrastructure deployment, QA,
-                  post-production support.
-                </div>
+            <div className={style.scopeBlock}>
+              <div className={style.scopeSubTitle}>
+                We started with full-cycle web application development:
+                requirements gathering, UX/UI prototyping, frontend and backend
+                development, cloud infrastructure deployment, QA,
+                post-production support.
               </div>
-            </Parallax>
-            <div className={style.requirementsCards}>
-              <Parallax
-              // startScroll={700}
-              // endScroll={2800}
-              // translateX={["800px", "50px"]}
-              >
-                <div className={style.requirementsCard}>
+              <div className={style.scopeCards}>
+                <div className={style.scopeCard}>
                   <Image
                     src={numberIcon1}
                     alt="numberIcon1"
                     className={style.numberIcon1}
                   />
-                  <div className={style.aboutBlockTitle}>Approach</div>
-                  <div className={style.aboutBlockDescr}>
-                    Their approach and architecture was not optimal, so it was
-                    hard to adjust, slow and resource-demanding
+                  <div className={style.researchBlockDescr} style={{marginLeft: '10px'}}>
+                    Campaign Creation and Management: Allows users to create
+                    text messages using customizable templates, personalization
+                    tags, and rich content.
                   </div>
                 </div>
-              </Parallax>
-              <Parallax
-              // startScroll={800}
-              // endScroll={2900}
-              // translateX={["800px", "50px"]}
-              >
-                <div className={style.requirementsCard}>
+                <div className={style.scopeCard}>
                   <Image
                     src={numberIcon2}
                     alt="numberIcon2"
                     className={style.numberIcon}
                   />
-                  <div className={style.aboutBlockTitle}>Cost</div>
-                  <div className={style.aboutBlockDescr}>
-                    The cloud AWS architecture cost was about 6000$/month
+                  <div className={style.researchBlockDescr}>
+                    Leads Management: Allows the organization and segmentation
+                    of contact lists for efficient targeting and messaging.
                   </div>
                 </div>
-              </Parallax>
-              <Parallax
-              // startScroll={800}
-              // endScroll={2900}
-              // translateX={["800px", "50px"]}
-              >
-                <div className={style.requirementsCard}>
+                <div className={style.scopeCard}>
                   <Image
                     src={numberIcon3}
                     alt="numberIcon3"
                     className={style.numberIcon}
                   />
-                  <div className={style.aboutBlockTitle}>Database</div>
-                  <div className={style.aboutBlockDescr}>
-                    AWS lambdas were wrongly used, the database was not properly
-                    normalized and indexed
+                  <div className={style.researchBlockDescr}>
+                    Delivery Reports: Provides insights into the delivery
+                    status, open rates, click-through rates, and overall
+                    campaign performance.
                   </div>
                 </div>
-              </Parallax>
+                <div className={style.scopeCard}>
+                  <Image
+                    src={numberIcon4}
+                    alt="numberIcon4"
+                    className={style.numberIcon}
+                  />
+                  <div className={style.researchBlockDescr}>
+                    API Support: Integrates with third-party SMS gateways via
+                    APIs for seamless data exchange and workflow integration.
+                  </div>
+                </div>
+                <div className={style.scopeCard}>
+                  <Image
+                    src={numberIcon5}
+                    alt="numberIcon5"
+                    className={style.numberIcon}
+                  />
+                  <div className={style.researchBlockDescr}>
+                    Personalization and Customization: Allows dynamic insertion
+                    of personalized content, such as recipient names or tailored
+                    offers.
+                  </div>
+                </div>
+                <div className={style.scopeCard}>
+                  <Image
+                    src={numberIcon6}
+                    alt="numberIcon6"
+                    className={style.numberIcon}
+                  />
+                  <div className={style.researchBlockDescr}>
+                    Data Security: Ensures data encryption and compliance with
+                    data protection standards to safeguard user information.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Parallax>
-        {/* <Parallax>
-          <div className={`${style.researchContainer} ${style.padding45}`}>
-            <Image
-              src={dataConceptCard}
-              id="dataConceptCard"
-              className={style.dataConceptCard}
-              alt="dataConceptCard"
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            />
-          </div>
-        </Parallax> */}
 
         <Parallax
         // startScroll={1300}
@@ -327,13 +341,7 @@ const LeadsPage = () => {
                     that allows effortless setup of recurring campaigns. Through
                     seamless integration with leading SMS providers, including
                     Telnyx, Twilio, and Nexmo, we ensured reliable delivery and
-                    execution. Our development process focused on scalability
-                    and flexibility, enabling users to customize campaigns based
-                    on diverse scheduling parameters. Rigorous testing and
-                    optimization were integral, ensuring a flawless experience,
-                    empowering businesses to engage audiences consistently and
-                    efficiently through our innovative Recurring SMS Campaign
-                    solution
+                    execution.
                   </div>
                 </div>
               </Parallax>

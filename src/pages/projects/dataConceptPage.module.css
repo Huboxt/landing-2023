@@ -353,6 +353,9 @@
 .scopeMargin {
     margin-top: 80px;
 }
+.scopeMarginUpload {
+    margin-top: 80px;
+}
 
 .scopeBlock {
     display: flex;
@@ -750,6 +753,9 @@
 
     .scopeMargin {
         margin-top: 160px;
+    }
+    .scopeMarginUpload {
+        margin-top: 140px;
     }
 
     .scopeBlock {
@@ -1423,8 +1429,14 @@
     .scopeMargin {
         margin-top: 140px;
     }
+    .scopeMarginUpload {
+        margin-top: 140px;
+    }
     .requirementsMargin {
         margin-top: -20px;
+    }
+    .requirementsMarginUpload {
+        margin-top: 100px;
     }
     .getTouchWrapper {
         margin-top: -120px;

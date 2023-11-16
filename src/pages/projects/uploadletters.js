@@ -191,7 +191,7 @@ const UploadlettersPage = () => {
           endScroll={1200}
           translateY={["-250px", "-400px"]}
         >
-          <div className={`${style.aboutContainer} ${style.requirementsMargin}`}>
+          <div className={`${style.aboutContainer} ${style.requirementsMarginUpload}`}>
             <Parallax
               startScroll={600}
               endScroll={2600}
@@ -277,7 +277,7 @@ const UploadlettersPage = () => {
           endScroll={2000}
           translateY={["-200px", "-600px"]}
         >
-          <div className={`${style.researchContainer} ${style.scopeMargin}`}>
+          <div className={`${style.researchContainer} ${style.scopeMarginUpload}`}>
             <Parallax
               startScroll={600}
               endScroll={2600}
