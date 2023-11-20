@@ -22,6 +22,7 @@ import OurWorksPage from './our-works-page';
 import StartupsPage from './services/startups';
 import DataConceptPage from './projects/data-concept';
 import LeadsPage from './projects/leads';
+import MmsPage from './projects/mms';
 import UploadlettersPage from './projects/uploadletters';
 import PetmateAI from './projects/petmate';
 import FlutterPage from './services/flutter';
@@ -224,6 +225,7 @@ export default function Home() {
           {router.pathname === '/our-works-page' && <OurWorksPage />}
           {router.pathname === '/data-concept' && <DataConceptPage />}
           {router.pathname === '/leads' && <LeadsPage />}
+          {router.pathname === '/mms' && <MmsPage />}
           {router.pathname === '/uploadletters' && <UploadlettersPage />}
           {router.pathname === '/petmate' && <PetmateAI />}
           {router.pathname === '/startups' && <StartupsPage />}

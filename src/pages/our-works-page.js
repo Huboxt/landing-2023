@@ -29,7 +29,6 @@ const OurWorksPage = () => {
             "segma",
             "fleetInsider",
             "carbookingservice",
-            "dms",
             "datbi",
           ].includes(e.page);
           const tagsArray = e.tags.split(", ");
@@ -87,7 +86,6 @@ const OurWorksPage = () => {
             "segma",
             "fleetInsider",
             "carbookingservice",
-            "dms",
             "datbi",
           ].includes(e.page);
           const tagsArray = e.tags.split(", ");
