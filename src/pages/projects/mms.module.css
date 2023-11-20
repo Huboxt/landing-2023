@@ -1548,7 +1548,7 @@
 
     .developmentCard {
         border-radius: 20px;
-  border: 2px solid var(--gradient-3, #082B9B);
+        border: 2px solid var(--gradient-3, #082B9B);
         padding: 40px;
         /* max-width: 532px; */
         width: 100%;

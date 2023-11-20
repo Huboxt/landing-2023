@@ -8,9 +8,9 @@ import golangIcon from "../../assets/img/stackIcons/golang-icon.svg";
 import mysqlIcon from "../../assets/img/stackIcons/mysql-icon.svg";
 import reactIcon from "../../assets/img/stackIcons/react-icon.svg";
 import style from "@/pages/projects/leads.module.css";
-import leadsCard1 from "../../assets/img/leadsCard1.png";
-import leadsCard2 from "../../assets/img/leadsCard2.png";
-import leadsCard3 from "../../assets/img/leadsCard3.png";
+import mmsCard1 from "../../assets/img/mmsCard1.png";
+import mmsCard2 from "../../assets/img/mmsCard2.png";
+import mmsCard3 from "../../assets/img/mmsCard3.png";
 import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
@@ -58,9 +58,6 @@ const MmsPage = () => {
             We build a software application that allows to streamline and
             optimize maintenance-related operations. It serves as a centralized
             platform for managing maintenance activities, assets, and resources.
-            The primary goal of an MMS is to enhance the efficiency,
-            reliability, and lifecycle management of assets while minimizing
-            downtime and operational costs.
           </div>
           <button className={style.needSameButton} onClick={handleClickScroll}>
             I NEED THE SAME!
@@ -279,54 +276,7 @@ const MmsPage = () => {
                 </div>
               </div>
             </Parallax>
-            <div className={style.requirementsCards}>
-              <Parallax
-              // startScroll={700}
-              // endScroll={2800}
-              // translateX={["800px", "50px"]}
-              >
-                <div className={style.requirementsCard}>
-                  <Image
-                    src={numberIcon1}
-                    alt="numberIcon1"
-                    className={style.numberIcon1}
-                  />
-                  <div className={style.aboutBlockTitle}>Api Integration</div>
-                  <div className={style.aboutBlockDescr}>
-                    Our accomplished team has seamlessly integrated with
-                    renowned SMS providers such as Telnyx, Twilio, Nexmo and
-                    others ensuring robust communication solutions tailored to
-                    customer needs
-                  </div>
-                </div>
-              </Parallax>
-              <Parallax
-              // startScroll={800}
-              // endScroll={2900}
-              // translateX={["800px", "50px"]}
-              >
-                <div className={style.requirementsCard}>
-                  <Image
-                    src={numberIcon2}
-                    alt="numberIcon2"
-                    className={style.numberIcon}
-                  />
-                  <div className={style.aboutBlockTitle}>
-                    Recurring Campaigns
-                  </div>
-                  <div className={style.aboutBlockDescr}>
-                    Our team meticulously developed an advanced system for
-                    Recurring SMS& Email Campaigns, leveraging cutting-edge
-                    technologies and a strategic approach. Implementing a robust
-                    scheduling system, we engineered a user-friendly interface
-                    that allows effortless setup of recurring campaigns. Through
-                    seamless integration with leading SMS providers, including
-                    Telnyx, Twilio, and Nexmo, we ensured reliable delivery and
-                    execution.
-                  </div>
-                </div>
-              </Parallax>
-            </div>
+            
           </div>
         </Parallax>
 
@@ -334,7 +284,7 @@ const MmsPage = () => {
           <div className={`${style.researchContainer} ${style.padding45}`}>
             <div>
               <Image
-                src={leadsCard1}
+                src={mmsCard1}
                 className={style.dataConceptJobs}
                 alt="dataConceptJobs"
                 style={{
@@ -344,12 +294,14 @@ const MmsPage = () => {
                   marginRight: "auto",
                   display: "flex",
                   marginBottom: "32px",
+                  borderRadius: "20px",
+                  border: "10px solid #f7f7f7"
                 }}
               />
             </div>
             <div>
               <Image
-                src={leadsCard2}
+                src={mmsCard2}
                 className={style.dataConceptJobs}
                 alt="dataConceptJobs"
                 style={{
@@ -359,12 +311,14 @@ const MmsPage = () => {
                   marginRight: "auto",
                   display: "flex",
                   marginBottom: "32px",
+                  borderRadius: "20px",
+                  border: "10px solid #f7f7f7"
                 }}
               />
             </div>
-            {/* <div>
+            <div>
             <Image
-              src={leadsCard3}
+              src={mmsCard3}
               className={style.dataConceptJobs}
               alt="dataConceptJobs"
               style={{
@@ -373,9 +327,11 @@ const MmsPage = () => {
                 marginLeft: "auto",
                 marginRight: "auto",
                 display: "flex",
+                borderRadius: "20px",
+                border: "10px solid #f7f7f7"
               }}
             />
-          </div> */}
+          </div>
           </div>
         </Parallax>
       </ParallaxProvider>
