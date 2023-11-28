@@ -196,8 +196,8 @@
   color: transparent;
   background: #F2F0EE;
   animation-name: whiteBackground;
-  /* animation-duration: 0.6s;
-  animation-delay: 2.5s; */
+  animation-duration: 0.6s;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
   /* transform-origin: 100%; */
   max-width: 100%;
