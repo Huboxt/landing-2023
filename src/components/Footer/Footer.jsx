@@ -144,7 +144,7 @@ const Footer = () => {
                   href="/termspolicy/terms"
                   className={style.link}
                 >
-                  TERMS
+                  TERMS AND CONDITIONS
                 </Link>
                 <Link href="/termspolicy/policy" className={style.link}>
                   PRIVACY POLICY

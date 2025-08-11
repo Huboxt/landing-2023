@@ -30,6 +30,10 @@ const App = ({ Component, pageProps }) => {
           gtag('config', 'UA-175640325-1');
         `}
       </Script>
+      <Script
+        src="https://clients.deep-chat.ai/api/widget.js?project-id=55bb0009-b8a5-4296-83e4-7c3e3efcf3d4"
+        strategy="afterInteractive"
+      />
 
       <Component {...pageProps} />
     </>
