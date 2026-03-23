@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Next.js static assets
+Allow: /_next/static/
+
+Sitemap: https://huboxt.com/sitemap.xml

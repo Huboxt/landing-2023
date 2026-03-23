@@ -15,6 +15,7 @@ import OurWorks from "@/components/OurWorks/OurWorks";
 import FAQ from "@/components/FAQ/FAQ";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const StartupsPage = () => {
   const handleClickScroll = (e) => {
@@ -30,6 +31,12 @@ const StartupsPage = () => {
   
 
   return (
+    <>
+    <SeoHead
+      title="Software development for startups"
+      description="MVP, product design, and scalable engineering for startups. HUBOXT helps early-stage teams ship web and mobile products faster."
+      path="/services/startups"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn offsetPosition={12200}/>
       <div className={style.startupsTitleContainer}>
@@ -692,6 +699,7 @@ const StartupsPage = () => {
         </Parallax>
       </ParallaxProvider>
     </div>
+    </>
   );
 };
 

@@ -20,6 +20,7 @@ import numberIcon6 from "../../assets/img/numberIcon6.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import arrowBack from "../../assets/img/arrow-back.svg";
 import Link from "next/link";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const MmsPage = () => {
   const handleClickScroll = (e) => {
@@ -34,6 +35,12 @@ const MmsPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="MMS — case study"
+      description="Document management case study: full-stack development with Golang, MySQL, and React by HUBOXT."
+      path="/projects/mms"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.backBtn}>
@@ -342,6 +349,7 @@ const MmsPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

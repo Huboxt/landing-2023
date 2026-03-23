@@ -21,6 +21,7 @@ import numberIcon6 from "../../assets/img/numberIcon6.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import arrowBack from "../../assets/img/arrow-back.svg";
 import Link from "next/link";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const LeadsPage = () => {
   const handleClickScroll = (e) => {
@@ -35,6 +36,12 @@ const LeadsPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="Leads — case study"
+      description="Lead generation product case study: Golang, MySQL, and React engineering by HUBOXT."
+      path="/projects/leads"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.backBtn}>
@@ -405,6 +412,7 @@ const LeadsPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

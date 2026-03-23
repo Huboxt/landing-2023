@@ -9,11 +9,18 @@ import style from "@/pages/our-works/ourWorksPage.module.css";
 import touch from "../assets/img/getInTouch.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const OurWorksPage = () => {
   const router = useRouter();
 
   return (
+    <>
+    <SeoHead
+      title="Our work & case studies"
+      description="Portfolio of HUBOXT: web and mobile software projects, product design, and engineering case studies from our team."
+      path="/our-works-page"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div>
@@ -138,6 +145,7 @@ const OurWorksPage = () => {
       <GetTouch borderRadius="60px 60px 0px 0px" />
       <Footer />
     </div>
+    </>
   );
 };
 

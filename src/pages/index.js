@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Parallax, ParallaxProvider} from 'react-scroll-parallax';
+import SeoHead from '@/components/Seo/SeoHead';
 import Head from 'next/head';
+import { SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/seo';
 import Header from '../components/Header/Header';
 import FirstBlock from '../components/FirstBlock/FirstBlock';
 import Service from '../components/Service/Service';
@@ -11,8 +13,6 @@ import Clutch from '../components/Clutch/Clutch';
 import FAQ from '../components/FAQ/FAQ';
 import GetTouch from '../components/GetTouch/GetTouch';
 import Footer from '../components/Footer/Footer';
-import Terms from './termspolicy/terms';
-import Policy from './termspolicy/policy';
 import SecondBlock from '../components/SecondBlock/SecondBlock';
 import ThirdBlock from '../components/ThirdBlock/ThirdBlock';
 import FourthBlock from '../components/FourthBlock/FourthBlock';
@@ -75,57 +75,56 @@ export default function Home() {
   }
   return (
     <>
+      <SeoHead
+        title="Software Development Company"
+        description="HUBOXT — custom software development: web, UI/UX, mobile apps, and API integration. Straight-up engineering for teams that ship."
+        path="/"
+      />
       <Head>
-        <title>Software Development Company - HUBOXT</title>
-        <meta name="description" content="HUBOXT - custom software development company. Web Development ✔️ UI/UX ✔️ Mobile Development ✔️ API Integration" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              "name": "HUBOXT",
-              "url": "https://huboxt.com/",
-              "logo": "https://huboxt.com/_next/static/media/oxt.0b4789e2.svg",
-              "email": "sales@huboxt.com",
-              "telephone": "[+351963770487]"
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Event",
-              "name": "Software Development Company",
-              "url": "https://huboxt.com/",
-              "description": "Straight-up software development",
-              "startDate": "2023-06-29",
-              "endDate": "2023-10-29",
-              "image": "https://huboxt.com/_next/static/media/thirdBlockIcon.8348d987.svg",
-              "performer": "HUBOXT",
-              "location": {
-                "@type": "Place",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Tornimäe tn 3 // 5 // 7",
-                  "addressLocality": "Tallinn",
-                  "addressRegion": "Kesklinna linnaosa",
-                  "postalCode": "10145",
-                  "addressCountry": "Estonia"
-                }
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'HUBOXT',
+              url: `${SITE_URL}/`,
+              logo: DEFAULT_OG_IMAGE,
+              email: 'sales@huboxt.com',
+              telephone: '+351963770487',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tornimäe tn 3 // 5 // 7',
+                addressLocality: 'Tallinn',
+                addressRegion: 'Kesklinna linnaosa',
+                postalCode: '10145',
+                addressCountry: 'EE',
               },
-              "offers": {
-                "@type": "Offer",
-                "description": "Straight-up software development",
-                "url": "https://huboxt.com/",
-                "price": 150,
-                "priceCurrency": "USD"
-              }
-            }
-          `}
-        </script>
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'HUBOXT',
+              url: `${SITE_URL}/`,
+              description:
+                'Custom software development company: web, mobile, UI/UX, and API integration.',
+              publisher: {
+                '@type': 'Organization',
+                name: 'HUBOXT',
+                url: `${SITE_URL}/`,
+              },
+            }),
+          }}
+        />
       </Head>
       <main>
         <div className={style.firstScreenWrapper}>
@@ -230,8 +229,6 @@ export default function Home() {
           {router.pathname === '/petmate' && <PetmateAI />}
           {router.pathname === '/startups' && <StartupsPage />}
           {router.pathname === '/flutter' && <FlutterPage />}
-          {router.pathname === '/terms' && <Terms />}
-          {router.pathname === '/policy' && <Policy />}
       </main>
     </>
   )

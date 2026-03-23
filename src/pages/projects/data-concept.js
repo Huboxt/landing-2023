@@ -19,6 +19,7 @@ import numberIcon1 from "../../assets/img/numberIcon1.svg";
 import numberIcon2 from "../../assets/img/numberIcon2.svg";
 import numberIcon3 from "../../assets/img/numberIcon3.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const DataConceptPage = () => {
   const handleClickScroll = (e) => {
@@ -33,6 +34,12 @@ const DataConceptPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="Dataconcepts — case study"
+      description="Web platform case study: Golang, MySQL, and React. HUBOXT built a modern, fast product for Dataconcepts."
+      path="/projects/data-concept"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div>
@@ -485,6 +492,7 @@ const DataConceptPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

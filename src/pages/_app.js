@@ -1,9 +1,13 @@
 import '@/styles/globals.css'
 import Script from 'next/script'
+import Head from 'next/head'
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-4HTVPFEJYG"
         strategy="afterInteractive"

@@ -19,6 +19,7 @@ import OurWorks from "@/components/OurWorks/OurWorks";
 import FAQ from "@/components/FAQ/FAQ";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const FlutterPage = () => {
   const handleClickScroll = (e) => {
@@ -33,6 +34,12 @@ const FlutterPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="Flutter app development"
+      description="Cross-platform mobile apps with Flutter: UI/UX, performance, and delivery by HUBOXT. Build iOS and Android from one codebase."
+      path="/services/flutter"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.startupsTitleContainer}>
@@ -497,6 +504,7 @@ const FlutterPage = () => {
         </Parallax>
       </ParallaxProvider>
     </div>
+    </>
   );
 };
 

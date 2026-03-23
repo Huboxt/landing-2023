@@ -37,6 +37,7 @@ import numberIcon7 from "../../assets/img/numberIcon7.svg";
 import numberIcon8 from "../../assets/img/numberIcon8.svg";
 import arrowBack from "../../assets/img/arrow-back.svg";
 import Link from "next/link";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const PetmateAI = () => {
   const handleClickScroll = (e) => {
@@ -51,6 +52,12 @@ const PetmateAI = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="Petmate AI — case study"
+      description="AI-powered pet care mobile app: Flutter, Next.js, OpenAI integration. Product case study by HUBOXT."
+      path="/projects/petmate"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.backBtn}>
@@ -354,6 +361,7 @@ const PetmateAI = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

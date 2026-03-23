@@ -30,6 +30,7 @@ import numberIcon8 from "../../assets/img/numberIcon8.svg";
 import arrowBack from "../../assets/img/arrow-back.svg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import Link from "next/link";
+import SeoHead from "@/components/Seo/SeoHead";
 
 const UploadlettersPage = () => {
   const handleClickScroll = (e) => {
@@ -44,6 +45,12 @@ const UploadlettersPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+      title="Upload Letters — case study"
+      description="Shipping and compliance web platform: React, Laravel, Golang, and AWS. Case study by HUBOXT."
+      path="/projects/uploadletters"
+    />
     <div className={style.container}>
       <Header showGetTouchBtn />
       <div className={style.backBtn}>
@@ -555,6 +562,7 @@ const UploadlettersPage = () => {
         </Parallax>
       </ParallaxProvider>
     </div>
+    </>
   );
 };
 
