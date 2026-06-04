@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Image from "next/image";
 import Select from 'react-select';
 import useContactForm from './use-contact-form';
@@ -6,7 +7,14 @@ import validate from './validate-contact-form';
 import touch from '../../assets/img/getInTouch.svg';
 import style from './contactForm.module.css';
 
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false });
+
+const RECAPTCHA_SITE_KEY = '6Ld9aAwtAAAAANK2w0dKm9029EHu9ahhnngd7xYw';
+
 const ContactFormComponent = () => {
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const recaptchaRef = useRef(null);
+
   const {
     values,
     errors,
@@ -49,12 +57,25 @@ const ContactFormComponent = () => {
     handleChange(event)
   }
 
-  const cantBeSubmitted = errors.email;
+  const cantBeSubmitted = errors.email || !captchaToken || isSubmitting;
+
+  const onCaptchaChange = (token) => {
+    setCaptchaToken(token);
+  };
+
+  const resetCaptcha = () => {
+    setCaptchaToken(null);
+    recaptchaRef.current?.reset();
+  };
+
+  const onFormSubmit = (ev) => {
+    handleSubmit(ev, captchaToken, resetCaptcha);
+  };
 
   return (
     <div className={style.formWrapper} id="contact-form">
         <form
-          onSubmit={handleSubmit}
+          onSubmit={onFormSubmit}
           noValidate
         >
           <div className={style.inputContainer}>
@@ -116,6 +137,15 @@ const ContactFormComponent = () => {
               rows="3"
               onChange={handleChange}
               value={values.message || ''}
+            />
+          </div>
+          <div className={style.captchaWrapper}>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={RECAPTCHA_SITE_KEY}
+              theme="dark"
+              onChange={onCaptchaChange}
+              onExpired={resetCaptcha}
             />
           </div>
           <div className={style.buttonWrapper}>

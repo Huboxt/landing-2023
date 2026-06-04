@@ -8,12 +8,15 @@ const useContactForm = (validate) => {
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (ev) => {
+    const handleSubmit = (ev, captchaToken, onCaptchaReset) => {
         ev.preventDefault();
         const errors = validate(values);
     
         if (errors.email) {
             setErrors(validate(values));
+            return;
+        }
+        if (!captchaToken) {
             return;
         }
         setErrors({});
@@ -22,16 +25,20 @@ const useContactForm = (validate) => {
         data.append('name', values.name);
         data.append('email', values.email);
         data.append('message', `${values.services ? 'Services: ' + values.services : ''} ${values.ProjectBudget ? 'ProjectBudget: ' + values.ProjectBudget : ''} Message: ${values.message}`);
+        data.append('g-recaptcha-response', captchaToken);
         const xhr = new XMLHttpRequest();
         xhr.open('post', 'https://formspree.io/f/mgerzjow');
         xhr.setRequestHeader('Accept', 'application/json');
         xhr.onreadystatechange = () => {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            setIsSubmitting(false);
             if (xhr.status === 200) {
                 setValues({});
+                onCaptchaReset?.();
                 toast.success("Success! Your message has been successfully delivered to our team.");
             } else {
-                // this.setState({ status: "ERROR" });
+                onCaptchaReset?.();
+                toast.error("Something went wrong. Please try again.");
             }
         };
         xhr.send(data);
